@@ -1,0 +1,26 @@
+[
+  {
+    "id": "q_week1_001",
+    "type": "single_choice",
+    "text": "下列哪一層皮膚結構含有黑色素細胞？",
+    "options": ["角質層", "透明層", "顆粒層", "基底層"],
+    "correctAnswer": "基底層",
+    "explanation": "基底層 (Stratum basale) 位於表皮最深處，包含會分裂的角質形成細胞，以及能製造黑色素、決定皮膚顏色的黑色素細胞 (Melanocytes)。"
+  },
+  {
+    "id": "q_week1_002",
+    "type": "single_choice",
+    "text": "根據 IFA 準則，下列哪一種精油對於癲癇患者是絕對禁忌？",
+    "options": ["真正薰衣草", "茶樹", "迷迭香", "羅馬洋甘菊"],
+    "correctAnswer": "迷迭香",
+    "explanation": "迷迭香 (Rosemary) 含有高比例的樟腦與酮類成分，會刺激中樞神經系統，對於癲癇患者容易誘發發作，為絕對禁忌症。"
+  },
+  {
+    "id": "q_week1_003",
+    "type": "single_choice",
+    "text": "檸檬烯 (Limonene) 屬於哪一種精油化學類別？",
+    "options": ["單萜烯類", "酯類", "單萜醇類", "酚類"],
+    "correctAnswer": "單萜烯類",
+    "explanation": "檸檬烯 (Limonene) 是柑橘類果皮中最常見的化學分子，屬於單萜烯類 (Monoterpenes)，具有提振精神、抗病毒與促進消化的特性。"
+  }
+]
