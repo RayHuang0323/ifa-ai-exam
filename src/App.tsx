@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Home from './components/Home';
 import Exam from './components/Exam';
 import Result from './components/Result';
@@ -12,10 +12,13 @@ function App() {
   const [currentPage, setCurrentPage] = useState<Page>('home');
   const [questions, setQuestions] = useState<any[]>([]);
   const [userAnswers, setUserAnswers] = useState<Record<string, string>>({});
+  // 新增：紀錄當前測驗總共限制的時間（單位：分鐘）
+  const [timeLimit, setTimeLimit] = useState<number>(10);
 
   const handleStartExam = (week: number) => {
     if (week === 1) {
       setQuestions(week1Data);
+      setTimeLimit(10); // Week 1 設定為 10 分鐘
       setCurrentPage('exam');
     } else {
       alert(`Week ${week} 題庫尚未建置，MVP 階段請先測試 Week 1。`);
@@ -39,7 +42,11 @@ function App() {
         <Home onStartExam={handleStartExam} />
       )}
       {currentPage === 'exam' && (
-        <Exam questions={questions} onFinish={handleFinishExam} />
+        <Exam 
+          questions={questions} 
+          timeLimitInMinutes={timeLimit} 
+          onFinish={handleFinishExam} 
+        />
       )}
       {currentPage === 'result' && (
         <Result questions={questions} answers={userAnswers} onReturnHome={handleReturnHome} />
