@@ -3,7 +3,7 @@ import Home from './components/Home';
 import Exam from './components/Exam';
 import Result from './components/Result';
 
-// 正式資料層路徑導入
+// 正式資料層路徑導入 (已確認不使用舊版 src/data/week1.json)
 import week1Questions from './data/questions/week1.json';
 import week1Knowledge from './data/knowledge/week1-knowledge.json';
 
@@ -28,7 +28,7 @@ function App() {
 
   const handleFinishExam = (answers: Record<string, any>, timeLeft: number) => {
     setUserAnswers(answers);
-    setTimeSpent(timeLimit * 60 - timeLeft); // 記錄花費秒數
+    setTimeSpent(timeLimit * 60 - Math.max(0, timeLeft)); // 記錄花費秒數，防止負數
     setCurrentPage('result');
   };
 
@@ -40,7 +40,8 @@ function App() {
   };
 
   return (
-    <div className="font-sans bg-slate-50 min-h-screen text-slate-800 selection:bg-blue-600 selection:text-white">
+    // 導入 Linear/Stripe 風格的底色與字體渲染設定
+    <div className="font-sans min-h-screen bg-[#F9FAFB] text-slate-900 antialiased selection:bg-indigo-500/20 selection:text-indigo-900 flex flex-col">
       {currentPage === 'home' && (
         <Home onStartExam={handleStartExam} />
       )}

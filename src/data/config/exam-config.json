@@ -1,0 +1,12 @@
+{
+  "examDate": "2026-10-12",
+  "week": 1,
+  "title": "人體解剖學與生理學",
+  "subtitle": "Anatomy and Physiology - 涵蓋心血管、淋巴、神經等四大系統核心觀念。",
+  "timeLimit": 90,
+  "difficulty": 5,
+  "aiCoachAdvice": {
+    "targetKnowledgeId": "CV001",
+    "message": "心血管循環。確保理解充氧血與缺氧血流向後，再開始本週的模擬測驗。"
+  }
+}
