@@ -80,3 +80,10 @@ Sprint 10：刷題與錯題複習。
 ### 驗證
 
 - Build、Deploy、Commit 與 Push 完成。
+
+## Sprint 10.1－驗收 Bug 修正與 Codex Debug 規範
+
+- 修正 mockExam 離開後草稿被清除的問題。
+- 補齊草稿 mode、題目 id 與建立時間。
+- 新增短版專案狀態與驗收／Debug 規範。
+- Build、Deploy、Commit、Push 完成。

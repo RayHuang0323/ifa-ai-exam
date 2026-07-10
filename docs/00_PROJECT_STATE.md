@@ -1,0 +1,12 @@
+# 專案目前狀態
+
+- 目前版本：Sprint 10.1
+- 正式考試日期：2026-09-08
+- 正式題庫來源：`src/data/questions/`
+- 可用題庫：Week1
+- 原始資料：`private/考古題原始資料/`
+- 不使用登入、後端或資料庫。
+- localStorage：`ifa-week1-exam-draft-v1`（mockExam 草稿）、`ifa-study-progress-v1`（學習進度）、`ifa-wrong-answers-v1`（錯題索引）。
+- 首頁按鈕：繼續模擬測驗＝resume mockExam 草稿；開始今日任務＝指定題數低壓練習；開始測驗＝完整 Week1 正式模擬。
+- 模式：`mockExam`、`daily`、`weeklyCatchUp`。
+- 限制：不建立重複題庫、不修改正式答案、不覆蓋正式測驗草稿、不新增假 Week2～Week8、UI 預設繁體中文、Build 成功才 Deploy、Sprint 完成即停止。

@@ -158,7 +158,7 @@ function App() {
     setUserAnswers({});
     setQuestions([]);
     setTimeSpent(0);
-    setExamDraft(null);
+    setExamDraft(loadExamDraft());
     setCurrentPage('home');
   };
 
@@ -189,7 +189,7 @@ function App() {
         <main className="exam-instructions w-full max-w-3xl mx-auto px-4 sm:px-6 py-8 md:py-12 flex-grow flex items-center">
           <section className="exam-instructions-card w-full bg-[#0b0d14] border border-slate-800 rounded-2xl p-6 sm:p-8 space-y-6 shadow-lg">
             <div className="space-y-2">
-              <span className="text-[10px] font-bold uppercase tracking-widest font-mono text-indigo-400">Exam Instructions</span>
+              <span className="text-[10px] font-bold uppercase tracking-widest font-mono text-indigo-400">測驗說明</span>
               <h1 className="text-2xl font-bold text-white">Week {examConfig.week}：{examConfig.title}</h1>
               <p className="text-sm text-slate-400 leading-relaxed">{examEntry === 'today-task' && todaySuggestedQuestions > 0 ? `今日建議先完成 ${todaySuggestedQuestions} 題；目前以完整 Week1 正式測驗進行。` : '確認開始後才會啟動倒數。請在作答期間隨時確認題目狀態與標記。'}</p>
             </div>

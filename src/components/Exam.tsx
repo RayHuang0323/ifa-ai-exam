@@ -45,14 +45,17 @@ export default function Exam({ questions, timeLimitInMinutes, onFinish, onAbort,
     if (persistDraft && !hasSubmittedRef.current && timeLeft > 0) {
       saveExamDraft({
         weekId: 'week-1',
+        mode: 'mockExam',
         currentIndex,
         answers,
         markedQuestionIds: [...markedQuestionIds],
         timeLeft,
+        questionIds: questions.map((question) => question.id),
+        createdAt: initialDraft?.createdAt ?? new Date().toISOString(),
         updatedAt: new Date().toISOString(),
       });
     }
-  }, [answers, currentIndex, markedQuestionIds, persistDraft, timeLeft]);
+  }, [answers, currentIndex, initialDraft?.createdAt, markedQuestionIds, persistDraft, questions, timeLeft]);
 
   const submitExam = (secondsLeft: number) => {
     if (hasSubmittedRef.current) return;
@@ -136,11 +139,13 @@ export default function Exam({ questions, timeLimitInMinutes, onFinish, onAbort,
   };
 
   const leaveExam = () => {
-    hasSubmittedRef.current = true;
-    clearExamDraft();
-    setAnswers({});
-    setMarkedQuestionIds(new Set());
-    setTimeLeft(0);
+    if (!persistDraft) {
+      hasSubmittedRef.current = true;
+      clearExamDraft();
+      setAnswers({});
+      setMarkedQuestionIds(new Set());
+      setTimeLeft(0);
+    }
     onAbort();
   };
 

@@ -6,6 +6,8 @@
 
 專案 Wiki 位於 [`docs/`](docs/)。所有 AI 在開始修改程式前，必須先閱讀本 README，再依序閱讀：
 
+優先入口：[`docs/00_PROJECT_STATE.md`](docs/00_PROJECT_STATE.md) 與 [`docs/13_Codex驗收與Debug規範.md`](docs/13_Codex驗收與Debug規範.md)。
+
 1. [`docs/01_專案概觀.md`](docs/01_專案概觀.md)
 2. [`docs/02_系統架構.md`](docs/02_系統架構.md)
 3. [`docs/03_開發規範.md`](docs/03_開發規範.md)

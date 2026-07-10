@@ -69,7 +69,7 @@ export default function Result({ questions, knowledge, answers, timeSpent, onRet
     <div className="min-h-screen bg-[#050508] text-slate-200 font-sans pb-20">
       <header className="border-b border-slate-800/80 bg-[#090a0f] py-8">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-2">
-          <span className="text-[10px] font-bold uppercase tracking-widest font-mono text-indigo-400">Assessment Report</span>
+          <span className="text-[10px] font-bold uppercase tracking-widest font-mono text-indigo-400">測驗結果</span>
           <h1 className="text-2xl sm:text-3xl font-bold text-white tracking-tight">Week 1 測驗結果</h1>
         </div>
       </header>
