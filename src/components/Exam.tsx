@@ -21,12 +21,13 @@ interface ExamProps {
   onFinish: (answers: Record<string, string | string[]>, timeLeft: number) => void;
   onAbort: () => void;
   initialDraft: ExamDraft | null;
+  persistDraft: boolean;
 }
 
 const isAnswered = (answer: string | string[] | undefined) =>
   Array.isArray(answer) ? answer.length > 0 : Boolean(answer?.trim());
 
-export default function Exam({ questions, timeLimitInMinutes, onFinish, onAbort, initialDraft }: ExamProps) {
+export default function Exam({ questions, timeLimitInMinutes, onFinish, onAbort, initialDraft, persistDraft }: ExamProps) {
   const [currentIndex, setCurrentIndex] = useState(() => Math.min(initialDraft?.currentIndex ?? 0, Math.max(0, questions.length - 1)));
   const [answers, setAnswers] = useState<Record<string, string | string[]>>(() => initialDraft?.answers ?? {});
   const [markedQuestionIds, setMarkedQuestionIds] = useState<Set<number>>(() => new Set(initialDraft?.markedQuestionIds ?? []));
@@ -41,7 +42,7 @@ export default function Exam({ questions, timeLimitInMinutes, onFinish, onAbort,
   }, [answers]);
 
   useEffect(() => {
-    if (!hasSubmittedRef.current && timeLeft > 0) {
+    if (persistDraft && !hasSubmittedRef.current && timeLeft > 0) {
       saveExamDraft({
         weekId: 'week-1',
         currentIndex,
@@ -51,7 +52,7 @@ export default function Exam({ questions, timeLimitInMinutes, onFinish, onAbort,
         updatedAt: new Date().toISOString(),
       });
     }
-  }, [answers, currentIndex, markedQuestionIds, timeLeft]);
+  }, [answers, currentIndex, markedQuestionIds, persistDraft, timeLeft]);
 
   const submitExam = (secondsLeft: number) => {
     if (hasSubmittedRef.current) return;

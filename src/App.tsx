@@ -9,6 +9,8 @@ import week1Knowledge from './data/knowledge/week1-knowledge.json';
 import examConfig from './data/config/exam-config.json';
 import { getLocalDateString, recordStudySession } from './utils/studyProgress';
 import { clearExamDraft, loadExamDraft, type ExamDraft } from './utils/examDraft';
+import { recordWrongAnswers } from './utils/wrongAnswerStore';
+import type { StudyMode } from './types/study';
 
 type Page = 'home' | 'instructions' | 'exam' | 'result';
 type ExamEntry = 'new-exam' | 'today-task';
@@ -40,6 +42,8 @@ function App() {
   const [showDraftChoice, setShowDraftChoice] = useState(false);
   const [examEntry, setExamEntry] = useState<ExamEntry>('new-exam');
   const [todaySuggestedQuestions, setTodaySuggestedQuestions] = useState(0);
+  const [sessionMode, setSessionMode] = useState<StudyMode>('formal-exam');
+  const [persistDraft, setPersistDraft] = useState(true);
   const hasFinishedRef = useRef(false);
 
   const prepareNewExam = (entry: ExamEntry, suggestedQuestions = 0) => {
@@ -49,6 +53,8 @@ function App() {
     setTimeLimit(examConfig.timeLimit);
     setExamEntry(entry);
     setTodaySuggestedQuestions(suggestedQuestions);
+    setSessionMode('formal-exam');
+    setPersistDraft(true);
     setCurrentPage('instructions');
   };
 
@@ -62,16 +68,15 @@ function App() {
     prepareNewExam('new-exam');
   };
 
-  const handleStartTodayTask = (suggestedQuestions: number) => {
-    const draft = loadExamDraft();
-    setExamDraft(draft);
-    if (draft) {
-      setTodaySuggestedQuestions(suggestedQuestions);
-      setExamEntry('today-task');
-      setShowDraftChoice(true);
-      return;
-    }
-    prepareNewExam('today-task', suggestedQuestions);
+  const handleStartTodayTask = (suggestedQuestions: number, mode: StudyMode) => {
+    setExamDraft(loadExamDraft());
+    setQuestions(week1Questions.slice(0, Math.min(suggestedQuestions, week1Questions.length)));
+    setTimeLimit(examConfig.timeLimit);
+    setExamEntry('today-task');
+    setTodaySuggestedQuestions(suggestedQuestions);
+    setSessionMode(mode);
+    setPersistDraft(false);
+    setCurrentPage('instructions');
   };
 
   const handleResumeExam = () => {
@@ -106,6 +111,9 @@ function App() {
     const answeredCount = questions.filter((question) => isAnswerProvided(answers[question.id])).length;
     const correctCount = questions.filter((question) => isCorrectAnswer(question, answers[question.id])).length;
     const unansweredCount = questions.length - answeredCount;
+    const wrongAnswerRecords = questions
+      .filter((question) => isAnswerProvided(answers[question.id]) && !isCorrectAnswer(question, answers[question.id]))
+      .map((question) => ({ questionId: question.id, weekId: 'week-1' as const, lastSelectedAnswer: answers[question.id] ?? null, correctAnswer: question.answer, questionType: question.type, source: 'week-1' as const }));
 
     try {
       localStorage.setItem('ifa_exam_state', JSON.stringify({
@@ -126,13 +134,14 @@ function App() {
       id: `week-1-${completedAt}`,
       date: getLocalDateString(new Date()),
       weekId: 'week-1',
-      mode: 'formal-exam',
+      mode: sessionMode,
       answeredCount,
       correctCount,
       wrongCount: answeredCount - correctCount,
       durationSeconds,
       completedAt,
     });
+    recordWrongAnswers(wrongAnswerRecords);
 
     setCurrentPage('result');
   };
@@ -161,6 +170,8 @@ function App() {
     setTimeSpent(0);
     hasFinishedRef.current = false;
     setExamEntry('new-exam');
+    setSessionMode('formal-exam');
+    setPersistDraft(true);
     setCurrentPage('instructions');
   };
 
@@ -210,7 +221,8 @@ function App() {
           timeLimitInMinutes={timeLimit} 
           onFinish={handleFinishExam}
           onAbort={handleAbortExam}
-          initialDraft={examDraft} />
+          initialDraft={persistDraft ? examDraft : null}
+          persistDraft={persistDraft} />
       )}
       {showDraftChoice && (
         <div className="app-draft-modal" role="dialog" aria-modal="true" aria-labelledby="draft-choice-title">

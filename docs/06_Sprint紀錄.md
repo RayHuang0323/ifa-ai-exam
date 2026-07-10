@@ -63,3 +63,20 @@ Sprint 10：刷題與錯題複習。
 - `npm.cmd run build` 成功。
 - `npm.cmd run deploy` 成功並顯示 `Published`。
 - Commit 與 push 完成後記錄 hash。
+
+## Sprint 10－每日任務與每週複習架構 v1
+
+### 完成功能
+
+- Task Planner 依未練習天數與本週進度產生低壓 Week1 任務。
+- 每日任務可指定 5、10 或 15 題，不建立重複題庫。
+- 每週記憶強化顯示週題量、錯題數與複習提醒。
+- 正式完成後以 `ifa-wrong-answers-v1` 保存錯題索引與答題結果。
+
+### 未完成
+
+- 完整錯題本、跨週混題、簡答／默寫與間隔重複。
+
+### 驗證
+
+- Build、Deploy、Commit 與 Push 完成。

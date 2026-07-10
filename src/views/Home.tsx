@@ -13,23 +13,28 @@ import { studyConfig } from '../data/studyConfig';
 import { getExamCountdown, getTodayCompleted, getWeeklyProgress, loadStudyProgress } from '../utils/studyProgress';
 import { getStudyReminder } from '../utils/studyReminder';
 import type { StudyProgress } from '../types/study';
+import type { StudyMode } from '../types/study';
+import { loadWrongAnswers } from '../utils/wrongAnswerStore';
+import { planTodayTask } from '../utils/taskPlanner';
 
 interface HomeProps {
   hasExamDraft: boolean;
   onResumeExam: () => void;
-  onStartTodayTask: (suggestedQuestions: number) => void;
+  onStartTodayTask: (suggestedQuestions: number, mode: StudyMode) => void;
   onStartNewExam: () => void;
 }
 
 const Home: React.FC<HomeProps> = ({ hasExamDraft, onResumeExam, onStartTodayTask, onStartNewExam }) => {
   const [hasHistory, setHasHistory] = useState<boolean>(false);
   const [studyProgress, setStudyProgress] = useState<StudyProgress>(() => loadStudyProgress());
+  const [wrongAnswerCount, setWrongAnswerCount] = useState(0);
 
   useEffect(() => {
     try {
       const existingState = localStorage.getItem('ifa_exam_state');
       const latestProgress = loadStudyProgress();
       setStudyProgress(latestProgress);
+      setWrongAnswerCount(loadWrongAnswers().length);
       setHasHistory(Boolean(existingState) || latestProgress.sessions.length > 0);
     } catch (error) {
       console.error('Failed to read configuration storage key:', error);
@@ -41,6 +46,7 @@ const Home: React.FC<HomeProps> = ({ hasExamDraft, onResumeExam, onStartTodayTas
   const reminder = getStudyReminder(studyProgress, weeklyProgress, now);
   const examCountdown = getExamCountdown(now);
   const todayCompleted = getTodayCompleted(studyProgress, now);
+  const todayTask = planTodayTask(studyProgress, weeklyProgress, wrongAnswerCount, reminder.daysSinceLastStudy);
   const countdownLabel = examCountdown === 0 ? '今天考試' : examCountdown < 0 ? '考試已結束' : `${examCountdown} 天`;
 
   return (
@@ -71,6 +77,7 @@ const Home: React.FC<HomeProps> = ({ hasExamDraft, onResumeExam, onStartTodayTas
               <div className="study-progress-fill" style={{ width: `${weeklyProgress.percentage}%` }} />
             </div>
             <p>本週還差 {weeklyProgress.remaining} 題・剩餘 {weeklyProgress.remainingDays} 天</p>
+            <p className="study-memory-focus">每週記憶強化：{wrongAnswerCount > 0 ? `本週錯題 ${wrongAnswerCount} 題，建議至少再複習 ${studyConfig.weeklyTask.weeklyReviewTarget} 題錯題與重點題。` : '完成更多測驗後，系統會整理本週錯題與複習重點。'}</p>
           </article>
 
           <article className={`study-card study-reminder-card study-reminder-${reminder.level}`}>
@@ -81,7 +88,7 @@ const Home: React.FC<HomeProps> = ({ hasExamDraft, onResumeExam, onStartTodayTas
               <span>今日已完成 {todayCompleted} / {studyConfig.dailyQuestionTarget} 題</span>
               {reminder.suggestedQuestions > 0 && <span>建議：{reminder.suggestedQuestions} 題</span>}
             </div>
-            <button onClick={() => onStartTodayTask(reminder.suggestedQuestions)} className="study-task-button">開始今日任務：Week1 練習 {reminder.suggestedQuestions || studyConfig.dailyQuestionTarget} 題</button>
+            {todayTask.mode === 'reviewPreview' ? <span className="study-preview-note">{todayTask.ctaLabel}</span> : <button onClick={() => onStartTodayTask(todayTask.suggestedQuestions, todayTask.mode as StudyMode)} className="study-task-button">{todayTask.ctaLabel}</button>}
           </article>
 
           <article className="study-card study-streak-card">
@@ -103,7 +110,7 @@ const Home: React.FC<HomeProps> = ({ hasExamDraft, onResumeExam, onStartTodayTas
 
         {/* [3] Mission 滿版 */}
         <div className="w-full">
-          <MissionSection />
+          <MissionSection task={todayTask} wrongAnswerCount={wrongAnswerCount} onStartTask={onStartTodayTask} />
         </div>
 
         {/* [4] Exam 滿版 */}
