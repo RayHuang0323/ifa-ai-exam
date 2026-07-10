@@ -10,6 +10,7 @@ export interface StudySession {
   wrongCount: number;
   durationSeconds: number;
   completedAt: string;
+  questionIds?: number[];
 }
 
 export interface StudyProgress {

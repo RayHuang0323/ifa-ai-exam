@@ -102,3 +102,18 @@ Sprint 10：刷題與錯題複習。
 - 新增 `scripts/e2e-sprint-10-2.mjs`、`tests/e2e/sprint-10-2.spec.ts` 與 Playwright 設定。
 - `npm.cmd run verify:sprint10.2` 以系統 Chrome 逐步驗證 mockExam 草稿續作、今日任務題數一致與首頁中文化，明確結束並回傳 exit code 0。
 - Build、Deploy、Commit 與 Push 於本紀錄更新後執行。
+
+## Sprint 10.3－學習策略定義與首頁 UX 優化
+
+### 完成功能
+
+- 首頁第一層整合考試倒數、本週進度與單一今日任務主 CTA，移除重複的「今日建議」卡片與 CTA。
+- 第二層新增連續學習、錯題數與 Week1 題庫覆蓋率；覆蓋率採新 StudySession 的 questionIds 與錯題索引計算，不猜測舊資料。
+- 今日任務說明頁改為顯示實際題數與今日練習定位，不再誤稱完整 Week1 正式測驗。
+- 新增 `docs/14_出題策略與學習模式.md`，定義每日任務、每週任務、完整模擬考、錯題規則與考前 14 天衝刺方向。
+- 瀏覽器驗證新增首頁唯一主 CTA、覆蓋率卡片、今日任務文案與無重複今日建議檢查。
+
+### 驗證
+
+- `npm.cmd run verify:sprint10.2` 使用系統 Chrome，驗證 Resume、今日任務題數、中文化與首頁焦點，exit code 0。
+- Build、Deploy、Commit 與 Push 於本紀錄更新後執行。

@@ -29,12 +29,13 @@ const isValidSession = (value: unknown): value is StudySession => {
   return typeof session.id === 'string'
     && typeof session.date === 'string'
     && typeof session.weekId === 'string'
-    && session.mode === 'formal-exam'
+    && (session.mode === 'formal-exam' || session.mode === 'daily' || session.mode === 'weeklyCatchUp' || session.mode === 'recovery')
     && typeof session.answeredCount === 'number'
     && typeof session.correctCount === 'number'
     && typeof session.wrongCount === 'number'
     && typeof session.durationSeconds === 'number'
-    && typeof session.completedAt === 'string';
+    && typeof session.completedAt === 'string'
+    && (session.questionIds === undefined || (Array.isArray(session.questionIds) && session.questionIds.every((id) => typeof id === 'number')));
 };
 
 const refreshStreaks = (progress: StudyProgress, today = new Date()): StudyProgress => {

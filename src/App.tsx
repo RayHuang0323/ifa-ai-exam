@@ -70,10 +70,11 @@ function App() {
 
   const handleStartTodayTask = (suggestedQuestions: number, mode: StudyMode) => {
     setExamDraft(loadExamDraft());
-    setQuestions(week1Questions.slice(0, Math.min(suggestedQuestions, week1Questions.length)));
+    const taskQuestions = week1Questions.slice(0, Math.min(suggestedQuestions, week1Questions.length));
+    setQuestions(taskQuestions);
     setTimeLimit(examConfig.timeLimit);
     setExamEntry('today-task');
-    setTodaySuggestedQuestions(suggestedQuestions);
+    setTodaySuggestedQuestions(taskQuestions.length);
     setSessionMode(mode);
     setPersistDraft(false);
     setCurrentPage('instructions');
@@ -140,6 +141,7 @@ function App() {
       wrongCount: answeredCount - correctCount,
       durationSeconds,
       completedAt,
+      questionIds: questions.filter((question) => isAnswerProvided(answers[question.id])).map((question) => question.id),
     });
     recordWrongAnswers(wrongAnswerRecords);
 
@@ -191,12 +193,12 @@ function App() {
             <div className="space-y-2">
               <span className="text-[10px] font-bold uppercase tracking-widest font-mono text-indigo-400">測驗說明</span>
               <h1 className="text-2xl font-bold text-white">Week {examConfig.week}：{examConfig.title}</h1>
-              <p className="text-sm text-slate-400 leading-relaxed">{examEntry === 'today-task' && todaySuggestedQuestions > 0 ? `今日建議先完成 ${todaySuggestedQuestions} 題；目前以完整 Week1 正式測驗進行。` : '確認開始後才會啟動倒數。請在作答期間隨時確認題目狀態與標記。'}</p>
+              <p className="text-sm text-slate-400 leading-relaxed">{examEntry === 'today-task' && todaySuggestedQuestions > 0 ? `本次為 Week1 今日練習，共 ${todaySuggestedQuestions} 題；完成後其餘題目會在後續每日任務、每週複習與正式模擬考中安排。` : '確認開始後才會啟動倒數。請在作答期間隨時確認題目狀態與標記。'}</p>
             </div>
             <dl className="grid grid-cols-2 gap-3 text-sm">
               <div className="rounded-xl bg-slate-900/60 border border-slate-800 p-4">
                 <dt className="text-xs text-slate-500">題目數</dt>
-                <dd className="mt-1 text-lg font-bold text-slate-100">{week1Questions.length} 題</dd>
+                <dd className="mt-1 text-lg font-bold text-slate-100">{questions.length} 題</dd>
               </div>
               <div className="rounded-xl bg-slate-900/60 border border-slate-800 p-4">
                 <dt className="text-xs text-slate-500">考試時間</dt>

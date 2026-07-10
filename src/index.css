@@ -282,10 +282,13 @@ h1, h2, h3, p { margin: 0; }
 .study-task-button { width: 100%; margin-top: 1rem; padding: .75rem 1rem; border-radius: .75rem; background: #0f172a; color: #fff; font-size: .875rem; font-weight: 700; }
 .study-preview-note { display: block; margin-top: 1rem; color: #64748b; font-size: .8125rem; }
 
+.mission-section { grid-column: span 2; border-color: #c7d2fe; background: #eef2ff; }
 .mission-task-card { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; padding: 1.25rem; border: 1px solid #e2e8f0; border-radius: .75rem; background: #f8fafc; }
 .mission-task-card p { margin-top: .4rem; color: #64748b; font-size: .8125rem; line-height: 1.55; }
 .mission-task-title { display: block; color: #1e293b; font-size: .9375rem; font-weight: 700; }
 .mission-task-reason { color: #475569 !important; }
+.mission-task-note { padding-top: .75rem; border-top: 1px solid #e2e8f0; }
+.mission-question-count { color: #312e81 !important; font-size: clamp(2rem, 5vw, 2.75rem) !important; line-height: 1.1; }
 .mission-task-card .study-task-button { width: auto; min-width: 13rem; margin-top: 0; }
 
 .study-streak-card { display: grid; align-content: start; }
@@ -309,6 +312,16 @@ h1, h2, h3, p { margin: 0; }
   gap: 1.5rem;
   width: 100%;
 }
+
+.learning-status-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  width: 100%;
+}
+
+.coverage-card strong { color: #312e81; }
+.home-secondary-content { display: grid; gap: 1.5rem; width: 100%; }
 
 .home-progress-grid > div { min-width: 0; }
 .home-progress-grid > div > div { height: 100%; }
@@ -352,6 +365,7 @@ h1, h2, h3, p { margin: 0; }
   .study-weekly-card { grid-column: span 2; }
   .study-reminder-card { grid-column: span 2; }
   .study-streak-card { grid-column: span 1; }
+  .home-primary-dashboard .mission-section { grid-column: span 3; }
 }
 
 @media (min-width: 640px) {
@@ -372,7 +386,9 @@ h1, h2, h3, p { margin: 0; }
   .exam-action-button { flex: 1 1 0; min-width: 0; }
   .study-dashboard { grid-template-columns: minmax(0, 1fr); }
   .study-weekly-card, .study-reminder-card { grid-column: span 1; }
+  .mission-section { grid-column: span 1; }
   .home-content { gap: 1.5rem; padding: 1.5rem 1rem 2rem; }
+  .learning-status-grid { grid-template-columns: minmax(0, 1fr); }
   .mission-task-card { align-items: stretch; flex-direction: column; gap: 1rem; }
   .mission-task-card .study-task-button { width: 100%; min-width: 0; }
 }

@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 
 // 引入切片元件
 import { HeroSection } from '../components/home/HeroSection';
-import { ProgressSection } from '../components/home/ProgressSection';
 import { MissionSection } from '../components/home/MissionSection';
 import { ExamSection } from '../components/home/ExamSection';
 import { CoachSection } from '../components/home/CoachSection';
@@ -10,12 +9,14 @@ import { RecentActivitySection } from '../components/home/RecentActivitySection'
 import { RoadmapSection } from '../components/home/RoadmapSection';
 import { FooterSection } from '../components/home/FooterSection';
 import { studyConfig } from '../data/studyConfig';
-import { getExamCountdown, getTodayCompleted, getWeeklyProgress, loadStudyProgress } from '../utils/studyProgress';
+import { getExamCountdown, getWeeklyProgress, loadStudyProgress } from '../utils/studyProgress';
 import { getStudyReminder } from '../utils/studyReminder';
 import type { StudyProgress } from '../types/study';
 import type { StudyMode } from '../types/study';
 import { loadWrongAnswers } from '../utils/wrongAnswerStore';
 import { planTodayTask } from '../utils/taskPlanner';
+import { getQuestionCountByWeek } from '../utils/questionBank';
+import type { WrongAnswerRecord } from '../types/task';
 
 interface HomeProps {
   hasExamDraft: boolean;
@@ -27,14 +28,14 @@ interface HomeProps {
 const Home: React.FC<HomeProps> = ({ hasExamDraft, onResumeExam, onStartTodayTask, onStartNewExam }) => {
   const [hasHistory, setHasHistory] = useState<boolean>(false);
   const [studyProgress, setStudyProgress] = useState<StudyProgress>(() => loadStudyProgress());
-  const [wrongAnswerCount, setWrongAnswerCount] = useState(0);
+  const [wrongAnswers, setWrongAnswers] = useState<WrongAnswerRecord[]>([]);
 
   useEffect(() => {
     try {
       const existingState = localStorage.getItem('ifa_exam_state');
       const latestProgress = loadStudyProgress();
       setStudyProgress(latestProgress);
-      setWrongAnswerCount(loadWrongAnswers().length);
+      setWrongAnswers(loadWrongAnswers());
       setHasHistory(Boolean(existingState) || latestProgress.sessions.length > 0);
     } catch (error) {
       console.error('Failed to read configuration storage key:', error);
@@ -45,9 +46,15 @@ const Home: React.FC<HomeProps> = ({ hasExamDraft, onResumeExam, onStartTodayTas
   const weeklyProgress = getWeeklyProgress(studyProgress, now);
   const reminder = getStudyReminder(studyProgress, weeklyProgress, now);
   const examCountdown = getExamCountdown(now);
-  const todayCompleted = getTodayCompleted(studyProgress, now);
+  const wrongAnswerCount = wrongAnswers.length;
   const todayTask = planTodayTask(studyProgress, weeklyProgress, wrongAnswerCount, reminder.daysSinceLastStudy);
   const countdownLabel = examCountdown === 0 ? '今天考試' : examCountdown < 0 ? '考試已結束' : `${examCountdown} 天`;
+  const week1Total = getQuestionCountByWeek('week-1');
+  const practicedQuestionIds = new Set<number>();
+  studyProgress.sessions.filter((session) => session.weekId === 'week-1').forEach((session) => session.questionIds?.forEach((id) => practicedQuestionIds.add(id)));
+  wrongAnswers.forEach((record) => practicedQuestionIds.add(record.questionId));
+  const practicedCount = practicedQuestionIds.size;
+  const remainingQuestionCount = Math.max(0, week1Total - practicedCount);
 
   return (
     <div className="min-h-screen bg-[#fafafa] text-slate-800 antialiased selection:bg-slate-200 w-full flex flex-col items-center">
@@ -57,7 +64,7 @@ const Home: React.FC<HomeProps> = ({ hasExamDraft, onResumeExam, onStartTodayTas
           <HeroSection hasExamDraft={hasExamDraft} onResumeExam={onResumeExam} />
         </div>
 
-        <section className="study-dashboard" aria-label="學習進度與提醒">
+        <section className="study-dashboard home-primary-dashboard" aria-label="今日學習重點">
           <article className="study-card study-countdown-card">
             <span className="study-eyebrow">IFA 考試</span>
             <strong>2026 / 09 / 08</strong>
@@ -80,55 +87,37 @@ const Home: React.FC<HomeProps> = ({ hasExamDraft, onResumeExam, onStartTodayTas
             <p className="study-memory-focus">每週記憶強化：{wrongAnswerCount > 0 ? `本週錯題 ${wrongAnswerCount} 題，建議至少再複習 ${studyConfig.weeklyTask.weeklyReviewTarget} 題錯題與重點題。` : '完成更多測驗後，系統會整理本週錯題與複習重點。'}</p>
           </article>
 
-          <article className={`study-card study-reminder-card study-reminder-${reminder.level}`}>
-            <span className="study-eyebrow">今日建議</span>
-            <strong>{reminder.title}</strong>
-            <p>{reminder.message}</p>
-            <div className="study-reminder-footer">
-              <span>今日已完成 {todayCompleted} / {studyConfig.dailyQuestionTarget} 題</span>
-              {reminder.suggestedQuestions > 0 && <span>建議：{reminder.suggestedQuestions} 題</span>}
-            </div>
-            {todayTask.mode === 'reviewPreview' ? <span className="study-preview-note">{todayTask.ctaLabel}</span> : <button onClick={() => onStartTodayTask(todayTask.suggestedQuestions, todayTask.mode as StudyMode)} className="study-task-button">{todayTask.ctaLabel}</button>}
-          </article>
+          <MissionSection task={todayTask} wrongAnswerCount={wrongAnswerCount} onStartTask={onStartTodayTask} />
+        </section>
 
+        <section className="learning-status-grid" aria-label="學習狀態">
           <article className="study-card study-streak-card">
             <span className="study-eyebrow">連續學習</span>
             <strong>{studyProgress.currentStreak} 天</strong>
             <p>同一天完成多次測驗只計為一天。</p>
           </article>
+          <article className="study-card">
+            <span className="study-eyebrow">錯題數</span>
+            <strong>{wrongAnswerCount} 題</strong>
+            <p>{wrongAnswerCount > 0 ? '錯題會保留為後續複習依據。' : '完成測驗後會建立錯題紀錄。'}</p>
+          </article>
+          <article className="study-card coverage-card" data-testid="week1-coverage">
+            <span className="study-eyebrow">Week1 題庫覆蓋率</span>
+            <strong>已練習 {practicedCount} / {week1Total} 題</strong>
+            <p>尚未練習：{remainingQuestionCount} 題</p>
+            <p>錯題：{wrongAnswerCount} 題・待複習：{wrongAnswerCount} 題</p>
+          </article>
         </section>
 
-        {/* [2] Progress + Coach 左右排列 (桌機並排，行動端自動堆疊) */}
-        <div className="home-progress-grid grid grid-cols-1 lg:grid-cols-3 gap-6 w-full items-start">
-          <div className="lg:col-span-2 w-full">
-            <ProgressSection />
+        <section className="home-secondary-content" aria-label="其他學習功能">
+          <div className="w-full">
+            <ExamSection onStartExam={onStartNewExam} />
           </div>
-          <div className="lg:col-span-1 w-full">
-            <CoachSection hasHistory={hasHistory} />
-          </div>
-        </div>
+          <div className="w-full"><RecentActivitySection hasHistory={hasHistory} /></div>
+          <div className="w-full"><RoadmapSection /></div>
+          <div className="w-full"><CoachSection hasHistory={hasHistory} /></div>
+        </section>
 
-        {/* [3] Mission 滿版 */}
-        <div className="w-full">
-          <MissionSection task={todayTask} wrongAnswerCount={wrongAnswerCount} onStartTask={onStartTodayTask} />
-        </div>
-
-        {/* [4] Exam 滿版 */}
-        <div className="w-full">
-          <ExamSection onStartExam={onStartNewExam} />
-        </div>
-
-        {/* [5] Activity 滿版 */}
-        <div className="w-full">
-          <RecentActivitySection hasHistory={hasHistory} />
-        </div>
-
-        {/* [6] Roadmap 滿版 */}
-        <div className="w-full">
-          <RoadmapSection />
-        </div>
-
-        {/* [7] Footer 滿版 */}
         <div className="w-full pt-4">
           <FooterSection />
         </div>
