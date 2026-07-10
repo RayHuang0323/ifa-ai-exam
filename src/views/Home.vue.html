@@ -1,0 +1,178 @@
+<template>
+  <div class="min-h-screen bg-gray-50 font-sans text-gray-800 pb-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 space-y-8">
+      
+      <section class="bg-white rounded-3xl shadow-sm border border-gray-100 p-8 sm:p-12 text-center flex flex-col items-center relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-indigo-500"></div>
+        <h1 class="text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight mb-4">
+          IFA Master Coach
+        </h1>
+        <p class="text-gray-500 text-lg max-w-xl mb-8">
+          你的專屬 AI 考官。專注於考試需求，幫你精準掌握 IFA 核心考點，順利取得國際芳療師認證。
+        </p>
+        <button 
+          @click="startExam"
+          class="bg-gray-900 text-white hover:bg-gray-800 transition-colors duration-200 ease-in-out rounded-2xl px-8 py-3.5 font-semibold text-lg shadow-sm flex items-center gap-2"
+        >
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+          立即開始模擬考試
+        </button>
+      </section>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <div class="col-span-1 lg:col-span-2 bg-white rounded-3xl shadow-sm border border-gray-100 p-6 sm:p-8 flex flex-col justify-between">
+          <div class="flex justify-between items-start mb-6">
+            <div>
+              <h2 class="text-xl font-bold text-gray-900">學習進度</h2>
+              <p class="text-sm text-gray-500 mt-1">Week 1: 人體解剖、生理</p>
+            </div>
+            <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-50 text-blue-700">
+              進行中
+            </span>
+          </div>
+          
+          <div>
+            <div class="flex justify-between text-sm font-medium text-gray-700 mb-2">
+              <span>完成率</span>
+              <span>15%</span>
+            </div>
+            <div class="w-full bg-gray-100 rounded-full h-2.5">
+              <div class="bg-blue-600 h-2.5 rounded-full" style="width: 15%"></div>
+            </div>
+            <p class="text-xs text-gray-400 mt-3 flex items-center gap-1">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              距離本週結束還有 5 天
+            </p>
+          </div>
+        </div>
+
+        <div class="col-span-1 bg-gradient-to-br from-indigo-50 to-blue-50 rounded-3xl shadow-sm border border-indigo-100 p-6 sm:p-8">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="bg-white p-2 rounded-xl shadow-sm">
+              <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
+            </div>
+            <h2 class="text-lg font-bold text-gray-900">AI 考官提醒</h2>
+          </div>
+          <p class="text-sm text-gray-700 leading-relaxed">
+            「請注意，解剖學的『神經傳導與離子』是近期常考重點。建議今天先完成單選題測驗，確認對鈉、鉀離子的觀念是否清晰。」
+          </p>
+        </div>
+
+        <div class="col-span-1 bg-white rounded-3xl shadow-sm border border-gray-100 p-6 sm:p-8">
+          <h2 class="text-lg font-bold text-gray-900 mb-4">今日任務</h2>
+          <ul class="space-y-3">
+            <li class="flex items-center gap-3">
+              <div class="flex-shrink-0 w-5 h-5 rounded-full border-2 border-gray-300 flex items-center justify-center"></div>
+              <span class="text-sm text-gray-600">閱讀 Week1 解剖學講義</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <div class="flex-shrink-0 w-5 h-5 rounded-full border-2 border-gray-300 flex items-center justify-center"></div>
+              <span class="text-sm text-gray-600">完成 20 題模擬測驗</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <div class="flex-shrink-0 w-5 h-5 rounded-full border-2 border-gray-300 flex items-center justify-center"></div>
+              <span class="text-sm text-gray-600">錯題複習 (目前 3 題)</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-span-1 bg-white rounded-3xl shadow-sm border border-gray-100 p-6 sm:p-8">
+          <h2 class="text-lg font-bold text-gray-900 mb-4">本週模擬考</h2>
+          <div class="grid grid-cols-2 gap-4 mb-6">
+            <div class="bg-gray-50 rounded-xl p-3">
+              <span class="block text-xs text-gray-400 mb-1">題數</span>
+              <span class="font-semibold text-gray-800">40 題</span>
+            </div>
+            <div class="bg-gray-50 rounded-xl p-3">
+              <span class="block text-xs text-gray-400 mb-1">預估時間</span>
+              <span class="font-semibold text-gray-800">45 分鐘</span>
+            </div>
+            <div class="bg-gray-50 rounded-xl p-3 col-span-2">
+              <span class="block text-xs text-gray-400 mb-1">難度</span>
+              <div class="flex gap-1 mt-1">
+                <div class="w-2 h-2 rounded-full bg-blue-500"></div>
+                <div class="w-2 h-2 rounded-full bg-blue-500"></div>
+                <div class="w-2 h-2 rounded-full bg-gray-300"></div>
+              </div>
+            </div>
+          </div>
+          <button @click="startExam" class="w-full bg-gray-50 hover:bg-gray-100 text-gray-900 font-medium py-2.5 rounded-xl transition-colors border border-gray-200">
+            設定並開始測驗
+          </button>
+        </div>
+
+        <div class="col-span-1 md:col-span-2 lg:col-span-1 bg-white rounded-3xl shadow-sm border border-gray-100 p-6 sm:p-8 opacity-60">
+          <div class="flex justify-between items-center mb-4">
+            <h2 class="text-lg font-bold text-gray-400">近期表現</h2>
+            <span class="text-xs bg-gray-100 text-gray-400 px-2 py-1 rounded-md">即將推出</span>
+          </div>
+          <div class="space-y-4">
+            <div class="flex justify-between items-end border-b border-gray-50 pb-3">
+              <span class="text-sm text-gray-400">平均分數</span>
+              <span class="text-xl font-semibold text-gray-300">-- / 100</span>
+            </div>
+            <div class="flex justify-between items-end">
+              <span class="text-sm text-gray-400">上次模擬考</span>
+              <span class="text-sm font-medium text-gray-300">尚未測驗</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="bg-white rounded-3xl shadow-sm border border-gray-100 p-6 sm:p-8">
+        <h2 class="text-xl font-bold text-gray-900 mb-6">學習 Roadmap</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div 
+            v-for="week in roadmap" 
+            :key="week.id"
+            :class="[
+              'p-4 rounded-2xl border transition-all',
+              week.active ? 'border-blue-200 bg-blue-50 cursor-pointer hover:border-blue-300' : 'border-gray-100 bg-gray-50 opacity-50 cursor-not-allowed'
+            ]"
+          >
+            <h3 :class="['font-bold text-sm mb-1', week.active ? 'text-blue-800' : 'text-gray-400']">{{ week.title }}</h3>
+            <p :class="['text-xs', week.active ? 'text-blue-600' : 'text-gray-400']">{{ week.desc }}</p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="pt-8 pb-4 text-center text-xs text-gray-400 flex flex-col items-center gap-2">
+        <div class="flex items-center gap-4">
+          <span>IFA Master Coach v1.1.0</span>
+          <span>•</span>
+          <span>Build 2026.07.06</span>
+          <span>•</span>
+          <span class="flex items-center gap-1">
+            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+            PWA Ready
+          </span>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+</template>
+
+<script setup>
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
+
+// 觸發前往考試頁面（請確保 Route name 與您現有架構一致）
+const startExam = () => {
+  router.push({ name: 'Exam' }) // 若您的 route 路徑不同，請修改此處
+}
+
+// Roadmap 靜態資料
+const roadmap = [
+  { id: 1, title: 'Week 1', desc: '人體解剖、生理', active: true },
+  { id: 2, title: 'Week 2', desc: '精油與植物學', active: false },
+  { id: 3, title: 'Week 3', desc: '精油化學', active: false },
+  { id: 4, title: 'Week 4', desc: '基底油、純露', active: false },
+  { id: 5, title: 'Week 5', desc: '病理與禁忌症', active: false },
+  { id: 6, title: 'Week 6', desc: '個案分析', active: false },
+  { id: 7, title: 'Week 7', desc: '綜合複習', active: false },
+  { id: 8, title: 'Week 8', desc: '全真模擬考', active: false }
+]
+</script>

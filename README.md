@@ -1,75 +1,21 @@
-# React + TypeScript + Vite
+# IFA Master Coach Project Wiki v1.0
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+本資料夾為專案知識庫入口。
 
-Currently, two official plugins are available:
+## Project Wiki
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+專案 Wiki 位於 [`docs/`](docs/)。所有 AI 在開始修改程式前，必須先閱讀本 README，再依序閱讀：
 
-## React Compiler
+1. [`docs/01_專案概觀.md`](docs/01_專案概觀.md)
+2. [`docs/02_系統架構.md`](docs/02_系統架構.md)
+3. [`docs/03_開發規範.md`](docs/03_開發規範.md)
+4. [`docs/04_開發流程.md`](docs/04_開發流程.md)
+5. [`docs/05_功能進度.md`](docs/05_功能進度.md)
+6. [`docs/06_Sprint紀錄.md`](docs/06_Sprint紀錄.md)
+7. [`docs/07_部署指南.md`](docs/07_部署指南.md)
+8. [`docs/08_題庫規範.md`](docs/08_題庫規範.md)
+9. [`docs/09_Technical_Debt.md`](docs/09_Technical_Debt.md)
+10. [`docs/10_Roadmap.md`](docs/10_Roadmap.md)
+11. [`docs/11_AI題庫維護規範.md`](docs/11_AI題庫維護規範.md)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
+開發入口與 Sprint 完成後的文件更新規則，請參閱 [`docs/AI_START_HERE.md`](docs/AI_START_HERE.md)。

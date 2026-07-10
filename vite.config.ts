@@ -4,7 +4,7 @@ import { VitePWA } from 'vite-plugin-pwa'
 
 export default defineConfig({
   // 加上這行，確保在 GitHub Pages 上的子目錄路徑正確
-  base: './', 
+  base: '/ifa-ai-exam/',
   plugins: [
     react(),
     VitePWA({
