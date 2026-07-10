@@ -7,4 +7,4 @@
 -   AI Coach 尚未實作。
 -   Week1 未完成測驗草稿目前為單一 localStorage draft，尚未提供跨裝置或多份草稿管理。
 -   尚無完整錯題本、跨週混題、簡答／默寫、間隔重複與 AI Coach 真實分析。
--   尚未有自動化瀏覽器流程測試覆蓋草稿恢復與指定題數任務。
+-   已有 Sprint 10.2 最小瀏覽器驗證覆蓋草稿恢復與指定題數任務；尚未涵蓋完整交卷、Result、localStorage migration、提醒規則與日期邊界。

@@ -10,11 +10,11 @@ export const ProgressSection: React.FC = () => {
           <span className="text-sm font-semibold text-slate-800 mt-1 block">Week 1: 人體解剖與生理學</span>
         </div>
         <span className="text-[11px] font-bold bg-emerald-50 text-emerald-700 px-3 py-1 rounded-full border border-emerald-100">
-          Active
+          使用中
         </span>
       </div>
       <div className="text-center py-6 border border-dashed border-slate-200 rounded-xl bg-slate-50/50">
-        <span className="text-[11px] font-medium text-slate-400">更多分析功能建置中 (Coming Soon)</span>
+        <span className="text-[11px] font-medium text-slate-400">更多分析功能建置中</span>
       </div>
     </div>
   );

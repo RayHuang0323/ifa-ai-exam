@@ -8,6 +8,9 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
+    "test:e2e": "playwright test",
+    "test:e2e:headed": "playwright test --headed",
+    "verify:sprint10.2": "node scripts/e2e-sprint-10-2.mjs",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist -r https://github.com/RayHuang0323/ifa-ai-exam.git"
   },
@@ -18,6 +21,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.61.1",
     "@types/node": "^24.13.2",
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",

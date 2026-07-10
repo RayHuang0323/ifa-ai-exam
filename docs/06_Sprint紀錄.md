@@ -87,3 +87,18 @@ Sprint 10：刷題與錯題複習。
 - 補齊草稿 mode、題目 id 與建立時間。
 - 新增短版專案狀態與驗收／Debug 規範。
 - Build、Deploy、Commit、Push 完成。
+
+## Sprint 10.2－Playwright 瀏覽器驗證與核心 Bug 修正
+
+### 問題與修正
+
+- Sprint 10.1 未以瀏覽器完整走過草稿、題數與首頁字串流程；本 Sprint 新增可重複執行的最小 Playwright 驗證。
+- mockExam 未交卷離開時保留 `ifa-week1-exam-draft-v1`，首頁重新讀取有效草稿後提供「繼續模擬測驗」；daily 與 weeklyCatchUp 不覆蓋正式草稿。
+- 今日任務以同一個實際題數傳入說明頁與 Exam，避免首頁建議題數與作答題數不同。
+- 首頁非考題 UI 統一為繁體中文：模擬考中心、最近學習紀錄、正在整理資料、學習路線圖、使用中、尚未開放、建置中。
+
+### 驗證
+
+- 新增 `scripts/e2e-sprint-10-2.mjs`、`tests/e2e/sprint-10-2.spec.ts` 與 Playwright 設定。
+- `npm.cmd run verify:sprint10.2` 以系統 Chrome 逐步驗證 mockExam 草稿續作、今日任務題數一致與首頁中文化，明確結束並回傳 exit code 0。
+- Build、Deploy、Commit 與 Push 於本紀錄更新後執行。
