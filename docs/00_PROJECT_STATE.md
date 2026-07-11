@@ -1,6 +1,6 @@
 # 專案目前狀態
 
-- 目前版本：Sprint 15
+- 目前版本：Sprint 16
 - 正式考試日期：2026-09-08
 - 正式題庫來源：`src/data/questions/`
 - 可用題庫：Week1
@@ -32,3 +32,9 @@
 - 首頁 Recent Activity 顯示最近 3 筆真實 `ifa-study-progress-v1` StudySession，包含時間、模式、題數、答對／答錯、正確率與花費時間。
 - 每日任務會從可複習錯題優先混入約 30% 題目，其餘由正式 Week1 題庫補足且不重複。
 - 首頁以規則型提示處理高風險錯題、今日已完成、本週進度與考前 14 天衝刺，不使用 AI 或外部 API。
+
+## Sprint 16 完成
+
+- 新增簡答／默寫練習 v1：使用 1 題明確標示 sample／needsReview 的待審核示範題，不改動正式 Week1 題庫。
+- 使用者輸入文字後查看參考答案、Rubric 檢核點並自行選擇答對或需要複習；不做 AI 或自動語意判分。
+- `writingPractice` StudySession 與 wrongAnswerStore、Recent Activity 已整合，未新增 localStorage key。

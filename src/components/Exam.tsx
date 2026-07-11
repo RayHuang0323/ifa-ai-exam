@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { Bookmark, ChevronLeft, ChevronRight, Send, Star, Timer } from 'lucide-react';
 import { clearExamDraft, saveExamDraft, type ExamDraft } from '../utils/examDraft';
+import { getRubricByQuestionId } from '../utils/answerRubric';
 
 interface Question {
   id: number;
@@ -18,7 +19,7 @@ interface Question {
 interface ExamProps {
   questions: Question[];
   timeLimitInMinutes: number;
-  onFinish: (answers: Record<string, string | string[]>, timeLeft: number) => void;
+  onFinish: (answers: Record<string, string | string[]>, timeLeft: number, selfCheckResults?: Record<string, boolean>) => void;
   onAbort: () => void;
   initialDraft: ExamDraft | null;
   persistDraft: boolean;
@@ -26,6 +27,7 @@ interface ExamProps {
 
 const isAnswered = (answer: string | string[] | undefined) =>
   Array.isArray(answer) ? answer.length > 0 : Boolean(answer?.trim());
+const isSelfCheckQuestion = (question: { type: string }) => ['short-answer', 'writing', 'memorization', 'essay'].includes(question.type);
 
 export default function Exam({ questions, timeLimitInMinutes, onFinish, onAbort, initialDraft, persistDraft }: ExamProps) {
   const [currentIndex, setCurrentIndex] = useState(() => Math.min(initialDraft?.currentIndex ?? 0, Math.max(0, questions.length - 1)));
@@ -34,6 +36,8 @@ export default function Exam({ questions, timeLimitInMinutes, onFinish, onAbort,
   const [timeLeft, setTimeLeft] = useState(initialDraft?.timeLeft ?? timeLimitInMinutes * 60);
   const [showSubmitConfirmation, setShowSubmitConfirmation] = useState(false);
   const [showLeaveConfirmation, setShowLeaveConfirmation] = useState(false);
+  const [showSelfCheck, setShowSelfCheck] = useState(false);
+  const [selfCheckResults, setSelfCheckResults] = useState<Record<string, boolean>>({});
   const answersRef = useRef(answers);
   const hasSubmittedRef = useRef(false);
 
@@ -57,12 +61,12 @@ export default function Exam({ questions, timeLimitInMinutes, onFinish, onAbort,
     }
   }, [answers, currentIndex, initialDraft?.createdAt, markedQuestionIds, persistDraft, questions, timeLeft]);
 
-  const submitExam = (secondsLeft: number) => {
+  const submitExam = (secondsLeft: number, results = selfCheckResults) => {
     if (hasSubmittedRef.current) return;
 
     hasSubmittedRef.current = true;
     clearExamDraft();
-    onFinish(answersRef.current, Math.max(0, secondsLeft));
+    onFinish(answersRef.current, Math.max(0, secondsLeft), results);
   };
 
   useEffect(() => {
@@ -91,6 +95,7 @@ export default function Exam({ questions, timeLimitInMinutes, onFinish, onAbort,
   }, []);
 
   const currentQuestion = questions[currentIndex];
+  const currentRubric = getRubricByQuestionId(currentQuestion?.id ?? 0);
   const answeredCount = useMemo(
     () => questions.filter((question) => isAnswered(answers[question.id])).length,
     [answers, questions],
@@ -147,6 +152,13 @@ export default function Exam({ questions, timeLimitInMinutes, onFinish, onAbort,
       setTimeLeft(0);
     }
     onAbort();
+  };
+
+  const completeSelfCheck = (correct: boolean) => {
+    const nextResults = { ...selfCheckResults, [currentQuestion.id]: correct };
+    setSelfCheckResults(nextResults);
+    setShowSelfCheck(false);
+    submitExam(timeLeft, nextResults);
   };
 
   if (!currentQuestion) return null;
@@ -248,13 +260,16 @@ export default function Exam({ questions, timeLimitInMinutes, onFinish, onAbort,
                 </button>
               );
             }) : (
-              <textarea
-                className="exam-answer-textarea"
-                placeholder="請輸入您的論述或個案分析策略..."
-                value={typeof answers[currentQuestion.id] === 'string' ? answers[currentQuestion.id] : ''}
-                onChange={(event) => setAnswers({ ...answers, [currentQuestion.id]: event.target.value })}
-                aria-label="文字答案"
-              />
+              <div className="space-y-4">
+                <textarea
+                  className="exam-answer-textarea"
+                  placeholder="請輸入您的簡答、名詞解釋或默寫內容..."
+                  value={typeof answers[currentQuestion.id] === 'string' ? answers[currentQuestion.id] : ''}
+                  onChange={(event) => setAnswers({ ...answers, [currentQuestion.id]: event.target.value })}
+                  aria-label="文字答案"
+                />
+                {isSelfCheckQuestion(currentQuestion) && <button data-testid="submit-self-check-button" onClick={() => setShowSelfCheck(true)} disabled={!isAnswered(answers[currentQuestion.id])} className="h-11 px-5 rounded-xl bg-indigo-600 hover:bg-indigo-500 disabled:opacity-40 disabled:pointer-events-none text-white text-sm font-bold">提交答案並自我檢核</button>}
+              </div>
             )}
           </div>
         </section>
@@ -292,6 +307,18 @@ export default function Exam({ questions, timeLimitInMinutes, onFinish, onAbort,
               <button onClick={() => setShowSubmitConfirmation(false)} className="h-11 px-4 rounded-xl border border-slate-700 text-slate-300 hover:bg-slate-800 text-sm font-medium">返回檢查</button>
               <button onClick={() => submitExam(timeLeft)} className="h-11 px-4 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-bold">確認交卷</button>
             </div>
+          </section>
+        </div>
+      )}
+
+      {showSelfCheck && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/75 px-4" role="dialog" aria-modal="true" aria-labelledby="self-check-title">
+          <section className="w-full max-w-2xl max-h-[90vh] overflow-y-auto rounded-2xl border border-slate-700 bg-[#0b0d14] p-6 shadow-2xl space-y-5">
+            <div><h2 id="self-check-title" className="text-lg font-bold text-white">自我檢核</h2><p className="mt-2 text-sm text-slate-400">系統不會自動判分，請依參考答案與檢核點自行判斷。</p></div>
+            <div className="rounded-xl bg-slate-900/70 p-4 text-sm space-y-2"><p className="text-slate-500">你的答案</p><p className="whitespace-pre-line text-slate-200">{typeof answers[currentQuestion.id] === 'string' ? answers[currentQuestion.id] : ''}</p></div>
+            <div className="rounded-xl border border-emerald-500/30 bg-emerald-500/10 p-4 text-sm space-y-2"><p className="font-bold text-emerald-200">參考答案</p><p className="whitespace-pre-line text-slate-100">{Array.isArray(currentQuestion.answer) ? currentQuestion.answer.join('、') : currentQuestion.answer}</p></div>
+            {currentRubric ? <section className="rounded-xl border border-slate-700 bg-slate-900/50 p-4 text-sm space-y-3"><p className="font-bold text-indigo-200">自我檢核點</p><p><span className="text-slate-500">必要核心概念：</span>{currentRubric.requiredConcepts.map((concept) => concept.label).join('、') || '未設定'}</p><p><span className="text-slate-500">可接受同義說法：</span>{Object.values(currentRubric.acceptedSynonyms).flat().join('、') || '未設定'}</p><p><span className="text-slate-500">常見錯誤或矛盾點：</span>{currentRubric.contradictions.join('、') || '未設定'}</p><p><span className="text-slate-500">通過分數：</span>{currentRubric.passingScore} / {currentRubric.maxScore}</p></section> : <p className="rounded-xl border border-dashed border-slate-700 p-4 text-sm text-slate-400">目前尚未建立評分規準，請依參考答案自我檢核。</p>}
+            <div className="flex flex-col sm:flex-row justify-end gap-3"><button onClick={() => setShowSelfCheck(false)} className="h-11 px-4 rounded-xl border border-slate-700 text-slate-300 hover:bg-slate-800 text-sm font-medium">返回修改</button><button data-testid="self-check-needs-review-button" onClick={() => completeSelfCheck(false)} className="h-11 px-4 rounded-xl bg-amber-600 hover:bg-amber-500 text-white text-sm font-bold">我需要複習</button><button data-testid="self-check-correct-button" onClick={() => completeSelfCheck(true)} className="h-11 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-bold">我答對了</button></div>
           </section>
         </div>
       )}

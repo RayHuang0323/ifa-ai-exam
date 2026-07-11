@@ -144,6 +144,19 @@ Sprint 10：刷題與錯題複習。
 - 新增 `scripts/e2e-sprint-15.mjs`，驗證 Recent Activity 空狀態、daily／reviewWrong 真實紀錄、高風險提示與今日任務進入流程。
 - `verify:sprint15` 至 `verify:sprint10.2` 全部通過，build 通過。
 
+## Sprint 16－簡答與默寫練習 v1
+
+### 完成功能
+
+- 新增獨立 sample／needsReview 簡答示範題與對應 Rubric，不納入正式 Week1 題庫、每日任務或完整模擬考。
+- 既有 Exam 支援 short-answer 文字輸入與自我檢核 modal；顯示參考答案、必要概念、同義說法、矛盾點與通過分數，不進行自動判分。
+- 自我選擇的正確／需要複習結果寫入 `writingPractice` StudySession；需要複習時沿用 wrongAnswerStore，Recent Activity 顯示模式中文。
+
+### 驗證
+
+- 新增 `scripts/e2e-sprint-16.mjs`，驗證文字作答、自我檢核、需要複習、StudySession、錯題與 Recent Activity。
+- `verify:sprint16` 至 `verify:sprint10.2` 全部通過，build 通過。
+
 ## Sprint 10.3－學習策略定義與首頁 UX 優化
 
 ### 完成功能

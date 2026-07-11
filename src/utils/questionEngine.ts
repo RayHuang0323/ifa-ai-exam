@@ -1,4 +1,5 @@
 import week1Questions from '../data/questions/week1.json';
+import { writingPracticeSamples } from '../data/questions/writingPracticeSamples';
 import type { QuestionCoverage, QuestionStats, EngineQuestion, QuestionType } from '../types/question';
 import type { StudyProgress } from '../types/study';
 import type { WrongAnswerRecord } from '../types/task';
@@ -23,9 +24,10 @@ export const normalizeQuestion = (rawQuestion: RawQuestion, weekId: string, inde
 
 export const getAvailableWeeks = () => ['week-1'] as const;
 export const getQuestionsByWeek = (weekId: string) => weekId === 'week-1' ? week1Questions : [];
-export const getQuestionById = (questionId: number) => week1Questions.find((question) => question.id === questionId) ?? null;
+export const getQuestionById = (questionId: number) => week1Questions.find((question) => question.id === questionId) ?? writingPracticeSamples.find((question) => question.id === questionId) ?? null;
 export const getQuestionCountByWeek = (weekId: string) => getQuestionsByWeek(weekId).length;
 export const getQuestionIdsByWeek = (weekId: string) => getQuestionsByWeek(weekId).map((question) => question.id);
+export const getWritingPracticeQuestions = () => writingPracticeSamples;
 
 export const getCoverageByWeek = (weekId: string, studyProgress: StudyProgress, wrongAnswers: WrongAnswerRecord[]): QuestionCoverage => {
   const validQuestionIds = new Set(getQuestionIdsByWeek(weekId));

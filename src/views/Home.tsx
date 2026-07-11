@@ -15,7 +15,7 @@ import type { StudyProgress } from '../types/study';
 import type { StudyMode } from '../types/study';
 import { getWrongAnswerSummary, loadWrongAnswers } from '../utils/wrongAnswerStore';
 import { planTodayTask } from '../utils/taskPlanner';
-import { getCoverageByWeek } from '../utils/questionEngine';
+import { getCoverageByWeek, getWritingPracticeQuestions } from '../utils/questionEngine';
 import type { WrongAnswerRecord } from '../types/task';
 
 interface HomeProps {
@@ -25,9 +25,10 @@ interface HomeProps {
   onStartNewExam: () => void;
   onStartWrongReview: () => void;
   onOpenWrongBook: () => void;
+  onStartWritingPractice: () => void;
 }
 
-const Home: React.FC<HomeProps> = ({ hasExamDraft, onResumeExam, onStartTodayTask, onStartNewExam, onStartWrongReview, onOpenWrongBook }) => {
+const Home: React.FC<HomeProps> = ({ hasExamDraft, onResumeExam, onStartTodayTask, onStartNewExam, onStartWrongReview, onOpenWrongBook, onStartWritingPractice }) => {
   const [hasHistory, setHasHistory] = useState<boolean>(false);
   const [studyProgress, setStudyProgress] = useState<StudyProgress>(() => loadStudyProgress());
   const [wrongAnswers, setWrongAnswers] = useState<WrongAnswerRecord[]>([]);
@@ -54,6 +55,7 @@ const Home: React.FC<HomeProps> = ({ hasExamDraft, onResumeExam, onStartTodayTas
   const todayLabel = `${now.getFullYear()}/${`${now.getMonth() + 1}`.padStart(2, '0')}/${`${now.getDate()}`.padStart(2, '0')}（${['週日', '週一', '週二', '週三', '週四', '週五', '週六'][now.getDay()]}）`;
   const week1Coverage = getCoverageByWeek('week-1', studyProgress, wrongAnswers);
   const wrongSummary = getWrongAnswerSummary();
+  const writingPracticeQuestions = getWritingPracticeQuestions();
   const todayCompleted = getTodayCompleted(studyProgress, now);
   const todayGuidance = examCountdown >= 0 && examCountdown <= 14 ? '已進入考前衝刺，建議優先處理錯題與完整模擬考。'
     : wrongSummary.highRiskCount > 0 ? '目前有高風險錯題，今日任務會優先混入部分錯題。'
@@ -124,6 +126,10 @@ const Home: React.FC<HomeProps> = ({ hasExamDraft, onResumeExam, onStartTodayTas
           <div className="w-full">
             <ExamSection onStartExam={onStartNewExam} />
           </div>
+          <section className="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 w-full" data-testid="writing-practice-section">
+            <h2 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">簡答／默寫練習</h2>
+            {writingPracticeQuestions.length > 0 ? <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4"><p className="text-sm text-slate-600">練習名詞解釋、簡答與默寫。完成後可依參考答案自我檢核。</p><button data-testid="start-writing-practice-button" onClick={onStartWritingPractice} className="study-task-button">開始簡答／默寫練習</button></div> : <p className="text-sm text-slate-500">目前尚未建立簡答／默寫題。之後可從課本與老師講義整理題目後加入。</p>}
+          </section>
           <div className="w-full"><RecentActivitySection /></div>
           <div className="w-full"><RoadmapSection /></div>
           <div className="w-full"><CoachSection hasHistory={hasHistory} /></div>

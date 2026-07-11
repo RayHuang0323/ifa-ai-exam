@@ -29,7 +29,7 @@ const isValidSession = (value: unknown): value is StudySession => {
   return typeof session.id === 'string'
     && typeof session.date === 'string'
     && typeof session.weekId === 'string'
-    && (session.mode === 'formal-exam' || session.mode === 'daily' || session.mode === 'weeklyCatchUp' || session.mode === 'recovery' || session.mode === 'reviewWrong')
+    && (session.mode === 'formal-exam' || session.mode === 'daily' || session.mode === 'weeklyCatchUp' || session.mode === 'recovery' || session.mode === 'reviewWrong' || session.mode === 'writingPractice')
     && typeof session.answeredCount === 'number'
     && typeof session.correctCount === 'number'
     && typeof session.wrongCount === 'number'

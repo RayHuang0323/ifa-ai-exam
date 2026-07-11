@@ -10,6 +10,7 @@ export const formatStudyMode = (mode: StudyMode | string | undefined) => ({
   daily: '今日任務',
   'formal-exam': '完整模擬考',
   reviewWrong: '錯題複習',
+  writingPractice: '簡答／默寫練習',
   weeklyCatchUp: '每週補強',
   recovery: '進度補強',
 }[mode ?? ''] ?? '學習紀錄');

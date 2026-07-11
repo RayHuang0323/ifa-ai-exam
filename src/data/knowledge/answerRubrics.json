@@ -1,1 +1,21 @@
-[]
+[
+  {
+    "id": "sample-writing-9001",
+    "questionId": 9001,
+    "requiredConcepts": [
+      { "id": "from-lungs", "label": "血液自肺部返回", "keywords": ["肺部", "肺"] },
+      { "id": "oxygenated", "label": "含氧血／充氧血", "keywords": ["含氧", "充氧"] },
+      { "id": "to-left-atrium", "label": "流向左心房", "keywords": ["左心房"] }
+    ],
+    "acceptedSynonyms": {
+      "from-lungs": ["由肺臟回流"],
+      "oxygenated": ["富氧血", "帶氧血"],
+      "to-left-atrium": ["回到心臟左心房"]
+    },
+    "optionalConcepts": [],
+    "contradictions": ["右心房", "缺氧血"],
+    "maxScore": 3,
+    "passingScore": 2,
+    "needsHumanReviewBelowConfidence": 100
+  }
+]

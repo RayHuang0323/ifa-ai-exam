@@ -19,12 +19,14 @@ interface ResultProps {
   answers: Record<string, string | string[]>;
   timeSpent: number;
   mode: StudyMode;
+  selfCheckResults?: Record<string, boolean>;
   onReturnHome: () => void;
   onRetry: () => void;
 }
 
 const isAnswered = (answer: string | string[] | undefined) =>
   Array.isArray(answer) ? answer.length > 0 : Boolean(answer?.trim());
+const isSelfCheckQuestion = (question: Question) => ['short-answer', 'writing', 'memorization', 'essay'].includes(question.type);
 
 const normalizeText = (answer: string) => answer.trim().replace(/\s+/g, ' ');
 
@@ -45,13 +47,15 @@ const formatAnswer = (answer: string | string[] | undefined) => {
   return Array.isArray(answer) ? answer.join('、') : answer;
 };
 
-export default function Result({ questions, knowledge, answers, timeSpent, mode, onReturnHome, onRetry }: ResultProps) {
+export default function Result({ questions, knowledge, answers, timeSpent, mode, selfCheckResults = {}, onReturnHome, onRetry }: ResultProps) {
   const [showReview, setShowReview] = useState(false);
   const stats = useMemo(() => {
-    const reviewItems = questions.filter((question) => !isCorrect(question, answers[question.id]));
-    const unansweredCount = questions.filter((question) => !isAnswered(answers[question.id])).length;
-    const correctCount = questions.length - reviewItems.length;
-    const wrongCount = reviewItems.length - unansweredCount;
+    const wasAnswered = (question: Question) => isSelfCheckQuestion(question) ? selfCheckResults[question.id] !== undefined : isAnswered(answers[question.id]);
+    const wasCorrect = (question: Question) => isSelfCheckQuestion(question) ? selfCheckResults[question.id] === true : isCorrect(question, answers[question.id]);
+    const reviewItems = questions.filter((question) => !wasCorrect(question));
+    const unansweredCount = questions.filter((question) => !wasAnswered(question)).length;
+    const correctCount = questions.filter(wasCorrect).length;
+    const wrongCount = questions.filter((question) => wasAnswered(question) && !wasCorrect(question)).length;
 
     return {
       correctCount,
@@ -60,7 +64,7 @@ export default function Result({ questions, knowledge, answers, timeSpent, mode,
       reviewItems,
       accuracy: questions.length === 0 ? 0 : Math.round((correctCount / questions.length) * 100),
     };
-  }, [answers, questions]);
+  }, [answers, questions, selfCheckResults]);
 
   const formatTime = (seconds: number) => {
     const minutes = Math.floor(seconds / 60);
@@ -74,7 +78,7 @@ export default function Result({ questions, knowledge, answers, timeSpent, mode,
       <header className="border-b border-slate-800/80 bg-[#090a0f] py-8">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-2">
           <span className="text-[10px] font-bold uppercase tracking-widest font-mono text-indigo-400">測驗結果</span>
-          <h1 className="text-2xl sm:text-3xl font-bold text-white tracking-tight">{mode === 'reviewWrong' ? '錯題複習完成' : 'Week 1 測驗結果'}</h1>
+          <h1 className="text-2xl sm:text-3xl font-bold text-white tracking-tight">{mode === 'reviewWrong' ? '錯題複習完成' : mode === 'writingPractice' ? '簡答／默寫練習完成' : 'Week 1 測驗結果'}</h1>
         </div>
       </header>
 

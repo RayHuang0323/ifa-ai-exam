@@ -29,3 +29,8 @@ Sprint 12：間隔重複
 
 - 已完成最小考前學習閉環：真實最近學習紀錄、每日任務混入可複習錯題、規則型首頁提醒。
 - 後續仍保留跨週混題、完整間隔重複、Dashboard 與 AI Coach。
+
+## 已完成：Sprint 16
+
+- 已完成最小簡答／默寫自我檢核流程，並接入 StudySession、錯題與 Recent Activity。
+- 後續仍保留正式簡答題庫擴充、完整間隔重複與 AI Coach，不在本 Sprint 實作。
