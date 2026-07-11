@@ -1,6 +1,6 @@
 # 專案目前狀態
 
-- 目前版本：Sprint 16
+- 目前版本：Sprint 17
 - 正式考試日期：2026-09-08
 - 正式題庫來源：`src/data/questions/`
 - 可用題庫：Week1
@@ -38,3 +38,9 @@
 - 新增簡答／默寫練習 v1：使用 1 題明確標示 sample／needsReview 的待審核示範題，不改動正式 Week1 題庫。
 - 使用者輸入文字後查看參考答案、Rubric 檢核點並自行選擇答對或需要複習；不做 AI 或自動語意判分。
 - `writingPractice` StudySession 與 wrongAnswerStore、Recent Activity 已整合，未新增 localStorage key。
+
+## Sprint 17 完成
+
+- 首頁定位為今日學習儀表板：保留考試資訊、今日任務、規則型提醒、學習狀態摘要、最近 3 筆紀錄與練習中心入口。
+- 新增練習中心，集中今日任務、錯題複習、錯題本、完整模擬考與簡答／默寫練習的既有入口。
+- 不新增 state machine、不修改正式題目、答案、解析或 localStorage key。

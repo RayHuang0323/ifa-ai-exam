@@ -35,8 +35,9 @@ try {
   await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 15000 });
   await page.evaluate(() => localStorage.clear());
   await page.reload({ waitUntil: 'domcontentloaded', timeout: 15000 });
-  if (!(await page.getByTestId('writing-practice-section').innerText()).includes(text.title)) throw new Error('Writing practice entry missing');
-  await page.getByTestId('start-writing-practice-button').click();
+  await page.getByTestId('practice-center-entry').click();
+  if (!(await page.getByTestId('practice-writing-card').innerText()).includes(text.title)) throw new Error('Writing practice entry missing');
+  await page.getByTestId('practice-writing-card').getByRole('button', { name: text.start }).click();
   await page.getByRole('button', { name: text.confirm }).click();
 
   step = 'answer and self check';

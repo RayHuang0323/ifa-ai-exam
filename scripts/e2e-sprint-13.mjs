@@ -53,7 +53,8 @@ try {
 
   step = 'formal exam time';
   await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 15000 });
-  await page.getByRole('button', { name: text.startExam }).click({ timeout: 10000 });
+  await page.getByTestId('practice-center-entry').click();
+  await page.getByTestId('practice-formal-exam-card').getByRole('button', { name: '開始完整模擬考' }).click({ timeout: 10000 });
   if (!(await page.locator('body').innerText()).includes(`90 ${text.minutes}`)) throw new Error('Formal exam no longer shows 90 minutes');
 
   step = 'seed wrong answer';
@@ -74,7 +75,8 @@ try {
     source: 'week-1',
   }])));
   await page.reload({ waitUntil: 'domcontentloaded', timeout: 15000 });
-  await page.getByTestId('start-wrong-review-button').click({ timeout: 10000 });
+  await page.getByTestId('practice-center-entry').click();
+  await page.getByTestId('practice-wrong-review-card').getByRole('button', { name: text.startReview }).click({ timeout: 10000 });
   const reviewInstructions = await page.locator('body').innerText();
   const reviewMinutes = /\u8003\u8a66\u6642\u9593\s*(\d+) \u5206\u9418/.exec(reviewInstructions)?.[1];
   if (!reviewMinutes || Number(reviewMinutes) === 90) throw new Error('Wrong-answer review shows 90 minutes');
@@ -93,9 +95,10 @@ try {
   const wrongAnswers = await page.evaluate(() => JSON.parse(localStorage.getItem('ifa-wrong-answers-v1') ?? '[]'));
   if (wrongAnswers.find((record) => record.questionId === 1)?.status !== 'improving') throw new Error('Correct review did not set status to improving');
   await page.reload({ waitUntil: 'domcontentloaded', timeout: 15000 });
-  const reviewSection = page.getByTestId('wrong-review-section');
-  if (await reviewSection.getByTestId('start-wrong-review-button').count()) throw new Error('Same-day improving answer remains reviewable');
-  if (!(await page.getByTestId('week1-coverage').innerText()).includes('\u5f85\u8907\u7fd2\uff1a0 \u984c')) throw new Error('Homepage reviewableCount does not exclude same-day improving answer');
+  await page.getByTestId('practice-center-entry').click();
+  const reviewCard = page.getByTestId('practice-wrong-review-card');
+  if (await reviewCard.getByRole('button', { name: text.startReview }).count()) throw new Error('Same-day improving answer remains reviewable');
+  if (!(await reviewCard.innerText()).includes('\u76ee\u524d\u6c92\u6709\u53ef\u8907\u7fd2\u932f\u984c')) throw new Error('Practice center reviewableCount does not exclude same-day improving answer');
 
   console.log('SPRINT 13 VERIFY PASSED');
   process.exitCode = 0;

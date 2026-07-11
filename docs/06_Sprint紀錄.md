@@ -157,6 +157,19 @@ Sprint 10：刷題與錯題複習。
 - 新增 `scripts/e2e-sprint-16.mjs`，驗證文字作答、自我檢核、需要複習、StudySession、錯題與 Recent Activity。
 - `verify:sprint16` 至 `verify:sprint10.2` 全部通過，build 通過。
 
+## Sprint 17－首頁瘦身與練習中心 v1
+
+### 完成功能
+
+- 新增 `PracticeCenter` 頁面，提供今日任務、錯題複習、錯題本、完整模擬考與簡答／默寫練習卡片。
+- 首頁改為今日學習儀表板，不再展開完整模擬考、錯題複習或簡答／默寫功能卡。
+- 所有卡片直接接既有 App handler；沒有新增重複流程、state machine 或 localStorage key。
+
+### 驗證
+
+- 新增 `scripts/e2e-sprint-17.mjs`；驗證首頁資訊、練習中心、今日任務、合法錯題、錯題本與簡答／默寫入口。
+- `verify:sprint17` 至 `verify:sprint10.2` 全部通過。
+
 ## Sprint 10.3－學習策略定義與首頁 UX 優化
 
 ### 完成功能

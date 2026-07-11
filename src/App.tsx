@@ -3,6 +3,7 @@ import Home from './views/Home';
 import Exam from './components/Exam';
 import Result from './components/Result';
 import WrongBook from './views/WrongBook';
+import PracticeCenter from './views/PracticeCenter';
 
 // 引入正式資料路徑
 import week1Questions from './data/questions/week1.json';
@@ -15,7 +16,7 @@ import { getQuestionById, getQuestionsByWeek, getWritingPracticeQuestions } from
 import { calculateTimeLimitInMinutes } from './utils/examTime';
 import type { StudyMode } from './types/study';
 
-type Page = 'home' | 'instructions' | 'exam' | 'result' | 'wrongBook';
+type Page = 'home' | 'instructions' | 'exam' | 'result' | 'wrongBook' | 'practiceCenter';
 type ExamEntry = 'new-exam' | 'today-task' | 'wrong-review' | 'writing-practice';
 
 const isAnswerProvided = (answer: unknown) =>
@@ -237,13 +238,12 @@ function App() {
           hasExamDraft={Boolean(examDraft)}
           onResumeExam={handleResumeExam}
           onStartTodayTask={handleStartTodayTask}
-          onStartNewExam={handleStartNewExam}
-          onStartWrongReview={() => handleStartWrongReview()}
           onOpenWrongBook={() => setCurrentPage('wrongBook')}
-          onStartWritingPractice={handleStartWritingPractice}
+          onOpenPracticeCenter={() => setCurrentPage('practiceCenter')}
         />
       )}
       {currentPage === 'wrongBook' && <WrongBook onReturnHome={handleReturnHome} onStartReview={handleStartWrongReview} />}
+      {currentPage === 'practiceCenter' && <PracticeCenter onReturnHome={handleReturnHome} onStartTodayTask={handleStartTodayTask} onStartWrongReview={() => handleStartWrongReview()} onOpenWrongBook={() => setCurrentPage('wrongBook')} onStartNewExam={handleStartNewExam} onStartWritingPractice={handleStartWritingPractice} />}
       {currentPage === 'instructions' && (
         <main className="exam-instructions w-full max-w-3xl mx-auto px-4 sm:px-6 py-8 md:py-12 flex-grow flex items-center">
           <section className="exam-instructions-card w-full bg-[#0b0d14] border border-slate-800 rounded-2xl p-6 sm:p-8 space-y-6 shadow-lg">
