@@ -9,11 +9,12 @@ import week1Knowledge from './data/knowledge/week1-knowledge.json';
 import examConfig from './data/config/exam-config.json';
 import { getLocalDateString, recordStudySession } from './utils/studyProgress';
 import { clearExamDraft, loadExamDraft, type ExamDraft } from './utils/examDraft';
-import { recordWrongAnswers } from './utils/wrongAnswerStore';
+import { getReviewableWrongAnswers, recordWrongAnswerReview, recordWrongAnswers } from './utils/wrongAnswerStore';
+import { getQuestionById } from './utils/questionEngine';
 import type { StudyMode } from './types/study';
 
 type Page = 'home' | 'instructions' | 'exam' | 'result';
-type ExamEntry = 'new-exam' | 'today-task';
+type ExamEntry = 'new-exam' | 'today-task' | 'wrong-review';
 
 const isAnswerProvided = (answer: unknown) =>
   Array.isArray(answer) ? answer.length > 0 : typeof answer === 'string' ? answer.trim().length > 0 : Boolean(answer);
@@ -79,6 +80,12 @@ function App() {
     setSessionMode(mode);
     setPersistDraft(false);
     setCurrentPage('instructions');
+  };
+
+  const handleStartWrongReview = () => {
+    const reviewQuestions = getReviewableWrongAnswers().slice(0, 10).map((record) => getQuestionById(record.questionId)).filter((question): question is typeof week1Questions[number] => question !== null);
+    if (reviewQuestions.length === 0) return;
+    setQuestions(reviewQuestions); setExamEntry('wrong-review'); setTodaySuggestedQuestions(reviewQuestions.length); setSessionMode('reviewWrong'); setPersistDraft(false); setCurrentPage('instructions');
   };
 
   const handleResumeExam = () => {
@@ -152,7 +159,8 @@ function App() {
       wrongQuestionIds,
       skippedQuestionIds,
     });
-    recordWrongAnswers(wrongAnswerRecords);
+    if (sessionMode === 'reviewWrong') questions.forEach((question) => recordWrongAnswerReview(question.id, correctQuestionIds.includes(question.id)));
+    else recordWrongAnswers(wrongAnswerRecords);
 
     setCurrentPage('result');
   };
@@ -194,6 +202,7 @@ function App() {
           onResumeExam={handleResumeExam}
           onStartTodayTask={handleStartTodayTask}
           onStartNewExam={handleStartNewExam}
+          onStartWrongReview={handleStartWrongReview}
         />
       )}
       {currentPage === 'instructions' && (
@@ -201,8 +210,8 @@ function App() {
           <section className="exam-instructions-card w-full bg-[#0b0d14] border border-slate-800 rounded-2xl p-6 sm:p-8 space-y-6 shadow-lg">
             <div className="space-y-2">
               <span className="text-[10px] font-bold uppercase tracking-widest font-mono text-indigo-400">測驗說明</span>
-              <h1 className="text-2xl font-bold text-white">Week {examConfig.week}：{examConfig.title}</h1>
-              <p className="text-sm text-slate-400 leading-relaxed">{examEntry === 'today-task' && todaySuggestedQuestions > 0 ? `本次為 Week1 今日練習，共 ${todaySuggestedQuestions} 題；完成後其餘題目會在後續每日任務、每週複習與正式模擬考中安排。` : '確認開始後才會啟動倒數。請在作答期間隨時確認題目狀態與標記。'}</p>
+              <h1 className="text-2xl font-bold text-white">{examEntry === 'wrong-review' ? '錯題複習' : `Week ${examConfig.week}：${examConfig.title}`}</h1>
+              <p className="text-sm text-slate-400 leading-relaxed">{examEntry === 'wrong-review' ? `本次複習 ${questions.length} 題。答對不會立即刪除錯題，連續答對後會標示為已熟練。` : examEntry === 'today-task' && todaySuggestedQuestions > 0 ? `本次為 Week1 今日練習，共 ${todaySuggestedQuestions} 題；完成後其餘題目會在後續每日任務、每週複習與正式模擬考中安排。` : '確認開始後才會啟動倒數。請在作答期間隨時確認題目狀態與標記。'}</p>
             </div>
             <dl className="grid grid-cols-2 gap-3 text-sm">
               <div className="rounded-xl bg-slate-900/60 border border-slate-800 p-4">
@@ -221,7 +230,7 @@ function App() {
             </ul>
             <div className="flex flex-col-reverse sm:flex-row justify-end gap-3 pt-2">
               <button onClick={handleReturnHome} className="h-11 px-5 rounded-xl border border-slate-700 text-slate-300 hover:bg-slate-800 font-medium text-sm">返回首頁</button>
-              <button onClick={handleConfirmStart} className="h-11 px-5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-sm">確認開始測驗</button>
+              <button onClick={handleConfirmStart} className="h-11 px-5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-sm">{examEntry === 'wrong-review' ? '確認開始複習' : '確認開始測驗'}</button>
             </div>
           </section>
         </main>
@@ -254,6 +263,7 @@ function App() {
           knowledge={week1Knowledge} 
           answers={userAnswers} 
           timeSpent={timeSpent}
+          mode={sessionMode}
           onReturnHome={handleReturnHome}
           onRetry={handleRetry}
         />

@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react';
 import { RotateCcw, Target } from 'lucide-react';
+import type { StudyMode } from '../types/study';
 
 interface Question {
   id: number;
@@ -16,6 +17,7 @@ interface ResultProps {
   knowledge: { id: string; topic: string }[];
   answers: Record<string, string | string[]>;
   timeSpent: number;
+  mode: StudyMode;
   onReturnHome: () => void;
   onRetry: () => void;
 }
@@ -42,7 +44,7 @@ const formatAnswer = (answer: string | string[] | undefined) => {
   return Array.isArray(answer) ? answer.join('、') : answer;
 };
 
-export default function Result({ questions, knowledge, answers, timeSpent, onReturnHome, onRetry }: ResultProps) {
+export default function Result({ questions, knowledge, answers, timeSpent, mode, onReturnHome, onRetry }: ResultProps) {
   const [showReview, setShowReview] = useState(false);
   const stats = useMemo(() => {
     const reviewItems = questions.filter((question) => !isCorrect(question, answers[question.id]));
@@ -70,7 +72,7 @@ export default function Result({ questions, knowledge, answers, timeSpent, onRet
       <header className="border-b border-slate-800/80 bg-[#090a0f] py-8">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-2">
           <span className="text-[10px] font-bold uppercase tracking-widest font-mono text-indigo-400">測驗結果</span>
-          <h1 className="text-2xl sm:text-3xl font-bold text-white tracking-tight">Week 1 測驗結果</h1>
+          <h1 className="text-2xl sm:text-3xl font-bold text-white tracking-tight">{mode === 'reviewWrong' ? '錯題複習完成' : 'Week 1 測驗結果'}</h1>
         </div>
       </header>
 

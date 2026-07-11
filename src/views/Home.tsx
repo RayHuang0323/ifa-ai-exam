@@ -13,7 +13,7 @@ import { getExamCountdown, getWeeklyProgress, loadStudyProgress } from '../utils
 import { getStudyReminder } from '../utils/studyReminder';
 import type { StudyProgress } from '../types/study';
 import type { StudyMode } from '../types/study';
-import { loadWrongAnswers } from '../utils/wrongAnswerStore';
+import { getWrongAnswerSummary, loadWrongAnswers } from '../utils/wrongAnswerStore';
 import { planTodayTask } from '../utils/taskPlanner';
 import { getCoverageByWeek } from '../utils/questionEngine';
 import type { WrongAnswerRecord } from '../types/task';
@@ -23,9 +23,10 @@ interface HomeProps {
   onResumeExam: () => void;
   onStartTodayTask: (suggestedQuestions: number, mode: StudyMode) => void;
   onStartNewExam: () => void;
+  onStartWrongReview: () => void;
 }
 
-const Home: React.FC<HomeProps> = ({ hasExamDraft, onResumeExam, onStartTodayTask, onStartNewExam }) => {
+const Home: React.FC<HomeProps> = ({ hasExamDraft, onResumeExam, onStartTodayTask, onStartNewExam, onStartWrongReview }) => {
   const [hasHistory, setHasHistory] = useState<boolean>(false);
   const [studyProgress, setStudyProgress] = useState<StudyProgress>(() => loadStudyProgress());
   const [wrongAnswers, setWrongAnswers] = useState<WrongAnswerRecord[]>([]);
@@ -50,6 +51,7 @@ const Home: React.FC<HomeProps> = ({ hasExamDraft, onResumeExam, onStartTodayTas
   const todayTask = planTodayTask(studyProgress, weeklyProgress, wrongAnswerCount, reminder.daysSinceLastStudy);
   const countdownLabel = examCountdown === 0 ? '今天考試' : examCountdown < 0 ? '考試已結束' : `${examCountdown} 天`;
   const week1Coverage = getCoverageByWeek('week-1', studyProgress, wrongAnswers);
+  const wrongSummary = getWrongAnswerSummary();
 
   return (
     <div className="min-h-screen bg-[#fafafa] text-slate-800 antialiased selection:bg-slate-200 w-full flex flex-col items-center">
@@ -95,6 +97,9 @@ const Home: React.FC<HomeProps> = ({ hasExamDraft, onResumeExam, onStartTodayTas
             <span className="study-eyebrow">錯題數</span>
             <strong>{wrongAnswerCount} 題</strong>
             <p>{wrongAnswerCount > 0 ? '錯題會保留為後續複習依據。' : '完成測驗後會建立錯題紀錄。'}</p>
+            <div data-testid="wrong-review-section">
+              {wrongSummary.reviewableCount > 0 ? <><p>錯題複習：目前有 {wrongSummary.reviewableCount} 題待複習，其中 {wrongSummary.highRiskCount} 題為高風險，{wrongSummary.masteredCount} 題已熟練。</p><button data-testid="start-wrong-review-button" onClick={onStartWrongReview} className="study-task-button">開始錯題複習</button></> : <p>完成測驗後，系統會自動整理錯題複習清單。</p>}
+            </div>
           </article>
           <article className="study-card coverage-card" data-testid="week1-coverage">
             <span className="study-eyebrow">Week1 題庫覆蓋率</span>

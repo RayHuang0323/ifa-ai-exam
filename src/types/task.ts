@@ -17,7 +17,12 @@ export interface WrongAnswerRecord {
   questionId: number;
   weekId: 'week-1';
   wrongCount: number;
+  correctReviewCount: number;
+  consecutiveCorrect: number;
   lastWrongAt: string;
+  lastReviewedAt: string | null;
+  masteredAt: string | null;
+  status: 'newWrong' | 'reviewing' | 'highRisk' | 'improving' | 'mastered';
   lastSelectedAnswer: string | string[] | null;
   correctAnswer: string | string[];
   questionType: string;
