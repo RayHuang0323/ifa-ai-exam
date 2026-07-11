@@ -13,6 +13,7 @@
     "verify:sprint10.2": "node scripts/e2e-sprint-10-2.mjs",
     "verify:sprint11": "node scripts/e2e-sprint-11.mjs",
     "verify:sprint12": "node scripts/e2e-sprint-12.mjs",
+    "verify:sprint13": "node scripts/e2e-sprint-13.mjs",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist -r https://github.com/RayHuang0323/ifa-ai-exam.git"
   },

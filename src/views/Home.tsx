@@ -50,6 +50,7 @@ const Home: React.FC<HomeProps> = ({ hasExamDraft, onResumeExam, onStartTodayTas
   const wrongAnswerCount = wrongAnswers.length;
   const todayTask = planTodayTask(studyProgress, weeklyProgress, wrongAnswerCount, reminder.daysSinceLastStudy);
   const countdownLabel = examCountdown === 0 ? '今天考試' : examCountdown < 0 ? '考試已結束' : `${examCountdown} 天`;
+  const todayLabel = `${now.getFullYear()}/${`${now.getMonth() + 1}`.padStart(2, '0')}/${`${now.getDate()}`.padStart(2, '0')}（${['週日', '週一', '週二', '週三', '週四', '週五', '週六'][now.getDay()]}）`;
   const week1Coverage = getCoverageByWeek('week-1', studyProgress, wrongAnswers);
   const wrongSummary = getWrongAnswerSummary();
 
@@ -64,8 +65,9 @@ const Home: React.FC<HomeProps> = ({ hasExamDraft, onResumeExam, onStartTodayTas
         <section className="study-dashboard home-primary-dashboard" aria-label="今日學習重點">
           <article className="study-card study-countdown-card">
             <span className="study-eyebrow">IFA 考試</span>
-            <strong>2026 / 09 / 08</strong>
-            <span className="study-countdown-label">距離考試</span>
+            <strong>今天：{todayLabel}</strong>
+            <span className="study-countdown-label">考試日：2026/09/08</span>
+            <span className="study-countdown-label">距離 IFA 考試</span>
             <span className="study-countdown-value">{countdownLabel}</span>
           </article>
 

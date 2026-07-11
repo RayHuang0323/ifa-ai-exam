@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react';
 import { RotateCcw, Target } from 'lucide-react';
 import type { StudyMode } from '../types/study';
+import { getWrongAnswerSummary } from '../utils/wrongAnswerStore';
 
 interface Question {
   id: number;
@@ -66,6 +67,7 @@ export default function Result({ questions, knowledge, answers, timeSpent, mode,
     const remainingSeconds = seconds % 60;
     return `${minutes} 分 ${remainingSeconds} 秒`;
   };
+  const wrongSummary = mode === 'reviewWrong' ? getWrongAnswerSummary() : null;
 
   return (
     <div className="min-h-screen bg-[#050508] text-slate-200 font-sans pb-20">
@@ -77,6 +79,7 @@ export default function Result({ questions, knowledge, answers, timeSpent, mode,
       </header>
 
       <main className="max-w-4xl mx-auto px-4 sm:px-6 py-8 md:py-12 space-y-8">
+        {mode === 'reviewWrong' && <section className="bg-[#0b0d14] border border-slate-800 rounded-2xl p-6 text-sm text-slate-300"><strong>本次錯題複習 {questions.length} 題</strong><p>本次答對 {stats.correctCount} 題・本次仍需加強 {stats.wrongCount} 題・目前已熟練 {wrongSummary?.masteredCount ?? 0} 題</p></section>}
         <section className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
           <div className="bg-[#0b0d14] border border-slate-800 rounded-2xl p-6 sm:p-8 flex flex-col items-center justify-center text-center shadow-lg">
             <p className="text-[10px] font-bold text-slate-500 uppercase tracking-widest font-mono mb-3">正確率</p>
