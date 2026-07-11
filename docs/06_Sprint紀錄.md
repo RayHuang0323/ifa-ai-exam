@@ -131,6 +131,19 @@ Sprint 10：刷題與錯題複習。
 - 新增 `scripts/e2e-sprint-14.mjs` 與 `npm.cmd run verify:sprint14`，驗證首頁入口、空狀態、錯題列表、狀態摘要與篩選後進入 reviewWrong。
 - `verify:sprint14`、`verify:sprint13`、`verify:sprint12`、`verify:sprint11`、`verify:sprint10.2` 與 build 均通過。
 
+## Sprint 15－考前核心學習閉環 v1
+
+### 完成功能
+
+- Recent Activity 讀取既有 StudySession，顯示最近 3 筆真實紀錄與安全空狀態；`reviewWrong` 也納入既有 StudyProgress 驗證。
+- 每日、每週補強與進度補強任務由可複習錯題優先取約 30%，其餘以 Question Engine 的正式 Week1 題目補足並去重。
+- 首頁新增最小規則型學習提醒，依考前 14 天、高風險錯題、今日已完成仍有錯題、本週落後順序提示。
+
+### 驗證
+
+- 新增 `scripts/e2e-sprint-15.mjs`，驗證 Recent Activity 空狀態、daily／reviewWrong 真實紀錄、高風險提示與今日任務進入流程。
+- `verify:sprint15` 至 `verify:sprint10.2` 全部通過，build 通過。
+
 ## Sprint 10.3－學習策略定義與首頁 UX 優化
 
 ### 完成功能

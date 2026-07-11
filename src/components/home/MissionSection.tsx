@@ -5,10 +5,11 @@ import type { StudyMode } from '../../types/study';
 interface MissionSectionProps {
   task: TodayTask;
   wrongAnswerCount: number;
+  guidance: string;
   onStartTask: (suggestedQuestions: number, mode: StudyMode) => void;
 }
 
-export const MissionSection: React.FC<MissionSectionProps> = ({ task, wrongAnswerCount, onStartTask }) => {
+export const MissionSection: React.FC<MissionSectionProps> = ({ task, wrongAnswerCount, guidance, onStartTask }) => {
   return (
     <article className="study-card mission-section">
       <span className="study-eyebrow">今日任務</span>
@@ -18,6 +19,7 @@ export const MissionSection: React.FC<MissionSectionProps> = ({ task, wrongAnswe
           <strong className="mission-question-count">{task.suggestedQuestions} 題</strong>
           <p>約 {task.estimatedMinutes} 分鐘</p>
           <p className="mission-task-reason">原因：{task.reason}</p>
+          <p className="mission-task-reason" data-testid="study-guidance">學習提醒：{guidance}</p>
           <p className="mission-task-note">今日完成後，剩餘題目將於後續每日任務、每週複習與正式模擬考中安排。</p>
           {wrongAnswerCount > 0 && <p>目前錯題數：{wrongAnswerCount} 題</p>}
         </div>

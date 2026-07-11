@@ -1,7 +1,6 @@
 # Technical Debt
 
 -   未安裝 Tailwind 編譯流程，目前以 `src/index.css` 的最小 utility fallback 支援既有頁面樣式。
--   Recent Activity 尚未顯示 `ifa-study-progress-v1` 的真實最近一次紀錄。
 -   學習紀錄已涵蓋目前可用的正式測驗、指定題數任務與錯題複習；尚未涵蓋混合刷題。
 -   尚無自動化測試覆蓋 localStorage migration、提醒規則與日期邊界。
 -   AI Coach 尚未實作。
@@ -25,3 +24,8 @@
 - 已提供完整錯題本 v1，包含狀態摘要、狀態篩選、空狀態與既有 reviewWrong 入口。
 - 已補上從首頁進入錯題本、顯示正式題目與從篩選結果開始複習的瀏覽器驗證。
 - 尚無自動化測試覆蓋 localStorage migration、提醒規則與日期邊界。
+
+## Sprint 15 已移除
+
+- 已移除首頁 Recent Activity 僅顯示 placeholder 的 Technical Debt；現在安全呈現最近 3 筆真實 StudySession。
+- 已移除每日任務完全未混入可複習錯題的缺口；仍未實作完整間隔重複演算法。

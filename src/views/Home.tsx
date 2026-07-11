@@ -9,7 +9,7 @@ import { RecentActivitySection } from '../components/home/RecentActivitySection'
 import { RoadmapSection } from '../components/home/RoadmapSection';
 import { FooterSection } from '../components/home/FooterSection';
 import { studyConfig } from '../data/studyConfig';
-import { getExamCountdown, getWeeklyProgress, loadStudyProgress } from '../utils/studyProgress';
+import { getExamCountdown, getTodayCompleted, getWeeklyProgress, loadStudyProgress } from '../utils/studyProgress';
 import { getStudyReminder } from '../utils/studyReminder';
 import type { StudyProgress } from '../types/study';
 import type { StudyMode } from '../types/study';
@@ -54,6 +54,12 @@ const Home: React.FC<HomeProps> = ({ hasExamDraft, onResumeExam, onStartTodayTas
   const todayLabel = `${now.getFullYear()}/${`${now.getMonth() + 1}`.padStart(2, '0')}/${`${now.getDate()}`.padStart(2, '0')}（${['週日', '週一', '週二', '週三', '週四', '週五', '週六'][now.getDay()]}）`;
   const week1Coverage = getCoverageByWeek('week-1', studyProgress, wrongAnswers);
   const wrongSummary = getWrongAnswerSummary();
+  const todayCompleted = getTodayCompleted(studyProgress, now);
+  const todayGuidance = examCountdown >= 0 && examCountdown <= 14 ? '已進入考前衝刺，建議優先處理錯題與完整模擬考。'
+    : wrongSummary.highRiskCount > 0 ? '目前有高風險錯題，今日任務會優先混入部分錯題。'
+      : todayCompleted > 0 && wrongSummary.reviewableCount > 0 ? '今日任務已完成，建議再做錯題複習。'
+        : todayTask.mode === 'weeklyCatchUp' ? '本週進度落後，建議先完成今日任務。'
+          : '依今日任務維持練習節奏。';
 
   return (
     <div className="min-h-screen bg-[#fafafa] text-slate-800 antialiased selection:bg-slate-200 w-full flex flex-col items-center">
@@ -87,7 +93,7 @@ const Home: React.FC<HomeProps> = ({ hasExamDraft, onResumeExam, onStartTodayTas
             <p className="study-memory-focus">每週記憶強化：{wrongAnswerCount > 0 ? `本週錯題 ${wrongAnswerCount} 題，建議至少再複習 ${studyConfig.weeklyTask.weeklyReviewTarget} 題錯題與重點題。` : '完成更多測驗後，系統會整理本週錯題與複習重點。'}</p>
           </article>
 
-          <MissionSection task={todayTask} wrongAnswerCount={wrongAnswerCount} onStartTask={onStartTodayTask} />
+          <MissionSection task={todayTask} wrongAnswerCount={wrongAnswerCount} guidance={todayGuidance} onStartTask={onStartTodayTask} />
         </section>
 
         <section className="learning-status-grid" aria-label="學習狀態">
@@ -118,7 +124,7 @@ const Home: React.FC<HomeProps> = ({ hasExamDraft, onResumeExam, onStartTodayTas
           <div className="w-full">
             <ExamSection onStartExam={onStartNewExam} />
           </div>
-          <div className="w-full"><RecentActivitySection hasHistory={hasHistory} /></div>
+          <div className="w-full"><RecentActivitySection /></div>
           <div className="w-full"><RoadmapSection /></div>
           <div className="w-full"><CoachSection hasHistory={hasHistory} /></div>
         </section>

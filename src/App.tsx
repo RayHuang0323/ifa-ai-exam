@@ -11,7 +11,7 @@ import examConfig from './data/config/exam-config.json';
 import { getLocalDateString, recordStudySession } from './utils/studyProgress';
 import { clearExamDraft, loadExamDraft, type ExamDraft } from './utils/examDraft';
 import { getReviewableWrongAnswers, recordWrongAnswerReview, recordWrongAnswers } from './utils/wrongAnswerStore';
-import { getQuestionById } from './utils/questionEngine';
+import { getQuestionById, getQuestionsByWeek } from './utils/questionEngine';
 import { calculateTimeLimitInMinutes } from './utils/examTime';
 import type { StudyMode } from './types/study';
 
@@ -74,7 +74,17 @@ function App() {
 
   const handleStartTodayTask = (suggestedQuestions: number, mode: StudyMode) => {
     setExamDraft(loadExamDraft());
-    const taskQuestions = week1Questions.slice(0, Math.min(suggestedQuestions, week1Questions.length));
+    const availableQuestions = getQuestionsByWeek('week-1');
+    const targetQuestionCount = Math.min(suggestedQuestions, availableQuestions.length);
+    const reviewQuestionTarget = Math.round(targetQuestionCount * 0.3);
+    const reviewQuestions = getReviewableWrongAnswers()
+      .map((record) => getQuestionById(record.questionId))
+      .filter((question): question is typeof week1Questions[number] => question !== null)
+      .filter((question, index, all) => all.findIndex((item) => item.id === question.id) === index)
+      .slice(0, reviewQuestionTarget);
+    const reviewQuestionIds = new Set(reviewQuestions.map((question) => question.id));
+    const regularQuestions = availableQuestions.filter((question) => !reviewQuestionIds.has(question.id));
+    const taskQuestions = [...reviewQuestions, ...regularQuestions].slice(0, targetQuestionCount);
     setQuestions(taskQuestions);
     setTimeLimit(calculateTimeLimitInMinutes(mode, taskQuestions));
     setExamEntry('today-task');
