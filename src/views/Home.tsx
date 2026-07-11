@@ -67,7 +67,7 @@ const Home: React.FC<HomeProps> = ({ hasExamDraft, onResumeExam, onStartTodayTas
             <span className="study-eyebrow">IFA 考試</span>
             <strong>今天：{todayLabel}</strong>
             <span className="study-countdown-label">考試日：2026/09/08</span>
-            <span className="study-countdown-label">距離 IFA 考試</span>
+            <span className="study-countdown-label">距離 IFA 考試：</span>
             <span className="study-countdown-value">{countdownLabel}</span>
           </article>
 
@@ -107,7 +107,7 @@ const Home: React.FC<HomeProps> = ({ hasExamDraft, onResumeExam, onStartTodayTas
             <span className="study-eyebrow">Week1 題庫覆蓋率</span>
             <strong>已練習 {week1Coverage.practicedCount} / {week1Coverage.totalQuestions} 題</strong>
             <p>尚未練習：{week1Coverage.unpracticedCount} 題</p>
-            <p>錯題：{wrongAnswerCount} 題・待複習：{wrongAnswerCount} 題</p>
+            <p>錯題：{wrongAnswerCount} 題・待複習：{wrongSummary.reviewableCount} 題</p>
             {week1Coverage.isEstimated && <p>部分舊紀錄無題目 ID，覆蓋率為估算。</p>}
           </article>
         </section>

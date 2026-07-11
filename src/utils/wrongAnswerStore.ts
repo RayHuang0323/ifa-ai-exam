@@ -1,4 +1,5 @@
 import type { WrongAnswerRecord } from '../types/task';
+import { getLocalDateString } from './studyProgress';
 
 const storageKey = 'ifa-wrong-answers-v1';
 
@@ -32,6 +33,14 @@ export const recordWrongAnswers = (records: Omit<WrongAnswerRecord, 'wrongCount'
   return next;
 };
 
-export const getReviewableWrongAnswers = () => loadWrongAnswers().filter((record) => record.status !== 'mastered').sort((a, b) => ({ highRisk: 0, newWrong: 1, reviewing: 2, improving: 3, mastered: 4 }[a.status]) - ({ highRisk: 0, newWrong: 1, reviewing: 2, improving: 3, mastered: 4 }[b.status]));
-export const getWrongAnswerSummary = () => { const records = loadWrongAnswers(); return { totalWrong: records.length, reviewableCount: records.filter((record) => record.status !== 'mastered').length, highRiskCount: records.filter((record) => record.status === 'highRisk').length, masteredCount: records.filter((record) => record.status === 'mastered').length }; };
+export const isReviewableToday = (record: WrongAnswerRecord) => {
+  if (record.status === 'mastered') return false;
+  if (record.status !== 'improving') return true;
+  return !record.lastReviewedAt || getLocalDateString(new Date(record.lastReviewedAt)) !== getLocalDateString(new Date());
+};
+
+const reviewPriority: Record<WrongAnswerRecord['status'], number> = { highRisk: 0, newWrong: 1, reviewing: 2, improving: 3, mastered: 4 };
+
+export const getReviewableWrongAnswers = () => loadWrongAnswers().filter(isReviewableToday).sort((a, b) => reviewPriority[a.status] - reviewPriority[b.status]);
+export const getWrongAnswerSummary = () => { const records = loadWrongAnswers(); return { totalWrong: records.length, reviewableCount: records.filter(isReviewableToday).length, highRiskCount: records.filter((record) => record.status === 'highRisk').length, masteredCount: records.filter((record) => record.status === 'mastered').length }; };
 export const recordWrongAnswerReview = (questionId: number, correct: boolean) => { const records = loadWrongAnswers(); const index = records.findIndex((record) => record.questionId === questionId); if (index < 0) return records; const now = new Date().toISOString(); const current = records[index]; if (correct) { const consecutiveCorrect = current.consecutiveCorrect + 1; records[index] = { ...current, correctReviewCount: current.correctReviewCount + 1, consecutiveCorrect, lastReviewedAt: now, status: consecutiveCorrect >= 2 ? 'mastered' : 'improving', masteredAt: consecutiveCorrect >= 2 ? now : null }; } else records[index] = { ...current, wrongCount: current.wrongCount + 1, consecutiveCorrect: 0, status: 'highRisk', lastWrongAt: now, lastReviewedAt: now, masteredAt: null }; saveWrongAnswers(records); return records; };

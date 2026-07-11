@@ -1,6 +1,6 @@
 # 專案目前狀態
 
-- 目前版本：Sprint 11
+- 目前版本：Sprint 13.1
 - 正式考試日期：2026-09-08
 - 正式題庫來源：`src/data/questions/`
 - 可用題庫：Week1
@@ -13,3 +13,10 @@
 - 互動流程修改必須以瀏覽器逐步驗證；TypeScript、Build 與 Deploy 只能作為最後確認，不能取代流程驗收。Sprint 10.2 使用 `scripts/e2e-sprint-10-2.mjs` 搭配系統 Chrome 驗證草稿續作、今日任務題數與首頁中文化。
 - 首頁第一層聚焦今日要做什麼：考試倒數、本週進度與唯一的今日任務主 CTA；第二層顯示連續學習、錯題與 Week1 題庫覆蓋率。
 - Question Engine v1 已提供題庫查詢與覆蓋率；新 StudySession 保存完整題目 ID 與作答分類，舊紀錄缺少 ID 時覆蓋率為估算。
+
+## Sprint 13.1 完成
+
+- 首頁顯示今天日期、考試日與距離 IFA 考試。
+- 時間依模式與實際題組計算：formal-exam 固定 90 分鐘；daily／recovery 為 10～30 分鐘；weeklyCatchUp 為 20～60 分鐘；reviewWrong 為 5～20 分鐘。
+- daily 的 15 題選擇題與 reviewWrong 不再顯示或使用 90 分鐘；正式模擬考維持 90 分鐘。
+- `getWrongAnswerSummary().reviewableCount` 與 `getReviewableWrongAnswers()` 共用 `isReviewableToday`；同日已複習且 improving 的題目不列入錯題複習。

@@ -11,6 +11,7 @@ import { getLocalDateString, recordStudySession } from './utils/studyProgress';
 import { clearExamDraft, loadExamDraft, type ExamDraft } from './utils/examDraft';
 import { getReviewableWrongAnswers, recordWrongAnswerReview, recordWrongAnswers } from './utils/wrongAnswerStore';
 import { getQuestionById } from './utils/questionEngine';
+import { calculateTimeLimitInMinutes } from './utils/examTime';
 import type { StudyMode } from './types/study';
 
 type Page = 'home' | 'instructions' | 'exam' | 'result';
@@ -52,7 +53,7 @@ function App() {
     clearExamDraft();
     setExamDraft(null);
     setQuestions(week1Questions);
-    setTimeLimit(examConfig.timeLimit);
+    setTimeLimit(calculateTimeLimitInMinutes('formal-exam', week1Questions));
     setExamEntry(entry);
     setTodaySuggestedQuestions(suggestedQuestions);
     setSessionMode('formal-exam');
@@ -74,7 +75,7 @@ function App() {
     setExamDraft(loadExamDraft());
     const taskQuestions = week1Questions.slice(0, Math.min(suggestedQuestions, week1Questions.length));
     setQuestions(taskQuestions);
-    setTimeLimit(examConfig.timeLimit);
+    setTimeLimit(calculateTimeLimitInMinutes(mode, taskQuestions));
     setExamEntry('today-task');
     setTodaySuggestedQuestions(taskQuestions.length);
     setSessionMode(mode);
@@ -85,7 +86,7 @@ function App() {
   const handleStartWrongReview = () => {
     const reviewQuestions = getReviewableWrongAnswers().slice(0, 10).map((record) => getQuestionById(record.questionId)).filter((question): question is typeof week1Questions[number] => question !== null);
     if (reviewQuestions.length === 0) return;
-    setQuestions(reviewQuestions); setExamEntry('wrong-review'); setTodaySuggestedQuestions(reviewQuestions.length); setSessionMode('reviewWrong'); setPersistDraft(false); setCurrentPage('instructions');
+    setQuestions(reviewQuestions); setTimeLimit(calculateTimeLimitInMinutes('reviewWrong', reviewQuestions)); setExamEntry('wrong-review'); setTodaySuggestedQuestions(reviewQuestions.length); setSessionMode('reviewWrong'); setPersistDraft(false); setCurrentPage('instructions');
   };
 
   const handleResumeExam = () => {
@@ -96,7 +97,7 @@ function App() {
     }
     setExamDraft(draft);
     setQuestions(week1Questions);
-    setTimeLimit(examConfig.timeLimit);
+    setTimeLimit(calculateTimeLimitInMinutes('formal-exam', week1Questions));
     setCurrentPage('exam');
   };
 
@@ -184,7 +185,7 @@ function App() {
   const handleRetry = () => {
     clearExamDraft();
     setQuestions(week1Questions);
-    setTimeLimit(examConfig.timeLimit);
+    setTimeLimit(calculateTimeLimitInMinutes('formal-exam', week1Questions));
     setUserAnswers({});
     setTimeSpent(0);
     hasFinishedRef.current = false;
@@ -220,7 +221,7 @@ function App() {
               </div>
               <div className="rounded-xl bg-slate-900/60 border border-slate-800 p-4">
                 <dt className="text-xs text-slate-500">考試時間</dt>
-                <dd className="mt-1 text-lg font-bold text-slate-100">{examConfig.timeLimit} 分鐘</dd>
+                <dd className="mt-1 text-lg font-bold text-slate-100">{timeLimit} 分鐘</dd>
               </div>
             </dl>
             <ul className="space-y-3 text-sm text-slate-300 leading-relaxed list-disc pl-5">

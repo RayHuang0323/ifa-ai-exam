@@ -103,6 +103,20 @@ Sprint 10：刷題與錯題複習。
 - `npm.cmd run verify:sprint10.2` 以系統 Chrome 逐步驗證 mockExam 草稿續作、今日任務題數一致與首頁中文化，明確結束並回傳 exit code 0。
 - Build、Deploy、Commit 與 Push 於本紀錄更新後執行。
 
+## Sprint 13.1－動態時間與錯題複習排程
+
+### 完成功能
+
+- 正式模擬考以 Week1 全題組、`formal-exam` mode 計時，固定 90 分鐘。
+- daily、recovery 與 weeklyCatchUp 以 taskQuestions 和實際 mode 計時；15 題任務不會誤用正式考試的 90 分鐘。
+- reviewWrong 以 reviewQuestions 和 `reviewWrong` mode 計時，不覆蓋正式測驗草稿。
+- `getReviewableWrongAnswers()` 與 `getWrongAnswerSummary().reviewableCount` 共用 `isReviewableToday`；highRisk、newWrong、reviewing 可複習，mastered 不可複習，improving 當日複習後暫不重複排入。
+- 首頁新增今天日期、考試日與距離 IFA 考試資訊。
+
+### 驗證
+
+- `npm.cmd run verify:sprint10.2`、`npm.cmd run verify:sprint11`、`npm.cmd run verify:sprint12`、`npm.cmd run verify:sprint13` 與 `npm.cmd run build` 均通過。
+
 ## Sprint 10.3－學習策略定義與首頁 UX 優化
 
 ### 完成功能
