@@ -15,7 +15,7 @@ import type { StudyProgress } from '../types/study';
 import type { StudyMode } from '../types/study';
 import { loadWrongAnswers } from '../utils/wrongAnswerStore';
 import { planTodayTask } from '../utils/taskPlanner';
-import { getQuestionCountByWeek } from '../utils/questionBank';
+import { getCoverageByWeek } from '../utils/questionEngine';
 import type { WrongAnswerRecord } from '../types/task';
 
 interface HomeProps {
@@ -49,12 +49,7 @@ const Home: React.FC<HomeProps> = ({ hasExamDraft, onResumeExam, onStartTodayTas
   const wrongAnswerCount = wrongAnswers.length;
   const todayTask = planTodayTask(studyProgress, weeklyProgress, wrongAnswerCount, reminder.daysSinceLastStudy);
   const countdownLabel = examCountdown === 0 ? '今天考試' : examCountdown < 0 ? '考試已結束' : `${examCountdown} 天`;
-  const week1Total = getQuestionCountByWeek('week-1');
-  const practicedQuestionIds = new Set<number>();
-  studyProgress.sessions.filter((session) => session.weekId === 'week-1').forEach((session) => session.questionIds?.forEach((id) => practicedQuestionIds.add(id)));
-  wrongAnswers.forEach((record) => practicedQuestionIds.add(record.questionId));
-  const practicedCount = practicedQuestionIds.size;
-  const remainingQuestionCount = Math.max(0, week1Total - practicedCount);
+  const week1Coverage = getCoverageByWeek('week-1', studyProgress, wrongAnswers);
 
   return (
     <div className="min-h-screen bg-[#fafafa] text-slate-800 antialiased selection:bg-slate-200 w-full flex flex-col items-center">
@@ -103,9 +98,10 @@ const Home: React.FC<HomeProps> = ({ hasExamDraft, onResumeExam, onStartTodayTas
           </article>
           <article className="study-card coverage-card" data-testid="week1-coverage">
             <span className="study-eyebrow">Week1 題庫覆蓋率</span>
-            <strong>已練習 {practicedCount} / {week1Total} 題</strong>
-            <p>尚未練習：{remainingQuestionCount} 題</p>
+            <strong>已練習 {week1Coverage.practicedCount} / {week1Coverage.totalQuestions} 題</strong>
+            <p>尚未練習：{week1Coverage.unpracticedCount} 題</p>
             <p>錯題：{wrongAnswerCount} 題・待複習：{wrongAnswerCount} 題</p>
+            {week1Coverage.isEstimated && <p>部分舊紀錄無題目 ID，覆蓋率為估算。</p>}
           </article>
         </section>
 

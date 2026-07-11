@@ -10,7 +10,11 @@ export interface StudySession {
   wrongCount: number;
   durationSeconds: number;
   completedAt: string;
+  startedAt?: string;
   questionIds?: number[];
+  correctQuestionIds?: number[];
+  wrongQuestionIds?: number[];
+  skippedQuestionIds?: number[];
 }
 
 export interface StudyProgress {

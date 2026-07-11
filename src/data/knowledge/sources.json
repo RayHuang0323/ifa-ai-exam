@@ -1,0 +1,12 @@
+[
+  {
+    "id": "source-pending-review",
+    "title": "來源待人工確認",
+    "sourceType": "pending-review",
+    "priority": 0,
+    "version": null,
+    "isPrivate": true,
+    "reviewedByHuman": false,
+    "notes": "僅作為尚未建立正式來源登錄的保守標記，不代表正式引用。"
+  }
+]

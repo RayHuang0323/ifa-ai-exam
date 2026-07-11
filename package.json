@@ -11,6 +11,7 @@
     "test:e2e": "playwright test",
     "test:e2e:headed": "playwright test --headed",
     "verify:sprint10.2": "node scripts/e2e-sprint-10-2.mjs",
+    "verify:sprint11": "node scripts/e2e-sprint-11.mjs",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist -r https://github.com/RayHuang0323/ifa-ai-exam.git"
   },

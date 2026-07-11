@@ -44,6 +44,7 @@ function App() {
   const [todaySuggestedQuestions, setTodaySuggestedQuestions] = useState(0);
   const [sessionMode, setSessionMode] = useState<StudyMode>('formal-exam');
   const [persistDraft, setPersistDraft] = useState(true);
+  const [startedAt, setStartedAt] = useState<string | null>(null);
   const hasFinishedRef = useRef(false);
 
   const prepareNewExam = (entry: ExamEntry, suggestedQuestions = 0) => {
@@ -96,6 +97,7 @@ function App() {
     hasFinishedRef.current = false;
     setUserAnswers({});
     setTimeSpent(0);
+    setStartedAt(new Date().toISOString());
     setCurrentPage('exam');
   };
 
@@ -112,6 +114,9 @@ function App() {
     const answeredCount = questions.filter((question) => isAnswerProvided(answers[question.id])).length;
     const correctCount = questions.filter((question) => isCorrectAnswer(question, answers[question.id])).length;
     const unansweredCount = questions.length - answeredCount;
+    const correctQuestionIds = questions.filter((question) => isCorrectAnswer(question, answers[question.id])).map((question) => question.id);
+    const wrongQuestionIds = questions.filter((question) => isAnswerProvided(answers[question.id]) && !isCorrectAnswer(question, answers[question.id])).map((question) => question.id);
+    const skippedQuestionIds = questions.filter((question) => !isAnswerProvided(answers[question.id])).map((question) => question.id);
     const wrongAnswerRecords = questions
       .filter((question) => isAnswerProvided(answers[question.id]) && !isCorrectAnswer(question, answers[question.id]))
       .map((question) => ({ questionId: question.id, weekId: 'week-1' as const, lastSelectedAnswer: answers[question.id] ?? null, correctAnswer: question.answer, questionType: question.type, source: 'week-1' as const }));
@@ -141,7 +146,11 @@ function App() {
       wrongCount: answeredCount - correctCount,
       durationSeconds,
       completedAt,
-      questionIds: questions.filter((question) => isAnswerProvided(answers[question.id])).map((question) => question.id),
+      startedAt: startedAt ?? completedAt,
+      questionIds: questions.map((question) => question.id),
+      correctQuestionIds,
+      wrongQuestionIds,
+      skippedQuestionIds,
     });
     recordWrongAnswers(wrongAnswerRecords);
 

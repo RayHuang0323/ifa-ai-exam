@@ -35,7 +35,10 @@ const isValidSession = (value: unknown): value is StudySession => {
     && typeof session.wrongCount === 'number'
     && typeof session.durationSeconds === 'number'
     && typeof session.completedAt === 'string'
-    && (session.questionIds === undefined || (Array.isArray(session.questionIds) && session.questionIds.every((id) => typeof id === 'number')));
+    && (session.questionIds === undefined || (Array.isArray(session.questionIds) && session.questionIds.every((id) => typeof id === 'number')))
+    && (session.correctQuestionIds === undefined || (Array.isArray(session.correctQuestionIds) && session.correctQuestionIds.every((id) => typeof id === 'number')))
+    && (session.wrongQuestionIds === undefined || (Array.isArray(session.wrongQuestionIds) && session.wrongQuestionIds.every((id) => typeof id === 'number')))
+    && (session.skippedQuestionIds === undefined || (Array.isArray(session.skippedQuestionIds) && session.skippedQuestionIds.every((id) => typeof id === 'number')));
 };
 
 const refreshStreaks = (progress: StudyProgress, today = new Date()): StudyProgress => {
