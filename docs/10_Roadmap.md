@@ -19,3 +19,8 @@ Sprint 12：間隔重複
 - 首頁考試日期資訊、模式化動態計時與錯題複習排程已完成。
 - formal-exam 維持 90 分鐘；daily／recovery、weeklyCatchUp、reviewWrong 依實際題組計時。
 - 同日 improving 錯題不重複排入 reviewWrong，且首頁待複習數與入口一致。
+
+## 已完成：Sprint 14
+
+- 完整錯題本 v1 已完成：可查看狀態摘要、篩選所有錯題，並從可複習的篩選結果進入 reviewWrong。
+- 後續仍保留跨週混題、完整間隔重複、簡答／默寫、Dashboard 與 AI Coach，不在本 Sprint 實作。

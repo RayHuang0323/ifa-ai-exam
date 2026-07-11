@@ -117,6 +117,20 @@ Sprint 10：刷題與錯題複習。
 
 - `npm.cmd run verify:sprint10.2`、`npm.cmd run verify:sprint11`、`npm.cmd run verify:sprint12`、`npm.cmd run verify:sprint13` 與 `npm.cmd run build` 均通過。
 
+## Sprint 14－完整錯題本 v1
+
+### 完成功能
+
+- 新增 `wrongBook` 頁面與首頁「查看錯題本」入口；空清單顯示引導文案與返回首頁按鈕。
+- 顯示錯題總數、待複習、高風險、改善中、已熟練，且 `reviewableCount` 持續與 `getReviewableWrongAnswers()` 共用 `isReviewableToday`。
+- 支援全部、待複習、高風險、改善中、已熟練篩選；列表查詢正式題目、顯示狀態與複習統計，缺少題目時安全 fallback。
+- 可從目前篩選結果取最多 10 題，交給既有 reviewWrong，不建立第二套複習流程，也不覆蓋正式測驗草稿。
+
+### 驗證
+
+- 新增 `scripts/e2e-sprint-14.mjs` 與 `npm.cmd run verify:sprint14`，驗證首頁入口、空狀態、錯題列表、狀態摘要與篩選後進入 reviewWrong。
+- `verify:sprint14`、`verify:sprint13`、`verify:sprint12`、`verify:sprint11`、`verify:sprint10.2` 與 build 均通過。
+
 ## Sprint 10.3－學習策略定義與首頁 UX 優化
 
 ### 完成功能

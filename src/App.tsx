@@ -2,6 +2,7 @@ import { useRef, useState } from 'react';
 import Home from './views/Home';
 import Exam from './components/Exam';
 import Result from './components/Result';
+import WrongBook from './views/WrongBook';
 
 // 引入正式資料路徑
 import week1Questions from './data/questions/week1.json';
@@ -14,7 +15,7 @@ import { getQuestionById } from './utils/questionEngine';
 import { calculateTimeLimitInMinutes } from './utils/examTime';
 import type { StudyMode } from './types/study';
 
-type Page = 'home' | 'instructions' | 'exam' | 'result';
+type Page = 'home' | 'instructions' | 'exam' | 'result' | 'wrongBook';
 type ExamEntry = 'new-exam' | 'today-task' | 'wrong-review';
 
 const isAnswerProvided = (answer: unknown) =>
@@ -83,8 +84,9 @@ function App() {
     setCurrentPage('instructions');
   };
 
-  const handleStartWrongReview = () => {
-    const reviewQuestions = getReviewableWrongAnswers().slice(0, 10).map((record) => getQuestionById(record.questionId)).filter((question): question is typeof week1Questions[number] => question !== null);
+  const handleStartWrongReview = (questionIds?: number[]) => {
+    const reviewRecords = getReviewableWrongAnswers().filter((record) => !questionIds || questionIds.includes(record.questionId)).slice(0, 10);
+    const reviewQuestions = reviewRecords.map((record) => getQuestionById(record.questionId)).filter((question): question is typeof week1Questions[number] => question !== null);
     if (reviewQuestions.length === 0) return;
     setQuestions(reviewQuestions); setTimeLimit(calculateTimeLimitInMinutes('reviewWrong', reviewQuestions)); setExamEntry('wrong-review'); setTodaySuggestedQuestions(reviewQuestions.length); setSessionMode('reviewWrong'); setPersistDraft(false); setCurrentPage('instructions');
   };
@@ -203,9 +205,11 @@ function App() {
           onResumeExam={handleResumeExam}
           onStartTodayTask={handleStartTodayTask}
           onStartNewExam={handleStartNewExam}
-          onStartWrongReview={handleStartWrongReview}
+          onStartWrongReview={() => handleStartWrongReview()}
+          onOpenWrongBook={() => setCurrentPage('wrongBook')}
         />
       )}
+      {currentPage === 'wrongBook' && <WrongBook onReturnHome={handleReturnHome} onStartReview={handleStartWrongReview} />}
       {currentPage === 'instructions' && (
         <main className="exam-instructions w-full max-w-3xl mx-auto px-4 sm:px-6 py-8 md:py-12 flex-grow flex items-center">
           <section className="exam-instructions-card w-full bg-[#0b0d14] border border-slate-800 rounded-2xl p-6 sm:p-8 space-y-6 shadow-lg">

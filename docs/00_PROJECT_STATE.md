@@ -1,6 +1,6 @@
 # 專案目前狀態
 
-- 目前版本：Sprint 13.1
+- 目前版本：Sprint 14
 - 正式考試日期：2026-09-08
 - 正式題庫來源：`src/data/questions/`
 - 可用題庫：Week1
@@ -20,3 +20,9 @@
 - 時間依模式與實際題組計算：formal-exam 固定 90 分鐘；daily／recovery 為 10～30 分鐘；weeklyCatchUp 為 20～60 分鐘；reviewWrong 為 5～20 分鐘。
 - daily 的 15 題選擇題與 reviewWrong 不再顯示或使用 90 分鐘；正式模擬考維持 90 分鐘。
 - `getWrongAnswerSummary().reviewableCount` 與 `getReviewableWrongAnswers()` 共用 `isReviewableToday`；同日已複習且 improving 的題目不列入錯題複習。
+
+## Sprint 14 完成
+
+- 新增完整錯題本 v1：首頁可進入、可看全部錯題與狀態摘要、可依狀態篩選，並可從目前篩選結果啟動既有 reviewWrong。
+- 錯題本只讀取 `ifa-wrong-answers-v1` 的索引與統計，顯示題目時一律透過 Question Engine 查詢正式 Week1 題庫。
+- 錯題本可處理題目不存在的紀錄並顯示「題目資料待確認」，不會白屏。

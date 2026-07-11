@@ -24,9 +24,10 @@ interface HomeProps {
   onStartTodayTask: (suggestedQuestions: number, mode: StudyMode) => void;
   onStartNewExam: () => void;
   onStartWrongReview: () => void;
+  onOpenWrongBook: () => void;
 }
 
-const Home: React.FC<HomeProps> = ({ hasExamDraft, onResumeExam, onStartTodayTask, onStartNewExam, onStartWrongReview }) => {
+const Home: React.FC<HomeProps> = ({ hasExamDraft, onResumeExam, onStartTodayTask, onStartNewExam, onStartWrongReview, onOpenWrongBook }) => {
   const [hasHistory, setHasHistory] = useState<boolean>(false);
   const [studyProgress, setStudyProgress] = useState<StudyProgress>(() => loadStudyProgress());
   const [wrongAnswers, setWrongAnswers] = useState<WrongAnswerRecord[]>([]);
@@ -101,6 +102,7 @@ const Home: React.FC<HomeProps> = ({ hasExamDraft, onResumeExam, onStartTodayTas
             <p>{wrongAnswerCount > 0 ? '錯題會保留為後續複習依據。' : '完成測驗後會建立錯題紀錄。'}</p>
             <div data-testid="wrong-review-section">
               {wrongSummary.reviewableCount > 0 ? <><p>錯題複習：目前有 {wrongSummary.reviewableCount} 題待複習，其中 {wrongSummary.highRiskCount} 題為高風險，{wrongSummary.masteredCount} 題已熟練。</p><button data-testid="start-wrong-review-button" onClick={onStartWrongReview} className="study-task-button">開始錯題複習</button></> : <p>完成測驗後，系統會自動整理錯題複習清單。</p>}
+              <button data-testid="open-wrong-book-button" onClick={onOpenWrongBook} className="study-task-button">查看錯題本</button>
             </div>
           </article>
           <article className="study-card coverage-card" data-testid="week1-coverage">

@@ -6,7 +6,7 @@
 -   尚無自動化測試覆蓋 localStorage migration、提醒規則與日期邊界。
 -   AI Coach 尚未實作。
 -   Week1 未完成測驗草稿目前為單一 localStorage draft，尚未提供跨裝置或多份草稿管理。
--   尚無完整錯題本、跨週混題、簡答／默寫、間隔重複與 AI Coach 真實分析。
+-   尚無跨週混題、簡答／默寫、間隔重複與 AI Coach 真實分析。
 -   已有 Sprint 10.2 與 Sprint 13.1 瀏覽器驗證覆蓋草稿恢復、指定題數任務、錯題複習完整交卷與 Result；尚未涵蓋 localStorage migration、提醒規則與日期邊界。
 -   Week1 題庫覆蓋率從新 StudySession 的 `questionIds` 與既有錯題索引計算；舊 Session 未保存題目 ID，無法回推精確覆蓋率。
 
@@ -18,5 +18,10 @@
 
 ## 仍存在
 
-- 尚無完整錯題本頁面、跨週混題、簡答／默寫、間隔重複與 AI Coach 真實分析。
+- 尚無跨週混題、簡答／默寫、間隔重複與 AI Coach 真實分析。
+
+## Sprint 14 已移除
+
+- 已提供完整錯題本 v1，包含狀態摘要、狀態篩選、空狀態與既有 reviewWrong 入口。
+- 已補上從首頁進入錯題本、顯示正式題目與從篩選結果開始複習的瀏覽器驗證。
 - 尚無自動化測試覆蓋 localStorage migration、提醒規則與日期邊界。
