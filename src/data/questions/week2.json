@@ -1,0 +1,1122 @@
+[
+  {
+    "id": 1001,
+    "knowledgeId": "W2-0001",
+    "type": "shortAnswer",
+    "chapter": "考古題",
+    "category": "考古題",
+    "difficulty": 2,
+    "question": "何謂更年期？",
+    "options": [],
+    "answer": "自然絕經前後的生理過渡階段；女性自然停經 12 個月後，可回顧性診斷為絕經。",
+    "explanation": "依使用者整理之來源答案進行自我檢核。",
+    "reference": "使用者整理考古題",
+    "sourceType": "past_exam",
+    "sourceLabel": "使用者整理考古題",
+    "reviewStatus": "verified",
+    "referenceAnswer": "自然絕經前後的生理過渡階段；女性自然停經 12 個月後，可回顧性診斷為絕經。",
+    "sampleAnswer": "高分示範答案：自然絕經前後的生理過渡階段；女性自然停經 12 個月後，可回顧性診斷為絕經。",
+    "keyPoints": [
+      "核心內容：自然絕經前後的生理過渡階段",
+      "核心內容：女性自然停經 12 個月後，可回顧性診斷為絕經",
+      "回答需涵蓋題目要求的核心概念"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要評分重點，方向正確、表達完整且沒有危險說法。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數核心重點，只有小幅缺漏且沒有重大錯誤或危險建議。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "碰到部分概念，但漏掉主要重點或回答不完整。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、明顯錯誤或出現危險建議。"
+      }
+    ],
+    "commonOmissions": [
+      "漏寫題目要求的關鍵名詞或範圍",
+      "只寫結論，未交代必要關係或條件"
+    ],
+    "teacherExplanation": "依使用者整理之來源答案進行自我檢核。",
+    "sourceFile": "待補",
+    "sourcePage": "待補",
+    "riskLevel": "standard_review",
+    "answerGuide": "請依參考答案、評分重點與常見漏答提醒逐項檢核；不確定時回看教材並採保守作答。"
+  },
+  {
+    "id": 1002,
+    "knowledgeId": "W2-0002",
+    "type": "shortAnswer",
+    "chapter": "考古題",
+    "category": "考古題",
+    "difficulty": 2,
+    "question": "請說出自主神經操控的活動。",
+    "options": [],
+    "answer": "心率、血壓、呼吸、消化與性喚起等不隨意生理過程。",
+    "explanation": "依使用者整理之來源答案進行自我檢核。",
+    "reference": "使用者整理考古題",
+    "sourceType": "past_exam",
+    "sourceLabel": "使用者整理考古題",
+    "reviewStatus": "verified",
+    "referenceAnswer": "心率、血壓、呼吸、消化與性喚起等不隨意生理過程。",
+    "sampleAnswer": "高分示範答案：心率、血壓、呼吸、消化與性喚起等不隨意生理過程。",
+    "keyPoints": [
+      "核心內容：心率、血壓、呼吸、消化與性喚起等不隨意生理過程",
+      "回答需涵蓋題目要求的核心概念",
+      "使用教材中的關鍵名詞，並交代必要限制"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要評分重點，方向正確、表達完整且沒有危險說法。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數核心重點，只有小幅缺漏且沒有重大錯誤或危險建議。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "碰到部分概念，但漏掉主要重點或回答不完整。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、明顯錯誤或出現危險建議。"
+      }
+    ],
+    "commonOmissions": [
+      "漏寫題目要求的關鍵名詞或範圍",
+      "只寫結論，未交代必要關係或條件"
+    ],
+    "teacherExplanation": "依使用者整理之來源答案進行自我檢核。",
+    "sourceFile": "待補",
+    "sourcePage": "待補",
+    "riskLevel": "standard_review",
+    "answerGuide": "請依參考答案、評分重點與常見漏答提醒逐項檢核；不確定時回看教材並採保守作答。"
+  },
+  {
+    "id": 1004,
+    "knowledgeId": "W2-0004",
+    "type": "shortAnswer",
+    "chapter": "考古題",
+    "category": "考古題",
+    "difficulty": 1,
+    "question": "中樞神經系統分為哪兩個部分？",
+    "options": [],
+    "answer": "腦和脊髓。",
+    "explanation": "依使用者整理之來源答案進行自我檢核。",
+    "reference": "使用者整理考古題",
+    "sourceType": "past_exam",
+    "sourceLabel": "使用者整理考古題",
+    "reviewStatus": "verified",
+    "referenceAnswer": "腦和脊髓。",
+    "sampleAnswer": "高分示範答案：腦和脊髓。",
+    "keyPoints": [
+      "核心內容：腦和脊髓",
+      "回答需涵蓋題目要求的核心概念",
+      "使用教材中的關鍵名詞，並交代必要限制"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要評分重點，方向正確、表達完整且沒有危險說法。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數核心重點，只有小幅缺漏且沒有重大錯誤或危險建議。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "碰到部分概念，但漏掉主要重點或回答不完整。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、明顯錯誤或出現危險建議。"
+      }
+    ],
+    "commonOmissions": [
+      "漏寫題目要求的關鍵名詞或範圍",
+      "只寫結論，未交代必要關係或條件"
+    ],
+    "teacherExplanation": "依使用者整理之來源答案進行自我檢核。",
+    "sourceFile": "待補",
+    "sourcePage": "待補",
+    "riskLevel": "standard_review",
+    "answerGuide": "請依參考答案、評分重點與常見漏答提醒逐項檢核；不確定時回看教材並採保守作答。"
+  },
+  {
+    "id": 1005,
+    "knowledgeId": "W2-0005",
+    "type": "essay",
+    "chapter": "考古題",
+    "category": "考古題",
+    "difficulty": 3,
+    "question": "簡述肌肉收縮的過程。",
+    "options": [],
+    "answer": "神經－肌肉接頭興奮傳遞、興奮－收縮耦聯、橫橋運動與肌絲滑行，之後肌肉舒張。",
+    "explanation": "依使用者整理之來源答案進行自我檢核。",
+    "reference": "使用者整理考古題",
+    "sourceType": "past_exam",
+    "sourceLabel": "使用者整理考古題",
+    "reviewStatus": "verified",
+    "referenceAnswer": "神經－肌肉接頭興奮傳遞、興奮－收縮耦聯、橫橋運動與肌絲滑行，之後肌肉舒張。",
+    "sampleAnswer": "高分示範答案：先界定題目核心，再依序說明主要重點、關係與限制。\n神經－肌肉接頭興奮傳遞、興奮－收縮耦聯、橫橋運動與肌絲滑行，之後肌肉舒張。",
+    "keyPoints": [
+      "先界定題目核心與範圍",
+      "論述重點：神經－肌肉接頭興奮傳遞、興奮－收縮耦聯、橫橋運動與肌絲滑行，之後肌肉舒張",
+      "說明各重點之間的關係或流程",
+      "最後交代適用條件或限制",
+      "以清楚、有順序的方式說明，避免跳過關鍵條件"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要評分重點，方向正確、表達完整且沒有危險說法。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數核心重點，只有小幅缺漏且沒有重大錯誤或危險建議。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "碰到部分概念，但漏掉主要重點或回答不完整。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、明顯錯誤或出現危險建議。"
+      }
+    ],
+    "commonOmissions": [
+      "缺少清楚的答題架構",
+      "只列名詞，未說明因果、流程、差異或限制",
+      "忽略題目要求的安全或實務界線"
+    ],
+    "teacherExplanation": "依使用者整理之來源答案進行自我檢核。",
+    "sourceFile": "待補",
+    "sourcePage": "待補",
+    "riskLevel": "standard_review",
+    "answerGuide": "請依參考答案、評分重點與常見漏答提醒逐項檢核；不確定時回看教材並採保守作答。"
+  },
+  {
+    "id": 1006,
+    "knowledgeId": "W2-0006",
+    "type": "shortAnswer",
+    "chapter": "考古題",
+    "category": "考古題",
+    "difficulty": 2,
+    "question": "列舉骨骼依形態的不同類型。",
+    "options": [],
+    "answer": "長骨、短骨、扁骨、不規則骨及籽骨。",
+    "explanation": "依使用者整理之來源答案進行自我檢核。",
+    "reference": "使用者整理考古題",
+    "sourceType": "past_exam",
+    "sourceLabel": "使用者整理考古題",
+    "reviewStatus": "verified",
+    "referenceAnswer": "長骨、短骨、扁骨、不規則骨及籽骨。",
+    "sampleAnswer": "高分示範答案：長骨、短骨、扁骨、不規則骨及籽骨。",
+    "keyPoints": [
+      "核心內容：長骨、短骨、扁骨、不規則骨及籽骨",
+      "回答需涵蓋題目要求的核心概念",
+      "使用教材中的關鍵名詞，並交代必要限制"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要評分重點，方向正確、表達完整且沒有危險說法。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數核心重點，只有小幅缺漏且沒有重大錯誤或危險建議。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "碰到部分概念，但漏掉主要重點或回答不完整。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、明顯錯誤或出現危險建議。"
+      }
+    ],
+    "commonOmissions": [
+      "漏寫題目要求的關鍵名詞或範圍",
+      "只寫結論，未交代必要關係或條件"
+    ],
+    "teacherExplanation": "依使用者整理之來源答案進行自我檢核。",
+    "sourceFile": "待補",
+    "sourcePage": "待補",
+    "riskLevel": "standard_review",
+    "answerGuide": "請依參考答案、評分重點與常見漏答提醒逐項檢核；不確定時回看教材並採保守作答。"
+  },
+  {
+    "id": 1007,
+    "knowledgeId": "W2-0007",
+    "type": "shortAnswer",
+    "chapter": "考古題",
+    "category": "考古題",
+    "difficulty": 2,
+    "question": "肝臟主要儲存哪四種維生素？",
+    "options": [],
+    "answer": "維生素 A、D、K 與 B12。",
+    "explanation": "依使用者整理之來源答案進行自我檢核。",
+    "reference": "使用者整理考古題",
+    "sourceType": "past_exam",
+    "sourceLabel": "使用者整理考古題",
+    "reviewStatus": "verified",
+    "referenceAnswer": "維生素 A、D、K 與 B12。",
+    "sampleAnswer": "高分示範答案：維生素 A、D、K 與 B12。",
+    "keyPoints": [
+      "核心內容：維生素 A、D、K 與 B12",
+      "回答需涵蓋題目要求的核心概念",
+      "使用教材中的關鍵名詞，並交代必要限制"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要評分重點，方向正確、表達完整且沒有危險說法。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數核心重點，只有小幅缺漏且沒有重大錯誤或危險建議。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "碰到部分概念，但漏掉主要重點或回答不完整。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、明顯錯誤或出現危險建議。"
+      }
+    ],
+    "commonOmissions": [
+      "漏寫題目要求的關鍵名詞或範圍",
+      "只寫結論，未交代必要關係或條件"
+    ],
+    "teacherExplanation": "依使用者整理之來源答案進行自我檢核。",
+    "sourceFile": "待補",
+    "sourcePage": "待補",
+    "riskLevel": "standard_review",
+    "answerGuide": "請依參考答案、評分重點與常見漏答提醒逐項檢核；不確定時回看教材並採保守作答。"
+  },
+  {
+    "id": 1021,
+    "knowledgeId": "W2-0021",
+    "type": "shortAnswer",
+    "chapter": "精油個論",
+    "category": "精油個論",
+    "difficulty": 3,
+    "question": "列舉兩款含有苯甲酸苄酯（Benzyl benzoate）的精油，並標注拉丁文。",
+    "options": [],
+    "answer": "依蘭依蘭 Cananga odorata；大花茉莉 Jasminum grandiflorum。",
+    "explanation": "依使用者整理之來源答案進行自我檢核。",
+    "reference": "使用者提供課程練習",
+    "sourceType": "lecture",
+    "sourceLabel": "使用者提供課程練習",
+    "reviewStatus": "verified",
+    "referenceAnswer": "依蘭依蘭 Cananga odorata；大花茉莉 Jasminum grandiflorum。",
+    "sampleAnswer": "高分示範答案：依蘭依蘭 Cananga odorata；大花茉莉 Jasminum grandiflorum。",
+    "keyPoints": [
+      "核心內容：依蘭依蘭 Cananga odorata",
+      "核心內容：大花茉莉 Jasminum grandiflorum",
+      "回答需涵蓋題目要求的核心概念"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要評分重點，方向正確、表達完整且沒有危險說法。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數核心重點，只有小幅缺漏且沒有重大錯誤或危險建議。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "碰到部分概念，但漏掉主要重點或回答不完整。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、明顯錯誤或出現危險建議。"
+      }
+    ],
+    "commonOmissions": [
+      "漏寫題目要求的關鍵名詞或範圍",
+      "只寫結論，未交代必要關係或條件"
+    ],
+    "teacherExplanation": "依使用者整理之來源答案進行自我檢核。",
+    "sourceFile": "待補",
+    "sourcePage": "待補",
+    "riskLevel": "standard_review",
+    "answerGuide": "請依參考答案、評分重點與常見漏答提醒逐項檢核；不確定時回看教材並採保守作答。"
+  },
+  {
+    "id": 1022,
+    "knowledgeId": "W2-0022",
+    "type": "shortAnswer",
+    "chapter": "精油個論",
+    "category": "精油個論",
+    "difficulty": 2,
+    "question": "列舉一款含有 β-caryophyllene（丁香油烴）的精油，並標注拉丁文。",
+    "options": [],
+    "answer": "黑胡椒 Piper nigrum。",
+    "explanation": "依使用者整理之來源答案進行自我檢核。",
+    "reference": "使用者提供課程練習",
+    "sourceType": "lecture",
+    "sourceLabel": "使用者提供課程練習",
+    "reviewStatus": "verified",
+    "referenceAnswer": "黑胡椒 Piper nigrum。",
+    "sampleAnswer": "高分示範答案：黑胡椒 Piper nigrum。",
+    "keyPoints": [
+      "核心內容：黑胡椒 Piper nigrum",
+      "回答需涵蓋題目要求的核心概念",
+      "使用教材中的關鍵名詞，並交代必要限制"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要評分重點，方向正確、表達完整且沒有危險說法。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數核心重點，只有小幅缺漏且沒有重大錯誤或危險建議。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "碰到部分概念，但漏掉主要重點或回答不完整。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、明顯錯誤或出現危險建議。"
+      }
+    ],
+    "commonOmissions": [
+      "漏寫題目要求的關鍵名詞或範圍",
+      "只寫結論，未交代必要關係或條件"
+    ],
+    "teacherExplanation": "依使用者整理之來源答案進行自我檢核。",
+    "sourceFile": "待補",
+    "sourcePage": "待補",
+    "riskLevel": "standard_review",
+    "answerGuide": "請依參考答案、評分重點與常見漏答提醒逐項檢核；不確定時回看教材並採保守作答。"
+  },
+  {
+    "id": 1024,
+    "knowledgeId": "W2-0024",
+    "type": "shortAnswer",
+    "chapter": "精油個論",
+    "category": "精油個論",
+    "difficulty": 3,
+    "question": "列舉一款含有沒藥醇（Bisabolol）與檀香醇（Santalol）的精油，並標注拉丁文。",
+    "options": [],
+    "answer": "澳洲檀香 Santalum spicatum。",
+    "explanation": "依使用者整理之來源答案進行自我檢核。",
+    "reference": "使用者提供課程練習",
+    "sourceType": "lecture",
+    "sourceLabel": "使用者提供課程練習",
+    "reviewStatus": "verified",
+    "referenceAnswer": "澳洲檀香 Santalum spicatum。",
+    "sampleAnswer": "高分示範答案：澳洲檀香 Santalum spicatum。",
+    "keyPoints": [
+      "核心內容：澳洲檀香 Santalum spicatum",
+      "回答需涵蓋題目要求的核心概念",
+      "使用教材中的關鍵名詞，並交代必要限制"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要評分重點，方向正確、表達完整且沒有危險說法。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數核心重點，只有小幅缺漏且沒有重大錯誤或危險建議。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "碰到部分概念，但漏掉主要重點或回答不完整。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、明顯錯誤或出現危險建議。"
+      }
+    ],
+    "commonOmissions": [
+      "漏寫題目要求的關鍵名詞或範圍",
+      "只寫結論，未交代必要關係或條件"
+    ],
+    "teacherExplanation": "依使用者整理之來源答案進行自我檢核。",
+    "sourceFile": "待補",
+    "sourcePage": "待補",
+    "riskLevel": "standard_review",
+    "answerGuide": "請依參考答案、評分重點與常見漏答提醒逐項檢核；不確定時回看教材並採保守作答。"
+  },
+  {
+    "id": 1025,
+    "knowledgeId": "W2-0025",
+    "type": "shortAnswer",
+    "chapter": "精油個論",
+    "category": "精油個論",
+    "difficulty": 2,
+    "question": "列舉一款含有安息香酸（Benzoic acid）的精油，並標注拉丁文。",
+    "options": [],
+    "answer": "安息香 Styrax benzoin。",
+    "explanation": "依使用者整理之來源答案進行自我檢核。",
+    "reference": "使用者提供課程練習",
+    "sourceType": "lecture",
+    "sourceLabel": "使用者提供課程練習",
+    "reviewStatus": "verified",
+    "referenceAnswer": "安息香 Styrax benzoin。",
+    "sampleAnswer": "高分示範答案：安息香 Styrax benzoin。",
+    "keyPoints": [
+      "核心內容：安息香 Styrax benzoin",
+      "回答需涵蓋題目要求的核心概念",
+      "使用教材中的關鍵名詞，並交代必要限制"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要評分重點，方向正確、表達完整且沒有危險說法。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數核心重點，只有小幅缺漏且沒有重大錯誤或危險建議。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "碰到部分概念，但漏掉主要重點或回答不完整。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、明顯錯誤或出現危險建議。"
+      }
+    ],
+    "commonOmissions": [
+      "漏寫題目要求的關鍵名詞或範圍",
+      "只寫結論，未交代必要關係或條件"
+    ],
+    "teacherExplanation": "依使用者整理之來源答案進行自我檢核。",
+    "sourceFile": "待補",
+    "sourcePage": "待補",
+    "riskLevel": "standard_review",
+    "answerGuide": "請依參考答案、評分重點與常見漏答提醒逐項檢核；不確定時回看教材並採保守作答。"
+  },
+  {
+    "id": 1026,
+    "knowledgeId": "W2-0026",
+    "type": "shortAnswer",
+    "chapter": "精油個論",
+    "category": "精油個論",
+    "difficulty": 3,
+    "question": "列舉一款含有 Germacrene D（大根老鸛草烯）成分的精油，並標注拉丁文。",
+    "options": [],
+    "answer": "依蘭依蘭 Cananga odorata。",
+    "explanation": "依使用者整理之來源答案進行自我檢核。",
+    "reference": "使用者提供課程練習",
+    "sourceType": "lecture",
+    "sourceLabel": "使用者提供課程練習",
+    "reviewStatus": "verified",
+    "referenceAnswer": "依蘭依蘭 Cananga odorata。",
+    "sampleAnswer": "高分示範答案：依蘭依蘭 Cananga odorata。",
+    "keyPoints": [
+      "核心內容：依蘭依蘭 Cananga odorata",
+      "回答需涵蓋題目要求的核心概念",
+      "使用教材中的關鍵名詞，並交代必要限制"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要評分重點，方向正確、表達完整且沒有危險說法。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數核心重點，只有小幅缺漏且沒有重大錯誤或危險建議。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "碰到部分概念，但漏掉主要重點或回答不完整。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、明顯錯誤或出現危險建議。"
+      }
+    ],
+    "commonOmissions": [
+      "漏寫題目要求的關鍵名詞或範圍",
+      "只寫結論，未交代必要關係或條件"
+    ],
+    "teacherExplanation": "依使用者整理之來源答案進行自我檢核。",
+    "sourceFile": "待補",
+    "sourcePage": "待補",
+    "riskLevel": "standard_review",
+    "answerGuide": "請依參考答案、評分重點與常見漏答提醒逐項檢核；不確定時回看教材並採保守作答。"
+  },
+  {
+    "id": 1028,
+    "knowledgeId": "W2-0028",
+    "type": "shortAnswer",
+    "chapter": "精油個論",
+    "category": "精油個論",
+    "difficulty": 2,
+    "question": "美白皮膚可使用本週學習的哪款精油來護理？",
+    "options": [],
+    "answer": "大馬士革玫瑰 Rosa x damascena。",
+    "explanation": "依使用者整理之來源答案進行自我檢核。",
+    "reference": "使用者提供課程練習",
+    "sourceType": "lecture",
+    "sourceLabel": "使用者提供課程練習",
+    "reviewStatus": "verified",
+    "referenceAnswer": "大馬士革玫瑰 Rosa x damascena。",
+    "sampleAnswer": "高分示範答案：大馬士革玫瑰 Rosa x damascena。",
+    "keyPoints": [
+      "核心內容：大馬士革玫瑰 Rosa x damascena",
+      "回答需涵蓋題目要求的核心概念",
+      "使用教材中的關鍵名詞，並交代必要限制"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要評分重點，方向正確、表達完整且沒有危險說法。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數核心重點，只有小幅缺漏且沒有重大錯誤或危險建議。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "碰到部分概念，但漏掉主要重點或回答不完整。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、明顯錯誤或出現危險建議。"
+      }
+    ],
+    "commonOmissions": [
+      "漏寫題目要求的關鍵名詞或範圍",
+      "只寫結論，未交代必要關係或條件"
+    ],
+    "teacherExplanation": "依使用者整理之來源答案進行自我檢核。",
+    "sourceFile": "待補",
+    "sourcePage": "待補",
+    "riskLevel": "standard_review",
+    "answerGuide": "請依參考答案、評分重點與常見漏答提醒逐項檢核；不確定時回看教材並採保守作答。"
+  },
+  {
+    "id": 1042,
+    "knowledgeId": "W2-0042",
+    "type": "shortAnswer",
+    "chapter": "解剖生理",
+    "category": "解剖生理",
+    "difficulty": 2,
+    "question": "依序寫出圖示中的呼吸系統結構名稱。",
+    "options": [],
+    "answer": "鼻旁竇、鼻腔、咽、氣管、主支氣管。",
+    "explanation": "依使用者整理之來源答案進行自我檢核。",
+    "reference": "使用者提供課程練習",
+    "sourceType": "lecture",
+    "sourceLabel": "使用者提供課程練習",
+    "reviewStatus": "verified",
+    "referenceAnswer": "鼻旁竇、鼻腔、咽、氣管、主支氣管。",
+    "sampleAnswer": "高分示範答案：鼻旁竇、鼻腔、咽、氣管、主支氣管。",
+    "keyPoints": [
+      "核心內容：鼻旁竇、鼻腔、咽、氣管、主支氣管",
+      "回答需涵蓋題目要求的核心概念",
+      "使用教材中的關鍵名詞，並交代必要限制"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要評分重點，方向正確、表達完整且沒有危險說法。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數核心重點，只有小幅缺漏且沒有重大錯誤或危險建議。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "碰到部分概念，但漏掉主要重點或回答不完整。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、明顯錯誤或出現危險建議。"
+      }
+    ],
+    "commonOmissions": [
+      "漏寫題目要求的關鍵名詞或範圍",
+      "只寫結論，未交代必要關係或條件"
+    ],
+    "teacherExplanation": "依使用者整理之來源答案進行自我檢核。",
+    "sourceFile": "待補",
+    "sourcePage": "待補",
+    "riskLevel": "standard_review",
+    "answerGuide": "請依參考答案、評分重點與常見漏答提醒逐項檢核；不確定時回看教材並採保守作答。"
+  },
+  {
+    "id": 1043,
+    "knowledgeId": "W2-0043",
+    "type": "shortAnswer",
+    "chapter": "解剖生理",
+    "category": "解剖生理",
+    "difficulty": 2,
+    "question": "呼吸系統的主要功能有哪些？",
+    "options": [],
+    "answer": "吸入氧氣、排出二氧化碳、維持酸鹼平衡、參與發聲及調節體溫。",
+    "explanation": "依使用者整理之來源答案進行自我檢核。",
+    "reference": "使用者提供課程練習",
+    "sourceType": "lecture",
+    "sourceLabel": "使用者提供課程練習",
+    "reviewStatus": "verified",
+    "referenceAnswer": "吸入氧氣、排出二氧化碳、維持酸鹼平衡、參與發聲及調節體溫。",
+    "sampleAnswer": "高分示範答案：吸入氧氣、排出二氧化碳、維持酸鹼平衡、參與發聲及調節體溫。",
+    "keyPoints": [
+      "核心內容：吸入氧氣、排出二氧化碳、維持酸鹼平衡、參與發聲及調節體溫",
+      "回答需涵蓋題目要求的核心概念",
+      "使用教材中的關鍵名詞，並交代必要限制"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要評分重點，方向正確、表達完整且沒有危險說法。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數核心重點，只有小幅缺漏且沒有重大錯誤或危險建議。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "碰到部分概念，但漏掉主要重點或回答不完整。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、明顯錯誤或出現危險建議。"
+      }
+    ],
+    "commonOmissions": [
+      "漏寫題目要求的關鍵名詞或範圍",
+      "只寫結論，未交代必要關係或條件"
+    ],
+    "teacherExplanation": "依使用者整理之來源答案進行自我檢核。",
+    "sourceFile": "待補",
+    "sourcePage": "待補",
+    "riskLevel": "standard_review",
+    "answerGuide": "請依參考答案、評分重點與常見漏答提醒逐項檢核；不確定時回看教材並採保守作答。"
+  },
+  {
+    "id": 1046,
+    "knowledgeId": "W2-0046",
+    "type": "shortAnswer",
+    "chapter": "解剖生理",
+    "category": "解剖生理",
+    "difficulty": 3,
+    "question": "什麼是玻意耳定律？",
+    "options": [],
+    "answer": "溫度不變時，氣體壓強與體積成反比。",
+    "explanation": "依使用者整理之來源答案進行自我檢核。",
+    "reference": "使用者提供課程練習",
+    "sourceType": "lecture",
+    "sourceLabel": "使用者提供課程練習",
+    "reviewStatus": "verified",
+    "referenceAnswer": "溫度不變時，氣體壓強與體積成反比。",
+    "sampleAnswer": "高分示範答案：溫度不變時，氣體壓強與體積成反比。",
+    "keyPoints": [
+      "核心內容：溫度不變時，氣體壓強與體積成反比",
+      "回答需涵蓋題目要求的核心概念",
+      "使用教材中的關鍵名詞，並交代必要限制"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要評分重點，方向正確、表達完整且沒有危險說法。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數核心重點，只有小幅缺漏且沒有重大錯誤或危險建議。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "碰到部分概念，但漏掉主要重點或回答不完整。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、明顯錯誤或出現危險建議。"
+      }
+    ],
+    "commonOmissions": [
+      "漏寫題目要求的關鍵名詞或範圍",
+      "只寫結論，未交代必要關係或條件"
+    ],
+    "teacherExplanation": "依使用者整理之來源答案進行自我檢核。",
+    "sourceFile": "待補",
+    "sourcePage": "待補",
+    "riskLevel": "standard_review",
+    "answerGuide": "請依參考答案、評分重點與常見漏答提醒逐項檢核；不確定時回看教材並採保守作答。"
+  },
+  {
+    "id": 1047,
+    "knowledgeId": "W2-0047",
+    "type": "multipleChoice",
+    "chapter": "解剖生理",
+    "category": "解剖生理",
+    "difficulty": 1,
+    "question": "正常吸氣時，肺的體積是變小還是變大？",
+    "options": [
+      "變小",
+      "變大"
+    ],
+    "answer": "變大",
+    "explanation": "依使用者整理之來源答案進行自我檢核。",
+    "reference": "使用者提供課程練習",
+    "sourceType": "lecture",
+    "sourceLabel": "使用者提供課程練習",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": 1054,
+    "knowledgeId": "W2-0054",
+    "type": "essay",
+    "chapter": "按摩與實務",
+    "category": "按摩與實務",
+    "difficulty": 3,
+    "question": "開始按摩前，芳療工作室的環境和工具有哪些需要注意？",
+    "options": [],
+    "answer": "應確保整潔舒適、溫度適宜、燈光柔和、音樂舒緩；準備乾淨衛生的按摩床、精油與毛巾，並符合衛生安全規定。",
+    "explanation": "依使用者整理之來源答案進行自我檢核。",
+    "reference": "使用者提供課程練習",
+    "sourceType": "lecture",
+    "sourceLabel": "使用者提供課程練習",
+    "reviewStatus": "verified",
+    "referenceAnswer": "應確保整潔舒適、溫度適宜、燈光柔和、音樂舒緩；準備乾淨衛生的按摩床、精油與毛巾，並符合衛生安全規定。",
+    "sampleAnswer": "高分示範答案：先界定題目核心，再依序說明主要重點、關係與限制。\n應確保整潔舒適、溫度適宜、燈光柔和、音樂舒緩；準備乾淨衛生的按摩床、精油與毛巾，並符合衛生安全規定。\n本題涉及安全或專業界線，示範內容僅供教材學習，不能作為診斷、治療或個別處方。",
+    "keyPoints": [
+      "先界定題目核心與範圍",
+      "論述重點：應確保整潔舒適、溫度適宜、燈光柔和、音樂舒緩",
+      "論述重點：準備乾淨衛生的按摩床、精油與毛巾，並符合衛生安全規定",
+      "先確認個案狀況、禁忌與適用範圍",
+      "不確定或有警訊時採保守處理並考慮轉介",
+      "不得作疾病診斷、治療承諾或取代醫療專業"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要評分重點，方向正確、表達完整且沒有危險說法。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數核心重點，只有小幅缺漏且沒有重大錯誤或危險建議。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "碰到部分概念，但漏掉主要重點或回答不完整。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、明顯錯誤或出現危險建議。"
+      }
+    ],
+    "commonOmissions": [
+      "缺少清楚的答題架構",
+      "只列名詞，未說明因果、流程、差異或限制",
+      "忽略題目要求的安全或實務界線"
+    ],
+    "teacherExplanation": "依使用者整理之來源答案進行自我檢核。",
+    "sourceFile": "待補",
+    "sourcePage": "待補",
+    "riskLevel": "safety_review",
+    "answerGuide": "請依參考答案、評分重點與常見漏答提醒逐項檢核；不確定時回看教材並採保守作答。"
+  },
+  {
+    "id": 1056,
+    "knowledgeId": "W2-0056",
+    "type": "essay",
+    "chapter": "按摩與實務",
+    "category": "按摩與實務",
+    "difficulty": 3,
+    "question": "芳療師按摩時個人需要注意哪些事項？",
+    "options": [],
+    "answer": "按摩前了解客戶情況與評估；操作時注意力道和溝通；維持職業道德、安全與衛生。",
+    "explanation": "依使用者整理之來源答案進行自我檢核。",
+    "reference": "使用者提供課程練習",
+    "sourceType": "lecture",
+    "sourceLabel": "使用者提供課程練習",
+    "reviewStatus": "verified",
+    "referenceAnswer": "按摩前了解客戶情況與評估；操作時注意力道和溝通；維持職業道德、安全與衛生。",
+    "sampleAnswer": "高分示範答案：先界定題目核心，再依序說明主要重點、關係與限制。\n按摩前了解客戶情況與評估；操作時注意力道和溝通；維持職業道德、安全與衛生。\n本題涉及安全或專業界線，示範內容僅供教材學習，不能作為診斷、治療或個別處方。",
+    "keyPoints": [
+      "先界定題目核心與範圍",
+      "論述重點：按摩前了解客戶情況與評估",
+      "論述重點：操作時注意力道和溝通",
+      "論述重點：維持職業道德、安全與衛生",
+      "先確認個案狀況、禁忌與適用範圍",
+      "不確定或有警訊時採保守處理並考慮轉介",
+      "不得作疾病診斷、治療承諾或取代醫療專業"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要評分重點，方向正確、表達完整且沒有危險說法。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數核心重點，只有小幅缺漏且沒有重大錯誤或危險建議。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "碰到部分概念，但漏掉主要重點或回答不完整。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、明顯錯誤或出現危險建議。"
+      }
+    ],
+    "commonOmissions": [
+      "缺少清楚的答題架構",
+      "只列名詞，未說明因果、流程、差異或限制",
+      "忽略題目要求的安全或實務界線"
+    ],
+    "teacherExplanation": "依使用者整理之來源答案進行自我檢核。",
+    "sourceFile": "待補",
+    "sourcePage": "待補",
+    "riskLevel": "safety_review",
+    "answerGuide": "請依參考答案、評分重點與常見漏答提醒逐項檢核；不確定時回看教材並採保守作答。"
+  },
+  {
+    "id": 1057,
+    "knowledgeId": "W2-0057",
+    "type": "essay",
+    "chapter": "按摩與實務",
+    "category": "按摩與實務",
+    "difficulty": 4,
+    "question": "為什麼對按摩好處進行質化與量化研究是困難的？",
+    "options": [],
+    "answer": "按摩效果涉及個體主觀感受、生理反應、持續性與變異性，難以用單一指標衡量。",
+    "explanation": "依使用者整理之來源答案進行自我檢核。",
+    "reference": "使用者提供課程練習",
+    "sourceType": "lecture",
+    "sourceLabel": "使用者提供課程練習",
+    "reviewStatus": "verified",
+    "referenceAnswer": "按摩效果涉及個體主觀感受、生理反應、持續性與變異性，難以用單一指標衡量。",
+    "sampleAnswer": "高分示範答案：先界定題目核心，再依序說明主要重點、關係與限制。\n按摩效果涉及個體主觀感受、生理反應、持續性與變異性，難以用單一指標衡量。",
+    "keyPoints": [
+      "先界定題目核心與範圍",
+      "論述重點：按摩效果涉及個體主觀感受、生理反應、持續性與變異性，難以用單一指標衡量",
+      "說明各重點之間的關係或流程",
+      "最後交代適用條件或限制",
+      "以清楚、有順序的方式說明，避免跳過關鍵條件"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要評分重點，方向正確、表達完整且沒有危險說法。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數核心重點，只有小幅缺漏且沒有重大錯誤或危險建議。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "碰到部分概念，但漏掉主要重點或回答不完整。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、明顯錯誤或出現危險建議。"
+      }
+    ],
+    "commonOmissions": [
+      "缺少清楚的答題架構",
+      "只列名詞，未說明因果、流程、差異或限制",
+      "忽略題目要求的安全或實務界線"
+    ],
+    "teacherExplanation": "依使用者整理之來源答案進行自我檢核。",
+    "sourceFile": "待補",
+    "sourcePage": "待補",
+    "riskLevel": "standard_review",
+    "answerGuide": "請依參考答案、評分重點與常見漏答提醒逐項檢核；不確定時回看教材並採保守作答。"
+  },
+  {
+    "id": 1058,
+    "knowledgeId": "W2-0058",
+    "type": "shortAnswer",
+    "chapter": "按摩與實務",
+    "category": "按摩與實務",
+    "difficulty": 2,
+    "question": "芳療師按摩時，床的高度如何判斷較合適？",
+    "options": [],
+    "answer": "站立床邊時，拳頭能觸碰到床面。",
+    "explanation": "依使用者整理之來源答案進行自我檢核。",
+    "reference": "使用者提供課程練習",
+    "sourceType": "lecture",
+    "sourceLabel": "使用者提供課程練習",
+    "reviewStatus": "verified",
+    "referenceAnswer": "站立床邊時，拳頭能觸碰到床面。",
+    "sampleAnswer": "高分示範答案：站立床邊時，拳頭能觸碰到床面。",
+    "keyPoints": [
+      "核心內容：站立床邊時，拳頭能觸碰到床面",
+      "回答需涵蓋題目要求的核心概念",
+      "使用教材中的關鍵名詞，並交代必要限制"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要評分重點，方向正確、表達完整且沒有危險說法。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數核心重點，只有小幅缺漏且沒有重大錯誤或危險建議。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "碰到部分概念，但漏掉主要重點或回答不完整。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、明顯錯誤或出現危險建議。"
+      }
+    ],
+    "commonOmissions": [
+      "漏寫題目要求的關鍵名詞或範圍",
+      "只寫結論，未交代必要關係或條件"
+    ],
+    "teacherExplanation": "依使用者整理之來源答案進行自我檢核。",
+    "sourceFile": "待補",
+    "sourcePage": "待補",
+    "riskLevel": "standard_review",
+    "answerGuide": "請依參考答案、評分重點與常見漏答提醒逐項檢核；不確定時回看教材並採保守作答。"
+  },
+  {
+    "id": 1060,
+    "knowledgeId": "W2-0060",
+    "type": "essay",
+    "chapter": "按摩與實務",
+    "category": "按摩與實務",
+    "difficulty": 3,
+    "question": "解釋按摩中的壓力、方向、游移、速率與節奏。",
+    "options": [],
+    "answer": "壓力是施於體表的力度；方向為力的走向；游移為手法移動方式；速率為快慢；節奏為輕重長短的組合。",
+    "explanation": "依使用者整理之來源答案進行自我檢核。",
+    "reference": "使用者提供課程練習",
+    "sourceType": "lecture",
+    "sourceLabel": "使用者提供課程練習",
+    "reviewStatus": "verified",
+    "referenceAnswer": "壓力是施於體表的力度；方向為力的走向；游移為手法移動方式；速率為快慢；節奏為輕重長短的組合。",
+    "sampleAnswer": "高分示範答案：先界定題目核心，再依序說明主要重點、關係與限制。\n壓力是施於體表的力度；方向為力的走向；游移為手法移動方式；速率為快慢；節奏為輕重長短的組合。",
+    "keyPoints": [
+      "先界定題目核心與範圍",
+      "論述重點：壓力是施於體表的力度",
+      "論述重點：方向為力的走向",
+      "論述重點：游移為手法移動方式",
+      "論述重點：速率為快慢",
+      "論述重點：節奏為輕重長短的組合",
+      "說明各重點之間的關係或流程",
+      "最後交代適用條件或限制"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要評分重點，方向正確、表達完整且沒有危險說法。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數核心重點，只有小幅缺漏且沒有重大錯誤或危險建議。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "碰到部分概念，但漏掉主要重點或回答不完整。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、明顯錯誤或出現危險建議。"
+      }
+    ],
+    "commonOmissions": [
+      "缺少清楚的答題架構",
+      "只列名詞，未說明因果、流程、差異或限制",
+      "忽略題目要求的安全或實務界線"
+    ],
+    "teacherExplanation": "依使用者整理之來源答案進行自我檢核。",
+    "sourceFile": "待補",
+    "sourcePage": "待補",
+    "riskLevel": "standard_review",
+    "answerGuide": "請依參考答案、評分重點與常見漏答提醒逐項檢核；不確定時回看教材並採保守作答。"
+  }
+]

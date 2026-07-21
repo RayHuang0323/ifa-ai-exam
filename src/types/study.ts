@@ -1,4 +1,4 @@
-export type StudyMode = 'formal-exam' | 'daily' | 'weeklyCatchUp' | 'recovery' | 'reviewWrong' | 'writingPractice';
+export type StudyMode = 'formal-exam' | 'daily' | 'weeklyReview' | 'weeklyCatchUp' | 'recovery' | 'reviewWrong' | 'writingPractice';
 
 export interface StudySession {
   id: string;

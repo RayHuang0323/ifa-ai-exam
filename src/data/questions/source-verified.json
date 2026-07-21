@@ -1,0 +1,5342 @@
+[
+  {
+    "id": 70001,
+    "weekId": "source-verified",
+    "type": "shortAnswer",
+    "chapter": "解剖生理",
+    "category": "解剖生理",
+    "difficulty": 2,
+    "question": "依教材證據，「心动周期」是什麼？",
+    "options": [],
+    "answer": "从一次心跳的起始到下一次心跳的起始，心血管系统所经历的过程。",
+    "referenceAnswer": "从一次心跳的起始到下一次心跳的起始，心血管系统所经历的过程。",
+    "sampleAnswer": "高分示範答案：从一次心跳的起始到下一次心跳的起始，心血管系统所经历的过程。",
+    "explanation": "答案依據教材證據 mat-2307：心动周期指从一次心跳的起始到下一次心跳的起始，心血管系统所经历的过程。",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "从一次心跳的起始到下一次心跳的起始",
+      "心血管系统所经历的过程"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/解剖生理/解剖学与生理学复习七（答案） .docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 4",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-2307"
+    ],
+    "evidenceExcerpt": "心动周期指从一次心跳的起始到下一次心跳的起始，心血管系统所经历的过程。",
+    "answerBasis": "答案直接由證據 mat-2307 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 4"
+  },
+  {
+    "id": 70002,
+    "weekId": "source-verified",
+    "type": "shortAnswer",
+    "chapter": "解剖生理",
+    "category": "解剖生理",
+    "difficulty": 2,
+    "question": "依教材證據，「内呼吸」是什麼？",
+    "options": [],
+    "answer": "能源物质在细胞内氧化的过程，消耗氧产生高能键、二氧化碳和水等，又称细胞呼吸。",
+    "referenceAnswer": "能源物质在细胞内氧化的过程，消耗氧产生高能键、二氧化碳和水等，又称细胞呼吸。",
+    "sampleAnswer": "高分示範答案：能源物质在细胞内氧化的过程，消耗氧产生高能键、二氧化碳和水等，又称细胞呼吸。",
+    "explanation": "答案依據教材證據 mat-2345：内呼吸是指能源物质在细胞内氧化的过程，消耗氧产生高能键、二氧化碳和水等，又称细胞呼吸。",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "能源物质在细胞内氧化的过程",
+      "消耗氧产生高能键",
+      "二氧化碳和水等",
+      "又称细胞呼吸"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/解剖生理/解剖学与生理学复习九（答案） .docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 7",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-2345"
+    ],
+    "evidenceExcerpt": "内呼吸是指能源物质在细胞内氧化的过程，消耗氧产生高能键、二氧化碳和水等，又称细胞呼吸。",
+    "answerBasis": "答案直接由證據 mat-2345 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 7"
+  },
+  {
+    "id": 70003,
+    "weekId": "source-verified",
+    "type": "shortAnswer",
+    "chapter": "解剖生理",
+    "category": "解剖生理",
+    "difficulty": 2,
+    "question": "依教材證據，「肾单位」是什麼？",
+    "options": [],
+    "answer": "肾的功能单位，是肾结构与功能的基本单位，与集合管共同完成泌尿功能。",
+    "referenceAnswer": "肾的功能单位，是肾结构与功能的基本单位，与集合管共同完成泌尿功能。",
+    "sampleAnswer": "高分示範答案：肾的功能单位，是肾结构与功能的基本单位，与集合管共同完成泌尿功能。",
+    "explanation": "答案依據教材證據 mat-2468：肾单位指肾的功能单位，是肾结构与功能的基本单位，与集合管共同完成泌尿功能。",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "肾的功能单位",
+      "是肾结构与功能的基本单位",
+      "与集合管共同完成泌尿功能"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/解剖生理/解剖学与生理学复习十一（答案） .docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 15",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-2468"
+    ],
+    "evidenceExcerpt": "肾单位指肾的功能单位，是肾结构与功能的基本单位，与集合管共同完成泌尿功能。",
+    "answerBasis": "答案直接由證據 mat-2468 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 15"
+  },
+  {
+    "id": 70004,
+    "weekId": "source-verified",
+    "type": "shortAnswer",
+    "chapter": "解剖生理",
+    "category": "解剖生理",
+    "difficulty": 2,
+    "question": "依教材證據，「人体四大组织分别」是什麼？",
+    "options": [],
+    "answer": "上皮组织、结缔组织、肌组织、神经组织。",
+    "referenceAnswer": "上皮组织、结缔组织、肌组织、神经组织。",
+    "sampleAnswer": "高分示範答案：上皮组织、结缔组织、肌组织、神经组织。",
+    "explanation": "答案依據教材證據 mat-2519：人体四大组织分别是：上皮组织、结缔组织、肌组织、神经组织。",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "上皮组织",
+      "结缔组织",
+      "肌组织",
+      "神经组织"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/解剖生理/解剖学和生理学复习一（答案） .docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 6",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-2519"
+    ],
+    "evidenceExcerpt": "人体四大组织分别是：上皮组织、结缔组织、肌组织、神经组织。",
+    "answerBasis": "答案直接由證據 mat-2519 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 6"
+  },
+  {
+    "id": 70005,
+    "weekId": "source-verified",
+    "type": "shortAnswer",
+    "chapter": "解剖生理",
+    "category": "解剖生理",
+    "difficulty": 2,
+    "question": "依教材證據，「人体解剖学姿势」是什麼？",
+    "options": [],
+    "answer": "身体直立，面向前方，两眼平视正前方，两足并拢，足尖向前，双上肢下垂于躯干的两侧，掌心向前。描述人体任何结构时，均应用标准姿势，即使被观察的客体、标本或模型处于不同的位置，或只是身体的一个局部，仍应依人体的标准姿势进行描述。",
+    "referenceAnswer": "身体直立，面向前方，两眼平视正前方，两足并拢，足尖向前，双上肢下垂于躯干的两侧，掌心向前。描述人体任何结构时，均应用标准姿势，即使被观察的客体、标本或模型处于不同的位置，或只是身体的一个局部，仍应依人体的标准姿势进行描述。",
+    "sampleAnswer": "高分示範答案：身体直立，面向前方，两眼平视正前方，两足并拢，足尖向前，双上肢下垂于躯干的两侧，掌心向前。描述人体任何结构时，均应用标准姿势，即使被观察的客体、标本或模型处于不同的位置，或只是身体的一个局部，仍应依人体的标准姿势进行描述。",
+    "explanation": "答案依據教材證據 mat-2514：人体解剖学姿势是指身体直立，面向前方，两眼平视正前方，两足并拢，足尖向前，双上肢下垂于躯干的两侧，掌心向前。描述人体任何结构时，均应用标准姿势，即使被观察的客体、标本或模型处于不同的位置，或只是身体的一个局部，仍应依人体的标准姿势进行描述。",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "身体直立",
+      "面向前方",
+      "两眼平视正前方",
+      "两足并拢",
+      "足尖向前"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/解剖生理/解剖学和生理学复习一（答案） .docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 1",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-2514"
+    ],
+    "evidenceExcerpt": "人体解剖学姿势是指身体直立，面向前方，两眼平视正前方，两足并拢，足尖向前，双上肢下垂于躯干的两侧，掌心向前。描述人体任何结构时，均应用标准姿势，即使被观察的客体、标本或模型处于不同的位置，或只是身体的一个局部，仍应依人体的标准姿势进行描述。",
+    "answerBasis": "答案直接由證據 mat-2514 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 1"
+  },
+  {
+    "id": 70006,
+    "weekId": "source-verified",
+    "type": "shortAnswer",
+    "chapter": "解剖生理",
+    "category": "解剖生理",
+    "difficulty": 2,
+    "question": "依教材證據，請說明「红细胞的寿命」的重點。",
+    "options": [],
+    "answer": "100-130天，平均125天左右。",
+    "referenceAnswer": "100-130天，平均125天左右。",
+    "sampleAnswer": "高分示範答案：100-130天，平均125天左右。",
+    "explanation": "答案依據教材證據 mat-2306：红细胞的寿命是100-130天，平均125天左右。",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "100-130天",
+      "平均125天左右"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/解剖生理/解剖学与生理学复习七（答案） .docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 3",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-2306"
+    ],
+    "evidenceExcerpt": "红细胞的寿命是100-130天，平均125天左右。",
+    "answerBasis": "答案直接由證據 mat-2306 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 3"
+  },
+  {
+    "id": 70007,
+    "weekId": "source-verified",
+    "type": "shortAnswer",
+    "chapter": "解剖生理",
+    "category": "解剖生理",
+    "difficulty": 2,
+    "question": "依教材證據，請說明「胸锁乳突肌」的重點。",
+    "options": [],
+    "answer": "一侧收缩，使头颈向同侧屈，并转向对侧；两侧收缩，肌肉合力作用线在寰枕关节额状轴的后面使头伸，肌肉合力作用线在寰枕关节额状轴的前面使头屈。上固定时，上提胸廓，助吸气。",
+    "referenceAnswer": "一侧收缩，使头颈向同侧屈，并转向对侧；两侧收缩，肌肉合力作用线在寰枕关节额状轴的后面使头伸，肌肉合力作用线在寰枕关节额状轴的前面使头屈。上固定时，上提胸廓，助吸气。",
+    "sampleAnswer": "高分示範答案：一侧收缩，使头颈向同侧屈，并转向对侧；两侧收缩，肌肉合力作用线在寰枕关节额状轴的后面使头伸，肌肉合力作用线在寰枕关节额状轴的前面使头屈。上固定时，上提胸廓，助吸气。",
+    "explanation": "答案依據教材證據 mat-2509：胸锁乳突肌：一侧收缩，使头颈向同侧屈，并转向对侧；两侧收缩，肌肉合力作用线在寰枕关节额状轴的后面使头伸，肌肉合力作用线在寰枕关节额状轴的前面使头屈。上固定时，上提胸廓，助吸气。",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "一侧收缩",
+      "使头颈向同侧屈",
+      "并转向对侧",
+      "两侧收缩",
+      "肌肉合力作用线在寰枕关节额状轴的后面使头伸"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/解剖生理/解剖学与生理学复习四（答案） .docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 12",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-2509"
+    ],
+    "evidenceExcerpt": "胸锁乳突肌：一侧收缩，使头颈向同侧屈，并转向对侧；两侧收缩，肌肉合力作用线在寰枕关节额状轴的后面使头伸，肌肉合力作用线在寰枕关节额状轴的前面使头屈。上固定时，上提胸廓，助吸气。",
+    "answerBasis": "答案直接由證據 mat-2509 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 12"
+  },
+  {
+    "id": 70008,
+    "weekId": "source-verified",
+    "type": "shortAnswer",
+    "chapter": "解剖生理",
+    "category": "解剖生理",
+    "difficulty": 2,
+    "question": "依教材證據，請說明「臀大肌」的重點。",
+    "options": [],
+    "answer": "近固定使大腿在髋关节处伸和旋外；肌肉的上半部收缩可使大腿外展、下半部收缩可使大腿内收。远固定一侧收缩，使骨盆转向对侧。两侧同时收缩使骨盆后倾。并使躯干后伸，维持身体站立的平衡。",
+    "referenceAnswer": "近固定使大腿在髋关节处伸和旋外；肌肉的上半部收缩可使大腿外展、下半部收缩可使大腿内收。远固定一侧收缩，使骨盆转向对侧。两侧同时收缩使骨盆后倾。并使躯干后伸，维持身体站立的平衡。",
+    "sampleAnswer": "高分示範答案：近固定使大腿在髋关节处伸和旋外；肌肉的上半部收缩可使大腿外展、下半部收缩可使大腿内收。远固定一侧收缩，使骨盆转向对侧。两侧同时收缩使骨盆后倾。并使躯干后伸，维持身体站立的平衡。",
+    "explanation": "答案依據教材證據 mat-2510：臀大肌：近固定使大腿在髋关节处伸和旋外；肌肉的上半部收缩可使大腿外展、下半部收缩可使大腿内收。远固定一侧收缩，使骨盆转向对侧。两侧同时收缩使骨盆后倾。并使躯干后伸，维持身体站立的平衡。",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "近固定使大腿在髋关节处伸和旋外",
+      "肌肉的上半部收缩可使大腿外展",
+      "下半部收缩可使大腿内收",
+      "远固定一侧收缩",
+      "使骨盆转向对侧"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/解剖生理/解剖学与生理学复习四（答案） .docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 13",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-2510"
+    ],
+    "evidenceExcerpt": "臀大肌：近固定使大腿在髋关节处伸和旋外；肌肉的上半部收缩可使大腿外展、下半部收缩可使大腿内收。远固定一侧收缩，使骨盆转向对侧。两侧同时收缩使骨盆后倾。并使躯干后伸，维持身体站立的平衡。",
+    "answerBasis": "答案直接由證據 mat-2510 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 13"
+  },
+  {
+    "id": 70009,
+    "weekId": "source-verified",
+    "type": "shortAnswer",
+    "chapter": "解剖生理",
+    "category": "解剖生理",
+    "difficulty": 2,
+    "question": "依教材證據，請說明「腓肠肌」的重點。",
+    "options": [],
+    "answer": "可以使足跖屈（上提足跟）；在站立时，固定踝关节，防止身体前倾。",
+    "referenceAnswer": "可以使足跖屈（上提足跟）；在站立时，固定踝关节，防止身体前倾。",
+    "sampleAnswer": "高分示範答案：可以使足跖屈（上提足跟）；在站立时，固定踝关节，防止身体前倾。",
+    "explanation": "答案依據教材證據 mat-2512：腓肠肌：可以使足跖屈（上提足跟）；在站立时，固定踝关节，防止身体前倾。",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "可以使足跖屈（上提足跟）",
+      "在站立时",
+      "固定踝关节",
+      "防止身体前倾"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/解剖生理/解剖学与生理学复习四（答案） .docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 15",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-2512"
+    ],
+    "evidenceExcerpt": "腓肠肌：可以使足跖屈（上提足跟）；在站立时，固定踝关节，防止身体前倾。",
+    "answerBasis": "答案直接由證據 mat-2512 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 15"
+  },
+  {
+    "id": 70010,
+    "weekId": "source-verified",
+    "type": "shortAnswer",
+    "chapter": "解剖生理",
+    "category": "解剖生理",
+    "difficulty": 2,
+    "question": "依教材證據，請說明「肩胛提肌」的重點。",
+    "options": [],
+    "answer": "近固定时，使肩胛骨上提和下回旋。远固定时，一侧收缩，使头向同侧屈和轻度回旋；两侧收缩，使颈伸。",
+    "referenceAnswer": "近固定时，使肩胛骨上提和下回旋。远固定时，一侧收缩，使头向同侧屈和轻度回旋；两侧收缩，使颈伸。",
+    "sampleAnswer": "高分示範答案：近固定时，使肩胛骨上提和下回旋。远固定时，一侧收缩，使头向同侧屈和轻度回旋；两侧收缩，使颈伸。",
+    "explanation": "答案依據教材證據 mat-2513：肩胛提肌：近固定时，使肩胛骨上提和下回旋。远固定时，一侧收缩，使头向同侧屈和轻度回旋；两侧收缩，使颈伸。",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "近固定时",
+      "使肩胛骨上提和下回旋",
+      "远固定时",
+      "一侧收缩",
+      "使头向同侧屈和轻度回旋"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/解剖生理/解剖学与生理学复习四（答案） .docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 16",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-2513"
+    ],
+    "evidenceExcerpt": "肩胛提肌：近固定时，使肩胛骨上提和下回旋。远固定时，一侧收缩，使头向同侧屈和轻度回旋；两侧收缩，使颈伸。",
+    "answerBasis": "答案直接由證據 mat-2513 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 16"
+  },
+  {
+    "id": 70011,
+    "weekId": "source-verified",
+    "type": "shortAnswer",
+    "chapter": "解剖生理",
+    "category": "解剖生理",
+    "difficulty": 2,
+    "question": "依教材證據，請說明「新陈代谢」的重點。",
+    "options": [],
+    "answer": "新旧细胞更新代谢的一个过程；",
+    "referenceAnswer": "新旧细胞更新代谢的一个过程；",
+    "sampleAnswer": "高分示範答案：新旧细胞更新代谢的一个过程；",
+    "explanation": "答案依據教材證據 mat-2534：新陈代谢：新旧细胞更新代谢的一个过程；",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "新旧细胞更新代谢的一个过程"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/解剖生理/解剖学和生理学复习二答案.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 6",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-2534"
+    ],
+    "evidenceExcerpt": "新陈代谢：新旧细胞更新代谢的一个过程；",
+    "answerBasis": "答案直接由證據 mat-2534 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 6"
+  },
+  {
+    "id": 70012,
+    "weekId": "source-verified",
+    "type": "shortAnswer",
+    "chapter": "解剖生理",
+    "category": "解剖生理",
+    "difficulty": 2,
+    "question": "依教材證據，請說明「维生素」的重點。",
+    "options": [],
+    "answer": "是维持人体正常代谢和生理功能的微量小分子有机化合物。",
+    "referenceAnswer": "是维持人体正常代谢和生理功能的微量小分子有机化合物。",
+    "sampleAnswer": "高分示範答案：是维持人体正常代谢和生理功能的微量小分子有机化合物。",
+    "explanation": "答案依據教材證據 mat-2492：维生素：是维持人体正常代谢和生理功能的微量小分子有机化合物。",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "是维持人体正常代谢和生理功能的微量小分子有机化合物"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/解剖生理/解剖学与生理学复习十（答案）.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 17",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-2492"
+    ],
+    "evidenceExcerpt": "维生素：是维持人体正常代谢和生理功能的微量小分子有机化合物。",
+    "answerBasis": "答案直接由證據 mat-2492 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 17"
+  },
+  {
+    "id": 70013,
+    "weekId": "source-verified",
+    "type": "shortAnswer",
+    "chapter": "解剖生理",
+    "category": "解剖生理",
+    "difficulty": 2,
+    "question": "依教材證據，請說明「肌肉的起点」的重點。",
+    "options": [],
+    "answer": "骨骼肌附着在关节近侧(靠近躯干一侧)骨上一端的附着点。",
+    "referenceAnswer": "骨骼肌附着在关节近侧(靠近躯干一侧)骨上一端的附着点。",
+    "sampleAnswer": "高分示範答案：骨骼肌附着在关节近侧(靠近躯干一侧)骨上一端的附着点。",
+    "explanation": "答案依據教材證據 mat-2504：肌肉的起点：骨骼肌附着在关节近侧(靠近躯干一侧)骨上一端的附着点。",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "骨骼肌附着在关节近侧(靠近躯干一侧)骨上一端的附着点"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/解剖生理/解剖学与生理学复习四（答案） .docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 7",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-2504"
+    ],
+    "evidenceExcerpt": "肌肉的起点：骨骼肌附着在关节近侧(靠近躯干一侧)骨上一端的附着点。",
+    "answerBasis": "答案直接由證據 mat-2504 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 7"
+  },
+  {
+    "id": 70014,
+    "weekId": "source-verified",
+    "type": "shortAnswer",
+    "chapter": "解剖生理",
+    "category": "解剖生理",
+    "difficulty": 2,
+    "question": "依教材證據，請說明「肌肉的止点」的重點。",
+    "options": [],
+    "answer": "骨骼肌跨过关节。附着在关节远侧(远离躯干一侧)骨上一端的附着点。",
+    "referenceAnswer": "骨骼肌跨过关节。附着在关节远侧(远离躯干一侧)骨上一端的附着点。",
+    "sampleAnswer": "高分示範答案：骨骼肌跨过关节。附着在关节远侧(远离躯干一侧)骨上一端的附着点。",
+    "explanation": "答案依據教材證據 mat-2505：肌肉的止点：骨骼肌跨过关节。附着在关节远侧(远离躯干一侧)骨上一端的附着点。",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "骨骼肌跨过关节",
+      "附着在关节远侧(远离躯干一侧)骨上一端的附着点"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/解剖生理/解剖学与生理学复习四（答案） .docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 8",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-2505"
+    ],
+    "evidenceExcerpt": "肌肉的止点：骨骼肌跨过关节。附着在关节远侧(远离躯干一侧)骨上一端的附着点。",
+    "answerBasis": "答案直接由證據 mat-2505 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 8"
+  },
+  {
+    "id": 70015,
+    "weekId": "source-verified",
+    "type": "shortAnswer",
+    "chapter": "解剖生理",
+    "category": "解剖生理",
+    "difficulty": 2,
+    "question": "依教材證據，請說明「环转」的重點。",
+    "options": [],
+    "answer": "骨的近侧端在原位转动，远侧端做圆周运动，它是屈、外展、伸和内收依次连续的运动。",
+    "referenceAnswer": "骨的近侧端在原位转动，远侧端做圆周运动，它是屈、外展、伸和内收依次连续的运动。",
+    "sampleAnswer": "高分示範答案：骨的近侧端在原位转动，远侧端做圆周运动，它是屈、外展、伸和内收依次连续的运动。",
+    "explanation": "答案依據教材證據 mat-2336：环转：骨的近侧端在原位转动，远侧端做圆周运动，它是屈、外展、伸和内收依次连续的运动。",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "骨的近侧端在原位转动",
+      "远侧端做圆周运动",
+      "它是屈",
+      "外展",
+      "伸和内收依次连续的运动"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/解剖生理/解剖学与生理学复习三答案 .docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 12",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-2336"
+    ],
+    "evidenceExcerpt": "环转：骨的近侧端在原位转动，远侧端做圆周运动，它是屈、外展、伸和内收依次连续的运动。",
+    "answerBasis": "答案直接由證據 mat-2336 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 12"
+  },
+  {
+    "id": 70016,
+    "weekId": "source-verified",
+    "type": "shortAnswer",
+    "chapter": "解剖生理",
+    "category": "解剖生理",
+    "difficulty": 2,
+    "question": "依教材證據，請說明「热量」的重點。",
+    "options": [],
+    "answer": "是食物提供给身体的能量，单位是千焦、卡路里、热卡。",
+    "referenceAnswer": "是食物提供给身体的能量，单位是千焦、卡路里、热卡。",
+    "sampleAnswer": "高分示範答案：是食物提供给身体的能量，单位是千焦、卡路里、热卡。",
+    "explanation": "答案依據教材證據 mat-2490：热量：是食物提供给身体的能量，单位是千焦、卡路里、热卡。",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "是食物提供给身体的能量",
+      "单位是千焦",
+      "卡路里",
+      "热卡"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/解剖生理/解剖学与生理学复习十（答案）.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 15",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-2490"
+    ],
+    "evidenceExcerpt": "热量：是食物提供给身体的能量，单位是千焦、卡路里、热卡。",
+    "answerBasis": "答案直接由證據 mat-2490 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 15"
+  },
+  {
+    "id": 70017,
+    "weekId": "source-verified",
+    "type": "shortAnswer",
+    "chapter": "解剖生理",
+    "category": "解剖生理",
+    "difficulty": 2,
+    "question": "依教材證據，請說明「动脉和静脉的主要区别」的重點。",
+    "options": [],
+    "answer": "动脉由心脏发出向全身供血，而静脉是收集全身的血液回流至心脏的血管。动脉的血管壁比静脉的血管壁厚，弹性更好，压力较高，只有这样才可以承受住正常血管内动脉的压力。静脉与动脉相比，血管壁较薄，管腔较大，且静脉内常伴有瓣膜，主要是防止静脉内的血液反流。动脉内的血液含氧量较高，颜色鲜红，静脉内的血液含氧量较低，颜色暗红。",
+    "referenceAnswer": "动脉由心脏发出向全身供血，而静脉是收集全身的血液回流至心脏的血管。动脉的血管壁比静脉的血管壁厚，弹性更好，压力较高，只有这样才可以承受住正常血管内动脉的压力。静脉与动脉相比，血管壁较薄，管腔较大，且静脉内常伴有瓣膜，主要是防止静脉内的血液反流。动脉内的血液含氧量较高，颜色鲜红，静脉内的血液含氧量较低，颜色暗红。",
+    "sampleAnswer": "高分示範答案：动脉由心脏发出向全身供血，而静脉是收集全身的血液回流至心脏的血管。动脉的血管壁比静脉的血管壁厚，弹性更好，压力较高，只有这样才可以承受住正常血管内动脉的压力。静脉与动脉相比，血管壁较薄，管腔较大，且静脉内常伴有瓣膜，主要是防止静脉内的血液反流。动脉内的血液含氧量较高，颜色鲜红，静脉内的血液含氧量较低，颜色暗红。",
+    "explanation": "答案依據教材證據 mat-2309：动脉和静脉的主要区别是动脉由心脏发出向全身供血，而静脉是收集全身的血液回流至心脏的血管。动脉的血管壁比静脉的血管壁厚，弹性更好，压力较高，只有这样才可以承受住正常血管内动脉的压力。静脉与动脉相比，血管壁较薄，管腔较大，且静脉内常伴有瓣膜，主要是防止静脉内的血液反流。动脉内的血液含氧量较高，颜色鲜红，静脉内的血液含氧量较低，颜色暗红。",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "动脉由心脏发出向全身供血",
+      "而静脉是收集全身的血液回流至心脏的血管",
+      "动脉的血管壁比静脉的血管壁厚",
+      "弹性更好",
+      "压力较高"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/解剖生理/解剖学与生理学复习七（答案） .docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 6",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-2309"
+    ],
+    "evidenceExcerpt": "动脉和静脉的主要区别是动脉由心脏发出向全身供血，而静脉是收集全身的血液回流至心脏的血管。动脉的血管壁比静脉的血管壁厚，弹性更好，压力较高，只有这样才可以承受住正常血管内动脉的压力。静脉与动脉相比，血管壁较薄，管腔较大，且静脉内常伴有瓣膜，主要是防止静脉内的血液反流。动脉内的血液含氧量较高，颜色鲜红，静脉内的血液含氧量较低，颜色暗红。",
+    "answerBasis": "答案直接由證據 mat-2309 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 6"
+  },
+  {
+    "id": 70018,
+    "weekId": "source-verified",
+    "type": "shortAnswer",
+    "chapter": "植物油／基底油",
+    "category": "植物油／基底油",
+    "difficulty": 2,
+    "question": "依教材證據，「葵花油」的拉丁學名為何？",
+    "options": [],
+    "answer": "Helianthus annuus",
+    "referenceAnswer": "Helianthus annuus",
+    "sampleAnswer": "高分示範答案：Helianthus annuus",
+    "explanation": "答案依據教材證據 mat-0095：葵花油Helianthus annuus",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "Helianthus annuus"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/安全濃度與稀釋/基础油.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 34",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0095"
+    ],
+    "evidenceExcerpt": "葵花油Helianthus annuus",
+    "answerBasis": "答案直接由證據 mat-0095 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 34"
+  },
+  {
+    "id": 70019,
+    "weekId": "source-verified",
+    "type": "shortAnswer",
+    "chapter": "植物油／基底油",
+    "category": "植物油／基底油",
+    "difficulty": 2,
+    "question": "依教材證據，「琉璃苣油」的拉丁學名為何？",
+    "options": [],
+    "answer": "Borago officinalis",
+    "referenceAnswer": "Borago officinalis",
+    "sampleAnswer": "高分示範答案：Borago officinalis",
+    "explanation": "答案依據教材證據 mat-0101：琉璃苣油Borago officinalis",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "Borago officinalis"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/安全濃度與稀釋/基础油.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 40",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0101"
+    ],
+    "evidenceExcerpt": "琉璃苣油Borago officinalis",
+    "answerBasis": "答案直接由證據 mat-0101 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 40"
+  },
+  {
+    "id": 70020,
+    "weekId": "source-verified",
+    "type": "shortAnswer",
+    "chapter": "植物油／基底油",
+    "category": "植物油／基底油",
+    "difficulty": 2,
+    "question": "依教材證據，「榛果油」的拉丁學名為何？",
+    "options": [],
+    "answer": "Corylus avellana",
+    "referenceAnswer": "Corylus avellana",
+    "sampleAnswer": "高分示範答案：Corylus avellana",
+    "explanation": "答案依據教材證據 mat-0111：榛果油Corylus avellana",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "Corylus avellana"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/安全濃度與稀釋/基础油.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 50",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0111"
+    ],
+    "evidenceExcerpt": "榛果油Corylus avellana",
+    "answerBasis": "答案直接由證據 mat-0111 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 50"
+  },
+  {
+    "id": 70021,
+    "weekId": "source-verified",
+    "type": "shortAnswer",
+    "chapter": "植物油／基底油",
+    "category": "植物油／基底油",
+    "difficulty": 2,
+    "question": "依教材證據，「沙棘果油」的拉丁學名為何？",
+    "options": [],
+    "answer": "Hippophae rhamnoides",
+    "referenceAnswer": "Hippophae rhamnoides",
+    "sampleAnswer": "高分示範答案：Hippophae rhamnoides",
+    "explanation": "答案依據教材證據 mat-0120：沙棘果油Hippophae rhamnoides",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "Hippophae rhamnoides"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/安全濃度與稀釋/基础油.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 59",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0120"
+    ],
+    "evidenceExcerpt": "沙棘果油Hippophae rhamnoides",
+    "answerBasis": "答案直接由證據 mat-0120 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 59"
+  },
+  {
+    "id": 70022,
+    "weekId": "source-verified",
+    "type": "shortAnswer",
+    "chapter": "植物油／基底油",
+    "category": "植物油／基底油",
+    "difficulty": 2,
+    "question": "依教材證據，「鳄梨油」的拉丁學名為何？",
+    "options": [],
+    "answer": "Persae americana",
+    "referenceAnswer": "Persae americana",
+    "sampleAnswer": "高分示範答案：Persae americana",
+    "explanation": "答案依據教材證據 mat-0133：鳄梨油Persae americana",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "Persae americana"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/安全濃度與稀釋/基础油.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 72",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0133"
+    ],
+    "evidenceExcerpt": "鳄梨油Persae americana",
+    "answerBasis": "答案直接由證據 mat-0133 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 72"
+  },
+  {
+    "id": 70023,
+    "weekId": "source-verified",
+    "type": "shortAnswer",
+    "chapter": "植物油／基底油",
+    "category": "植物油／基底油",
+    "difficulty": 2,
+    "question": "依教材證據，「亚麻籽油」的拉丁學名為何？",
+    "options": [],
+    "answer": "Linum usitatissimum",
+    "referenceAnswer": "Linum usitatissimum",
+    "sampleAnswer": "高分示範答案：Linum usitatissimum",
+    "explanation": "答案依據教材證據 mat-0136：亚麻籽油Linum usitatissimum",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "Linum usitatissimum"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/安全濃度與稀釋/基础油.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 75",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0136"
+    ],
+    "evidenceExcerpt": "亚麻籽油Linum usitatissimum",
+    "answerBasis": "答案直接由證據 mat-0136 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 75"
+  },
+  {
+    "id": 70024,
+    "weekId": "source-verified",
+    "type": "shortAnswer",
+    "chapter": "植物油／基底油",
+    "category": "植物油／基底油",
+    "difficulty": 2,
+    "question": "依教材證據，「月见草油」的拉丁學名為何？",
+    "options": [],
+    "answer": "Oenothera biennis",
+    "referenceAnswer": "Oenothera biennis",
+    "sampleAnswer": "高分示範答案：Oenothera biennis",
+    "explanation": "答案依據教材證據 mat-0143：11、月见草油Oenothera biennis",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "Oenothera biennis"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/安全濃度與稀釋/基础油.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 82",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0143"
+    ],
+    "evidenceExcerpt": "11、月见草油Oenothera biennis",
+    "answerBasis": "答案直接由證據 mat-0143 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 82"
+  },
+  {
+    "id": 70025,
+    "weekId": "source-verified",
+    "type": "shortAnswer",
+    "chapter": "植物油／基底油",
+    "category": "植物油／基底油",
+    "difficulty": 2,
+    "question": "依教材證據，「芝麻油」的拉丁學名為何？",
+    "options": [],
+    "answer": "Sesamum indicum",
+    "referenceAnswer": "Sesamum indicum",
+    "sampleAnswer": "高分示範答案：Sesamum indicum",
+    "explanation": "答案依據教材證據 mat-0148：芝麻油：Sesamum indicum",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "Sesamum indicum"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/安全濃度與稀釋/基础油.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 87",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0148"
+    ],
+    "evidenceExcerpt": "芝麻油：Sesamum indicum",
+    "answerBasis": "答案直接由證據 mat-0148 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 87"
+  },
+  {
+    "id": 70026,
+    "weekId": "source-verified",
+    "type": "shortAnswer",
+    "chapter": "植物油／基底油",
+    "category": "植物油／基底油",
+    "difficulty": 2,
+    "question": "依教材證據，「澳洲坚果油」的拉丁學名為何？",
+    "options": [],
+    "answer": "Macadamia ternifolia",
+    "referenceAnswer": "Macadamia ternifolia",
+    "sampleAnswer": "高分示範答案：Macadamia ternifolia",
+    "explanation": "答案依據教材證據 mat-0160：澳洲坚果油：Macadamia ternifolia",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "Macadamia ternifolia"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/安全濃度與稀釋/基础油.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 99",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0160"
+    ],
+    "evidenceExcerpt": "澳洲坚果油：Macadamia ternifolia",
+    "answerBasis": "答案直接由證據 mat-0160 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 99"
+  },
+  {
+    "id": 70027,
+    "weekId": "source-verified",
+    "type": "shortAnswer",
+    "chapter": "植物油／基底油",
+    "category": "植物油／基底油",
+    "difficulty": 2,
+    "question": "依教材證據，「甜杏仁油」的拉丁學名為何？",
+    "options": [],
+    "answer": "Prunus amygdalus var. dulcis/Prunus communis",
+    "referenceAnswer": "Prunus amygdalus var. dulcis/Prunus communis",
+    "sampleAnswer": "高分示範答案：Prunus amygdalus var. dulcis/Prunus communis",
+    "explanation": "答案依據教材證據 mat-0164：甜杏仁油：Prunus amygdalus var. dulcis/Prunus communis",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "Prunus amygdalus var. dulcis/Prunus communis"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/安全濃度與稀釋/基础油.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 103",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0164"
+    ],
+    "evidenceExcerpt": "甜杏仁油：Prunus amygdalus var. dulcis/Prunus communis",
+    "answerBasis": "答案直接由證據 mat-0164 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 103"
+  },
+  {
+    "id": 70028,
+    "weekId": "source-verified",
+    "type": "shortAnswer",
+    "chapter": "植物油／基底油",
+    "category": "植物油／基底油",
+    "difficulty": 2,
+    "question": "依教材證據，「杏核仁油」的拉丁學名為何？",
+    "options": [],
+    "answer": "Prunus armeniaca",
+    "referenceAnswer": "Prunus armeniaca",
+    "sampleAnswer": "高分示範答案：Prunus armeniaca",
+    "explanation": "答案依據教材證據 mat-0167：杏核仁油：Prunus armeniaca",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "Prunus armeniaca"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/安全濃度與稀釋/基础油.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 106",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0167"
+    ],
+    "evidenceExcerpt": "杏核仁油：Prunus armeniaca",
+    "answerBasis": "答案直接由證據 mat-0167 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 106"
+  },
+  {
+    "id": 70029,
+    "weekId": "source-verified",
+    "type": "shortAnswer",
+    "chapter": "植物油／基底油",
+    "category": "植物油／基底油",
+    "difficulty": 2,
+    "question": "依教材證據，「玫瑰果油」的拉丁學名為何？",
+    "options": [],
+    "answer": "Rosa rubiginosa",
+    "referenceAnswer": "Rosa rubiginosa",
+    "sampleAnswer": "高分示範答案：Rosa rubiginosa",
+    "explanation": "答案依據教材證據 mat-0170：玫瑰果油：Rosa rubiginosa",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "Rosa rubiginosa"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/安全濃度與稀釋/基础油.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 109",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0170"
+    ],
+    "evidenceExcerpt": "玫瑰果油：Rosa rubiginosa",
+    "answerBasis": "答案直接由證據 mat-0170 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 109"
+  },
+  {
+    "id": 70030,
+    "weekId": "source-verified",
+    "type": "shortAnswer",
+    "chapter": "植物油／基底油",
+    "category": "植物油／基底油",
+    "difficulty": 2,
+    "question": "依教材證據，「摩洛哥坚果油」的拉丁學名為何？",
+    "options": [],
+    "answer": "Argania spinosa",
+    "referenceAnswer": "Argania spinosa",
+    "sampleAnswer": "高分示範答案：Argania spinosa",
+    "explanation": "答案依據教材證據 mat-0175：摩洛哥坚果油：Argania spinosa",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "Argania spinosa"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/安全濃度與稀釋/基础油.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 114",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0175"
+    ],
+    "evidenceExcerpt": "摩洛哥坚果油：Argania spinosa",
+    "answerBasis": "答案直接由證據 mat-0175 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 114"
+  },
+  {
+    "id": 70031,
+    "weekId": "source-verified",
+    "type": "shortAnswer",
+    "chapter": "植物油／基底油",
+    "category": "植物油／基底油",
+    "difficulty": 2,
+    "question": "依教材證據，「山茶油」的拉丁學名為何？",
+    "options": [],
+    "answer": "Camellia oleifera",
+    "referenceAnswer": "Camellia oleifera",
+    "sampleAnswer": "高分示範答案：Camellia oleifera",
+    "explanation": "答案依據教材證據 mat-0177：山茶油：Camellia oleifera",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "Camellia oleifera"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/安全濃度與稀釋/基础油.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 116",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0177"
+    ],
+    "evidenceExcerpt": "山茶油：Camellia oleifera",
+    "answerBasis": "答案直接由證據 mat-0177 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 116"
+  },
+  {
+    "id": 70032,
+    "weekId": "source-verified",
+    "type": "shortAnswer",
+    "chapter": "植物油／基底油",
+    "category": "植物油／基底油",
+    "difficulty": 2,
+    "question": "依教材證據，「葡萄籽油」的拉丁學名為何？",
+    "options": [],
+    "answer": "Vitis vinifera",
+    "referenceAnswer": "Vitis vinifera",
+    "sampleAnswer": "高分示範答案：Vitis vinifera",
+    "explanation": "答案依據教材證據 mat-0180：葡萄籽油：Vitis vinifera",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "Vitis vinifera"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/安全濃度與稀釋/基础油.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 119",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0180"
+    ],
+    "evidenceExcerpt": "葡萄籽油：Vitis vinifera",
+    "answerBasis": "答案直接由證據 mat-0180 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 119"
+  },
+  {
+    "id": 70033,
+    "weekId": "source-verified",
+    "type": "shortAnswer",
+    "chapter": "植物油／基底油",
+    "category": "植物油／基底油",
+    "difficulty": 2,
+    "question": "依教材證據，請說明「饱和脂肪酸分」的重點。",
+    "options": [],
+    "answer": "短链和中链，不饱和脂肪酸全是长链",
+    "referenceAnswer": "短链和中链，不饱和脂肪酸全是长链",
+    "sampleAnswer": "高分示範答案：短链和中链，不饱和脂肪酸全是长链",
+    "explanation": "答案依據教材證據 mat-0077：饱和脂肪酸分为短链和中链，不饱和脂肪酸全是长链",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "短链和中链",
+      "不饱和脂肪酸全是长链"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/安全濃度與稀釋/基础油.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 16",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0077"
+    ],
+    "evidenceExcerpt": "饱和脂肪酸分为短链和中链，不饱和脂肪酸全是长链",
+    "answerBasis": "答案直接由證據 mat-0077 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 16"
+  },
+  {
+    "id": 70034,
+    "weekId": "source-verified",
+    "type": "shortAnswer",
+    "chapter": "植物油／基底油",
+    "category": "植物油／基底油",
+    "difficulty": 2,
+    "question": "依教材證據，請說明「饱和脂肪酸」的重點。",
+    "options": [],
+    "answer": "棕榈酸约 30-38%， 12%",
+    "referenceAnswer": "棕榈酸约 30-38%， 12%",
+    "sampleAnswer": "高分示範答案：棕榈酸约 30-38%， 12%",
+    "explanation": "答案依據教材證據 mat-0121：饱和脂肪酸： 棕榈酸约 30-38%， 12%",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "棕榈酸约 30-38%",
+      "12%"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/安全濃度與稀釋/基础油.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 60",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0121"
+    ],
+    "evidenceExcerpt": "饱和脂肪酸： 棕榈酸约 30-38%， 12%",
+    "answerBasis": "答案直接由證據 mat-0121 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 60"
+  },
+  {
+    "id": 70035,
+    "weekId": "source-verified",
+    "type": "shortAnswer",
+    "chapter": "植物油／基底油",
+    "category": "植物油／基底油",
+    "difficulty": 2,
+    "question": "依教材證據，請說明「脂肪伴随物」的重點。",
+    "options": [],
+    "answer": "植物固醇、卵磷脂、生育酚等",
+    "referenceAnswer": "植物固醇、卵磷脂、生育酚等",
+    "sampleAnswer": "高分示範答案：植物固醇、卵磷脂、生育酚等",
+    "explanation": "答案依據教材證據 mat-0149：脂肪伴随物：植物固醇、卵磷脂、生育酚等",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "植物固醇",
+      "卵磷脂",
+      "生育酚等"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/安全濃度與稀釋/基础油.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 88",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0149"
+    ],
+    "evidenceExcerpt": "脂肪伴随物：植物固醇、卵磷脂、生育酚等",
+    "answerBasis": "答案直接由證據 mat-0149 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 88"
+  },
+  {
+    "id": 70036,
+    "weekId": "source-verified",
+    "type": "shortAnswer",
+    "chapter": "植物油／基底油",
+    "category": "植物油／基底油",
+    "difficulty": 2,
+    "question": "依教材證據，請說明「双元多元不饱和脂肪酸」的重點。",
+    "options": [],
+    "answer": "18～22个碳原子的直链脂肪酸",
+    "referenceAnswer": "18～22个碳原子的直链脂肪酸",
+    "sampleAnswer": "高分示範答案：18～22个碳原子的直链脂肪酸",
+    "explanation": "答案依據教材證據 mat-0079：双元多元不饱和脂肪酸： 18～22个碳原子的直链脂肪酸",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "18～22个碳原子的直链脂肪酸"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/安全濃度與稀釋/基础油.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 18",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0079"
+    ],
+    "evidenceExcerpt": "双元多元不饱和脂肪酸： 18～22个碳原子的直链脂肪酸",
+    "answerBasis": "答案直接由證據 mat-0079 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 18"
+  },
+  {
+    "id": 70037,
+    "weekId": "source-verified",
+    "type": "shortAnswer",
+    "chapter": "植物油／基底油",
+    "category": "植物油／基底油",
+    "difficulty": 2,
+    "question": "依教材證據，請說明「单元不饱和脂肪酸」的重點。",
+    "options": [],
+    "answer": "油酸（19%） ω-9",
+    "referenceAnswer": "油酸（19%） ω-9",
+    "sampleAnswer": "高分示範答案：油酸（19%） ω-9",
+    "explanation": "答案依據教材證據 mat-0103：单元不饱和脂肪酸：油酸（19%） ω-9",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "油酸（19%） ω-9"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/安全濃度與稀釋/基础油.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 42",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0103"
+    ],
+    "evidenceExcerpt": "单元不饱和脂肪酸：油酸（19%） ω-9",
+    "answerBasis": "答案直接由證據 mat-0103 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 42"
+  },
+  {
+    "id": 70038,
+    "weekId": "source-verified",
+    "type": "shortAnswer",
+    "chapter": "植物油／基底油",
+    "category": "植物油／基底油",
+    "difficulty": 2,
+    "question": "依教材證據，請說明「双元不饱和脂肪酸」的重點。",
+    "options": [],
+    "answer": "亚油酸： 35% ω-6",
+    "referenceAnswer": "亚油酸： 35% ω-6",
+    "sampleAnswer": "高分示範答案：亚油酸： 35% ω-6",
+    "explanation": "答案依據教材證據 mat-0104：双元不饱和脂肪酸：亚油酸： 35% ω-6",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "亚油酸： 35% ω-6"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/安全濃度與稀釋/基础油.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 43",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0104"
+    ],
+    "evidenceExcerpt": "双元不饱和脂肪酸：亚油酸： 35% ω-6",
+    "answerBasis": "答案直接由證據 mat-0104 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 43"
+  },
+  {
+    "id": 70039,
+    "weekId": "source-verified",
+    "type": "shortAnswer",
+    "chapter": "植物油／基底油",
+    "category": "植物油／基底油",
+    "difficulty": 2,
+    "question": "依教材證據，請說明「多元不饱和脂肪酸」的重點。",
+    "options": [],
+    "answer": "γ -亚麻油酸（20-25%） ω-3 亚麻酸=亚麻油酸",
+    "referenceAnswer": "γ -亚麻油酸（20-25%） ω-3 亚麻酸=亚麻油酸",
+    "sampleAnswer": "高分示範答案：γ -亚麻油酸（20-25%） ω-3 亚麻酸=亚麻油酸",
+    "explanation": "答案依據教材證據 mat-0105：多元不饱和脂肪酸：γ -亚麻油酸（20-25%） ω-3 亚麻酸=亚麻油酸",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "γ -亚麻油酸（20-25%） ω-3 亚麻酸=亚麻油酸"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/安全濃度與稀釋/基础油.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 44",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0105"
+    ],
+    "evidenceExcerpt": "多元不饱和脂肪酸：γ -亚麻油酸（20-25%） ω-3 亚麻酸=亚麻油酸",
+    "answerBasis": "答案直接由證據 mat-0105 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 44"
+  },
+  {
+    "id": 70040,
+    "weekId": "source-verified",
+    "type": "shortAnswer",
+    "chapter": "植物油／基底油",
+    "category": "植物油／基底油",
+    "difficulty": 2,
+    "question": "依教材證據，請說明「双饱和脂肪酸」的重點。",
+    "options": [],
+    "answer": "亚油酸约 3% 33%",
+    "referenceAnswer": "亚油酸约 3% 33%",
+    "sampleAnswer": "高分示範答案：亚油酸约 3% 33%",
+    "explanation": "答案依據教材證據 mat-0123：双饱和脂肪酸： 亚油酸约 3% 33%",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "亚油酸约 3% 33%"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/安全濃度與稀釋/基础油.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 62",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0123"
+    ],
+    "evidenceExcerpt": "双饱和脂肪酸： 亚油酸约 3% 33%",
+    "answerBasis": "答案直接由證據 mat-0123 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 62"
+  },
+  {
+    "id": 70041,
+    "weekId": "source-verified",
+    "type": "shortAnswer",
+    "chapter": "植物油／基底油",
+    "category": "植物油／基底油",
+    "difficulty": 2,
+    "question": "依教材證據，請說明「最好与其他植物油1」的重點。",
+    "options": [],
+    "answer": "4混合，可加速皮肤代谢。",
+    "referenceAnswer": "4混合，可加速皮肤代谢。",
+    "sampleAnswer": "高分示範答案：4混合，可加速皮肤代谢。",
+    "explanation": "答案依據教材證據 mat-0140：最好与其他植物油1:4混合，可加速皮肤代谢。",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "4混合",
+      "可加速皮肤代谢"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/安全濃度與稀釋/基础油.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 79",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0140"
+    ],
+    "evidenceExcerpt": "最好与其他植物油1:4混合，可加速皮肤代谢。",
+    "answerBasis": "答案直接由證據 mat-0140 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 79"
+  },
+  {
+    "id": 70042,
+    "weekId": "source-verified",
+    "type": "shortAnswer",
+    "chapter": "植物油／基底油",
+    "category": "植物油／基底油",
+    "difficulty": 2,
+    "question": "依教材證據，請說明「饱和脂肪酸 9%」的重點。",
+    "options": [],
+    "answer": "棕榈酸6% 硬脂酸3%",
+    "referenceAnswer": "棕榈酸6% 硬脂酸3%",
+    "sampleAnswer": "高分示範答案：棕榈酸6% 硬脂酸3%",
+    "explanation": "答案依據教材證據 mat-0118：饱和脂肪酸 9% ：棕榈酸6% 硬脂酸3%",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "棕榈酸6% 硬脂酸3%"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/安全濃度與稀釋/基础油.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 57",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0118"
+    ],
+    "evidenceExcerpt": "饱和脂肪酸 9% ：棕榈酸6% 硬脂酸3%",
+    "answerBasis": "答案直接由證據 mat-0118 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 57"
+  },
+  {
+    "id": 70043,
+    "weekId": "source-verified",
+    "type": "shortAnswer",
+    "chapter": "精油化學",
+    "category": "精油化學",
+    "difficulty": 2,
+    "question": "依教材證據，請說明「芳香酚」的重點。",
+    "options": [],
+    "answer": "苯基丙烷酚，苯环+羟基OH的衍生物",
+    "referenceAnswer": "苯基丙烷酚，苯环+羟基OH的衍生物",
+    "sampleAnswer": "高分示範答案：苯基丙烷酚，苯环+羟基OH的衍生物",
+    "explanation": "答案依據教材證據 mat-0568：芳香酚：苯基丙烷酚，苯环+羟基OH的衍生物",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "苯基丙烷酚",
+      "苯环+羟基OH的衍生物"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/精油化學/精油分子合成通路.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 52",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0568"
+    ],
+    "evidenceExcerpt": "芳香酚：苯基丙烷酚，苯环+羟基OH的衍生物",
+    "answerBasis": "答案直接由證據 mat-0568 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 52"
+  },
+  {
+    "id": 70044,
+    "weekId": "source-verified",
+    "type": "shortAnswer",
+    "chapter": "精油化學",
+    "category": "精油化學",
+    "difficulty": 2,
+    "question": "依教材證據，請說明「光反应」的重點。",
+    "options": [],
+    "answer": "叶绿素将太阳能转化为活跃的化学能，并存在ATP中",
+    "referenceAnswer": "叶绿素将太阳能转化为活跃的化学能，并存在ATP中",
+    "sampleAnswer": "高分示範答案：叶绿素将太阳能转化为活跃的化学能，并存在ATP中",
+    "explanation": "答案依據教材證據 mat-0585：光反应：叶绿素将太阳能转化为活跃的化学能，并存在ATP中",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "叶绿素将太阳能转化为活跃的化学能",
+      "并存在ATP中"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/精油化學/精油分子合成通路.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 69",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0585"
+    ],
+    "evidenceExcerpt": "光反应：叶绿素将太阳能转化为活跃的化学能，并存在ATP中",
+    "answerBasis": "答案直接由證據 mat-0585 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 69"
+  },
+  {
+    "id": 70045,
+    "weekId": "source-verified",
+    "type": "shortAnswer",
+    "chapter": "精油化學",
+    "category": "精油化學",
+    "difficulty": 2,
+    "question": "依教材證據，請說明「顺式柠檬醛=橙花醛」的重點。",
+    "options": [],
+    "answer": "柠檬香茅、柠檬3～10%、山鸡椒，香蜂草、柠檬香桃木",
+    "referenceAnswer": "柠檬香茅、柠檬3～10%、山鸡椒，香蜂草、柠檬香桃木",
+    "sampleAnswer": "高分示範答案：柠檬香茅、柠檬3～10%、山鸡椒，香蜂草、柠檬香桃木",
+    "explanation": "答案依據教材證據 mat-0595：顺式柠檬醛=橙花醛：柠檬香茅、柠檬3～10%、山鸡椒，香蜂草、柠檬香桃木",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "柠檬香茅",
+      "柠檬3～10%",
+      "山鸡椒",
+      "香蜂草",
+      "柠檬香桃木"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/精油化學/精油分子合成通路.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 79",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0595"
+    ],
+    "evidenceExcerpt": "顺式柠檬醛=橙花醛：柠檬香茅、柠檬3～10%、山鸡椒，香蜂草、柠檬香桃木",
+    "answerBasis": "答案直接由證據 mat-0595 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 79"
+  },
+  {
+    "id": 70046,
+    "weekId": "source-verified",
+    "type": "shortAnswer",
+    "chapter": "精油化學",
+    "category": "精油化學",
+    "difficulty": 2,
+    "question": "依教材證據，請說明「反式柠檬醛=牻牛儿醛」的重點。",
+    "options": [],
+    "answer": "柠檬香茅、山鸡椒、香蜂草、柠檬香桃木",
+    "referenceAnswer": "柠檬香茅、山鸡椒、香蜂草、柠檬香桃木",
+    "sampleAnswer": "高分示範答案：柠檬香茅、山鸡椒、香蜂草、柠檬香桃木",
+    "explanation": "答案依據教材證據 mat-0596：反式柠檬醛=牻牛儿醛：柠檬香茅、山鸡椒、香蜂草、柠檬香桃木",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "柠檬香茅",
+      "山鸡椒",
+      "香蜂草",
+      "柠檬香桃木"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/精油化學/精油分子合成通路.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 80",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0596"
+    ],
+    "evidenceExcerpt": "反式柠檬醛=牻牛儿醛：柠檬香茅、山鸡椒、香蜂草、柠檬香桃木",
+    "answerBasis": "答案直接由證據 mat-0596 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 80"
+  },
+  {
+    "id": 70047,
+    "weekId": "source-verified",
+    "type": "shortAnswer",
+    "chapter": "精油化學",
+    "category": "精油化學",
+    "difficulty": 2,
+    "question": "依教材證據，請說明「暗反应」的重點。",
+    "options": [],
+    "answer": "ATP中活跃的化学能转化为糖等有机物中稳定的化学能",
+    "referenceAnswer": "ATP中活跃的化学能转化为糖等有机物中稳定的化学能",
+    "sampleAnswer": "高分示範答案：ATP中活跃的化学能转化为糖等有机物中稳定的化学能",
+    "explanation": "答案依據教材證據 mat-0586：暗反应：ATP中活跃的化学能转化为糖等有机物中稳定的化学能",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "ATP中活跃的化学能转化为糖等有机物中稳定的化学能"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/精油化學/精油分子合成通路.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 70",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0586"
+    ],
+    "evidenceExcerpt": "暗反应：ATP中活跃的化学能转化为糖等有机物中稳定的化学能",
+    "answerBasis": "答案直接由證據 mat-0586 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 70"
+  },
+  {
+    "id": 70048,
+    "weekId": "source-verified",
+    "type": "shortAnswer",
+    "chapter": "精油化學",
+    "category": "精油化學",
+    "difficulty": 2,
+    "question": "依教材證據，請說明「一次代谢」的重點。",
+    "options": [],
+    "answer": "太阳+水+光 得到：氧化和葡萄糖",
+    "referenceAnswer": "太阳+水+光 得到：氧化和葡萄糖",
+    "sampleAnswer": "高分示範答案：太阳+水+光 得到：氧化和葡萄糖",
+    "explanation": "答案依據教材證據 mat-0587：一次代谢：太阳+水+光 得到：氧化和葡萄糖",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "太阳+水+光 得到：氧化和葡萄糖"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/精油化學/精油分子合成通路.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 71",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0587"
+    ],
+    "evidenceExcerpt": "一次代谢：太阳+水+光 得到：氧化和葡萄糖",
+    "answerBasis": "答案直接由證據 mat-0587 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 71"
+  },
+  {
+    "id": 70049,
+    "weekId": "source-verified",
+    "type": "shortAnswer",
+    "chapter": "精油化學",
+    "category": "精油化學",
+    "difficulty": 2,
+    "question": "依教材證據，請說明「二次代谢」的重點。",
+    "options": [],
+    "answer": "葡萄糖+淀粉+维生素 得到丙酮酸",
+    "referenceAnswer": "葡萄糖+淀粉+维生素 得到丙酮酸",
+    "sampleAnswer": "高分示範答案：葡萄糖+淀粉+维生素 得到丙酮酸",
+    "explanation": "答案依據教材證據 mat-0588：二次代谢：葡萄糖+淀粉+维生素 得到丙酮酸",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "葡萄糖+淀粉+维生素 得到丙酮酸"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/精油化學/精油分子合成通路.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 72",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0588"
+    ],
+    "evidenceExcerpt": "二次代谢：葡萄糖+淀粉+维生素 得到丙酮酸",
+    "answerBasis": "答案直接由證據 mat-0588 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 72"
+  },
+  {
+    "id": 70050,
+    "weekId": "source-verified",
+    "type": "shortAnswer",
+    "chapter": "精油化學",
+    "category": "精油化學",
+    "difficulty": 2,
+    "question": "依教材證據，請說明「马鞭草酮迷迭香」的重點。",
+    "options": [],
+    "answer": "10～13% 桉油醇迷迭香1～2%",
+    "referenceAnswer": "10～13% 桉油醇迷迭香1～2%",
+    "sampleAnswer": "高分示範答案：10～13% 桉油醇迷迭香1～2%",
+    "explanation": "答案依據教材證據 mat-0603：马鞭草酮迷迭香：10～13% 桉油醇迷迭香1～2%",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "10～13% 桉油醇迷迭香1～2%"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/精油化學/精油分子合成通路.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 87",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0603"
+    ],
+    "evidenceExcerpt": "马鞭草酮迷迭香：10～13% 桉油醇迷迭香1～2%",
+    "answerBasis": "答案直接由證據 mat-0603 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 87"
+  },
+  {
+    "id": 70051,
+    "weekId": "source-verified",
+    "type": "shortAnswer",
+    "chapter": "精油化學",
+    "category": "精油化學",
+    "difficulty": 2,
+    "question": "依教材證據，請說明「2 香茅醛」的重點。",
+    "options": [],
+    "answer": "又叫玫瑰醛：可转化为玫瑰氧化物：玫瑰醚",
+    "referenceAnswer": "又叫玫瑰醛：可转化为玫瑰氧化物：玫瑰醚",
+    "sampleAnswer": "高分示範答案：又叫玫瑰醛：可转化为玫瑰氧化物：玫瑰醚",
+    "explanation": "答案依據教材證據 mat-0597：2 香茅醛：又叫玫瑰醛：可转化为玫瑰氧化物：玫瑰醚",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "又叫玫瑰醛：可转化为玫瑰氧化物：玫瑰醚"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/精油化學/精油分子合成通路.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 81",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0597"
+    ],
+    "evidenceExcerpt": "2 香茅醛：又叫玫瑰醛：可转化为玫瑰氧化物：玫瑰醚",
+    "answerBasis": "答案直接由證據 mat-0597 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 81"
+  },
+  {
+    "id": 70052,
+    "weekId": "source-verified",
+    "type": "shortAnswer",
+    "chapter": "精油化學",
+    "category": "精油化學",
+    "difficulty": 2,
+    "question": "依教材證據，請說明「豆蔻」的重點。",
+    "options": [],
+    "answer": "含：35～50% 1.8桉油醇，32～45%乙酸萜品烯酯",
+    "referenceAnswer": "含：35～50% 1.8桉油醇，32～45%乙酸萜品烯酯",
+    "sampleAnswer": "高分示範答案：含：35～50% 1.8桉油醇，32～45%乙酸萜品烯酯",
+    "explanation": "答案依據教材證據 mat-0611：豆蔻：含：35～50% 1.8桉油醇，32～45%乙酸萜品烯酯",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "含：35～50% 1.8桉油醇",
+      "32～45%乙酸萜品烯酯"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/精油化學/精油分子合成通路.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 95",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0611"
+    ],
+    "evidenceExcerpt": "豆蔻：含：35～50% 1.8桉油醇，32～45%乙酸萜品烯酯",
+    "answerBasis": "答案直接由證據 mat-0611 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 95"
+  },
+  {
+    "id": 70068,
+    "weekId": "source-verified",
+    "type": "multipleChoice",
+    "chapter": "解剖生理",
+    "category": "解剖生理",
+    "difficulty": 2,
+    "question": "依教材證據，哪一個名詞最符合以下說明：「100-130天，平均125天左右。」？",
+    "options": [
+      "红细胞的寿命",
+      "胸锁乳突肌",
+      "腓肠肌",
+      "臀大肌"
+    ],
+    "answer": "红细胞的寿命",
+    "referenceAnswer": "红细胞的寿命",
+    "sampleAnswer": "高分示範答案：红细胞的寿命",
+    "explanation": "答案依據教材證據 mat-2306：红细胞的寿命是100-130天，平均125天左右。",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "红细胞的寿命"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/解剖生理/解剖学与生理学复习七（答案） .docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 3",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-2306"
+    ],
+    "evidenceExcerpt": "红细胞的寿命是100-130天，平均125天左右。",
+    "answerBasis": "答案直接由證據 mat-2306 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 3"
+  },
+  {
+    "id": 70069,
+    "weekId": "source-verified",
+    "type": "multipleChoice",
+    "chapter": "解剖生理",
+    "category": "解剖生理",
+    "difficulty": 2,
+    "question": "依教材證據，哪一個名詞最符合以下說明：「一侧收缩，使头颈向同侧屈，并转向对侧；两侧收缩，肌肉合力作用线在寰枕关节额状轴的后面使头伸，肌肉合力作用线在寰枕关节额状轴的前面使头屈。上固定时，上提胸廓，助吸气。」？",
+    "options": [
+      "红细胞的寿命",
+      "胸锁乳突肌",
+      "腓肠肌",
+      "臀大肌"
+    ],
+    "answer": "胸锁乳突肌",
+    "referenceAnswer": "胸锁乳突肌",
+    "sampleAnswer": "高分示範答案：胸锁乳突肌",
+    "explanation": "答案依據教材證據 mat-2509：胸锁乳突肌：一侧收缩，使头颈向同侧屈，并转向对侧；两侧收缩，肌肉合力作用线在寰枕关节额状轴的后面使头伸，肌肉合力作用线在寰枕关节额状轴的前面使头屈。上固定时，上提胸廓，助吸气。",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "胸锁乳突肌"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/解剖生理/解剖学与生理学复习四（答案） .docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 12",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-2509"
+    ],
+    "evidenceExcerpt": "胸锁乳突肌：一侧收缩，使头颈向同侧屈，并转向对侧；两侧收缩，肌肉合力作用线在寰枕关节额状轴的后面使头伸，肌肉合力作用线在寰枕关节额状轴的前面使头屈。上固定时，上提胸廓，助吸气。",
+    "answerBasis": "答案直接由證據 mat-2509 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 12"
+  },
+  {
+    "id": 70070,
+    "weekId": "source-verified",
+    "type": "multipleChoice",
+    "chapter": "解剖生理",
+    "category": "解剖生理",
+    "difficulty": 2,
+    "question": "依教材證據，哪一個名詞最符合以下說明：「近固定使大腿在髋关节处伸和旋外；肌肉的上半部收缩可使大腿外展、下半部收缩可使大腿内收。远固定一侧收缩，使骨盆转向对侧。两侧同时收缩使骨盆后倾。并使躯干后伸，维持身体站立的平衡。」？",
+    "options": [
+      "红细胞的寿命",
+      "胸锁乳突肌",
+      "腓肠肌",
+      "臀大肌"
+    ],
+    "answer": "臀大肌",
+    "referenceAnswer": "臀大肌",
+    "sampleAnswer": "高分示範答案：臀大肌",
+    "explanation": "答案依據教材證據 mat-2510：臀大肌：近固定使大腿在髋关节处伸和旋外；肌肉的上半部收缩可使大腿外展、下半部收缩可使大腿内收。远固定一侧收缩，使骨盆转向对侧。两侧同时收缩使骨盆后倾。并使躯干后伸，维持身体站立的平衡。",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "臀大肌"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/解剖生理/解剖学与生理学复习四（答案） .docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 13",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-2510"
+    ],
+    "evidenceExcerpt": "臀大肌：近固定使大腿在髋关节处伸和旋外；肌肉的上半部收缩可使大腿外展、下半部收缩可使大腿内收。远固定一侧收缩，使骨盆转向对侧。两侧同时收缩使骨盆后倾。并使躯干后伸，维持身体站立的平衡。",
+    "answerBasis": "答案直接由證據 mat-2510 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 13"
+  },
+  {
+    "id": 70071,
+    "weekId": "source-verified",
+    "type": "multipleChoice",
+    "chapter": "解剖生理",
+    "category": "解剖生理",
+    "difficulty": 2,
+    "question": "依教材證據，哪一個名詞最符合以下說明：「可以使足跖屈（上提足跟）；在站立时，固定踝关节，防止身体前倾。」？",
+    "options": [
+      "红细胞的寿命",
+      "胸锁乳突肌",
+      "腓肠肌",
+      "臀大肌"
+    ],
+    "answer": "腓肠肌",
+    "referenceAnswer": "腓肠肌",
+    "sampleAnswer": "高分示範答案：腓肠肌",
+    "explanation": "答案依據教材證據 mat-2512：腓肠肌：可以使足跖屈（上提足跟）；在站立时，固定踝关节，防止身体前倾。",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "腓肠肌"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/解剖生理/解剖学与生理学复习四（答案） .docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 15",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-2512"
+    ],
+    "evidenceExcerpt": "腓肠肌：可以使足跖屈（上提足跟）；在站立时，固定踝关节，防止身体前倾。",
+    "answerBasis": "答案直接由證據 mat-2512 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 15"
+  },
+  {
+    "id": 70072,
+    "weekId": "source-verified",
+    "type": "multipleChoice",
+    "chapter": "解剖生理",
+    "category": "解剖生理",
+    "difficulty": 2,
+    "question": "依教材證據，哪一個名詞最符合以下說明：「近固定时，使肩胛骨上提和下回旋。远固定时，一侧收缩，使头向同侧屈和轻度回旋；两侧收缩，使颈伸。」？",
+    "options": [
+      "红细胞的寿命",
+      "肩胛提肌",
+      "胸锁乳突肌",
+      "臀大肌"
+    ],
+    "answer": "肩胛提肌",
+    "referenceAnswer": "肩胛提肌",
+    "sampleAnswer": "高分示範答案：肩胛提肌",
+    "explanation": "答案依據教材證據 mat-2513：肩胛提肌：近固定时，使肩胛骨上提和下回旋。远固定时，一侧收缩，使头向同侧屈和轻度回旋；两侧收缩，使颈伸。",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "肩胛提肌"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/解剖生理/解剖学与生理学复习四（答案） .docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 16",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-2513"
+    ],
+    "evidenceExcerpt": "肩胛提肌：近固定时，使肩胛骨上提和下回旋。远固定时，一侧收缩，使头向同侧屈和轻度回旋；两侧收缩，使颈伸。",
+    "answerBasis": "答案直接由證據 mat-2513 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 16"
+  },
+  {
+    "id": 70073,
+    "weekId": "source-verified",
+    "type": "multipleChoice",
+    "chapter": "解剖生理",
+    "category": "解剖生理",
+    "difficulty": 2,
+    "question": "依教材證據，哪一個名詞最符合以下說明：「新旧细胞更新代谢的一个过程；」？",
+    "options": [
+      "红细胞的寿命",
+      "胸锁乳突肌",
+      "新陈代谢",
+      "臀大肌"
+    ],
+    "answer": "新陈代谢",
+    "referenceAnswer": "新陈代谢",
+    "sampleAnswer": "高分示範答案：新陈代谢",
+    "explanation": "答案依據教材證據 mat-2534：新陈代谢：新旧细胞更新代谢的一个过程；",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "新陈代谢"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/解剖生理/解剖学和生理学复习二答案.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 6",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-2534"
+    ],
+    "evidenceExcerpt": "新陈代谢：新旧细胞更新代谢的一个过程；",
+    "answerBasis": "答案直接由證據 mat-2534 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 6"
+  },
+  {
+    "id": 70074,
+    "weekId": "source-verified",
+    "type": "multipleChoice",
+    "chapter": "解剖生理",
+    "category": "解剖生理",
+    "difficulty": 2,
+    "question": "依教材證據，哪一個名詞最符合以下說明：「是维持人体正常代谢和生理功能的微量小分子有机化合物。」？",
+    "options": [
+      "红细胞的寿命",
+      "胸锁乳突肌",
+      "维生素",
+      "臀大肌"
+    ],
+    "answer": "维生素",
+    "referenceAnswer": "维生素",
+    "sampleAnswer": "高分示範答案：维生素",
+    "explanation": "答案依據教材證據 mat-2492：维生素：是维持人体正常代谢和生理功能的微量小分子有机化合物。",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "维生素"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/解剖生理/解剖学与生理学复习十（答案）.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 17",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-2492"
+    ],
+    "evidenceExcerpt": "维生素：是维持人体正常代谢和生理功能的微量小分子有机化合物。",
+    "answerBasis": "答案直接由證據 mat-2492 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 17"
+  },
+  {
+    "id": 70075,
+    "weekId": "source-verified",
+    "type": "multipleChoice",
+    "chapter": "解剖生理",
+    "category": "解剖生理",
+    "difficulty": 2,
+    "question": "依教材證據，哪一個名詞最符合以下說明：「骨骼肌附着在关节近侧(靠近躯干一侧)骨上一端的附着点。」？",
+    "options": [
+      "红细胞的寿命",
+      "肌肉的起点",
+      "胸锁乳突肌",
+      "臀大肌"
+    ],
+    "answer": "肌肉的起点",
+    "referenceAnswer": "肌肉的起点",
+    "sampleAnswer": "高分示範答案：肌肉的起点",
+    "explanation": "答案依據教材證據 mat-2504：肌肉的起点：骨骼肌附着在关节近侧(靠近躯干一侧)骨上一端的附着点。",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "肌肉的起点"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/解剖生理/解剖学与生理学复习四（答案） .docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 7",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-2504"
+    ],
+    "evidenceExcerpt": "肌肉的起点：骨骼肌附着在关节近侧(靠近躯干一侧)骨上一端的附着点。",
+    "answerBasis": "答案直接由證據 mat-2504 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 7"
+  },
+  {
+    "id": 70076,
+    "weekId": "source-verified",
+    "type": "multipleChoice",
+    "chapter": "解剖生理",
+    "category": "解剖生理",
+    "difficulty": 2,
+    "question": "依教材證據，哪一個名詞最符合以下說明：「骨骼肌跨过关节。附着在关节远侧(远离躯干一侧)骨上一端的附着点。」？",
+    "options": [
+      "红细胞的寿命",
+      "肌肉的止点",
+      "胸锁乳突肌",
+      "臀大肌"
+    ],
+    "answer": "肌肉的止点",
+    "referenceAnswer": "肌肉的止点",
+    "sampleAnswer": "高分示範答案：肌肉的止点",
+    "explanation": "答案依據教材證據 mat-2505：肌肉的止点：骨骼肌跨过关节。附着在关节远侧(远离躯干一侧)骨上一端的附着点。",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "肌肉的止点"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/解剖生理/解剖学与生理学复习四（答案） .docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 8",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-2505"
+    ],
+    "evidenceExcerpt": "肌肉的止点：骨骼肌跨过关节。附着在关节远侧(远离躯干一侧)骨上一端的附着点。",
+    "answerBasis": "答案直接由證據 mat-2505 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 8"
+  },
+  {
+    "id": 70077,
+    "weekId": "source-verified",
+    "type": "multipleChoice",
+    "chapter": "解剖生理",
+    "category": "解剖生理",
+    "difficulty": 2,
+    "question": "依教材證據，哪一個名詞最符合以下說明：「骨的近侧端在原位转动，远侧端做圆周运动，它是屈、外展、伸和内收依次连续的运动。」？",
+    "options": [
+      "红细胞的寿命",
+      "环转",
+      "胸锁乳突肌",
+      "臀大肌"
+    ],
+    "answer": "环转",
+    "referenceAnswer": "环转",
+    "sampleAnswer": "高分示範答案：环转",
+    "explanation": "答案依據教材證據 mat-2336：环转：骨的近侧端在原位转动，远侧端做圆周运动，它是屈、外展、伸和内收依次连续的运动。",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "环转"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/解剖生理/解剖学与生理学复习三答案 .docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 12",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-2336"
+    ],
+    "evidenceExcerpt": "环转：骨的近侧端在原位转动，远侧端做圆周运动，它是屈、外展、伸和内收依次连续的运动。",
+    "answerBasis": "答案直接由證據 mat-2336 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 12"
+  },
+  {
+    "id": 70078,
+    "weekId": "source-verified",
+    "type": "multipleChoice",
+    "chapter": "解剖生理",
+    "category": "解剖生理",
+    "difficulty": 2,
+    "question": "依教材證據，哪一個名詞最符合以下說明：「是食物提供给身体的能量，单位是千焦、卡路里、热卡。」？",
+    "options": [
+      "红细胞的寿命",
+      "热量",
+      "胸锁乳突肌",
+      "臀大肌"
+    ],
+    "answer": "热量",
+    "referenceAnswer": "热量",
+    "sampleAnswer": "高分示範答案：热量",
+    "explanation": "答案依據教材證據 mat-2490：热量：是食物提供给身体的能量，单位是千焦、卡路里、热卡。",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "热量"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/解剖生理/解剖学与生理学复习十（答案）.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 15",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-2490"
+    ],
+    "evidenceExcerpt": "热量：是食物提供给身体的能量，单位是千焦、卡路里、热卡。",
+    "answerBasis": "答案直接由證據 mat-2490 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 15"
+  },
+  {
+    "id": 70079,
+    "weekId": "source-verified",
+    "type": "multipleChoice",
+    "chapter": "解剖生理",
+    "category": "解剖生理",
+    "difficulty": 2,
+    "question": "依教材證據，哪一個名詞最符合以下說明：「动脉由心脏发出向全身供血，而静脉是收集全身的血液回流至心脏的血管。动脉的血管壁比静脉的血管壁厚，弹性更好，压力较高，只有这样才可以承受住正常血管内动脉的压力。静脉与动脉相比，血管壁较薄，管腔较大，且静脉内常伴有瓣膜，主要是防止静脉内的血液反流。动脉内的血液含氧量较高，颜色鲜红，静脉内的血液含氧量较低，颜色暗红。」？",
+    "options": [
+      "动脉和静脉的主要区别",
+      "红细胞的寿命",
+      "胸锁乳突肌",
+      "臀大肌"
+    ],
+    "answer": "动脉和静脉的主要区别",
+    "referenceAnswer": "动脉和静脉的主要区别",
+    "sampleAnswer": "高分示範答案：动脉和静脉的主要区别",
+    "explanation": "答案依據教材證據 mat-2309：动脉和静脉的主要区别是动脉由心脏发出向全身供血，而静脉是收集全身的血液回流至心脏的血管。动脉的血管壁比静脉的血管壁厚，弹性更好，压力较高，只有这样才可以承受住正常血管内动脉的压力。静脉与动脉相比，血管壁较薄，管腔较大，且静脉内常伴有瓣膜，主要是防止静脉内的血液反流。动脉内的血液含氧量较高，颜色鲜红，静脉内的血液含氧量较低，颜色暗红。",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "动脉和静脉的主要区别"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/解剖生理/解剖学与生理学复习七（答案） .docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 6",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-2309"
+    ],
+    "evidenceExcerpt": "动脉和静脉的主要区别是动脉由心脏发出向全身供血，而静脉是收集全身的血液回流至心脏的血管。动脉的血管壁比静脉的血管壁厚，弹性更好，压力较高，只有这样才可以承受住正常血管内动脉的压力。静脉与动脉相比，血管壁较薄，管腔较大，且静脉内常伴有瓣膜，主要是防止静脉内的血液反流。动脉内的血液含氧量较高，颜色鲜红，静脉内的血液含氧量较低，颜色暗红。",
+    "answerBasis": "答案直接由證據 mat-2309 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 6"
+  },
+  {
+    "id": 70094,
+    "weekId": "source-verified",
+    "type": "multipleChoice",
+    "chapter": "植物油／基底油",
+    "category": "植物油／基底油",
+    "difficulty": 2,
+    "question": "依教材證據，哪一個名詞最符合以下說明：「短链和中链，不饱和脂肪酸全是长链」？",
+    "options": [
+      "双元多元不饱和脂肪酸",
+      "饱和脂肪酸",
+      "饱和脂肪酸分",
+      "脂肪伴随物"
+    ],
+    "answer": "饱和脂肪酸分",
+    "referenceAnswer": "饱和脂肪酸分",
+    "sampleAnswer": "高分示範答案：饱和脂肪酸分",
+    "explanation": "答案依據教材證據 mat-0077：饱和脂肪酸分为短链和中链，不饱和脂肪酸全是长链",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "饱和脂肪酸分"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/安全濃度與稀釋/基础油.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 16",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0077"
+    ],
+    "evidenceExcerpt": "饱和脂肪酸分为短链和中链，不饱和脂肪酸全是长链",
+    "answerBasis": "答案直接由證據 mat-0077 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 16"
+  },
+  {
+    "id": 70095,
+    "weekId": "source-verified",
+    "type": "multipleChoice",
+    "chapter": "植物油／基底油",
+    "category": "植物油／基底油",
+    "difficulty": 2,
+    "question": "依教材證據，哪一個名詞最符合以下說明：「棕榈酸约 30-38%， 12%」？",
+    "options": [
+      "双元多元不饱和脂肪酸",
+      "饱和脂肪酸",
+      "饱和脂肪酸分",
+      "脂肪伴随物"
+    ],
+    "answer": "饱和脂肪酸",
+    "referenceAnswer": "饱和脂肪酸",
+    "sampleAnswer": "高分示範答案：饱和脂肪酸",
+    "explanation": "答案依據教材證據 mat-0121：饱和脂肪酸： 棕榈酸约 30-38%， 12%",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "饱和脂肪酸"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/安全濃度與稀釋/基础油.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 60",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0121"
+    ],
+    "evidenceExcerpt": "饱和脂肪酸： 棕榈酸约 30-38%， 12%",
+    "answerBasis": "答案直接由證據 mat-0121 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 60"
+  },
+  {
+    "id": 70096,
+    "weekId": "source-verified",
+    "type": "multipleChoice",
+    "chapter": "植物油／基底油",
+    "category": "植物油／基底油",
+    "difficulty": 2,
+    "question": "依教材證據，哪一個名詞最符合以下說明：「植物固醇、卵磷脂、生育酚等」？",
+    "options": [
+      "双元多元不饱和脂肪酸",
+      "饱和脂肪酸",
+      "饱和脂肪酸分",
+      "脂肪伴随物"
+    ],
+    "answer": "脂肪伴随物",
+    "referenceAnswer": "脂肪伴随物",
+    "sampleAnswer": "高分示範答案：脂肪伴随物",
+    "explanation": "答案依據教材證據 mat-0149：脂肪伴随物：植物固醇、卵磷脂、生育酚等",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "脂肪伴随物"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/安全濃度與稀釋/基础油.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 88",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0149"
+    ],
+    "evidenceExcerpt": "脂肪伴随物：植物固醇、卵磷脂、生育酚等",
+    "answerBasis": "答案直接由證據 mat-0149 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 88"
+  },
+  {
+    "id": 70097,
+    "weekId": "source-verified",
+    "type": "multipleChoice",
+    "chapter": "植物油／基底油",
+    "category": "植物油／基底油",
+    "difficulty": 2,
+    "question": "依教材證據，哪一個名詞最符合以下說明：「18～22个碳原子的直链脂肪酸」？",
+    "options": [
+      "双元多元不饱和脂肪酸",
+      "饱和脂肪酸",
+      "饱和脂肪酸分",
+      "脂肪伴随物"
+    ],
+    "answer": "双元多元不饱和脂肪酸",
+    "referenceAnswer": "双元多元不饱和脂肪酸",
+    "sampleAnswer": "高分示範答案：双元多元不饱和脂肪酸",
+    "explanation": "答案依據教材證據 mat-0079：双元多元不饱和脂肪酸： 18～22个碳原子的直链脂肪酸",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "双元多元不饱和脂肪酸"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/安全濃度與稀釋/基础油.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 18",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0079"
+    ],
+    "evidenceExcerpt": "双元多元不饱和脂肪酸： 18～22个碳原子的直链脂肪酸",
+    "answerBasis": "答案直接由證據 mat-0079 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 18"
+  },
+  {
+    "id": 70098,
+    "weekId": "source-verified",
+    "type": "multipleChoice",
+    "chapter": "植物油／基底油",
+    "category": "植物油／基底油",
+    "difficulty": 2,
+    "question": "依教材證據，哪一個名詞最符合以下說明：「油酸（19%） ω-9」？",
+    "options": [
+      "单元不饱和脂肪酸",
+      "饱和脂肪酸",
+      "饱和脂肪酸分",
+      "脂肪伴随物"
+    ],
+    "answer": "单元不饱和脂肪酸",
+    "referenceAnswer": "单元不饱和脂肪酸",
+    "sampleAnswer": "高分示範答案：单元不饱和脂肪酸",
+    "explanation": "答案依據教材證據 mat-0103：单元不饱和脂肪酸：油酸（19%） ω-9",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "单元不饱和脂肪酸"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/安全濃度與稀釋/基础油.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 42",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0103"
+    ],
+    "evidenceExcerpt": "单元不饱和脂肪酸：油酸（19%） ω-9",
+    "answerBasis": "答案直接由證據 mat-0103 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 42"
+  },
+  {
+    "id": 70099,
+    "weekId": "source-verified",
+    "type": "multipleChoice",
+    "chapter": "植物油／基底油",
+    "category": "植物油／基底油",
+    "difficulty": 2,
+    "question": "依教材證據，哪一個名詞最符合以下說明：「亚油酸： 35% ω-6」？",
+    "options": [
+      "双元不饱和脂肪酸",
+      "饱和脂肪酸",
+      "饱和脂肪酸分",
+      "脂肪伴随物"
+    ],
+    "answer": "双元不饱和脂肪酸",
+    "referenceAnswer": "双元不饱和脂肪酸",
+    "sampleAnswer": "高分示範答案：双元不饱和脂肪酸",
+    "explanation": "答案依據教材證據 mat-0104：双元不饱和脂肪酸：亚油酸： 35% ω-6",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "双元不饱和脂肪酸"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/安全濃度與稀釋/基础油.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 43",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0104"
+    ],
+    "evidenceExcerpt": "双元不饱和脂肪酸：亚油酸： 35% ω-6",
+    "answerBasis": "答案直接由證據 mat-0104 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 43"
+  },
+  {
+    "id": 70100,
+    "weekId": "source-verified",
+    "type": "multipleChoice",
+    "chapter": "植物油／基底油",
+    "category": "植物油／基底油",
+    "difficulty": 2,
+    "question": "依教材證據，哪一個名詞最符合以下說明：「γ -亚麻油酸（20-25%） ω-3 亚麻酸=亚麻油酸」？",
+    "options": [
+      "多元不饱和脂肪酸",
+      "饱和脂肪酸",
+      "饱和脂肪酸分",
+      "脂肪伴随物"
+    ],
+    "answer": "多元不饱和脂肪酸",
+    "referenceAnswer": "多元不饱和脂肪酸",
+    "sampleAnswer": "高分示範答案：多元不饱和脂肪酸",
+    "explanation": "答案依據教材證據 mat-0105：多元不饱和脂肪酸：γ -亚麻油酸（20-25%） ω-3 亚麻酸=亚麻油酸",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "多元不饱和脂肪酸"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/安全濃度與稀釋/基础油.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 44",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0105"
+    ],
+    "evidenceExcerpt": "多元不饱和脂肪酸：γ -亚麻油酸（20-25%） ω-3 亚麻酸=亚麻油酸",
+    "answerBasis": "答案直接由證據 mat-0105 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 44"
+  },
+  {
+    "id": 70101,
+    "weekId": "source-verified",
+    "type": "multipleChoice",
+    "chapter": "植物油／基底油",
+    "category": "植物油／基底油",
+    "difficulty": 2,
+    "question": "依教材證據，哪一個名詞最符合以下說明：「亚油酸约 3% 33%」？",
+    "options": [
+      "双饱和脂肪酸",
+      "饱和脂肪酸",
+      "饱和脂肪酸分",
+      "脂肪伴随物"
+    ],
+    "answer": "双饱和脂肪酸",
+    "referenceAnswer": "双饱和脂肪酸",
+    "sampleAnswer": "高分示範答案：双饱和脂肪酸",
+    "explanation": "答案依據教材證據 mat-0123：双饱和脂肪酸： 亚油酸约 3% 33%",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "双饱和脂肪酸"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/安全濃度與稀釋/基础油.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 62",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0123"
+    ],
+    "evidenceExcerpt": "双饱和脂肪酸： 亚油酸约 3% 33%",
+    "answerBasis": "答案直接由證據 mat-0123 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 62"
+  },
+  {
+    "id": 70102,
+    "weekId": "source-verified",
+    "type": "multipleChoice",
+    "chapter": "植物油／基底油",
+    "category": "植物油／基底油",
+    "difficulty": 2,
+    "question": "依教材證據，哪一個名詞最符合以下說明：「4混合，可加速皮肤代谢。」？",
+    "options": [
+      "饱和脂肪酸",
+      "饱和脂肪酸分",
+      "脂肪伴随物",
+      "最好与其他植物油1"
+    ],
+    "answer": "最好与其他植物油1",
+    "referenceAnswer": "最好与其他植物油1",
+    "sampleAnswer": "高分示範答案：最好与其他植物油1",
+    "explanation": "答案依據教材證據 mat-0140：最好与其他植物油1:4混合，可加速皮肤代谢。",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "最好与其他植物油1"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/安全濃度與稀釋/基础油.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 79",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0140"
+    ],
+    "evidenceExcerpt": "最好与其他植物油1:4混合，可加速皮肤代谢。",
+    "answerBasis": "答案直接由證據 mat-0140 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 79"
+  },
+  {
+    "id": 70103,
+    "weekId": "source-verified",
+    "type": "multipleChoice",
+    "chapter": "植物油／基底油",
+    "category": "植物油／基底油",
+    "difficulty": 2,
+    "question": "依教材證據，哪一個名詞最符合以下說明：「棕榈酸6% 硬脂酸3%」？",
+    "options": [
+      "饱和脂肪酸",
+      "饱和脂肪酸 9%",
+      "饱和脂肪酸分",
+      "脂肪伴随物"
+    ],
+    "answer": "饱和脂肪酸 9%",
+    "referenceAnswer": "饱和脂肪酸 9%",
+    "sampleAnswer": "高分示範答案：饱和脂肪酸 9%",
+    "explanation": "答案依據教材證據 mat-0118：饱和脂肪酸 9% ：棕榈酸6% 硬脂酸3%",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "饱和脂肪酸 9%"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/安全濃度與稀釋/基础油.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 57",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0118"
+    ],
+    "evidenceExcerpt": "饱和脂肪酸 9% ：棕榈酸6% 硬脂酸3%",
+    "answerBasis": "答案直接由證據 mat-0118 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 57"
+  },
+  {
+    "id": 70104,
+    "weekId": "source-verified",
+    "type": "multipleChoice",
+    "chapter": "精油化學",
+    "category": "精油化學",
+    "difficulty": 2,
+    "question": "依教材證據，哪一個名詞最符合以下說明：「苯基丙烷酚，苯环+羟基OH的衍生物」？",
+    "options": [
+      "反式柠檬醛=牻牛儿醛",
+      "光反应",
+      "芳香酚",
+      "顺式柠檬醛=橙花醛"
+    ],
+    "answer": "芳香酚",
+    "referenceAnswer": "芳香酚",
+    "sampleAnswer": "高分示範答案：芳香酚",
+    "explanation": "答案依據教材證據 mat-0568：芳香酚：苯基丙烷酚，苯环+羟基OH的衍生物",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "芳香酚"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/精油化學/精油分子合成通路.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 52",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0568"
+    ],
+    "evidenceExcerpt": "芳香酚：苯基丙烷酚，苯环+羟基OH的衍生物",
+    "answerBasis": "答案直接由證據 mat-0568 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 52"
+  },
+  {
+    "id": 70105,
+    "weekId": "source-verified",
+    "type": "multipleChoice",
+    "chapter": "精油化學",
+    "category": "精油化學",
+    "difficulty": 2,
+    "question": "依教材證據，哪一個名詞最符合以下說明：「叶绿素将太阳能转化为活跃的化学能，并存在ATP中」？",
+    "options": [
+      "反式柠檬醛=牻牛儿醛",
+      "光反应",
+      "芳香酚",
+      "顺式柠檬醛=橙花醛"
+    ],
+    "answer": "光反应",
+    "referenceAnswer": "光反应",
+    "sampleAnswer": "高分示範答案：光反应",
+    "explanation": "答案依據教材證據 mat-0585：光反应：叶绿素将太阳能转化为活跃的化学能，并存在ATP中",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "光反应"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/精油化學/精油分子合成通路.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 69",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0585"
+    ],
+    "evidenceExcerpt": "光反应：叶绿素将太阳能转化为活跃的化学能，并存在ATP中",
+    "answerBasis": "答案直接由證據 mat-0585 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 69"
+  },
+  {
+    "id": 70106,
+    "weekId": "source-verified",
+    "type": "multipleChoice",
+    "chapter": "精油化學",
+    "category": "精油化學",
+    "difficulty": 2,
+    "question": "依教材證據，哪一個名詞最符合以下說明：「柠檬香茅、柠檬3～10%、山鸡椒，香蜂草、柠檬香桃木」？",
+    "options": [
+      "反式柠檬醛=牻牛儿醛",
+      "光反应",
+      "芳香酚",
+      "顺式柠檬醛=橙花醛"
+    ],
+    "answer": "顺式柠檬醛=橙花醛",
+    "referenceAnswer": "顺式柠檬醛=橙花醛",
+    "sampleAnswer": "高分示範答案：顺式柠檬醛=橙花醛",
+    "explanation": "答案依據教材證據 mat-0595：顺式柠檬醛=橙花醛：柠檬香茅、柠檬3～10%、山鸡椒，香蜂草、柠檬香桃木",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "顺式柠檬醛=橙花醛"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/精油化學/精油分子合成通路.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 79",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0595"
+    ],
+    "evidenceExcerpt": "顺式柠檬醛=橙花醛：柠檬香茅、柠檬3～10%、山鸡椒，香蜂草、柠檬香桃木",
+    "answerBasis": "答案直接由證據 mat-0595 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 79"
+  },
+  {
+    "id": 70107,
+    "weekId": "source-verified",
+    "type": "multipleChoice",
+    "chapter": "精油化學",
+    "category": "精油化學",
+    "difficulty": 2,
+    "question": "依教材證據，哪一個名詞最符合以下說明：「柠檬香茅、山鸡椒、香蜂草、柠檬香桃木」？",
+    "options": [
+      "反式柠檬醛=牻牛儿醛",
+      "光反应",
+      "芳香酚",
+      "顺式柠檬醛=橙花醛"
+    ],
+    "answer": "反式柠檬醛=牻牛儿醛",
+    "referenceAnswer": "反式柠檬醛=牻牛儿醛",
+    "sampleAnswer": "高分示範答案：反式柠檬醛=牻牛儿醛",
+    "explanation": "答案依據教材證據 mat-0596：反式柠檬醛=牻牛儿醛：柠檬香茅、山鸡椒、香蜂草、柠檬香桃木",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "反式柠檬醛=牻牛儿醛"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/精油化學/精油分子合成通路.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 80",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0596"
+    ],
+    "evidenceExcerpt": "反式柠檬醛=牻牛儿醛：柠檬香茅、山鸡椒、香蜂草、柠檬香桃木",
+    "answerBasis": "答案直接由證據 mat-0596 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 80"
+  },
+  {
+    "id": 70108,
+    "weekId": "source-verified",
+    "type": "multipleChoice",
+    "chapter": "精油化學",
+    "category": "精油化學",
+    "difficulty": 2,
+    "question": "依教材證據，哪一個名詞最符合以下說明：「ATP中活跃的化学能转化为糖等有机物中稳定的化学能」？",
+    "options": [
+      "光反应",
+      "芳香酚",
+      "顺式柠檬醛=橙花醛",
+      "暗反应"
+    ],
+    "answer": "暗反应",
+    "referenceAnswer": "暗反应",
+    "sampleAnswer": "高分示範答案：暗反应",
+    "explanation": "答案依據教材證據 mat-0586：暗反应：ATP中活跃的化学能转化为糖等有机物中稳定的化学能",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "暗反应"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/精油化學/精油分子合成通路.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 70",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0586"
+    ],
+    "evidenceExcerpt": "暗反应：ATP中活跃的化学能转化为糖等有机物中稳定的化学能",
+    "answerBasis": "答案直接由證據 mat-0586 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 70"
+  },
+  {
+    "id": 70109,
+    "weekId": "source-verified",
+    "type": "multipleChoice",
+    "chapter": "精油化學",
+    "category": "精油化學",
+    "difficulty": 2,
+    "question": "依教材證據，哪一個名詞最符合以下說明：「太阳+水+光 得到：氧化和葡萄糖」？",
+    "options": [
+      "一次代谢",
+      "光反应",
+      "芳香酚",
+      "顺式柠檬醛=橙花醛"
+    ],
+    "answer": "一次代谢",
+    "referenceAnswer": "一次代谢",
+    "sampleAnswer": "高分示範答案：一次代谢",
+    "explanation": "答案依據教材證據 mat-0587：一次代谢：太阳+水+光 得到：氧化和葡萄糖",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "一次代谢"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/精油化學/精油分子合成通路.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 71",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0587"
+    ],
+    "evidenceExcerpt": "一次代谢：太阳+水+光 得到：氧化和葡萄糖",
+    "answerBasis": "答案直接由證據 mat-0587 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 71"
+  },
+  {
+    "id": 70110,
+    "weekId": "source-verified",
+    "type": "multipleChoice",
+    "chapter": "精油化學",
+    "category": "精油化學",
+    "difficulty": 2,
+    "question": "依教材證據，哪一個名詞最符合以下說明：「葡萄糖+淀粉+维生素 得到丙酮酸」？",
+    "options": [
+      "二次代谢",
+      "光反应",
+      "芳香酚",
+      "顺式柠檬醛=橙花醛"
+    ],
+    "answer": "二次代谢",
+    "referenceAnswer": "二次代谢",
+    "sampleAnswer": "高分示範答案：二次代谢",
+    "explanation": "答案依據教材證據 mat-0588：二次代谢：葡萄糖+淀粉+维生素 得到丙酮酸",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "二次代谢"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/精油化學/精油分子合成通路.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 72",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0588"
+    ],
+    "evidenceExcerpt": "二次代谢：葡萄糖+淀粉+维生素 得到丙酮酸",
+    "answerBasis": "答案直接由證據 mat-0588 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 72"
+  },
+  {
+    "id": 70111,
+    "weekId": "source-verified",
+    "type": "multipleChoice",
+    "chapter": "精油化學",
+    "category": "精油化學",
+    "difficulty": 2,
+    "question": "依教材證據，哪一個名詞最符合以下說明：「10～13% 桉油醇迷迭香1～2%」？",
+    "options": [
+      "马鞭草酮迷迭香",
+      "光反应",
+      "芳香酚",
+      "顺式柠檬醛=橙花醛"
+    ],
+    "answer": "马鞭草酮迷迭香",
+    "referenceAnswer": "马鞭草酮迷迭香",
+    "sampleAnswer": "高分示範答案：马鞭草酮迷迭香",
+    "explanation": "答案依據教材證據 mat-0603：马鞭草酮迷迭香：10～13% 桉油醇迷迭香1～2%",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "马鞭草酮迷迭香"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/精油化學/精油分子合成通路.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 87",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0603"
+    ],
+    "evidenceExcerpt": "马鞭草酮迷迭香：10～13% 桉油醇迷迭香1～2%",
+    "answerBasis": "答案直接由證據 mat-0603 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 87"
+  },
+  {
+    "id": 70112,
+    "weekId": "source-verified",
+    "type": "multipleChoice",
+    "chapter": "精油化學",
+    "category": "精油化學",
+    "difficulty": 2,
+    "question": "依教材證據，哪一個名詞最符合以下說明：「又叫玫瑰醛：可转化为玫瑰氧化物：玫瑰醚」？",
+    "options": [
+      "2 香茅醛",
+      "光反应",
+      "芳香酚",
+      "顺式柠檬醛=橙花醛"
+    ],
+    "answer": "2 香茅醛",
+    "referenceAnswer": "2 香茅醛",
+    "sampleAnswer": "高分示範答案：2 香茅醛",
+    "explanation": "答案依據教材證據 mat-0597：2 香茅醛：又叫玫瑰醛：可转化为玫瑰氧化物：玫瑰醚",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "2 香茅醛"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/精油化學/精油分子合成通路.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 81",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0597"
+    ],
+    "evidenceExcerpt": "2 香茅醛：又叫玫瑰醛：可转化为玫瑰氧化物：玫瑰醚",
+    "answerBasis": "答案直接由證據 mat-0597 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 81"
+  },
+  {
+    "id": 70113,
+    "weekId": "source-verified",
+    "type": "multipleChoice",
+    "chapter": "精油化學",
+    "category": "精油化學",
+    "difficulty": 2,
+    "question": "依教材證據，哪一個名詞最符合以下說明：「含：35～50% 1.8桉油醇，32～45%乙酸萜品烯酯」？",
+    "options": [
+      "光反应",
+      "豆蔻",
+      "芳香酚",
+      "顺式柠檬醛=橙花醛"
+    ],
+    "answer": "豆蔻",
+    "referenceAnswer": "豆蔻",
+    "sampleAnswer": "高分示範答案：豆蔻",
+    "explanation": "答案依據教材證據 mat-0611：豆蔻：含：35～50% 1.8桉油醇，32～45%乙酸萜品烯酯",
+    "answerGuide": "請以教材證據與評分重點作答；若教材與其他來源衝突，採保守方式並列入人工覆核。",
+    "keyPoints": [
+      "豆蔻"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，方向正確。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題或與教材證據不符。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/精油化學/精油分子合成通路.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 95",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0611"
+    ],
+    "evidenceExcerpt": "豆蔻：含：35～50% 1.8桉油醇，32～45%乙酸萜品烯酯",
+    "answerBasis": "答案直接由證據 mat-0611 支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint35_source_evidence_factory",
+    "generatedAt": "2026-07-15T18:14:40.692Z",
+    "priority": 5,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 95"
+  }
+]

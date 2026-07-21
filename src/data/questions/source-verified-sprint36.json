@@ -1,0 +1,3741 @@
+[
+  {
+    "id": 71001,
+    "weekId": "source-verified-sprint36",
+    "type": "shortAnswer",
+    "chapter": "解剖生理",
+    "category": "解剖生理",
+    "difficulty": 2,
+    "question": "請依教材證據，說明「(Whereverpossiblep」的定義、結構或學習重點。",
+    "options": [],
+    "answer": "(Whereverpossiblepleaseanswerdirectlyontheexampaper.Ifneeded,useextrasheets, ensure that you enter your name for each. )",
+    "referenceAnswer": "(Whereverpossiblepleaseanswerdirectlyontheexampaper.Ifneeded,useextrasheets, ensure that you enter your name for each. )",
+    "sampleAnswer": "高分示範答案：(Whereverpossiblepleaseanswerdirectlyontheexampaper.Ifneeded,useextrasheets, ensure that you enter your name for each. )",
+    "explanation": "答案依據教材證據 mat-0182：(Whereverpossiblepleaseanswerdirectlyontheexampaper.Ifneeded,useextrasheets, ensure that you enter your name for each. )",
+    "answerGuide": "請依教材證據、參考答案與評分重點作答；本題不延伸醫療診斷、治療或精確配方建議。",
+    "keyPoints": [
+      "(Whereverpossiblepleaseanswerdirectlyontheexampaper.Ifneeded",
+      "useextrasheets",
+      "ensure that you enter your name for each. )"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，答案方向正確且沒有超出證據的推論。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數教材重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點，仍可看出部分理解。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、與證據不符，或加入未獲來源支持的高風險說法。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified 第二批，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/模擬題/副本解剖复习与模拟5套.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 1",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0182"
+    ],
+    "evidenceExcerpt": "(Whereverpossiblepleaseanswerdirectlyontheexampaper.Ifneeded,useextrasheets, ensure that you enter your name for each. )",
+    "answerBasis": "答案僅由教材證據 mat-0182 的摘錄支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint36_source_verified_expansion",
+    "generatedAt": "2026-07-16T00:00:00.000Z",
+    "priority": 4,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 1"
+  },
+  {
+    "id": 71002,
+    "weekId": "source-verified-sprint36",
+    "type": "shortAnswer",
+    "chapter": "精油基礎",
+    "category": "精油基礎",
+    "difficulty": 2,
+    "question": "請依教材證據，說明「Ravensara aromatica樟罗罗文蒸叶马柠甲」的定義、結構或學習重點。",
+    "options": [],
+    "answer": "Ravensara aromatica樟罗罗文蒸叶马柠甲",
+    "referenceAnswer": "Ravensara aromatica樟罗罗文蒸叶马柠甲",
+    "sampleAnswer": "高分示範答案：Ravensara aromatica樟罗罗文蒸叶马柠甲",
+    "explanation": "答案依據教材證據 mat-0305：Ravensara aromatica樟罗罗文蒸叶马柠甲",
+    "answerGuide": "請依教材證據、參考答案與評分重點作答；本題不延伸醫療診斷、治療或精確配方建議。",
+    "keyPoints": [
+      "掌握「Ravensara aromatica樟罗罗文蒸叶马柠甲」與教材摘錄的對應內容"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，答案方向正確且沒有超出證據的推論。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數教材重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點，仍可看出部分理解。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、與證據不符，或加入未獲來源支持的高風險說法。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified 第二批，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/精油個論/常见的精油名称和它们的拉丁文.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 4",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0305"
+    ],
+    "evidenceExcerpt": "Ravensara aromatica樟罗罗文蒸叶马柠甲",
+    "answerBasis": "答案僅由教材證據 mat-0305 的摘錄支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint36_source_verified_expansion",
+    "generatedAt": "2026-07-16T00:00:00.000Z",
+    "priority": 4,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 4"
+  },
+  {
+    "id": 71003,
+    "weekId": "source-verified-sprint36",
+    "type": "shortAnswer",
+    "chapter": "精油化學",
+    "category": "精油化學",
+    "difficulty": 2,
+    "question": "請依教材證據，說明「叶绿体细胞」的定義、結構或學習重點。",
+    "options": [],
+    "answer": "叶绿体细胞是植物体中的一种特殊细胞，它们主要负责植物体的光合作用。叶绿体细胞通常呈扁平形状，内部含有大量的叶绿素和其他色素，可以吸收太阳光能，将其转化为化学能，为植物体提供能量。",
+    "referenceAnswer": "叶绿体细胞是植物体中的一种特殊细胞，它们主要负责植物体的光合作用。叶绿体细胞通常呈扁平形状，内部含有大量的叶绿素和其他色素，可以吸收太阳光能，将其转化为化学能，为植物体提供能量。",
+    "sampleAnswer": "高分示範答案：叶绿体细胞是植物体中的一种特殊细胞，它们主要负责植物体的光合作用。叶绿体细胞通常呈扁平形状，内部含有大量的叶绿素和其他色素，可以吸收太阳光能，将其转化为化学能，为植物体提供能量。",
+    "explanation": "答案依據教材證據 mat-0514：叶绿体细胞是植物体中的一种特殊细胞，它们主要负责植物体的光合作用。叶绿体细胞通常呈扁平形状，内部含有大量的叶绿素和其他色素，可以吸收太阳光能，将其转化为化学能，为植物体提供能量。",
+    "answerGuide": "請依教材證據、參考答案與評分重點作答；本題不延伸醫療診斷、治療或精確配方建議。",
+    "keyPoints": [
+      "叶绿体细胞是植物体中的一种特殊细胞",
+      "它们主要负责植物体的光合作用",
+      "叶绿体细胞通常呈扁平形状",
+      "内部含有大量的叶绿素和其他色素",
+      "可以吸收太阳光能"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，答案方向正確且沒有超出證據的推論。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數教材重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點，仍可看出部分理解。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、與證據不符，或加入未獲來源支持的高風險說法。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified 第二批，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/精油化學/化学.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 4",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0514"
+    ],
+    "evidenceExcerpt": "叶绿体细胞是植物体中的一种特殊细胞，它们主要负责植物体的光合作用。叶绿体细胞通常呈扁平形状，内部含有大量的叶绿素和其他色素，可以吸收太阳光能，将其转化为化学能，为植物体提供能量。",
+    "answerBasis": "答案僅由教材證據 mat-0514 的摘錄支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint36_source_verified_expansion",
+    "generatedAt": "2026-07-16T00:00:00.000Z",
+    "priority": 4,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 4"
+  },
+  {
+    "id": 71004,
+    "weekId": "source-verified-sprint36",
+    "type": "shortAnswer",
+    "chapter": "植物油／基底油",
+    "category": "植物油／基底油",
+    "difficulty": 2,
+    "question": "請依教材證據，說明「α-亚麻酸称为ω-3 系列多不饱和脂肪酸的母体」的定義、結構或學習重點。",
+    "options": [],
+    "answer": "1、α-亚麻酸称为ω-3 系列多不饱和脂肪酸的母体。 吃了α-亚麻酸机会会代谢出DHA EPA、前列腺素",
+    "referenceAnswer": "1、α-亚麻酸称为ω-3 系列多不饱和脂肪酸的母体。 吃了α-亚麻酸机会会代谢出DHA EPA、前列腺素",
+    "sampleAnswer": "高分示範答案：1、α-亚麻酸称为ω-3 系列多不饱和脂肪酸的母体。 吃了α-亚麻酸机会会代谢出DHA EPA、前列腺素",
+    "explanation": "答案依據教材證據 mat-0065：1、α-亚麻酸称为ω-3 系列多不饱和脂肪酸的母体。 吃了α-亚麻酸机会会代谢出DHA EPA、前列腺素",
+    "answerGuide": "請依教材證據、參考答案與評分重點作答；本題不延伸醫療診斷、治療或精確配方建議。",
+    "keyPoints": [
+      "吃了α-亚麻酸机会会代谢出DHA EPA",
+      "前列腺素"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，答案方向正確且沒有超出證據的推論。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數教材重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點，仍可看出部分理解。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、與證據不符，或加入未獲來源支持的高風險說法。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified 第二批，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/安全濃度與稀釋/基础油.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 4",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0065"
+    ],
+    "evidenceExcerpt": "1、α-亚麻酸称为ω-3 系列多不饱和脂肪酸的母体。 吃了α-亚麻酸机会会代谢出DHA EPA、前列腺素",
+    "answerBasis": "答案僅由教材證據 mat-0065 的摘錄支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint36_source_verified_expansion",
+    "generatedAt": "2026-07-16T00:00:00.000Z",
+    "priority": 4,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 4"
+  },
+  {
+    "id": 71005,
+    "weekId": "source-verified-sprint36",
+    "type": "shortAnswer",
+    "chapter": "解剖生理",
+    "category": "解剖生理",
+    "difficulty": 2,
+    "question": "請依教材證據，說明「(尽可能将答案写在试卷上」的定義、結構或學習重點。",
+    "options": [],
+    "answer": "(尽可能将答案写在试卷上；如需附加答案纸，紧记在每页写上考生姓名页数。)",
+    "referenceAnswer": "(尽可能将答案写在试卷上；如需附加答案纸，紧记在每页写上考生姓名页数。)",
+    "sampleAnswer": "高分示範答案：(尽可能将答案写在试卷上；如需附加答案纸，紧记在每页写上考生姓名页数。)",
+    "explanation": "答案依據教材證據 mat-0183：(尽可能将答案写在试卷上；如需附加答案纸，紧记在每页写上考生姓名页数。)",
+    "answerGuide": "請依教材證據、參考答案與評分重點作答；本題不延伸醫療診斷、治療或精確配方建議。",
+    "keyPoints": [
+      "如需附加答案纸",
+      "紧记在每页写上考生姓名页数"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，答案方向正確且沒有超出證據的推論。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數教材重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點，仍可看出部分理解。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、與證據不符，或加入未獲來源支持的高風險說法。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified 第二批，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/模擬題/副本解剖复习与模拟5套.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 2",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0183"
+    ],
+    "evidenceExcerpt": "(尽可能将答案写在试卷上；如需附加答案纸，紧记在每页写上考生姓名页数。)",
+    "answerBasis": "答案僅由教材證據 mat-0183 的摘錄支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint36_source_verified_expansion",
+    "generatedAt": "2026-07-16T00:00:00.000Z",
+    "priority": 4,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 2"
+  },
+  {
+    "id": 71006,
+    "weekId": "source-verified-sprint36",
+    "type": "shortAnswer",
+    "chapter": "精油基礎",
+    "category": "精油基礎",
+    "difficulty": 2,
+    "question": "請依教材證據，說明「Boswellia sacra橄乳乳香蒸脂阿蒎柠」的定義、結構或學習重點。",
+    "options": [],
+    "answer": "Boswellia sacra橄乳乳香蒸脂阿蒎柠",
+    "referenceAnswer": "Boswellia sacra橄乳乳香蒸脂阿蒎柠",
+    "sampleAnswer": "高分示範答案：Boswellia sacra橄乳乳香蒸脂阿蒎柠",
+    "explanation": "答案依據教材證據 mat-0306：Boswellia sacra橄乳乳香蒸脂阿蒎柠",
+    "answerGuide": "請依教材證據、參考答案與評分重點作答；本題不延伸醫療診斷、治療或精確配方建議。",
+    "keyPoints": [
+      "掌握「Boswellia sacra橄乳乳香蒸脂阿蒎柠」與教材摘錄的對應內容"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，答案方向正確且沒有超出證據的推論。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數教材重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點，仍可看出部分理解。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、與證據不符，或加入未獲來源支持的高風險說法。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified 第二批，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/精油個論/常见的精油名称和它们的拉丁文.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 5",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0306"
+    ],
+    "evidenceExcerpt": "Boswellia sacra橄乳乳香蒸脂阿蒎柠",
+    "answerBasis": "答案僅由教材證據 mat-0306 的摘錄支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint36_source_verified_expansion",
+    "generatedAt": "2026-07-16T00:00:00.000Z",
+    "priority": 4,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 5"
+  },
+  {
+    "id": 71007,
+    "weekId": "source-verified-sprint36",
+    "type": "shortAnswer",
+    "chapter": "精油化學",
+    "category": "精油化學",
+    "difficulty": 2,
+    "question": "請依教材證據，說明「根毛细胞」的定義、結構或學習重點。",
+    "options": [],
+    "answer": "根毛细胞是植物体中的一种特殊细胞，它们主要负责植物体的吸收作用。根毛细胞通常呈长管状，表面有许多细小的毛状突起，可以增加细胞表面积，提高吸收效率。根毛细胞的主要功能是吸收土壤中的水分和养分，为植物体提供必要的营养。",
+    "referenceAnswer": "根毛细胞是植物体中的一种特殊细胞，它们主要负责植物体的吸收作用。根毛细胞通常呈长管状，表面有许多细小的毛状突起，可以增加细胞表面积，提高吸收效率。根毛细胞的主要功能是吸收土壤中的水分和养分，为植物体提供必要的营养。",
+    "sampleAnswer": "高分示範答案：根毛细胞是植物体中的一种特殊细胞，它们主要负责植物体的吸收作用。根毛细胞通常呈长管状，表面有许多细小的毛状突起，可以增加细胞表面积，提高吸收效率。根毛细胞的主要功能是吸收土壤中的水分和养分，为植物体提供必要的营养。",
+    "explanation": "答案依據教材證據 mat-0515：根毛细胞是植物体中的一种特殊细胞，它们主要负责植物体的吸收作用。根毛细胞通常呈长管状，表面有许多细小的毛状突起，可以增加细胞表面积，提高吸收效率。根毛细胞的主要功能是吸收土壤中的水分和养分，为植物体提供必要的营养。",
+    "answerGuide": "請依教材證據、參考答案與評分重點作答；本題不延伸醫療診斷、治療或精確配方建議。",
+    "keyPoints": [
+      "根毛细胞是植物体中的一种特殊细胞",
+      "它们主要负责植物体的吸收作用",
+      "根毛细胞通常呈长管状",
+      "表面有许多细小的毛状突起",
+      "可以增加细胞表面积"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，答案方向正確且沒有超出證據的推論。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數教材重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點，仍可看出部分理解。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、與證據不符，或加入未獲來源支持的高風險說法。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified 第二批，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/精油化學/化学.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 5",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0515"
+    ],
+    "evidenceExcerpt": "根毛细胞是植物体中的一种特殊细胞，它们主要负责植物体的吸收作用。根毛细胞通常呈长管状，表面有许多细小的毛状突起，可以增加细胞表面积，提高吸收效率。根毛细胞的主要功能是吸收土壤中的水分和养分，为植物体提供必要的营养。",
+    "answerBasis": "答案僅由教材證據 mat-0515 的摘錄支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint36_source_verified_expansion",
+    "generatedAt": "2026-07-16T00:00:00.000Z",
+    "priority": 4,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 5"
+  },
+  {
+    "id": 71008,
+    "weekId": "source-verified-sprint36",
+    "type": "shortAnswer",
+    "chapter": "植物油／基底油",
+    "category": "植物油／基底油",
+    "difficulty": 2,
+    "question": "請依教材證據，說明「摄入亚油酸后，机能可以代谢出γ-亚麻」的定義、結構或學習重點。",
+    "options": [],
+    "answer": "3、摄入亚油酸后，机能可以代谢出γ-亚麻酸（伽玛亚麻酸）及花生四烯酸。。因此，通常将亚油酸称为ω-6系列不饱和脂肪酸的母体。",
+    "referenceAnswer": "3、摄入亚油酸后，机能可以代谢出γ-亚麻酸（伽玛亚麻酸）及花生四烯酸。。因此，通常将亚油酸称为ω-6系列不饱和脂肪酸的母体。",
+    "sampleAnswer": "高分示範答案：3、摄入亚油酸后，机能可以代谢出γ-亚麻酸（伽玛亚麻酸）及花生四烯酸。。因此，通常将亚油酸称为ω-6系列不饱和脂肪酸的母体。",
+    "explanation": "答案依據教材證據 mat-0067：3、摄入亚油酸后，机能可以代谢出γ-亚麻酸（伽玛亚麻酸）及花生四烯酸。。因此，通常将亚油酸称为ω-6系列不饱和脂肪酸的母体。",
+    "answerGuide": "請依教材證據、參考答案與評分重點作答；本題不延伸醫療診斷、治療或精確配方建議。",
+    "keyPoints": [
+      "摄入亚油酸后",
+      "机能可以代谢出γ-亚麻酸（伽玛亚麻酸）及花生四烯酸",
+      "通常将亚油酸称为ω-6系列不饱和脂肪酸的母体"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，答案方向正確且沒有超出證據的推論。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數教材重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點，仍可看出部分理解。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、與證據不符，或加入未獲來源支持的高風險說法。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified 第二批，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/安全濃度與稀釋/基础油.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 6",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0067"
+    ],
+    "evidenceExcerpt": "3、摄入亚油酸后，机能可以代谢出γ-亚麻酸（伽玛亚麻酸）及花生四烯酸。。因此，通常将亚油酸称为ω-6系列不饱和脂肪酸的母体。",
+    "answerBasis": "答案僅由教材證據 mat-0067 的摘錄支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint36_source_verified_expansion",
+    "generatedAt": "2026-07-16T00:00:00.000Z",
+    "priority": 4,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 6"
+  },
+  {
+    "id": 71009,
+    "weekId": "source-verified-sprint36",
+    "type": "shortAnswer",
+    "chapter": "解剖生理",
+    "category": "解剖生理",
+    "difficulty": 2,
+    "question": "請依教材證據，說明「A.External oblique」的定義、結構或學習重點。",
+    "options": [],
+    "answer": "A.External oblique;B.Internaloblique;C.Rectus abdominis",
+    "referenceAnswer": "A.External oblique;B.Internaloblique;C.Rectus abdominis",
+    "sampleAnswer": "高分示範答案：A.External oblique;B.Internaloblique;C.Rectus abdominis",
+    "explanation": "答案依據教材證據 mat-0188：A.External oblique;B.Internaloblique;C.Rectus abdominis",
+    "answerGuide": "請依教材證據、參考答案與評分重點作答；本題不延伸醫療診斷、治療或精確配方建議。",
+    "keyPoints": [
+      "B.Internaloblique",
+      "C.Rectus abdominis"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，答案方向正確且沒有超出證據的推論。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數教材重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點，仍可看出部分理解。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、與證據不符，或加入未獲來源支持的高風險說法。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified 第二批，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/模擬題/副本解剖复习与模拟5套.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 7",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0188"
+    ],
+    "evidenceExcerpt": "A.External oblique;B.Internaloblique;C.Rectus abdominis",
+    "answerBasis": "答案僅由教材證據 mat-0188 的摘錄支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint36_source_verified_expansion",
+    "generatedAt": "2026-07-16T00:00:00.000Z",
+    "priority": 4,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 7"
+  },
+  {
+    "id": 71010,
+    "weekId": "source-verified-sprint36",
+    "type": "shortAnswer",
+    "chapter": "精油基礎",
+    "category": "精油基礎",
+    "difficulty": 2,
+    "question": "請依教材證據，說明「Citrus aurantium芸柑苦橙压皮意柠芳」的定義、結構或學習重點。",
+    "options": [],
+    "answer": "Citrus aurantium芸柑苦橙压皮意柠芳",
+    "referenceAnswer": "Citrus aurantium芸柑苦橙压皮意柠芳",
+    "sampleAnswer": "高分示範答案：Citrus aurantium芸柑苦橙压皮意柠芳",
+    "explanation": "答案依據教材證據 mat-0307：Citrus aurantium芸柑苦橙压皮意柠芳",
+    "answerGuide": "請依教材證據、參考答案與評分重點作答；本題不延伸醫療診斷、治療或精確配方建議。",
+    "keyPoints": [
+      "掌握「Citrus aurantium芸柑苦橙压皮意柠芳」與教材摘錄的對應內容"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，答案方向正確且沒有超出證據的推論。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數教材重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點，仍可看出部分理解。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、與證據不符，或加入未獲來源支持的高風險說法。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified 第二批，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/精油個論/常见的精油名称和它们的拉丁文.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 6",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0307"
+    ],
+    "evidenceExcerpt": "Citrus aurantium芸柑苦橙压皮意柠芳",
+    "answerBasis": "答案僅由教材證據 mat-0307 的摘錄支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint36_source_verified_expansion",
+    "generatedAt": "2026-07-16T00:00:00.000Z",
+    "priority": 4,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 6"
+  },
+  {
+    "id": 71011,
+    "weekId": "source-verified-sprint36",
+    "type": "shortAnswer",
+    "chapter": "精油化學",
+    "category": "精油化學",
+    "difficulty": 2,
+    "question": "請依教材證據，說明「植物体的细胞分类」的定義、結構或學習重點。",
+    "options": [],
+    "answer": "植物体的细胞分类是非常丰富的，每种细胞都有其独特的形态和功能，共同构成了植物体的各种组织和器官。只有深入了解这些细胞的特点和功能，才能更好地理解植物的生长和发育过程。",
+    "referenceAnswer": "植物体的细胞分类是非常丰富的，每种细胞都有其独特的形态和功能，共同构成了植物体的各种组织和器官。只有深入了解这些细胞的特点和功能，才能更好地理解植物的生长和发育过程。",
+    "sampleAnswer": "高分示範答案：植物体的细胞分类是非常丰富的，每种细胞都有其独特的形态和功能，共同构成了植物体的各种组织和器官。只有深入了解这些细胞的特点和功能，才能更好地理解植物的生长和发育过程。",
+    "explanation": "答案依據教材證據 mat-0516：植物体的细胞分类是非常丰富的，每种细胞都有其独特的形态和功能，共同构成了植物体的各种组织和器官。只有深入了解这些细胞的特点和功能，才能更好地理解植物的生长和发育过程。",
+    "answerGuide": "請依教材證據、參考答案與評分重點作答；本題不延伸醫療診斷、治療或精確配方建議。",
+    "keyPoints": [
+      "植物体的细胞分类是非常丰富的",
+      "每种细胞都有其独特的形态和功能",
+      "共同构成了植物体的各种组织和器官",
+      "只有深入了解这些细胞的特点和功能",
+      "才能更好地理解植物的生长和发育过程"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，答案方向正確且沒有超出證據的推論。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數教材重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點，仍可看出部分理解。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、與證據不符，或加入未獲來源支持的高風險說法。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified 第二批，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/精油化學/化学.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 6",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0516"
+    ],
+    "evidenceExcerpt": "植物体的细胞分类是非常丰富的，每种细胞都有其独特的形态和功能，共同构成了植物体的各种组织和器官。只有深入了解这些细胞的特点和功能，才能更好地理解植物的生长和发育过程。",
+    "answerBasis": "答案僅由教材證據 mat-0516 的摘錄支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint36_source_verified_expansion",
+    "generatedAt": "2026-07-16T00:00:00.000Z",
+    "priority": 4,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 6"
+  },
+  {
+    "id": 71012,
+    "weekId": "source-verified-sprint36",
+    "type": "shortAnswer",
+    "chapter": "植物油／基底油",
+    "category": "植物油／基底油",
+    "difficulty": 2,
+    "question": "請依教材證據，說明「ω-6生成生四烯酸，最后代谢出来的白三烯，活性大」的定義、結構或學習重點。",
+    "options": [],
+    "answer": "ω-6生成生四烯酸，最后代谢出来的白三烯，活性大",
+    "referenceAnswer": "ω-6生成生四烯酸，最后代谢出来的白三烯，活性大",
+    "sampleAnswer": "高分示範答案：ω-6生成生四烯酸，最后代谢出来的白三烯，活性大",
+    "explanation": "答案依據教材證據 mat-0068：ω-6生成生四烯酸，最后代谢出来的白三烯，活性大",
+    "answerGuide": "請依教材證據、參考答案與評分重點作答；本題不延伸醫療診斷、治療或精確配方建議。",
+    "keyPoints": [
+      "ω-6生成生四烯酸",
+      "最后代谢出来的白三烯",
+      "活性大"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，答案方向正確且沒有超出證據的推論。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數教材重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點，仍可看出部分理解。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、與證據不符，或加入未獲來源支持的高風險說法。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified 第二批，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/安全濃度與稀釋/基础油.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 7",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0068"
+    ],
+    "evidenceExcerpt": "ω-6生成生四烯酸，最后代谢出来的白三烯，活性大",
+    "answerBasis": "答案僅由教材證據 mat-0068 的摘錄支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint36_source_verified_expansion",
+    "generatedAt": "2026-07-16T00:00:00.000Z",
+    "priority": 4,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 7"
+  },
+  {
+    "id": 71013,
+    "weekId": "source-verified-sprint36",
+    "type": "shortAnswer",
+    "chapter": "解剖生理",
+    "category": "解剖生理",
+    "difficulty": 2,
+    "question": "請依教材證據，說明「A.腹外斜肌 5-12肋软骨 → 髂嵴＆白线」的定義、結構或學習重點。",
+    "options": [],
+    "answer": "A.腹外斜肌 5-12肋软骨 → 髂嵴＆白线",
+    "referenceAnswer": "A.腹外斜肌 5-12肋软骨 → 髂嵴＆白线",
+    "sampleAnswer": "高分示範答案：A.腹外斜肌 5-12肋软骨 → 髂嵴＆白线",
+    "explanation": "答案依據教材證據 mat-0189：A.腹外斜肌 5-12肋软骨 → 髂嵴＆白线",
+    "answerGuide": "請依教材證據、參考答案與評分重點作答；本題不延伸醫療診斷、治療或精確配方建議。",
+    "keyPoints": [
+      "掌握「A.腹外斜肌 5-12肋软骨 → 髂嵴＆白线」與教材摘錄的對應內容"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，答案方向正確且沒有超出證據的推論。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數教材重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點，仍可看出部分理解。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、與證據不符，或加入未獲來源支持的高風險說法。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified 第二批，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/模擬題/副本解剖复习与模拟5套.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 8",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0189"
+    ],
+    "evidenceExcerpt": "A.腹外斜肌 5-12肋软骨 → 髂嵴＆白线",
+    "answerBasis": "答案僅由教材證據 mat-0189 的摘錄支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint36_source_verified_expansion",
+    "generatedAt": "2026-07-16T00:00:00.000Z",
+    "priority": 4,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 8"
+  },
+  {
+    "id": 71014,
+    "weekId": "source-verified-sprint36",
+    "type": "shortAnswer",
+    "chapter": "精油基礎",
+    "category": "精油基礎",
+    "difficulty": 2,
+    "question": "請依教材證據，說明「Citrus sinensis芸柑甜橙压皮巴柠芳」的定義、結構或學習重點。",
+    "options": [],
+    "answer": "Citrus sinensis芸柑甜橙压皮巴柠芳",
+    "referenceAnswer": "Citrus sinensis芸柑甜橙压皮巴柠芳",
+    "sampleAnswer": "高分示範答案：Citrus sinensis芸柑甜橙压皮巴柠芳",
+    "explanation": "答案依據教材證據 mat-0308：Citrus sinensis芸柑甜橙压皮巴柠芳",
+    "answerGuide": "請依教材證據、參考答案與評分重點作答；本題不延伸醫療診斷、治療或精確配方建議。",
+    "keyPoints": [
+      "掌握「Citrus sinensis芸柑甜橙压皮巴柠芳」與教材摘錄的對應內容"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，答案方向正確且沒有超出證據的推論。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數教材重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點，仍可看出部分理解。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、與證據不符，或加入未獲來源支持的高風險說法。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified 第二批，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/精油個論/常见的精油名称和它们的拉丁文.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 7",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0308"
+    ],
+    "evidenceExcerpt": "Citrus sinensis芸柑甜橙压皮巴柠芳",
+    "answerBasis": "答案僅由教材證據 mat-0308 的摘錄支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint36_source_verified_expansion",
+    "generatedAt": "2026-07-16T00:00:00.000Z",
+    "priority": 4,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 7"
+  },
+  {
+    "id": 71015,
+    "weekId": "source-verified-sprint36",
+    "type": "shortAnswer",
+    "chapter": "精油化學",
+    "category": "精油化學",
+    "difficulty": 2,
+    "question": "請依教材證據，說明「苯乙醇」的定義、結構或學習重點。",
+    "options": [],
+    "answer": "苯乙醇：调节神经递质，玫瑰香气的代表",
+    "referenceAnswer": "苯乙醇：调节神经递质，玫瑰香气的代表",
+    "sampleAnswer": "高分示範答案：苯乙醇：调节神经递质，玫瑰香气的代表",
+    "explanation": "答案依據教材證據 mat-0564：苯乙醇：调节神经递质，玫瑰香气的代表",
+    "answerGuide": "請依教材證據、參考答案與評分重點作答；本題不延伸醫療診斷、治療或精確配方建議。",
+    "keyPoints": [
+      "调节神经递质",
+      "玫瑰香气的代表"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，答案方向正確且沒有超出證據的推論。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數教材重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點，仍可看出部分理解。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、與證據不符，或加入未獲來源支持的高風險說法。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified 第二批，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/精油化學/精油分子合成通路.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 48",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0564"
+    ],
+    "evidenceExcerpt": "苯乙醇：调节神经递质，玫瑰香气的代表",
+    "answerBasis": "答案僅由教材證據 mat-0564 的摘錄支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint36_source_verified_expansion",
+    "generatedAt": "2026-07-16T00:00:00.000Z",
+    "priority": 4,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 48"
+  },
+  {
+    "id": 71016,
+    "weekId": "source-verified-sprint36",
+    "type": "shortAnswer",
+    "chapter": "植物油／基底油",
+    "category": "植物油／基底油",
+    "difficulty": 2,
+    "question": "請依教材證據，說明「ω-3的母体是α-亚麻酸--DHA EPA、前列腺素」的定義、結構或學習重點。",
+    "options": [],
+    "answer": "ω-3的母体是α-亚麻酸--DHA EPA、前列腺素",
+    "referenceAnswer": "ω-3的母体是α-亚麻酸--DHA EPA、前列腺素",
+    "sampleAnswer": "高分示範答案：ω-3的母体是α-亚麻酸--DHA EPA、前列腺素",
+    "explanation": "答案依據教材證據 mat-0070：ω-3的母体是α-亚麻酸--DHA EPA、前列腺素",
+    "answerGuide": "請依教材證據、參考答案與評分重點作答；本題不延伸醫療診斷、治療或精確配方建議。",
+    "keyPoints": [
+      "ω-3的母体是α-亚麻酸--DHA EPA",
+      "前列腺素"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，答案方向正確且沒有超出證據的推論。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數教材重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點，仍可看出部分理解。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、與證據不符，或加入未獲來源支持的高風險說法。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified 第二批，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/安全濃度與稀釋/基础油.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 9",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0070"
+    ],
+    "evidenceExcerpt": "ω-3的母体是α-亚麻酸--DHA EPA、前列腺素",
+    "answerBasis": "答案僅由教材證據 mat-0070 的摘錄支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint36_source_verified_expansion",
+    "generatedAt": "2026-07-16T00:00:00.000Z",
+    "priority": 4,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 9"
+  },
+  {
+    "id": 71017,
+    "weekId": "source-verified-sprint36",
+    "type": "shortAnswer",
+    "chapter": "解剖生理",
+    "category": "解剖生理",
+    "difficulty": 2,
+    "question": "請依教材證據，說明「B. .腹内斜肌 9-12肋软骨 → 髂嵴＆腹股沟」的定義、結構或學習重點。",
+    "options": [],
+    "answer": "B. .腹内斜肌 9-12肋软骨 → 髂嵴＆腹股沟",
+    "referenceAnswer": "B. .腹内斜肌 9-12肋软骨 → 髂嵴＆腹股沟",
+    "sampleAnswer": "高分示範答案：B. .腹内斜肌 9-12肋软骨 → 髂嵴＆腹股沟",
+    "explanation": "答案依據教材證據 mat-0190：B. .腹内斜肌 9-12肋软骨 → 髂嵴＆腹股沟",
+    "answerGuide": "請依教材證據、參考答案與評分重點作答；本題不延伸醫療診斷、治療或精確配方建議。",
+    "keyPoints": [
+      "掌握「B. .腹内斜肌 9-12肋软骨 → 髂嵴＆腹股沟」與教材摘錄的對應內容"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，答案方向正確且沒有超出證據的推論。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數教材重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點，仍可看出部分理解。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、與證據不符，或加入未獲來源支持的高風險說法。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified 第二批，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/模擬題/副本解剖复习与模拟5套.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 9",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0190"
+    ],
+    "evidenceExcerpt": "B. .腹内斜肌 9-12肋软骨 → 髂嵴＆腹股沟",
+    "answerBasis": "答案僅由教材證據 mat-0190 的摘錄支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint36_source_verified_expansion",
+    "generatedAt": "2026-07-16T00:00:00.000Z",
+    "priority": 4,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 9"
+  },
+  {
+    "id": 71018,
+    "weekId": "source-verified-sprint36",
+    "type": "shortAnswer",
+    "chapter": "精油基礎",
+    "category": "精油基礎",
+    "difficulty": 2,
+    "question": "請依教材證據，說明「Citrus reticulata芸柑红桔压皮巴柠蒎」的定義、結構或學習重點。",
+    "options": [],
+    "answer": "Citrus reticulata芸柑红桔压皮巴柠蒎",
+    "referenceAnswer": "Citrus reticulata芸柑红桔压皮巴柠蒎",
+    "sampleAnswer": "高分示範答案：Citrus reticulata芸柑红桔压皮巴柠蒎",
+    "explanation": "答案依據教材證據 mat-0309：Citrus reticulata芸柑红桔压皮巴柠蒎",
+    "answerGuide": "請依教材證據、參考答案與評分重點作答；本題不延伸醫療診斷、治療或精確配方建議。",
+    "keyPoints": [
+      "掌握「Citrus reticulata芸柑红桔压皮巴柠蒎」與教材摘錄的對應內容"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，答案方向正確且沒有超出證據的推論。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數教材重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點，仍可看出部分理解。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、與證據不符，或加入未獲來源支持的高風險說法。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified 第二批，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/精油個論/常见的精油名称和它们的拉丁文.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 8",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0309"
+    ],
+    "evidenceExcerpt": "Citrus reticulata芸柑红桔压皮巴柠蒎",
+    "answerBasis": "答案僅由教材證據 mat-0309 的摘錄支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint36_source_verified_expansion",
+    "generatedAt": "2026-07-16T00:00:00.000Z",
+    "priority": 4,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 8"
+  },
+  {
+    "id": 71019,
+    "weekId": "source-verified-sprint36",
+    "type": "shortAnswer",
+    "chapter": "精油化學",
+    "category": "精油化學",
+    "difficulty": 2,
+    "question": "請依教材證據，說明「芳香醛」的定義、結構或學習重點。",
+    "options": [],
+    "answer": "芳香醛：含苯环，味道甜美，浓烈，皮肤刺激最强，",
+    "referenceAnswer": "芳香醛：含苯环，味道甜美，浓烈，皮肤刺激最强，",
+    "sampleAnswer": "高分示範答案：芳香醛：含苯环，味道甜美，浓烈，皮肤刺激最强，",
+    "explanation": "答案依據教材證據 mat-0565：芳香醛：含苯环，味道甜美，浓烈，皮肤刺激最强，",
+    "answerGuide": "請依教材證據、參考答案與評分重點作答；本題不延伸醫療診斷、治療或精確配方建議。",
+    "keyPoints": [
+      "含苯环",
+      "味道甜美",
+      "皮肤刺激最强"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，答案方向正確且沒有超出證據的推論。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數教材重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點，仍可看出部分理解。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、與證據不符，或加入未獲來源支持的高風險說法。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified 第二批，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/精油化學/精油分子合成通路.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 49",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0565"
+    ],
+    "evidenceExcerpt": "芳香醛：含苯环，味道甜美，浓烈，皮肤刺激最强，",
+    "answerBasis": "答案僅由教材證據 mat-0565 的摘錄支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint36_source_verified_expansion",
+    "generatedAt": "2026-07-16T00:00:00.000Z",
+    "priority": 4,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 49"
+  },
+  {
+    "id": 71020,
+    "weekId": "source-verified-sprint36",
+    "type": "shortAnswer",
+    "chapter": "植物油／基底油",
+    "category": "植物油／基底油",
+    "difficulty": 2,
+    "question": "請依教材證據，說明「饱和中链脂肪酸65%（其中月桂酸45%）」的定義、結構或學習重點。",
+    "options": [],
+    "answer": "饱和中链脂肪酸65%（其中月桂酸45%）",
+    "referenceAnswer": "饱和中链脂肪酸65%（其中月桂酸45%）",
+    "sampleAnswer": "高分示範答案：饱和中链脂肪酸65%（其中月桂酸45%）",
+    "explanation": "答案依據教材證據 mat-0071：饱和中链脂肪酸65%（其中月桂酸45%）",
+    "answerGuide": "請依教材證據、參考答案與評分重點作答；本題不延伸醫療診斷、治療或精確配方建議。",
+    "keyPoints": [
+      "掌握「饱和中链脂肪酸65%（其中月桂酸45%）」與教材摘錄的對應內容"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，答案方向正確且沒有超出證據的推論。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數教材重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點，仍可看出部分理解。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、與證據不符，或加入未獲來源支持的高風險說法。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified 第二批，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/安全濃度與稀釋/基础油.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 10",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0071"
+    ],
+    "evidenceExcerpt": "饱和中链脂肪酸65%（其中月桂酸45%）",
+    "answerBasis": "答案僅由教材證據 mat-0071 的摘錄支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint36_source_verified_expansion",
+    "generatedAt": "2026-07-16T00:00:00.000Z",
+    "priority": 4,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 10"
+  },
+  {
+    "id": 71021,
+    "weekId": "source-verified-sprint36",
+    "type": "shortAnswer",
+    "chapter": "解剖生理",
+    "category": "解剖生理",
+    "difficulty": 2,
+    "question": "請依教材證據，說明「c. Carbohydrates碳水化合物」的定義、結構或學習重點。",
+    "options": [],
+    "answer": "c. Carbohydrates碳水化合物",
+    "referenceAnswer": "c. Carbohydrates碳水化合物",
+    "sampleAnswer": "高分示範答案：c. Carbohydrates碳水化合物",
+    "explanation": "答案依據教材證據 mat-0203：c. Carbohydrates碳水化合物",
+    "answerGuide": "請依教材證據、參考答案與評分重點作答；本題不延伸醫療診斷、治療或精確配方建議。",
+    "keyPoints": [
+      "掌握「c. Carbohydrates碳水化合物」與教材摘錄的對應內容"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，答案方向正確且沒有超出證據的推論。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數教材重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點，仍可看出部分理解。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、與證據不符，或加入未獲來源支持的高風險說法。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified 第二批，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/模擬題/副本解剖复习与模拟5套.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 22",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0203"
+    ],
+    "evidenceExcerpt": "c. Carbohydrates碳水化合物",
+    "answerBasis": "答案僅由教材證據 mat-0203 的摘錄支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint36_source_verified_expansion",
+    "generatedAt": "2026-07-16T00:00:00.000Z",
+    "priority": 4,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 22"
+  },
+  {
+    "id": 71022,
+    "weekId": "source-verified-sprint36",
+    "type": "shortAnswer",
+    "chapter": "精油基礎",
+    "category": "精油基礎",
+    "difficulty": 2,
+    "question": "請依教材證據，說明「Citrus bergamia芸柑佛手压皮意柠芳」的定義、結構或學習重點。",
+    "options": [],
+    "answer": "Citrus bergamia芸柑佛手压皮意柠芳",
+    "referenceAnswer": "Citrus bergamia芸柑佛手压皮意柠芳",
+    "sampleAnswer": "高分示範答案：Citrus bergamia芸柑佛手压皮意柠芳",
+    "explanation": "答案依據教材證據 mat-0310：Citrus bergamia芸柑佛手压皮意柠芳",
+    "answerGuide": "請依教材證據、參考答案與評分重點作答；本題不延伸醫療診斷、治療或精確配方建議。",
+    "keyPoints": [
+      "掌握「Citrus bergamia芸柑佛手压皮意柠芳」與教材摘錄的對應內容"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，答案方向正確且沒有超出證據的推論。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數教材重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點，仍可看出部分理解。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、與證據不符，或加入未獲來源支持的高風險說法。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified 第二批，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/精油個論/常见的精油名称和它们的拉丁文.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 9",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0310"
+    ],
+    "evidenceExcerpt": "Citrus bergamia芸柑佛手压皮意柠芳",
+    "answerBasis": "答案僅由教材證據 mat-0310 的摘錄支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint36_source_verified_expansion",
+    "generatedAt": "2026-07-16T00:00:00.000Z",
+    "priority": 4,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 9"
+  },
+  {
+    "id": 71023,
+    "weekId": "source-verified-sprint36",
+    "type": "shortAnswer",
+    "chapter": "精油化學",
+    "category": "精油化學",
+    "difficulty": 2,
+    "question": "請依教材證據，說明「代表」的定義、結構或學習重點。",
+    "options": [],
+    "answer": "代表：苯甲酸苯甲酯、肉桂酸甲酯、水杨酸甲酯，邻氨基苯甲酸甲酯",
+    "referenceAnswer": "代表：苯甲酸苯甲酯、肉桂酸甲酯、水杨酸甲酯，邻氨基苯甲酸甲酯",
+    "sampleAnswer": "高分示範答案：代表：苯甲酸苯甲酯、肉桂酸甲酯、水杨酸甲酯，邻氨基苯甲酸甲酯",
+    "explanation": "答案依據教材證據 mat-0567：代表：苯甲酸苯甲酯、肉桂酸甲酯、水杨酸甲酯，邻氨基苯甲酸甲酯",
+    "answerGuide": "請依教材證據、參考答案與評分重點作答；本題不延伸醫療診斷、治療或精確配方建議。",
+    "keyPoints": [
+      "苯甲酸苯甲酯",
+      "肉桂酸甲酯",
+      "水杨酸甲酯",
+      "邻氨基苯甲酸甲酯"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，答案方向正確且沒有超出證據的推論。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數教材重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點，仍可看出部分理解。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、與證據不符，或加入未獲來源支持的高風險說法。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified 第二批，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/精油化學/精油分子合成通路.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 51",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0567"
+    ],
+    "evidenceExcerpt": "代表：苯甲酸苯甲酯、肉桂酸甲酯、水杨酸甲酯，邻氨基苯甲酸甲酯",
+    "answerBasis": "答案僅由教材證據 mat-0567 的摘錄支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint36_source_verified_expansion",
+    "generatedAt": "2026-07-16T00:00:00.000Z",
+    "priority": 4,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 51"
+  },
+  {
+    "id": 71024,
+    "weekId": "source-verified-sprint36",
+    "type": "shortAnswer",
+    "chapter": "植物油／基底油",
+    "category": "植物油／基底油",
+    "difficulty": 2,
+    "question": "請依教材證據，說明「饱和长链脂肪酸30%（肉豆蔻酸为主）」的定義、結構或學習重點。",
+    "options": [],
+    "answer": "饱和长链脂肪酸30%（肉豆蔻酸为主）",
+    "referenceAnswer": "饱和长链脂肪酸30%（肉豆蔻酸为主）",
+    "sampleAnswer": "高分示範答案：饱和长链脂肪酸30%（肉豆蔻酸为主）",
+    "explanation": "答案依據教材證據 mat-0072：饱和长链脂肪酸30%（肉豆蔻酸为主）",
+    "answerGuide": "請依教材證據、參考答案與評分重點作答；本題不延伸醫療診斷、治療或精確配方建議。",
+    "keyPoints": [
+      "掌握「饱和长链脂肪酸30%（肉豆蔻酸为主）」與教材摘錄的對應內容"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，答案方向正確且沒有超出證據的推論。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數教材重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點，仍可看出部分理解。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、與證據不符，或加入未獲來源支持的高風險說法。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified 第二批，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/安全濃度與稀釋/基础油.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 11",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0072"
+    ],
+    "evidenceExcerpt": "饱和长链脂肪酸30%（肉豆蔻酸为主）",
+    "answerBasis": "答案僅由教材證據 mat-0072 的摘錄支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint36_source_verified_expansion",
+    "generatedAt": "2026-07-16T00:00:00.000Z",
+    "priority": 4,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 11"
+  },
+  {
+    "id": 71025,
+    "weekId": "source-verified-sprint36",
+    "type": "shortAnswer",
+    "chapter": "解剖生理",
+    "category": "解剖生理",
+    "difficulty": 2,
+    "question": "請依教材證據，說明「（2.使用精油后，在不同个案疗程之间，皆需彻底洗净双手」的定義、結構或學習重點。",
+    "options": [],
+    "answer": "（2.使用精油后，在不同个案疗程之间，皆需彻底洗净双手。",
+    "referenceAnswer": "（2.使用精油后，在不同个案疗程之间，皆需彻底洗净双手。",
+    "sampleAnswer": "高分示範答案：（2.使用精油后，在不同个案疗程之间，皆需彻底洗净双手。",
+    "explanation": "答案依據教材證據 mat-0205：（2.使用精油后，在不同个案疗程之间，皆需彻底洗净双手。",
+    "answerGuide": "請依教材證據、參考答案與評分重點作答；本題不延伸醫療診斷、治療或精確配方建議。",
+    "keyPoints": [
+      "（2.使用精油后",
+      "在不同个案疗程之间",
+      "皆需彻底洗净双手"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，答案方向正確且沒有超出證據的推論。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數教材重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點，仍可看出部分理解。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、與證據不符，或加入未獲來源支持的高風險說法。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified 第二批，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/模擬題/副本解剖复习与模拟5套.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 24",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0205"
+    ],
+    "evidenceExcerpt": "（2.使用精油后，在不同个案疗程之间，皆需彻底洗净双手。",
+    "answerBasis": "答案僅由教材證據 mat-0205 的摘錄支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint36_source_verified_expansion",
+    "generatedAt": "2026-07-16T00:00:00.000Z",
+    "priority": 4,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 24"
+  },
+  {
+    "id": 71026,
+    "weekId": "source-verified-sprint36",
+    "type": "shortAnswer",
+    "chapter": "精油基礎",
+    "category": "精油基礎",
+    "difficulty": 2,
+    "question": "請依教材證據，說明「Citrus x aurantifo」的定義、結構或學習重點。",
+    "options": [],
+    "answer": "Citrus x aurantifolia芸柑莱姆压皮印柠蒎",
+    "referenceAnswer": "Citrus x aurantifolia芸柑莱姆压皮印柠蒎",
+    "sampleAnswer": "高分示範答案：Citrus x aurantifolia芸柑莱姆压皮印柠蒎",
+    "explanation": "答案依據教材證據 mat-0311：Citrus x aurantifolia芸柑莱姆压皮印柠蒎",
+    "answerGuide": "請依教材證據、參考答案與評分重點作答；本題不延伸醫療診斷、治療或精確配方建議。",
+    "keyPoints": [
+      "Citrus x aurantifolia芸柑莱姆压皮印柠蒎"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，答案方向正確且沒有超出證據的推論。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數教材重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點，仍可看出部分理解。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、與證據不符，或加入未獲來源支持的高風險說法。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified 第二批，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/精油個論/常见的精油名称和它们的拉丁文.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 10",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0311"
+    ],
+    "evidenceExcerpt": "Citrus x aurantifolia芸柑莱姆压皮印柠蒎",
+    "answerBasis": "答案僅由教材證據 mat-0311 的摘錄支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint36_source_verified_expansion",
+    "generatedAt": "2026-07-16T00:00:00.000Z",
+    "priority": 4,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 10"
+  },
+  {
+    "id": 71027,
+    "weekId": "source-verified-sprint36",
+    "type": "shortAnswer",
+    "chapter": "精油化學",
+    "category": "精油化學",
+    "difficulty": 2,
+    "question": "請依教材證據，說明「芳香酚」的定義、結構或學習重點。",
+    "options": [],
+    "answer": "芳香酚：苯基丙烷酚，苯环+羟基OH的衍生物",
+    "referenceAnswer": "芳香酚：苯基丙烷酚，苯环+羟基OH的衍生物",
+    "sampleAnswer": "高分示範答案：芳香酚：苯基丙烷酚，苯环+羟基OH的衍生物",
+    "explanation": "答案依據教材證據 mat-0568：芳香酚：苯基丙烷酚，苯环+羟基OH的衍生物",
+    "answerGuide": "請依教材證據、參考答案與評分重點作答；本題不延伸醫療診斷、治療或精確配方建議。",
+    "keyPoints": [
+      "苯基丙烷酚",
+      "苯环+羟基OH的衍生物"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，答案方向正確且沒有超出證據的推論。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數教材重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點，仍可看出部分理解。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、與證據不符，或加入未獲來源支持的高風險說法。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified 第二批，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/精油化學/精油分子合成通路.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 52",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0568"
+    ],
+    "evidenceExcerpt": "芳香酚：苯基丙烷酚，苯环+羟基OH的衍生物",
+    "answerBasis": "答案僅由教材證據 mat-0568 的摘錄支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint36_source_verified_expansion",
+    "generatedAt": "2026-07-16T00:00:00.000Z",
+    "priority": 4,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 52"
+  },
+  {
+    "id": 71028,
+    "weekId": "source-verified-sprint36",
+    "type": "shortAnswer",
+    "chapter": "植物油／基底油",
+    "category": "植物油／基底油",
+    "difficulty": 2,
+    "question": "請依教材證據，說明「油酸的渗透性好，吸收好，如果植物油含」的定義、結構或學習重點。",
+    "options": [],
+    "answer": "油酸的渗透性好，吸收好，如果植物油含油酸多，按摩就比较透通，干扰皮肤修复",
+    "referenceAnswer": "油酸的渗透性好，吸收好，如果植物油含油酸多，按摩就比较透通，干扰皮肤修复",
+    "sampleAnswer": "高分示範答案：油酸的渗透性好，吸收好，如果植物油含油酸多，按摩就比较透通，干扰皮肤修复",
+    "explanation": "答案依據教材證據 mat-0073：油酸的渗透性好，吸收好，如果植物油含油酸多，按摩就比较透通，干扰皮肤修复",
+    "answerGuide": "請依教材證據、參考答案與評分重點作答；本題不延伸醫療診斷、治療或精確配方建議。",
+    "keyPoints": [
+      "油酸的渗透性好",
+      "吸收好",
+      "如果植物油含油酸多",
+      "按摩就比较透通",
+      "干扰皮肤修复"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，答案方向正確且沒有超出證據的推論。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數教材重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點，仍可看出部分理解。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、與證據不符，或加入未獲來源支持的高風險說法。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified 第二批，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/安全濃度與稀釋/基础油.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 12",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0073"
+    ],
+    "evidenceExcerpt": "油酸的渗透性好，吸收好，如果植物油含油酸多，按摩就比较透通，干扰皮肤修复",
+    "answerBasis": "答案僅由教材證據 mat-0073 的摘錄支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint36_source_verified_expansion",
+    "generatedAt": "2026-07-16T00:00:00.000Z",
+    "priority": 4,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 12"
+  },
+  {
+    "id": 71029,
+    "weekId": "source-verified-sprint36",
+    "type": "shortAnswer",
+    "chapter": "解剖生理",
+    "category": "解剖生理",
+    "difficulty": 2,
+    "question": "請依教材證據，說明「（4.个案衣物、被单使用后即需清洗消毒」的定義、結構或學習重點。",
+    "options": [],
+    "answer": "（4.个案衣物、被单使用后即需清洗消毒",
+    "referenceAnswer": "（4.个案衣物、被单使用后即需清洗消毒",
+    "sampleAnswer": "高分示範答案：（4.个案衣物、被单使用后即需清洗消毒",
+    "explanation": "答案依據教材證據 mat-0206：（4.个案衣物、被单使用后即需清洗消毒",
+    "answerGuide": "請依教材證據、參考答案與評分重點作答；本題不延伸醫療診斷、治療或精確配方建議。",
+    "keyPoints": [
+      "（4.个案衣物",
+      "被单使用后即需清洗消毒"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，答案方向正確且沒有超出證據的推論。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數教材重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點，仍可看出部分理解。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、與證據不符，或加入未獲來源支持的高風險說法。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified 第二批，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/模擬題/副本解剖复习与模拟5套.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 25",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0206"
+    ],
+    "evidenceExcerpt": "（4.个案衣物、被单使用后即需清洗消毒",
+    "answerBasis": "答案僅由教材證據 mat-0206 的摘錄支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint36_source_verified_expansion",
+    "generatedAt": "2026-07-16T00:00:00.000Z",
+    "priority": 4,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 25"
+  },
+  {
+    "id": 71030,
+    "weekId": "source-verified-sprint36",
+    "type": "shortAnswer",
+    "chapter": "精油基礎",
+    "category": "精油基礎",
+    "difficulty": 2,
+    "question": "請依教材證據，說明「Citrus x paradisi芸柑萄柚压皮美柠蒎」的定義、結構或學習重點。",
+    "options": [],
+    "answer": "Citrus x paradisi芸柑萄柚压皮美柠蒎",
+    "referenceAnswer": "Citrus x paradisi芸柑萄柚压皮美柠蒎",
+    "sampleAnswer": "高分示範答案：Citrus x paradisi芸柑萄柚压皮美柠蒎",
+    "explanation": "答案依據教材證據 mat-0312：Citrus x paradisi芸柑萄柚压皮美柠蒎",
+    "answerGuide": "請依教材證據、參考答案與評分重點作答；本題不延伸醫療診斷、治療或精確配方建議。",
+    "keyPoints": [
+      "掌握「Citrus x paradisi芸柑萄柚压皮美柠蒎」與教材摘錄的對應內容"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，答案方向正確且沒有超出證據的推論。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數教材重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點，仍可看出部分理解。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、與證據不符，或加入未獲來源支持的高風險說法。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified 第二批，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/精油個論/常见的精油名称和它们的拉丁文.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 11",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0312"
+    ],
+    "evidenceExcerpt": "Citrus x paradisi芸柑萄柚压皮美柠蒎",
+    "answerBasis": "答案僅由教材證據 mat-0312 的摘錄支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint36_source_verified_expansion",
+    "generatedAt": "2026-07-16T00:00:00.000Z",
+    "priority": 4,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 11"
+  },
+  {
+    "id": 71031,
+    "weekId": "source-verified-sprint36",
+    "type": "shortAnswer",
+    "chapter": "精油化學",
+    "category": "精油化學",
+    "difficulty": 2,
+    "question": "請依教材證據，說明「增强心理抵抗力，强化意志力，消杀力强，，亲水，酸性」的定義、結構或學習重點。",
+    "options": [],
+    "answer": "增强心理抵抗力，强化意志力，消杀力强，，亲水，酸性",
+    "referenceAnswer": "增强心理抵抗力，强化意志力，消杀力强，，亲水，酸性",
+    "sampleAnswer": "高分示範答案：增强心理抵抗力，强化意志力，消杀力强，，亲水，酸性",
+    "explanation": "答案依據教材證據 mat-0569：增强心理抵抗力，强化意志力，消杀力强，，亲水，酸性",
+    "answerGuide": "請依教材證據、參考答案與評分重點作答；本題不延伸醫療診斷、治療或精確配方建議。",
+    "keyPoints": [
+      "增强心理抵抗力",
+      "强化意志力",
+      "消杀力强"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，答案方向正確且沒有超出證據的推論。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數教材重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點，仍可看出部分理解。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、與證據不符，或加入未獲來源支持的高風險說法。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified 第二批，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/精油化學/精油分子合成通路.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 53",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0569"
+    ],
+    "evidenceExcerpt": "增强心理抵抗力，强化意志力，消杀力强，，亲水，酸性",
+    "answerBasis": "答案僅由教材證據 mat-0569 的摘錄支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint36_source_verified_expansion",
+    "generatedAt": "2026-07-16T00:00:00.000Z",
+    "priority": 4,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 53"
+  },
+  {
+    "id": 71032,
+    "weekId": "source-verified-sprint36",
+    "type": "shortAnswer",
+    "chapter": "植物油／基底油",
+    "category": "植物油／基底油",
+    "difficulty": 2,
+    "question": "請依教材證據，說明「护肤，不厚重，适合各种肌肤」的定義、結構或學習重點。",
+    "options": [],
+    "answer": "护肤，不厚重，适合各种肌肤；神经性皮炎、护发；油浴，油漱",
+    "referenceAnswer": "护肤，不厚重，适合各种肌肤；神经性皮炎、护发；油浴，油漱",
+    "sampleAnswer": "高分示範答案：护肤，不厚重，适合各种肌肤；神经性皮炎、护发；油浴，油漱",
+    "explanation": "答案依據教材證據 mat-0074：护肤，不厚重，适合各种肌肤；神经性皮炎、护发；油浴，油漱",
+    "answerGuide": "請依教材證據、參考答案與評分重點作答；本題不延伸醫療診斷、治療或精確配方建議。",
+    "keyPoints": [
+      "不厚重",
+      "适合各种肌肤",
+      "神经性皮炎"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，答案方向正確且沒有超出證據的推論。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數教材重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點，仍可看出部分理解。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、與證據不符，或加入未獲來源支持的高風險說法。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified 第二批，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/安全濃度與稀釋/基础油.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 13",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0074"
+    ],
+    "evidenceExcerpt": "护肤，不厚重，适合各种肌肤；神经性皮炎、护发；油浴，油漱",
+    "answerBasis": "答案僅由教材證據 mat-0074 的摘錄支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint36_source_verified_expansion",
+    "generatedAt": "2026-07-16T00:00:00.000Z",
+    "priority": 4,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 13"
+  },
+  {
+    "id": 71033,
+    "weekId": "source-verified-sprint36",
+    "type": "shortAnswer",
+    "chapter": "解剖生理",
+    "category": "解剖生理",
+    "difficulty": 2,
+    "question": "請依教材證據，說明「a.Herpeszoster(shi」的定義、結構或學習重點。",
+    "options": [],
+    "answer": "a.Herpeszoster(shingles) 带状疱疹",
+    "referenceAnswer": "a.Herpeszoster(shingles) 带状疱疹",
+    "sampleAnswer": "高分示範答案：a.Herpeszoster(shingles) 带状疱疹",
+    "explanation": "答案依據教材證據 mat-0207：a.Herpeszoster(shingles) 带状疱疹",
+    "answerGuide": "請依教材證據、參考答案與評分重點作答；本題不延伸醫療診斷、治療或精確配方建議。",
+    "keyPoints": [
+      "a.Herpeszoster(shingles) 带状疱疹"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，答案方向正確且沒有超出證據的推論。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數教材重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點，仍可看出部分理解。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、與證據不符，或加入未獲來源支持的高風險說法。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified 第二批，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/模擬題/副本解剖复习与模拟5套.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 26",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0207"
+    ],
+    "evidenceExcerpt": "a.Herpeszoster(shingles) 带状疱疹",
+    "answerBasis": "答案僅由教材證據 mat-0207 的摘錄支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint36_source_verified_expansion",
+    "generatedAt": "2026-07-16T00:00:00.000Z",
+    "priority": 4,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 26"
+  },
+  {
+    "id": 71034,
+    "weekId": "source-verified-sprint36",
+    "type": "shortAnswer",
+    "chapter": "精油基礎",
+    "category": "精油基礎",
+    "difficulty": 2,
+    "question": "請依教材證據，說明「Citrus x limon芸柑柠檬压皮美柠蒎」的定義、結構或學習重點。",
+    "options": [],
+    "answer": "Citrus x limon芸柑柠檬压皮美柠蒎；",
+    "referenceAnswer": "Citrus x limon芸柑柠檬压皮美柠蒎；",
+    "sampleAnswer": "高分示範答案：Citrus x limon芸柑柠檬压皮美柠蒎；",
+    "explanation": "答案依據教材證據 mat-0313：Citrus x limon芸柑柠檬压皮美柠蒎；",
+    "answerGuide": "請依教材證據、參考答案與評分重點作答；本題不延伸醫療診斷、治療或精確配方建議。",
+    "keyPoints": [
+      "掌握「Citrus x limon芸柑柠檬压皮美柠蒎」與教材摘錄的對應內容"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，答案方向正確且沒有超出證據的推論。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數教材重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點，仍可看出部分理解。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、與證據不符，或加入未獲來源支持的高風險說法。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified 第二批，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/精油個論/常见的精油名称和它们的拉丁文.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 12",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0313"
+    ],
+    "evidenceExcerpt": "Citrus x limon芸柑柠檬压皮美柠蒎；",
+    "answerBasis": "答案僅由教材證據 mat-0313 的摘錄支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint36_source_verified_expansion",
+    "generatedAt": "2026-07-16T00:00:00.000Z",
+    "priority": 4,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 12"
+  },
+  {
+    "id": 71035,
+    "weekId": "source-verified-sprint36",
+    "type": "shortAnswer",
+    "chapter": "植物油／基底油",
+    "category": "植物油／基底油",
+    "difficulty": 2,
+    "question": "請依教材證據，說明「度液态脂肪，分溜椰子油 清爽没有香味，」的定義、結構或學習重點。",
+    "options": [],
+    "answer": "25度液态脂肪，分溜椰子油 清爽没有香味，",
+    "referenceAnswer": "25度液态脂肪，分溜椰子油 清爽没有香味，",
+    "sampleAnswer": "高分示範答案：25度液态脂肪，分溜椰子油 清爽没有香味，",
+    "explanation": "答案依據教材證據 mat-0076：25度液态脂肪，分溜椰子油 清爽没有香味，",
+    "answerGuide": "請依教材證據、參考答案與評分重點作答；本題不延伸醫療診斷、治療或精確配方建議。",
+    "keyPoints": [
+      "25度液态脂肪",
+      "分溜椰子油 清爽没有香味"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，答案方向正確且沒有超出證據的推論。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數教材重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點，仍可看出部分理解。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、與證據不符，或加入未獲來源支持的高風險說法。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified 第二批，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/安全濃度與稀釋/基础油.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 15",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0076"
+    ],
+    "evidenceExcerpt": "25度液态脂肪，分溜椰子油 清爽没有香味，",
+    "answerBasis": "答案僅由教材證據 mat-0076 的摘錄支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint36_source_verified_expansion",
+    "generatedAt": "2026-07-16T00:00:00.000Z",
+    "priority": 4,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 15"
+  },
+  {
+    "id": 71036,
+    "weekId": "source-verified-sprint36",
+    "type": "shortAnswer",
+    "chapter": "解剖生理",
+    "category": "解剖生理",
+    "difficulty": 2,
+    "question": "請依教材證據，說明「d.Ankylosingspondi」的定義、結構或學習重點。",
+    "options": [],
+    "answer": "d.Ankylosingspondilitis强直性脊椎炎",
+    "referenceAnswer": "d.Ankylosingspondilitis强直性脊椎炎",
+    "sampleAnswer": "高分示範答案：d.Ankylosingspondilitis强直性脊椎炎",
+    "explanation": "答案依據教材證據 mat-0209：d.Ankylosingspondilitis强直性脊椎炎",
+    "answerGuide": "請依教材證據、參考答案與評分重點作答；本題不延伸醫療診斷、治療或精確配方建議。",
+    "keyPoints": [
+      "d.Ankylosingspondilitis强直性脊椎炎"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，答案方向正確且沒有超出證據的推論。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數教材重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點，仍可看出部分理解。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、與證據不符，或加入未獲來源支持的高風險說法。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified 第二批，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/模擬題/副本解剖复习与模拟5套.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 28",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0209"
+    ],
+    "evidenceExcerpt": "d.Ankylosingspondilitis强直性脊椎炎",
+    "answerBasis": "答案僅由教材證據 mat-0209 的摘錄支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint36_source_verified_expansion",
+    "generatedAt": "2026-07-16T00:00:00.000Z",
+    "priority": 4,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 28"
+  },
+  {
+    "id": 71037,
+    "weekId": "source-verified-sprint36",
+    "type": "shortAnswer",
+    "chapter": "精油基礎",
+    "category": "精油基礎",
+    "difficulty": 2,
+    "question": "請依教材證據，說明「Cedrus atlantica松雪雪松蒸木法喜大」的定義、結構或學習重點。",
+    "options": [],
+    "answer": "Cedrus atlantica松雪雪松蒸木法喜大",
+    "referenceAnswer": "Cedrus atlantica松雪雪松蒸木法喜大",
+    "sampleAnswer": "高分示範答案：Cedrus atlantica松雪雪松蒸木法喜大",
+    "explanation": "答案依據教材證據 mat-0314：Cedrus atlantica松雪雪松蒸木法喜大",
+    "answerGuide": "請依教材證據、參考答案與評分重點作答；本題不延伸醫療診斷、治療或精確配方建議。",
+    "keyPoints": [
+      "掌握「Cedrus atlantica松雪雪松蒸木法喜大」與教材摘錄的對應內容"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，答案方向正確且沒有超出證據的推論。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數教材重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點，仍可看出部分理解。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、與證據不符，或加入未獲來源支持的高風險說法。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified 第二批，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/精油個論/常见的精油名称和它们的拉丁文.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 13",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0314"
+    ],
+    "evidenceExcerpt": "Cedrus atlantica松雪雪松蒸木法喜大",
+    "answerBasis": "答案僅由教材證據 mat-0314 的摘錄支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint36_source_verified_expansion",
+    "generatedAt": "2026-07-16T00:00:00.000Z",
+    "priority": 4,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 13"
+  },
+  {
+    "id": 71038,
+    "weekId": "source-verified-sprint36",
+    "type": "shortAnswer",
+    "chapter": "植物油／基底油",
+    "category": "植物油／基底油",
+    "difficulty": 2,
+    "question": "請依教材證據，說明「饱和脂肪酸分为短链和中链，不饱和脂肪酸全是长链」的定義、結構或學習重點。",
+    "options": [],
+    "answer": "饱和脂肪酸分为短链和中链，不饱和脂肪酸全是长链",
+    "referenceAnswer": "饱和脂肪酸分为短链和中链，不饱和脂肪酸全是长链",
+    "sampleAnswer": "高分示範答案：饱和脂肪酸分为短链和中链，不饱和脂肪酸全是长链",
+    "explanation": "答案依據教材證據 mat-0077：饱和脂肪酸分为短链和中链，不饱和脂肪酸全是长链",
+    "answerGuide": "請依教材證據、參考答案與評分重點作答；本題不延伸醫療診斷、治療或精確配方建議。",
+    "keyPoints": [
+      "饱和脂肪酸分为短链和中链",
+      "不饱和脂肪酸全是长链"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，答案方向正確且沒有超出證據的推論。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數教材重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點，仍可看出部分理解。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、與證據不符，或加入未獲來源支持的高風險說法。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified 第二批，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/安全濃度與稀釋/基础油.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 16",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0077"
+    ],
+    "evidenceExcerpt": "饱和脂肪酸分为短链和中链，不饱和脂肪酸全是长链",
+    "answerBasis": "答案僅由教材證據 mat-0077 的摘錄支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint36_source_verified_expansion",
+    "generatedAt": "2026-07-16T00:00:00.000Z",
+    "priority": 4,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 16"
+  },
+  {
+    "id": 71039,
+    "weekId": "source-verified-sprint36",
+    "type": "shortAnswer",
+    "chapter": "解剖生理",
+    "category": "解剖生理",
+    "difficulty": 2,
+    "question": "請依教材證據，說明「列出两种严重的传染病，」的定義、結構或學習重點。",
+    "options": [],
+    "answer": "列出两种严重的传染病，是你需要将此病患的顾客转介到卫生当局。(2 分)",
+    "referenceAnswer": "列出两种严重的传染病，是你需要将此病患的顾客转介到卫生当局。(2 分)",
+    "sampleAnswer": "高分示範答案：列出两种严重的传染病，是你需要将此病患的顾客转介到卫生当局。(2 分)",
+    "explanation": "答案依據教材證據 mat-0211：列出两种严重的传染病，是你需要将此病患的顾客转介到卫生当局。(2 分)",
+    "answerGuide": "請依教材證據、參考答案與評分重點作答；本題不延伸醫療診斷、治療或精確配方建議。",
+    "keyPoints": [
+      "列出两种严重的传染病",
+      "是你需要将此病患的顾客转介到卫生当局",
+      "(2 分)"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，答案方向正確且沒有超出證據的推論。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數教材重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點，仍可看出部分理解。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、與證據不符，或加入未獲來源支持的高風險說法。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified 第二批，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/模擬題/副本解剖复习与模拟5套.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 30",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0211"
+    ],
+    "evidenceExcerpt": "列出两种严重的传染病，是你需要将此病患的顾客转介到卫生当局。(2 分)",
+    "answerBasis": "答案僅由教材證據 mat-0211 的摘錄支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint36_source_verified_expansion",
+    "generatedAt": "2026-07-16T00:00:00.000Z",
+    "priority": 4,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 30"
+  },
+  {
+    "id": 71040,
+    "weekId": "source-verified-sprint36",
+    "type": "shortAnswer",
+    "chapter": "解剖生理",
+    "category": "解剖生理",
+    "difficulty": 2,
+    "question": "請依教材證據，說明「浅层级深层的血液循环、减轻水肿、协助身体代谢酸性物质」的定義、結構或學習重點。",
+    "options": [],
+    "answer": "浅层级深层的血液循环、减轻水肿、协助身体代谢酸性物质。",
+    "referenceAnswer": "浅层级深层的血液循环、减轻水肿、协助身体代谢酸性物质。",
+    "sampleAnswer": "高分示範答案：浅层级深层的血液循环、减轻水肿、协助身体代谢酸性物质。",
+    "explanation": "答案依據教材證據 mat-0228：浅层级深层的血液循环、减轻水肿、协助身体代谢酸性物质。",
+    "answerGuide": "請依教材證據、參考答案與評分重點作答；本題不延伸醫療診斷、治療或精確配方建議。",
+    "keyPoints": [
+      "浅层级深层的血液循环",
+      "减轻水肿",
+      "协助身体代谢酸性物质"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，答案方向正確且沒有超出證據的推論。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數教材重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點，仍可看出部分理解。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、與證據不符，或加入未獲來源支持的高風險說法。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified 第二批，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/模擬題/副本解剖复习与模拟5套.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 47",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0228"
+    ],
+    "evidenceExcerpt": "浅层级深层的血液循环、减轻水肿、协助身体代谢酸性物质。",
+    "answerBasis": "答案僅由教材證據 mat-0228 的摘錄支持，不延伸推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint36_source_verified_expansion",
+    "generatedAt": "2026-07-16T00:00:00.000Z",
+    "priority": 4,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 47"
+  },
+  {
+    "id": 71041,
+    "weekId": "source-verified-sprint36",
+    "type": "essay",
+    "chapter": "解剖生理",
+    "category": "解剖生理",
+    "difficulty": 3,
+    "question": "請依教材證據，以有結構的段落完整說明「外分泌腺有实际管腺，分布于全身表面，」的核心概念、教材重點與學習上的注意界線。",
+    "options": [],
+    "answer": "一、先界定「外分泌腺有实际管腺，分布于全身表面，」的教材內容。\n二、依教材摘錄完整說明：外分泌腺有实际管腺，分布于全身表面，多数分泌腺都属于外分泌腺，例如汗腺就是外分泌腺。\n三、作答時不把這段教材延伸成醫療診斷、治療或精確配方建議。",
+    "referenceAnswer": "一、先界定「外分泌腺有实际管腺，分布于全身表面，」的教材內容。\n二、依教材摘錄完整說明：外分泌腺有实际管腺，分布于全身表面，多数分泌腺都属于外分泌腺，例如汗腺就是外分泌腺。\n三、作答時不把這段教材延伸成醫療診斷、治療或精確配方建議。",
+    "sampleAnswer": "高分示範答案：\n一、先界定「外分泌腺有实际管腺，分布于全身表面，」的教材內容。\n二、依教材摘錄完整說明：外分泌腺有实际管腺，分布于全身表面，多数分泌腺都属于外分泌腺，例如汗腺就是外分泌腺。\n三、作答時不把這段教材延伸成醫療診斷、治療或精確配方建議。",
+    "explanation": "答案依據教材證據 mat-0283：本題要求以段落整理 mat-0283 的教材重點，重視概念完整、結構清楚與安全界線。",
+    "answerGuide": "請依教材證據、參考答案與評分重點作答；本題不延伸醫療診斷、治療或精確配方建議。",
+    "keyPoints": [
+      "外分泌腺有实际管腺",
+      "分布于全身表面",
+      "多数分泌腺都属于外分泌腺",
+      "例如汗腺就是外分泌腺"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，答案方向正確且沒有超出證據的推論。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數教材重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點，仍可看出部分理解。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、與證據不符，或加入未獲來源支持的高風險說法。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified 第二批，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/模擬題/副本解剖复习与模拟5套.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 102",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0283"
+    ],
+    "evidenceExcerpt": "外分泌腺有实际管腺，分布于全身表面，多数分泌腺都属于外分泌腺，例如汗腺就是外分泌腺。",
+    "answerBasis": "答案由教材證據 mat-0283 支持；題目只要求整理該摘錄，不延伸醫療或配方推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint36_source_verified_expansion",
+    "generatedAt": "2026-07-16T00:00:00.000Z",
+    "priority": 4,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 102"
+  },
+  {
+    "id": 71042,
+    "weekId": "source-verified-sprint36",
+    "type": "essay",
+    "chapter": "精油基礎",
+    "category": "精油基礎",
+    "difficulty": 3,
+    "question": "請依教材證據，以有結構的段落完整說明「Cymbopogon citratus禾香柠草蒸叶印牻橙」的核心概念、教材重點與學習上的注意界線。",
+    "options": [],
+    "answer": "一、先界定「Cymbopogon citratus禾香柠草蒸叶印牻橙」的教材內容。\n二、依教材摘錄完整說明：Cymbopogon citratus禾香柠草蒸叶印牻橙\n三、作答時不把這段教材延伸成醫療診斷、治療或精確配方建議。",
+    "referenceAnswer": "一、先界定「Cymbopogon citratus禾香柠草蒸叶印牻橙」的教材內容。\n二、依教材摘錄完整說明：Cymbopogon citratus禾香柠草蒸叶印牻橙\n三、作答時不把這段教材延伸成醫療診斷、治療或精確配方建議。",
+    "sampleAnswer": "高分示範答案：\n一、先界定「Cymbopogon citratus禾香柠草蒸叶印牻橙」的教材內容。\n二、依教材摘錄完整說明：Cymbopogon citratus禾香柠草蒸叶印牻橙\n三、作答時不把這段教材延伸成醫療診斷、治療或精確配方建議。",
+    "explanation": "答案依據教材證據 mat-0340：本題要求以段落整理 mat-0340 的教材重點，重視概念完整、結構清楚與安全界線。",
+    "answerGuide": "請依教材證據、參考答案與評分重點作答；本題不延伸醫療診斷、治療或精確配方建議。",
+    "keyPoints": [
+      "掌握「Cymbopogon citratus禾香柠草蒸叶印牻橙」與教材摘錄的對應內容"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，答案方向正確且沒有超出證據的推論。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數教材重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點，仍可看出部分理解。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、與證據不符，或加入未獲來源支持的高風險說法。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified 第二批，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/精油個論/常见的精油名称和它们的拉丁文.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 39",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0340"
+    ],
+    "evidenceExcerpt": "Cymbopogon citratus禾香柠草蒸叶印牻橙",
+    "answerBasis": "答案由教材證據 mat-0340 支持；題目只要求整理該摘錄，不延伸醫療或配方推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint36_source_verified_expansion",
+    "generatedAt": "2026-07-16T00:00:00.000Z",
+    "priority": 4,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 39"
+  },
+  {
+    "id": 71043,
+    "weekId": "source-verified-sprint36",
+    "type": "essay",
+    "chapter": "精油化學",
+    "category": "精油化學",
+    "difficulty": 3,
+    "question": "請依教材證據，以有結構的段落完整說明「单萜醇再次氧化成单萜酮」的核心概念、教材重點與學習上的注意界線。",
+    "options": [],
+    "answer": "一、先界定「单萜醇再次氧化成单萜酮」的教材內容。\n二、依教材摘錄完整說明：单萜醇再次氧化成单萜酮 ：侧柏酮、樟脑（龙脑酮）、马鞭草酮、薄荷酮（薄荷脑=薄荷醇----薄荷酮）\n三、作答時不把這段教材延伸成醫療診斷、治療或精確配方建議。",
+    "referenceAnswer": "一、先界定「单萜醇再次氧化成单萜酮」的教材內容。\n二、依教材摘錄完整說明：单萜醇再次氧化成单萜酮 ：侧柏酮、樟脑（龙脑酮）、马鞭草酮、薄荷酮（薄荷脑=薄荷醇----薄荷酮）\n三、作答時不把這段教材延伸成醫療診斷、治療或精確配方建議。",
+    "sampleAnswer": "高分示範答案：\n一、先界定「单萜醇再次氧化成单萜酮」的教材內容。\n二、依教材摘錄完整說明：单萜醇再次氧化成单萜酮 ：侧柏酮、樟脑（龙脑酮）、马鞭草酮、薄荷酮（薄荷脑=薄荷醇----薄荷酮）\n三、作答時不把這段教材延伸成醫療診斷、治療或精確配方建議。",
+    "explanation": "答案依據教材證據 mat-0612：本題要求以段落整理 mat-0612 的教材重點，重視概念完整、結構清楚與安全界線。",
+    "answerGuide": "請依教材證據、參考答案與評分重點作答；本題不延伸醫療診斷、治療或精確配方建議。",
+    "keyPoints": [
+      "侧柏酮",
+      "樟脑（龙脑酮）",
+      "马鞭草酮",
+      "薄荷酮（薄荷脑=薄荷醇----薄荷酮）"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，答案方向正確且沒有超出證據的推論。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數教材重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點，仍可看出部分理解。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、與證據不符，或加入未獲來源支持的高風險說法。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified 第二批，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/精油化學/精油分子合成通路.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 96",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0612"
+    ],
+    "evidenceExcerpt": "单萜醇再次氧化成单萜酮 ：侧柏酮、樟脑（龙脑酮）、马鞭草酮、薄荷酮（薄荷脑=薄荷醇----薄荷酮）",
+    "answerBasis": "答案由教材證據 mat-0612 支持；題目只要求整理該摘錄，不延伸醫療或配方推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint36_source_verified_expansion",
+    "generatedAt": "2026-07-16T00:00:00.000Z",
+    "priority": 4,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 96"
+  },
+  {
+    "id": 71044,
+    "weekId": "source-verified-sprint36",
+    "type": "essay",
+    "chapter": "植物油／基底油",
+    "category": "植物油／基底油",
+    "difficulty": 3,
+    "question": "請依教材證據，以有結構的段落完整說明「榛果油Corylus avellana」的核心概念、教材重點與學習上的注意界線。",
+    "options": [],
+    "answer": "一、先界定「榛果油Corylus avellana」的教材內容。\n二、依教材摘錄完整說明：榛果油Corylus avellana\n三、作答時不把這段教材延伸成醫療診斷、治療或精確配方建議。",
+    "referenceAnswer": "一、先界定「榛果油Corylus avellana」的教材內容。\n二、依教材摘錄完整說明：榛果油Corylus avellana\n三、作答時不把這段教材延伸成醫療診斷、治療或精確配方建議。",
+    "sampleAnswer": "高分示範答案：\n一、先界定「榛果油Corylus avellana」的教材內容。\n二、依教材摘錄完整說明：榛果油Corylus avellana\n三、作答時不把這段教材延伸成醫療診斷、治療或精確配方建議。",
+    "explanation": "答案依據教材證據 mat-0111：本題要求以段落整理 mat-0111 的教材重點，重視概念完整、結構清楚與安全界線。",
+    "answerGuide": "請依教材證據、參考答案與評分重點作答；本題不延伸醫療診斷、治療或精確配方建議。",
+    "keyPoints": [
+      "掌握「榛果油Corylus avellana」與教材摘錄的對應內容"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，答案方向正確且沒有超出證據的推論。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數教材重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點，仍可看出部分理解。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、與證據不符，或加入未獲來源支持的高風險說法。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified 第二批，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/安全濃度與稀釋/基础油.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 50",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0111"
+    ],
+    "evidenceExcerpt": "榛果油Corylus avellana",
+    "answerBasis": "答案由教材證據 mat-0111 支持；題目只要求整理該摘錄，不延伸醫療或配方推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint36_source_verified_expansion",
+    "generatedAt": "2026-07-16T00:00:00.000Z",
+    "priority": 4,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 50"
+  },
+  {
+    "id": 71045,
+    "weekId": "source-verified-sprint36",
+    "type": "essay",
+    "chapter": "解剖生理",
+    "category": "解剖生理",
+    "difficulty": 3,
+    "question": "請依教材證據，以有結構的段落完整說明「内分泌腺因」的核心概念、教材重點與學習上的注意界線。",
+    "options": [],
+    "answer": "一、先界定「内分泌腺因」的教材內容。\n二、依教材摘錄完整說明：内分泌腺因为没有实际的管腺，所以又称之为『无腺体』，内分泌腺主要将分泌的激素利用血液循环分布到全身，例如胰岛素。\n三、作答時不把這段教材延伸成醫療診斷、治療或精確配方建議。",
+    "referenceAnswer": "一、先界定「内分泌腺因」的教材內容。\n二、依教材摘錄完整說明：内分泌腺因为没有实际的管腺，所以又称之为『无腺体』，内分泌腺主要将分泌的激素利用血液循环分布到全身，例如胰岛素。\n三、作答時不把這段教材延伸成醫療診斷、治療或精確配方建議。",
+    "sampleAnswer": "高分示範答案：\n一、先界定「内分泌腺因」的教材內容。\n二、依教材摘錄完整說明：内分泌腺因为没有实际的管腺，所以又称之为『无腺体』，内分泌腺主要将分泌的激素利用血液循环分布到全身，例如胰岛素。\n三、作答時不把這段教材延伸成醫療診斷、治療或精確配方建議。",
+    "explanation": "答案依據教材證據 mat-0284：本題要求以段落整理 mat-0284 的教材重點，重視概念完整、結構清楚與安全界線。",
+    "answerGuide": "請依教材證據、參考答案與評分重點作答；本題不延伸醫療診斷、治療或精確配方建議。",
+    "keyPoints": [
+      "内分泌腺因为没有实际的管腺",
+      "所以又称之为『无腺体』",
+      "内分泌腺主要将分泌的激素利用血液循环分布到全身",
+      "例如胰岛素"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，答案方向正確且沒有超出證據的推論。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數教材重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點，仍可看出部分理解。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、與證據不符，或加入未獲來源支持的高風險說法。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified 第二批，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/模擬題/副本解剖复习与模拟5套.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 103",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0284"
+    ],
+    "evidenceExcerpt": "内分泌腺因为没有实际的管腺，所以又称之为『无腺体』，内分泌腺主要将分泌的激素利用血液循环分布到全身，例如胰岛素。",
+    "answerBasis": "答案由教材證據 mat-0284 支持；題目只要求整理該摘錄，不延伸醫療或配方推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint36_source_verified_expansion",
+    "generatedAt": "2026-07-16T00:00:00.000Z",
+    "priority": 4,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 103"
+  },
+  {
+    "id": 71046,
+    "weekId": "source-verified-sprint36",
+    "type": "essay",
+    "chapter": "精油基礎",
+    "category": "精油基礎",
+    "difficulty": 3,
+    "question": "請依教材證據，以有結構的段落完整說明「Melissa officinalis唇香香蜂蒸全法牻橙」的核心概念、教材重點與學習上的注意界線。",
+    "options": [],
+    "answer": "一、先界定「Melissa officinalis唇香香蜂蒸全法牻橙」的教材內容。\n二、依教材摘錄完整說明：Melissa officinalis唇香香蜂蒸全法牻橙\n三、作答時不把這段教材延伸成醫療診斷、治療或精確配方建議。",
+    "referenceAnswer": "一、先界定「Melissa officinalis唇香香蜂蒸全法牻橙」的教材內容。\n二、依教材摘錄完整說明：Melissa officinalis唇香香蜂蒸全法牻橙\n三、作答時不把這段教材延伸成醫療診斷、治療或精確配方建議。",
+    "sampleAnswer": "高分示範答案：\n一、先界定「Melissa officinalis唇香香蜂蒸全法牻橙」的教材內容。\n二、依教材摘錄完整說明：Melissa officinalis唇香香蜂蒸全法牻橙\n三、作答時不把這段教材延伸成醫療診斷、治療或精確配方建議。",
+    "explanation": "答案依據教材證據 mat-0341：本題要求以段落整理 mat-0341 的教材重點，重視概念完整、結構清楚與安全界線。",
+    "answerGuide": "請依教材證據、參考答案與評分重點作答；本題不延伸醫療診斷、治療或精確配方建議。",
+    "keyPoints": [
+      "掌握「Melissa officinalis唇香香蜂蒸全法牻橙」與教材摘錄的對應內容"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，答案方向正確且沒有超出證據的推論。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數教材重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點，仍可看出部分理解。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、與證據不符，或加入未獲來源支持的高風險說法。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified 第二批，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/精油個論/常见的精油名称和它们的拉丁文.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 40",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0341"
+    ],
+    "evidenceExcerpt": "Melissa officinalis唇香香蜂蒸全法牻橙",
+    "answerBasis": "答案由教材證據 mat-0341 支持；題目只要求整理該摘錄，不延伸醫療或配方推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint36_source_verified_expansion",
+    "generatedAt": "2026-07-16T00:00:00.000Z",
+    "priority": 4,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 40"
+  },
+  {
+    "id": 71047,
+    "weekId": "source-verified-sprint36",
+    "type": "essay",
+    "chapter": "精油化學",
+    "category": "精油化學",
+    "difficulty": 3,
+    "question": "請依教材證據，以有結構的段落完整說明「代表」的核心概念、教材重點與學習上的注意界線。",
+    "options": [],
+    "answer": "一、先界定「代表」的教材內容。\n二、依教材摘錄完整說明：代表：素馨酮、大马士革酮、紫罗兰酮、大西洋酮、印蒿酮\n三、作答時不把這段教材延伸成醫療診斷、治療或精確配方建議。",
+    "referenceAnswer": "一、先界定「代表」的教材內容。\n二、依教材摘錄完整說明：代表：素馨酮、大马士革酮、紫罗兰酮、大西洋酮、印蒿酮\n三、作答時不把這段教材延伸成醫療診斷、治療或精確配方建議。",
+    "sampleAnswer": "高分示範答案：\n一、先界定「代表」的教材內容。\n二、依教材摘錄完整說明：代表：素馨酮、大马士革酮、紫罗兰酮、大西洋酮、印蒿酮\n三、作答時不把這段教材延伸成醫療診斷、治療或精確配方建議。",
+    "explanation": "答案依據教材證據 mat-0613：本題要求以段落整理 mat-0613 的教材重點，重視概念完整、結構清楚與安全界線。",
+    "answerGuide": "請依教材證據、參考答案與評分重點作答；本題不延伸醫療診斷、治療或精確配方建議。",
+    "keyPoints": [
+      "素馨酮",
+      "大马士革酮",
+      "紫罗兰酮",
+      "大西洋酮",
+      "印蒿酮"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，答案方向正確且沒有超出證據的推論。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數教材重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點，仍可看出部分理解。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、與證據不符，或加入未獲來源支持的高風險說法。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified 第二批，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/精油化學/精油分子合成通路.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 97",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0613"
+    ],
+    "evidenceExcerpt": "代表：素馨酮、大马士革酮、紫罗兰酮、大西洋酮、印蒿酮",
+    "answerBasis": "答案由教材證據 mat-0613 支持；題目只要求整理該摘錄，不延伸醫療或配方推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint36_source_verified_expansion",
+    "generatedAt": "2026-07-16T00:00:00.000Z",
+    "priority": 4,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 97"
+  },
+  {
+    "id": 71048,
+    "weekId": "source-verified-sprint36",
+    "type": "essay",
+    "chapter": "植物油／基底油",
+    "category": "植物油／基底油",
+    "difficulty": 3,
+    "question": "請依教材證據，以有結構的段落完整說明「单不饱和脂肪酸」的核心概念、教材重點與學習上的注意界線。",
+    "options": [],
+    "answer": "一、先界定「单不饱和脂肪酸」的教材內容。\n二、依教材摘錄完整說明：单不饱和脂肪酸： 油酸（78-90%）-----高油酸\n三、作答時不把這段教材延伸成醫療診斷、治療或精確配方建議。",
+    "referenceAnswer": "一、先界定「单不饱和脂肪酸」的教材內容。\n二、依教材摘錄完整說明：单不饱和脂肪酸： 油酸（78-90%）-----高油酸\n三、作答時不把這段教材延伸成醫療診斷、治療或精確配方建議。",
+    "sampleAnswer": "高分示範答案：\n一、先界定「单不饱和脂肪酸」的教材內容。\n二、依教材摘錄完整說明：单不饱和脂肪酸： 油酸（78-90%）-----高油酸\n三、作答時不把這段教材延伸成醫療診斷、治療或精確配方建議。",
+    "explanation": "答案依據教材證據 mat-0112：本題要求以段落整理 mat-0112 的教材重點，重視概念完整、結構清楚與安全界線。",
+    "answerGuide": "請依教材證據、參考答案與評分重點作答；本題不延伸醫療診斷、治療或精確配方建議。",
+    "keyPoints": [
+      "油酸（78-90%）-----高油酸"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，答案方向正確且沒有超出證據的推論。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數教材重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點，仍可看出部分理解。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、與證據不符，或加入未獲來源支持的高風險說法。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified 第二批，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/安全濃度與稀釋/基础油.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 51",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0112"
+    ],
+    "evidenceExcerpt": "单不饱和脂肪酸： 油酸（78-90%）-----高油酸",
+    "answerBasis": "答案由教材證據 mat-0112 支持；題目只要求整理該摘錄，不延伸醫療或配方推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint36_source_verified_expansion",
+    "generatedAt": "2026-07-16T00:00:00.000Z",
+    "priority": 4,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 51"
+  },
+  {
+    "id": 71049,
+    "weekId": "source-verified-sprint36",
+    "type": "essay",
+    "chapter": "解剖生理",
+    "category": "解剖生理",
+    "difficulty": 3,
+    "question": "請依教材證據，以有結構的段落完整說明「肌肉运动模式有分为很多种类，以下举出四种常见的运动模式」的核心概念、教材重點與學習上的注意界線。",
+    "options": [],
+    "answer": "一、先界定「肌肉运动模式有分为很多种类，以下举出四种常见的运动模式」的教材內容。\n二、依教材摘錄完整說明：肌肉运动模式有分为很多种类，以下举出四种常见的运动模式。\n三、作答時不把這段教材延伸成醫療診斷、治療或精確配方建議。",
+    "referenceAnswer": "一、先界定「肌肉运动模式有分为很多种类，以下举出四种常见的运动模式」的教材內容。\n二、依教材摘錄完整說明：肌肉运动模式有分为很多种类，以下举出四种常见的运动模式。\n三、作答時不把這段教材延伸成醫療診斷、治療或精確配方建議。",
+    "sampleAnswer": "高分示範答案：\n一、先界定「肌肉运动模式有分为很多种类，以下举出四种常见的运动模式」的教材內容。\n二、依教材摘錄完整說明：肌肉运动模式有分为很多种类，以下举出四种常见的运动模式。\n三、作答時不把這段教材延伸成醫療診斷、治療或精確配方建議。",
+    "explanation": "答案依據教材證據 mat-0285：本題要求以段落整理 mat-0285 的教材重點，重視概念完整、結構清楚與安全界線。",
+    "answerGuide": "請依教材證據、參考答案與評分重點作答；本題不延伸醫療診斷、治療或精確配方建議。",
+    "keyPoints": [
+      "肌肉运动模式有分为很多种类",
+      "以下举出四种常见的运动模式"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，答案方向正確且沒有超出證據的推論。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數教材重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點，仍可看出部分理解。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、與證據不符，或加入未獲來源支持的高風險說法。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified 第二批，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/模擬題/副本解剖复习与模拟5套.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 104",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0285"
+    ],
+    "evidenceExcerpt": "肌肉运动模式有分为很多种类，以下举出四种常见的运动模式。",
+    "answerBasis": "答案由教材證據 mat-0285 支持；題目只要求整理該摘錄，不延伸醫療或配方推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint36_source_verified_expansion",
+    "generatedAt": "2026-07-16T00:00:00.000Z",
+    "priority": 4,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 104"
+  },
+  {
+    "id": 71050,
+    "weekId": "source-verified-sprint36",
+    "type": "essay",
+    "chapter": "精油基礎",
+    "category": "精油基礎",
+    "difficulty": 3,
+    "question": "請依教材證據，以有結構的段落完整說明「Foeniculum vulgare伞茴甜茴蒸种爪洋茴」的核心概念、教材重點與學習上的注意界線。",
+    "options": [],
+    "answer": "一、先界定「Foeniculum vulgare伞茴甜茴蒸种爪洋茴」的教材內容。\n二、依教材摘錄完整說明：Foeniculum vulgare伞茴甜茴蒸种爪洋茴\n三、作答時不把這段教材延伸成醫療診斷、治療或精確配方建議。",
+    "referenceAnswer": "一、先界定「Foeniculum vulgare伞茴甜茴蒸种爪洋茴」的教材內容。\n二、依教材摘錄完整說明：Foeniculum vulgare伞茴甜茴蒸种爪洋茴\n三、作答時不把這段教材延伸成醫療診斷、治療或精確配方建議。",
+    "sampleAnswer": "高分示範答案：\n一、先界定「Foeniculum vulgare伞茴甜茴蒸种爪洋茴」的教材內容。\n二、依教材摘錄完整說明：Foeniculum vulgare伞茴甜茴蒸种爪洋茴\n三、作答時不把這段教材延伸成醫療診斷、治療或精確配方建議。",
+    "explanation": "答案依據教材證據 mat-0342：本題要求以段落整理 mat-0342 的教材重點，重視概念完整、結構清楚與安全界線。",
+    "answerGuide": "請依教材證據、參考答案與評分重點作答；本題不延伸醫療診斷、治療或精確配方建議。",
+    "keyPoints": [
+      "掌握「Foeniculum vulgare伞茴甜茴蒸种爪洋茴」與教材摘錄的對應內容"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，答案方向正確且沒有超出證據的推論。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數教材重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點，仍可看出部分理解。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、與證據不符，或加入未獲來源支持的高風險說法。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified 第二批，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/精油個論/常见的精油名称和它们的拉丁文.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 41",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0342"
+    ],
+    "evidenceExcerpt": "Foeniculum vulgare伞茴甜茴蒸种爪洋茴",
+    "answerBasis": "答案由教材證據 mat-0342 支持；題目只要求整理該摘錄，不延伸醫療或配方推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint36_source_verified_expansion",
+    "generatedAt": "2026-07-16T00:00:00.000Z",
+    "priority": 4,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 41"
+  },
+  {
+    "id": 71051,
+    "weekId": "source-verified-sprint36",
+    "type": "essay",
+    "chapter": "精油化學",
+    "category": "精油化學",
+    "difficulty": 3,
+    "question": "請依教材證據，以有結構的段落完整說明「意大利酮」的核心概念、教材重點與學習上的注意界線。",
+    "options": [],
+    "answer": "一、先界定「意大利酮」的教材內容。\n二、依教材摘錄完整說明：意大利酮：散淤血、疏通血管、促进细胞再生与修复、抑制酪氨酸酶活性\n三、作答時不把這段教材延伸成醫療診斷、治療或精確配方建議。",
+    "referenceAnswer": "一、先界定「意大利酮」的教材內容。\n二、依教材摘錄完整說明：意大利酮：散淤血、疏通血管、促进细胞再生与修复、抑制酪氨酸酶活性\n三、作答時不把這段教材延伸成醫療診斷、治療或精確配方建議。",
+    "sampleAnswer": "高分示範答案：\n一、先界定「意大利酮」的教材內容。\n二、依教材摘錄完整說明：意大利酮：散淤血、疏通血管、促进细胞再生与修复、抑制酪氨酸酶活性\n三、作答時不把這段教材延伸成醫療診斷、治療或精確配方建議。",
+    "explanation": "答案依據教材證據 mat-0614：本題要求以段落整理 mat-0614 的教材重點，重視概念完整、結構清楚與安全界線。",
+    "answerGuide": "請依教材證據、參考答案與評分重點作答；本題不延伸醫療診斷、治療或精確配方建議。",
+    "keyPoints": [
+      "散淤血",
+      "疏通血管",
+      "促进细胞再生与修复",
+      "抑制酪氨酸酶活性"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，答案方向正確且沒有超出證據的推論。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數教材重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點，仍可看出部分理解。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、與證據不符，或加入未獲來源支持的高風險說法。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified 第二批，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/精油化學/精油分子合成通路.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 98",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0614"
+    ],
+    "evidenceExcerpt": "意大利酮：散淤血、疏通血管、促进细胞再生与修复、抑制酪氨酸酶活性",
+    "answerBasis": "答案由教材證據 mat-0614 支持；題目只要求整理該摘錄，不延伸醫療或配方推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint36_source_verified_expansion",
+    "generatedAt": "2026-07-16T00:00:00.000Z",
+    "priority": 4,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 98"
+  },
+  {
+    "id": 71052,
+    "weekId": "source-verified-sprint36",
+    "type": "essay",
+    "chapter": "植物油／基底油",
+    "category": "植物油／基底油",
+    "difficulty": 3,
+    "question": "請依教材證據，以有結構的段落完整說明「双不饱和脂肪酸」的核心概念、教材重點與學習上的注意界線。",
+    "options": [],
+    "answer": "一、先界定「双不饱和脂肪酸」的教材內容。\n二、依教材摘錄完整說明：双不饱和脂肪酸： 亚油酸（3-14%）、 ω-6\n三、作答時不把這段教材延伸成醫療診斷、治療或精確配方建議。",
+    "referenceAnswer": "一、先界定「双不饱和脂肪酸」的教材內容。\n二、依教材摘錄完整說明：双不饱和脂肪酸： 亚油酸（3-14%）、 ω-6\n三、作答時不把這段教材延伸成醫療診斷、治療或精確配方建議。",
+    "sampleAnswer": "高分示範答案：\n一、先界定「双不饱和脂肪酸」的教材內容。\n二、依教材摘錄完整說明：双不饱和脂肪酸： 亚油酸（3-14%）、 ω-6\n三、作答時不把這段教材延伸成醫療診斷、治療或精確配方建議。",
+    "explanation": "答案依據教材證據 mat-0113：本題要求以段落整理 mat-0113 的教材重點，重視概念完整、結構清楚與安全界線。",
+    "answerGuide": "請依教材證據、參考答案與評分重點作答；本題不延伸醫療診斷、治療或精確配方建議。",
+    "keyPoints": [
+      "亚油酸（3-14%）",
+      "ω-6"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，答案方向正確且沒有超出證據的推論。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數教材重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點，仍可看出部分理解。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、與證據不符，或加入未獲來源支持的高風險說法。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified 第二批，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/安全濃度與稀釋/基础油.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 52",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0113"
+    ],
+    "evidenceExcerpt": "双不饱和脂肪酸： 亚油酸（3-14%）、 ω-6",
+    "answerBasis": "答案由教材證據 mat-0113 支持；題目只要求整理該摘錄，不延伸醫療或配方推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint36_source_verified_expansion",
+    "generatedAt": "2026-07-16T00:00:00.000Z",
+    "priority": 4,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 52"
+  },
+  {
+    "id": 71053,
+    "weekId": "source-verified-sprint36",
+    "type": "essay",
+    "chapter": "解剖生理",
+    "category": "解剖生理",
+    "difficulty": 3,
+    "question": "請依教材證據，以有結構的段落完整說明「滑车神经属于运动神经，主要负责眼睛上」的核心概念、教材重點與學習上的注意界線。",
+    "options": [],
+    "answer": "一、先界定「滑车神经属于运动神经，主要负责眼睛上」的教材內容。\n二、依教材摘錄完整說明：滑车神经属于运动神经，主要负责眼睛上斜肌的运作，ex.眼球运动。第九脑神经（舌咽神经）：\n三、作答時不把這段教材延伸成醫療診斷、治療或精確配方建議。",
+    "referenceAnswer": "一、先界定「滑车神经属于运动神经，主要负责眼睛上」的教材內容。\n二、依教材摘錄完整說明：滑车神经属于运动神经，主要负责眼睛上斜肌的运作，ex.眼球运动。第九脑神经（舌咽神经）：\n三、作答時不把這段教材延伸成醫療診斷、治療或精確配方建議。",
+    "sampleAnswer": "高分示範答案：\n一、先界定「滑车神经属于运动神经，主要负责眼睛上」的教材內容。\n二、依教材摘錄完整說明：滑车神经属于运动神经，主要负责眼睛上斜肌的运作，ex.眼球运动。第九脑神经（舌咽神经）：\n三、作答時不把這段教材延伸成醫療診斷、治療或精確配方建議。",
+    "explanation": "答案依據教材證據 mat-0286：本題要求以段落整理 mat-0286 的教材重點，重視概念完整、結構清楚與安全界線。",
+    "answerGuide": "請依教材證據、參考答案與評分重點作答；本題不延伸醫療診斷、治療或精確配方建議。",
+    "keyPoints": [
+      "滑车神经属于运动神经",
+      "主要负责眼睛上斜肌的运作",
+      "ex.眼球运动",
+      "第九脑神经（舌咽神经）"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，答案方向正確且沒有超出證據的推論。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數教材重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點，仍可看出部分理解。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、與證據不符，或加入未獲來源支持的高風險說法。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified 第二批，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/模擬題/副本解剖复习与模拟5套.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 105",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0286"
+    ],
+    "evidenceExcerpt": "滑车神经属于运动神经，主要负责眼睛上斜肌的运作，ex.眼球运动。第九脑神经（舌咽神经）：",
+    "answerBasis": "答案由教材證據 mat-0286 支持；題目只要求整理該摘錄，不延伸醫療或配方推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint36_source_verified_expansion",
+    "generatedAt": "2026-07-16T00:00:00.000Z",
+    "priority": 4,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 105"
+  },
+  {
+    "id": 71054,
+    "weekId": "source-verified-sprint36",
+    "type": "essay",
+    "chapter": "精油基礎",
+    "category": "精油基礎",
+    "difficulty": 3,
+    "question": "請依教材證據，以有結構的段落完整說明「Cinnamomum zeylani」的核心概念、教材重點與學習上的注意界線。",
+    "options": [],
+    "answer": "一、先界定「Cinnamomum zeylani」的教材內容。\n二、依教材摘錄完整說明：Cinnamomum zeylanicum樟樟肉桂蒸叶印丁肉\n三、作答時不把這段教材延伸成醫療診斷、治療或精確配方建議。",
+    "referenceAnswer": "一、先界定「Cinnamomum zeylani」的教材內容。\n二、依教材摘錄完整說明：Cinnamomum zeylanicum樟樟肉桂蒸叶印丁肉\n三、作答時不把這段教材延伸成醫療診斷、治療或精確配方建議。",
+    "sampleAnswer": "高分示範答案：\n一、先界定「Cinnamomum zeylani」的教材內容。\n二、依教材摘錄完整說明：Cinnamomum zeylanicum樟樟肉桂蒸叶印丁肉\n三、作答時不把這段教材延伸成醫療診斷、治療或精確配方建議。",
+    "explanation": "答案依據教材證據 mat-0343：本題要求以段落整理 mat-0343 的教材重點，重視概念完整、結構清楚與安全界線。",
+    "answerGuide": "請依教材證據、參考答案與評分重點作答；本題不延伸醫療診斷、治療或精確配方建議。",
+    "keyPoints": [
+      "Cinnamomum zeylanicum樟樟肉桂蒸叶印丁肉"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，答案方向正確且沒有超出證據的推論。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數教材重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點，仍可看出部分理解。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、與證據不符，或加入未獲來源支持的高風險說法。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified 第二批，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/精油個論/常见的精油名称和它们的拉丁文.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 42",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0343"
+    ],
+    "evidenceExcerpt": "Cinnamomum zeylanicum樟樟肉桂蒸叶印丁肉",
+    "answerBasis": "答案由教材證據 mat-0343 支持；題目只要求整理該摘錄，不延伸醫療或配方推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint36_source_verified_expansion",
+    "generatedAt": "2026-07-16T00:00:00.000Z",
+    "priority": 4,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 42"
+  },
+  {
+    "id": 71055,
+    "weekId": "source-verified-sprint36",
+    "type": "essay",
+    "chapter": "植物油／基底油",
+    "category": "植物油／基底油",
+    "difficulty": 3,
+    "question": "請依教材證據，以有結構的段落完整說明「有微微收敛作用，缓解皮肤出油，适合痘肌和混油肌」的核心概念、教材重點與學習上的注意界線。",
+    "options": [],
+    "answer": "一、先界定「有微微收敛作用，缓解皮肤出油，适合痘肌和混油肌」的教材內容。\n二、依教材摘錄完整說明：有微微收敛作用，缓解皮肤出油，适合痘肌和混油肌；\n三、作答時不把這段教材延伸成醫療診斷、治療或精確配方建議。",
+    "referenceAnswer": "一、先界定「有微微收敛作用，缓解皮肤出油，适合痘肌和混油肌」的教材內容。\n二、依教材摘錄完整說明：有微微收敛作用，缓解皮肤出油，适合痘肌和混油肌；\n三、作答時不把這段教材延伸成醫療診斷、治療或精確配方建議。",
+    "sampleAnswer": "高分示範答案：\n一、先界定「有微微收敛作用，缓解皮肤出油，适合痘肌和混油肌」的教材內容。\n二、依教材摘錄完整說明：有微微收敛作用，缓解皮肤出油，适合痘肌和混油肌；\n三、作答時不把這段教材延伸成醫療診斷、治療或精確配方建議。",
+    "explanation": "答案依據教材證據 mat-0114：本題要求以段落整理 mat-0114 的教材重點，重視概念完整、結構清楚與安全界線。",
+    "answerGuide": "請依教材證據、參考答案與評分重點作答；本題不延伸醫療診斷、治療或精確配方建議。",
+    "keyPoints": [
+      "有微微收敛作用",
+      "缓解皮肤出油",
+      "适合痘肌和混油肌"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，答案方向正確且沒有超出證據的推論。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數教材重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點，仍可看出部分理解。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、與證據不符，或加入未獲來源支持的高風險說法。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified 第二批，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/安全濃度與稀釋/基础油.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 53",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0114"
+    ],
+    "evidenceExcerpt": "有微微收敛作用，缓解皮肤出油，适合痘肌和混油肌；",
+    "answerBasis": "答案由教材證據 mat-0114 支持；題目只要求整理該摘錄，不延伸醫療或配方推論。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint36_source_verified_expansion",
+    "generatedAt": "2026-07-16T00:00:00.000Z",
+    "priority": 4,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 53"
+  },
+  {
+    "id": 71056,
+    "weekId": "source-verified-sprint36",
+    "type": "case_study",
+    "chapter": "植物油／基底油",
+    "category": "植物油／基底油",
+    "difficulty": 3,
+    "question": "低風險諮詢案例：個案想直接把單方精油塗在皮膚上。請依教材證據說明你會如何回應、需要先確認什麼，以及哪些內容不應自行延伸。",
+    "options": [],
+    "answer": "先回到教材所載的「因为单方精油不能直接用于皮肤，需要用」重點，向個案清楚說明：因为单方精油不能直接用于皮肤，需要用没有刺激的油脂来稀释单方精油，一般从植物的种子、根茎、果实、花朵中压榨或萃取得来的非挥发性油。本題只要求整理教材與確認使用界線，不把芳療建議延伸為診斷或治療。",
+    "referenceAnswer": "先回到教材所載的「因为单方精油不能直接用于皮肤，需要用」重點，向個案清楚說明：因为单方精油不能直接用于皮肤，需要用没有刺激的油脂来稀释单方精油，一般从植物的种子、根茎、果实、花朵中压榨或萃取得来的非挥发性油。本題只要求整理教材與確認使用界線，不把芳療建議延伸為診斷或治療。",
+    "sampleAnswer": "高分示範答案：\n先回到教材所載的「因为单方精油不能直接用于皮肤，需要用」重點，向個案清楚說明：因为单方精油不能直接用于皮肤，需要用没有刺激的油脂来稀释单方精油，一般从植物的种子、根茎、果实、花朵中压榨或萃取得来的非挥发性油。本題只要求整理教材與確認使用界線，不把芳療建議延伸為診斷或治療。",
+    "explanation": "答案依據教材證據 mat-0063：本題以 mat-0063 的教材摘錄設計低風險案例，評估重點是能否引用來源、說明界線並避免過度推論。",
+    "answerGuide": "請依教材證據、參考答案與評分重點作答；本題不延伸醫療診斷、治療或精確配方建議。",
+    "keyPoints": [
+      "因为单方精油不能直接用于皮肤，需要用没有刺激的油脂来稀释单方精油，一般从植物的种子、根茎、果实、花朵中压榨或萃取得来的非挥发性油",
+      "先確認教材依據與使用界線",
+      "避免診斷、治療承諾與未有證據支持的配方建議"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，答案方向正確且沒有超出證據的推論。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數教材重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點，仍可看出部分理解。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、與證據不符，或加入未獲來源支持的高風險說法。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified 第二批，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/安全濃度與稀釋/基础油.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 2",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0063"
+    ],
+    "evidenceExcerpt": "因为单方精油不能直接用于皮肤，需要用没有刺激的油脂来稀释单方精油，一般从植物的种子、根茎、果实、花朵中压榨或萃取得来的非挥发性油",
+    "answerBasis": "案例答案僅以教材證據 mat-0063 的一般概念為依據，並採保守安全的回應框架。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint36_source_verified_expansion",
+    "generatedAt": "2026-07-16T00:00:00.000Z",
+    "priority": 3,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 2"
+  },
+  {
+    "id": 71057,
+    "weekId": "source-verified-sprint36",
+    "type": "case_study",
+    "chapter": "植物油／基底油",
+    "category": "植物油／基底油",
+    "difficulty": 3,
+    "question": "低風險諮詢案例：個案想比較不同脂肪酸分類的教材重點。請依教材證據說明你會如何回應、需要先確認什麼，以及哪些內容不應自行延伸。",
+    "options": [],
+    "answer": "先回到教材所載的「单不饱和脂肪酸」重點，向個案清楚說明：单不饱和脂肪酸： 1个双键-------油酸 ω-9 芥酸等。本題只要求整理教材與確認使用界線，不把芳療建議延伸為診斷或治療。",
+    "referenceAnswer": "先回到教材所載的「单不饱和脂肪酸」重點，向個案清楚說明：单不饱和脂肪酸： 1个双键-------油酸 ω-9 芥酸等。本題只要求整理教材與確認使用界線，不把芳療建議延伸為診斷或治療。",
+    "sampleAnswer": "高分示範答案：\n先回到教材所載的「单不饱和脂肪酸」重點，向個案清楚說明：单不饱和脂肪酸： 1个双键-------油酸 ω-9 芥酸等。本題只要求整理教材與確認使用界線，不把芳療建議延伸為診斷或治療。",
+    "explanation": "答案依據教材證據 mat-0081：本題以 mat-0081 的教材摘錄設計低風險案例，評估重點是能否引用來源、說明界線並避免過度推論。",
+    "answerGuide": "請依教材證據、參考答案與評分重點作答；本題不延伸醫療診斷、治療或精確配方建議。",
+    "keyPoints": [
+      "单不饱和脂肪酸： 1个双键-------油酸 ω-9 芥酸等",
+      "先確認教材依據與使用界線",
+      "避免診斷、治療承諾與未有證據支持的配方建議"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，答案方向正確且沒有超出證據的推論。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數教材重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點，仍可看出部分理解。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、與證據不符，或加入未獲來源支持的高風險說法。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified 第二批，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/安全濃度與稀釋/基础油.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 20",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0081"
+    ],
+    "evidenceExcerpt": "单不饱和脂肪酸： 1个双键-------油酸 ω-9 芥酸等",
+    "answerBasis": "案例答案僅以教材證據 mat-0081 的一般概念為依據，並採保守安全的回應框架。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint36_source_verified_expansion",
+    "generatedAt": "2026-07-16T00:00:00.000Z",
+    "priority": 3,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 20"
+  },
+  {
+    "id": 71058,
+    "weekId": "source-verified-sprint36",
+    "type": "case_study",
+    "chapter": "植物油／基底油",
+    "category": "植物油／基底油",
+    "difficulty": 3,
+    "question": "低風險諮詢案例：個案詢問單元不飽和與多元不飽和脂肪酸的差異。請依教材證據說明你會如何回應、需要先確認什麼，以及哪些內容不應自行延伸。",
+    "options": [],
+    "answer": "先回到教材所載的「双元不饱和脂肪酸」重點，向個案清楚說明：双元不饱和脂肪酸 ： 2 个双键------亚油酸 ω-6。本題只要求整理教材與確認使用界線，不把芳療建議延伸為診斷或治療。",
+    "referenceAnswer": "先回到教材所載的「双元不饱和脂肪酸」重點，向個案清楚說明：双元不饱和脂肪酸 ： 2 个双键------亚油酸 ω-6。本題只要求整理教材與確認使用界線，不把芳療建議延伸為診斷或治療。",
+    "sampleAnswer": "高分示範答案：\n先回到教材所載的「双元不饱和脂肪酸」重點，向個案清楚說明：双元不饱和脂肪酸 ： 2 个双键------亚油酸 ω-6。本題只要求整理教材與確認使用界線，不把芳療建議延伸為診斷或治療。",
+    "explanation": "答案依據教材證據 mat-0082：本題以 mat-0082 的教材摘錄設計低風險案例，評估重點是能否引用來源、說明界線並避免過度推論。",
+    "answerGuide": "請依教材證據、參考答案與評分重點作答；本題不延伸醫療診斷、治療或精確配方建議。",
+    "keyPoints": [
+      "双元不饱和脂肪酸 ： 2 个双键------亚油酸 ω-6",
+      "先確認教材依據與使用界線",
+      "避免診斷、治療承諾與未有證據支持的配方建議"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，答案方向正確且沒有超出證據的推論。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數教材重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點，仍可看出部分理解。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、與證據不符，或加入未獲來源支持的高風險說法。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified 第二批，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/安全濃度與稀釋/基础油.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 21",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0082"
+    ],
+    "evidenceExcerpt": "双元不饱和脂肪酸 ： 2 个双键------亚油酸 ω-6",
+    "answerBasis": "案例答案僅以教材證據 mat-0082 的一般概念為依據，並採保守安全的回應框架。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint36_source_verified_expansion",
+    "generatedAt": "2026-07-16T00:00:00.000Z",
+    "priority": 3,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 21"
+  },
+  {
+    "id": 71059,
+    "weekId": "source-verified-sprint36",
+    "type": "case_study",
+    "chapter": "植物油／基底油",
+    "category": "植物油／基底油",
+    "difficulty": 3,
+    "question": "低風險諮詢案例：個案希望依教材整理脂肪酸的分類方式。請依教材證據說明你會如何回應、需要先確認什麼，以及哪些內容不應自行延伸。",
+    "options": [],
+    "answer": "先回到教材所載的「多元不饱和脂肪酸」重點，向個案清楚說明：多元不饱和脂肪酸 ： 3个双键-------次亚麻油酸=亚麻酸--α-亚麻酸和γ-亚麻酸。。本題只要求整理教材與確認使用界線，不把芳療建議延伸為診斷或治療。",
+    "referenceAnswer": "先回到教材所載的「多元不饱和脂肪酸」重點，向個案清楚說明：多元不饱和脂肪酸 ： 3个双键-------次亚麻油酸=亚麻酸--α-亚麻酸和γ-亚麻酸。。本題只要求整理教材與確認使用界線，不把芳療建議延伸為診斷或治療。",
+    "sampleAnswer": "高分示範答案：\n先回到教材所載的「多元不饱和脂肪酸」重點，向個案清楚說明：多元不饱和脂肪酸 ： 3个双键-------次亚麻油酸=亚麻酸--α-亚麻酸和γ-亚麻酸。。本題只要求整理教材與確認使用界線，不把芳療建議延伸為診斷或治療。",
+    "explanation": "答案依據教材證據 mat-0083：本題以 mat-0083 的教材摘錄設計低風險案例，評估重點是能否引用來源、說明界線並避免過度推論。",
+    "answerGuide": "請依教材證據、參考答案與評分重點作答；本題不延伸醫療診斷、治療或精確配方建議。",
+    "keyPoints": [
+      "多元不饱和脂肪酸 ： 3个双键-------次亚麻油酸=亚麻酸--α-亚麻酸和γ-亚麻酸。",
+      "先確認教材依據與使用界線",
+      "避免診斷、治療承諾與未有證據支持的配方建議"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，答案方向正確且沒有超出證據的推論。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數教材重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點，仍可看出部分理解。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、與證據不符，或加入未獲來源支持的高風險說法。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified 第二批，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/安全濃度與稀釋/基础油.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 22",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0083"
+    ],
+    "evidenceExcerpt": "多元不饱和脂肪酸 ： 3个双键-------次亚麻油酸=亚麻酸--α-亚麻酸和γ-亚麻酸。",
+    "answerBasis": "案例答案僅以教材證據 mat-0083 的一般概念為依據，並採保守安全的回應框架。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint36_source_verified_expansion",
+    "generatedAt": "2026-07-16T00:00:00.000Z",
+    "priority": 3,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 22"
+  },
+  {
+    "id": 71060,
+    "weekId": "source-verified-sprint36",
+    "type": "case_study",
+    "chapter": "植物油／基底油",
+    "category": "植物油／基底油",
+    "difficulty": 3,
+    "question": "低風險諮詢案例：個案帶來一瓶已開封的植物油，想先確認教材記載的保存資訊。請依教材證據說明你會如何回應、需要先確認什麼，以及哪些內容不應自行延伸。",
+    "options": [],
+    "answer": "先回到教材所載的「打开后2个月内用完，淡黄色，坚果味，」重點，向個案清楚說明：打开后2个月内用完，淡黄色，坚果味，草腥味，中等黏度，但按摩时仍顺滑。本題只要求整理教材與確認使用界線，不把芳療建議延伸為診斷或治療。",
+    "referenceAnswer": "先回到教材所載的「打开后2个月内用完，淡黄色，坚果味，」重點，向個案清楚說明：打开后2个月内用完，淡黄色，坚果味，草腥味，中等黏度，但按摩时仍顺滑。本題只要求整理教材與確認使用界線，不把芳療建議延伸為診斷或治療。",
+    "sampleAnswer": "高分示範答案：\n先回到教材所載的「打开后2个月内用完，淡黄色，坚果味，」重點，向個案清楚說明：打开后2个月内用完，淡黄色，坚果味，草腥味，中等黏度，但按摩时仍顺滑。本題只要求整理教材與確認使用界線，不把芳療建議延伸為診斷或治療。",
+    "explanation": "答案依據教材證據 mat-0102：本題以 mat-0102 的教材摘錄設計低風險案例，評估重點是能否引用來源、說明界線並避免過度推論。",
+    "answerGuide": "請依教材證據、參考答案與評分重點作答；本題不延伸醫療診斷、治療或精確配方建議。",
+    "keyPoints": [
+      "打开后2个月内用完，淡黄色，坚果味，草腥味，中等黏度，但按摩时仍顺滑",
+      "先確認教材依據與使用界線",
+      "避免診斷、治療承諾與未有證據支持的配方建議"
+    ],
+    "rubric": [
+      {
+        "score": 3,
+        "label": "掌握",
+        "description": "涵蓋主要教材重點，答案方向正確且沒有超出證據的推論。"
+      },
+      {
+        "score": 2,
+        "label": "大致掌握",
+        "description": "涵蓋多數教材重點，只有小幅缺漏。"
+      },
+      {
+        "score": 1,
+        "label": "部分掌握",
+        "description": "只涵蓋少數重點，仍可看出部分理解。"
+      },
+      {
+        "score": 0,
+        "label": "未掌握",
+        "description": "空白、偏題、與證據不符，或加入未獲來源支持的高風險說法。"
+      }
+    ],
+    "sourceType": "extracted_material",
+    "sourceLabel": "教材證據正式題（source_verified 第二批，非官方歷屆題）",
+    "sourceFile": "IFA_教材庫/01_已分類教材/安全濃度與稀釋/基础油.docx",
+    "sourcePage": "待補",
+    "sourceLocation": "word/document.xml 段落 41",
+    "reviewStatus": "source_verified",
+    "verificationType": "source_verified",
+    "sourceEvidenceIds": [
+      "mat-0102"
+    ],
+    "evidenceExcerpt": "打开后2个月内用完，淡黄色，坚果味，草腥味，中等黏度，但按摩时仍顺滑",
+    "answerBasis": "案例答案僅以教材證據 mat-0102 的一般概念為依據，並採保守安全的回應框架。",
+    "sourceConfidence": "medium",
+    "formalScoreEligible": true,
+    "practiceOnly": false,
+    "generatedBy": "sprint36_source_verified_expansion",
+    "generatedAt": "2026-07-16T00:00:00.000Z",
+    "priority": 3,
+    "riskLevel": "standard_review",
+    "isActive": true,
+    "sourceChapter": "word/document.xml 段落 41"
+  }
+]

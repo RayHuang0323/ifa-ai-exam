@@ -1,5 +1,7 @@
 import { studyConfig } from '../data/studyConfig';
 import type { StudyProgress, StudySession, WeeklyProgress } from '../types/study';
+import { getProfileStorageKey } from './learnerProfile';
+import { getStorageItem, safeJsonParse, setStorageItem } from './storageHealth';
 
 const legacyResultKey = 'ifa_exam_state';
 
@@ -23,26 +25,21 @@ const parseLocalDate = (date: string) => {
   return new Date(year, month - 1, day);
 };
 
-const isValidSession = (value: unknown): value is StudySession => {
-  if (!value || typeof value !== 'object') return false;
-  const session = value as Partial<StudySession>;
-  return typeof session.id === 'string'
-    && typeof session.date === 'string'
-    && typeof session.weekId === 'string'
-    && (session.mode === 'formal-exam' || session.mode === 'daily' || session.mode === 'weeklyCatchUp' || session.mode === 'recovery' || session.mode === 'reviewWrong' || session.mode === 'writingPractice')
-    && typeof session.answeredCount === 'number'
-    && typeof session.correctCount === 'number'
-    && typeof session.wrongCount === 'number'
-    && typeof session.durationSeconds === 'number'
-    && typeof session.completedAt === 'string'
-    && (session.questionIds === undefined || (Array.isArray(session.questionIds) && session.questionIds.every((id) => typeof id === 'number')))
-    && (session.correctQuestionIds === undefined || (Array.isArray(session.correctQuestionIds) && session.correctQuestionIds.every((id) => typeof id === 'number')))
-    && (session.wrongQuestionIds === undefined || (Array.isArray(session.wrongQuestionIds) && session.wrongQuestionIds.every((id) => typeof id === 'number')))
-    && (session.skippedQuestionIds === undefined || (Array.isArray(session.skippedQuestionIds) && session.skippedQuestionIds.every((id) => typeof id === 'number')));
+const modes = new Set<StudySession['mode']>(['formal-exam', 'daily', 'weeklyReview', 'weeklyCatchUp', 'recovery', 'reviewWrong', 'writingPractice']);
+const list = (value: unknown) => Array.isArray(value) ? value.filter((id): id is number => typeof id === 'number' && Number.isFinite(id)) : undefined;
+const safeCount = (value: unknown, fallback = 0) => typeof value === 'number' && Number.isFinite(value) && value >= 0 ? value : fallback;
+const validTimestamp = (value: unknown) => typeof value === 'string' && !Number.isNaN(new Date(value).getTime()) ? value : '';
+export const normalizeStudySession = (value: unknown, index = 0): StudySession | null => {
+  if (!value || typeof value !== 'object') return null;
+  const session = value as Partial<StudySession>; const questionIds = list(session.questionIds); const completedAt = validTimestamp(session.completedAt);
+  return { id: typeof session.id === 'string' && session.id ? session.id : `legacy-session-${index}`, date: typeof session.date === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(session.date) ? session.date : completedAt ? toLocalDate(new Date(completedAt)) : '', weekId: typeof session.weekId === 'string' && session.weekId ? session.weekId : 'week-1', mode: modes.has(session.mode as StudySession['mode']) ? session.mode as StudySession['mode'] : 'recovery', answeredCount: safeCount(session.answeredCount, questionIds?.length ?? 0), correctCount: safeCount(session.correctCount), wrongCount: safeCount(session.wrongCount), durationSeconds: safeCount(session.durationSeconds, -1), completedAt, startedAt: validTimestamp(session.startedAt) || undefined, questionIds, correctQuestionIds: list(session.correctQuestionIds), wrongQuestionIds: list(session.wrongQuestionIds), skippedQuestionIds: list(session.skippedQuestionIds) };
 };
-
+export const normalizeStudyProgress = (value: unknown): StudyProgress | null => {
+  if (!value || typeof value !== 'object' || !Array.isArray((value as Partial<StudyProgress>).sessions)) return null;
+  const progress = value as Partial<StudyProgress>; return { version: studyConfig.localStorageVersion, sessions: progress.sessions!.map(normalizeStudySession).filter((item): item is StudySession => item !== null), lastStudyDate: typeof progress.lastStudyDate === 'string' ? progress.lastStudyDate : null, currentStreak: safeCount(progress.currentStreak), longestStreak: safeCount(progress.longestStreak) };
+};
 const refreshStreaks = (progress: StudyProgress, today = new Date()): StudyProgress => {
-  const uniqueDates = [...new Set(progress.sessions.map((session) => session.date))].sort().reverse();
+  const uniqueDates = [...new Set(progress.sessions.map((session) => session.date).filter((date) => /^\d{4}-\d{2}-\d{2}$/.test(date)))].sort().reverse();
   const todayDate = toLocalDate(today);
   const yesterday = new Date(today);
   yesterday.setDate(today.getDate() - 1);
@@ -50,7 +47,7 @@ const refreshStreaks = (progress: StudyProgress, today = new Date()): StudyProgr
   let currentStreak = 0;
 
   if (validStart && uniqueDates[0]) {
-    let cursor = parseLocalDate(uniqueDates[0]);
+    const cursor = parseLocalDate(uniqueDates[0]);
     for (const date of uniqueDates) {
       if (date !== toLocalDate(cursor)) break;
       currentStreak += 1;
@@ -86,9 +83,9 @@ const migrateLegacyResult = (progress: StudyProgress): StudyProgress => {
   if (progress.sessions.length > 0 || typeof window === 'undefined') return progress;
 
   try {
-    const raw = window.localStorage.getItem(legacyResultKey);
+    const raw = getStorageItem(getProfileStorageKey(legacyResultKey));
     if (!raw) return progress;
-    const legacy = JSON.parse(raw) as Record<string, unknown>;
+    const legacy = safeJsonParse<Record<string, unknown>>(raw) ?? {};
     const completedAt = typeof legacy.completedAt === 'string' ? legacy.completedAt : null;
     const correctCount = typeof legacy.correctCount === 'number' ? legacy.correctCount : null;
     const wrongCount = typeof legacy.wrongCount === 'number' ? legacy.wrongCount : null;
@@ -121,42 +118,12 @@ const migrateLegacyResult = (progress: StudyProgress): StudyProgress => {
 };
 
 export const loadStudyProgress = (): StudyProgress => {
-  const fallback = createEmptyProgress();
-  if (typeof window === 'undefined') return fallback;
-
-  try {
-    const raw = window.localStorage.getItem(studyConfig.localStorageKey);
-    if (!raw) {
-      const migrated = migrateLegacyResult(fallback);
-      if (migrated.sessions.length > 0) saveStudyProgress(migrated);
-      return migrated;
-    }
-    const parsed = JSON.parse(raw) as Partial<StudyProgress>;
-    if (!Array.isArray(parsed.sessions) || !parsed.sessions.every(isValidSession)) {
-      const migrated = migrateLegacyResult(fallback);
-      if (migrated.sessions.length > 0) saveStudyProgress(migrated);
-      return migrated;
-    }
-
-    return refreshStreaks({
-      version: studyConfig.localStorageVersion,
-      sessions: parsed.sessions,
-      lastStudyDate: typeof parsed.lastStudyDate === 'string' ? parsed.lastStudyDate : null,
-      currentStreak: typeof parsed.currentStreak === 'number' ? parsed.currentStreak : 0,
-      longestStreak: typeof parsed.longestStreak === 'number' ? parsed.longestStreak : 0,
-    });
-  } catch {
-    return migrateLegacyResult(fallback);
-  }
+  const fallback = createEmptyProgress(); if (typeof window === 'undefined') return fallback;
+  const normalized = normalizeStudyProgress(safeJsonParse<unknown>(getStorageItem(getProfileStorageKey(studyConfig.localStorageKey))));
+  if (normalized) return refreshStreaks(normalized);
+  return migrateLegacyResult(fallback);
 };
-
-export const saveStudyProgress = (progress: StudyProgress) => {
-  try {
-    window.localStorage.setItem(studyConfig.localStorageKey, JSON.stringify(progress));
-  } catch (error) {
-    console.error('Failed to save study progress:', error);
-  }
-};
+export const saveStudyProgress = (progress: StudyProgress) => { setStorageItem(getProfileStorageKey(studyConfig.localStorageKey), JSON.stringify(progress)); };
 
 export const recordStudySession = (session: StudySession) => {
   const progress = loadStudyProgress();

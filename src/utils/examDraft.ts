@@ -1,3 +1,6 @@
+import { getQuestionById } from './questionEngine';
+import { getProfileStorageKey } from './learnerProfile';
+import { getStorageItem, removeStorageItem, safeJsonParse, setStorageItem } from './storageHealth';
 export interface ExamDraft {
   weekId: 'week-1';
   mode: 'mockExam';
@@ -8,6 +11,10 @@ export interface ExamDraft {
   questionIds: number[];
   createdAt: string;
   updatedAt: string;
+  /** Sprint 24A: optional so pre-existing drafts remain valid. */
+  sessionId?: string;
+  /** Sprint 24C-1: optional daily-task context; old full-exam drafts stay valid. */
+  entry?: string;
 }
 
 const storageKey = 'ifa-week1-exam-draft-v1';
@@ -26,31 +33,37 @@ const isValidDraft = (value: unknown): value is ExamDraft => {
     && draft.timeLeft > 0
     && Array.isArray(draft.questionIds)
     && typeof draft.createdAt === 'string'
-    && typeof draft.updatedAt === 'string';
+    && typeof draft.updatedAt === 'string'
+    && (draft.sessionId === undefined || typeof draft.sessionId === 'string')
+    && (draft.entry === undefined || typeof draft.entry === 'string');
 };
 
-export const loadExamDraft = (): ExamDraft | null => {
+export const loadExamDraft = (key = storageKey): ExamDraft | null => {
+  const scopedKey = getProfileStorageKey(key);
   try {
-    const raw = window.localStorage.getItem(storageKey);
+    const raw = getStorageItem(scopedKey);
     if (!raw) return null;
-    const draft = JSON.parse(raw) as unknown;
-    return isValidDraft(draft) ? draft : null;
+    const draft = safeJsonParse<unknown>(raw);
+    if (isValidDraft(draft) && draft.questionIds.length > 0 && draft.questionIds.every((id) => getQuestionById(id) !== null)) return draft;
+    removeStorageItem(scopedKey); return null;
   } catch {
     return null;
   }
 };
 
-export const saveExamDraft = (draft: ExamDraft) => {
+export const saveExamDraft = (draft: ExamDraft, key = storageKey) => {
+  const scopedKey = getProfileStorageKey(key);
   try {
-    window.localStorage.setItem(storageKey, JSON.stringify(draft));
+    setStorageItem(scopedKey, JSON.stringify(draft));
   } catch (error) {
     console.error('Failed to save exam draft:', error);
   }
 };
 
-export const clearExamDraft = () => {
+export const clearExamDraft = (key = storageKey) => {
+  const scopedKey = getProfileStorageKey(key);
   try {
-    window.localStorage.removeItem(storageKey);
+    removeStorageItem(scopedKey);
   } catch (error) {
     console.error('Failed to clear exam draft:', error);
   }

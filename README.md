@@ -21,3 +21,6 @@
 11. [`docs/11_AI題庫維護規範.md`](docs/11_AI題庫維護規範.md)
 
 開發入口與 Sprint 完成後的文件更新規則，請參閱 [`docs/AI_START_HERE.md`](docs/AI_START_HERE.md)。
+# Sprint 24A 同步
+
+學習作答仍以 localStorage 為主；可選的 Google Apps Script + Google Sheets 只同步開始、進度與完成紀錄，不使用 Google Auth、OAuth 或會員系統。設定請見 `docs/google-apps-script/README.md`。

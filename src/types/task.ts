@@ -11,11 +11,18 @@ export interface TodayTask {
   reason: string;
   estimatedMinutes: number;
   ctaLabel: string;
+  totalQuestions?: number;
+  completedQuestions?: number;
+  carryoverQuestions?: number;
+  isInsufficient?: boolean;
+  basicQuestions?: number;
+  maximumQuestions?: number;
+  canAddQuestions?: number;
 }
 
 export interface WrongAnswerRecord {
   questionId: number;
-  weekId: 'week-1';
+  weekId: string;
   wrongCount: number;
   correctReviewCount: number;
   consecutiveCorrect: number;
@@ -26,5 +33,5 @@ export interface WrongAnswerRecord {
   lastSelectedAnswer: string | string[] | null;
   correctAnswer: string | string[];
   questionType: string;
-  source: 'week-1';
+  source: string;
 }

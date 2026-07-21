@@ -1,3 +1,4 @@
+/* eslint-disable no-irregular-whitespace */
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { Bookmark, ChevronLeft, ChevronRight, Send, Star, Timer } from 'lucide-react';
 import { clearExamDraft, saveExamDraft, type ExamDraft } from '../utils/examDraft';
@@ -5,15 +6,21 @@ import { getRubricByQuestionId } from '../utils/answerRubric';
 
 interface Question {
   id: number;
-  knowledgeId: string;
+  knowledgeId?: string;
   type: string;
   chapter: string;
   difficulty: number;
   question: string;
+  displayQuestion?: string;
   options?: string[];
+  displayOptions?: string[];
+  imageRequired?: boolean;
+  imageSource?: string;
+  imageAlt?: string;
+  imageMissing?: boolean;
   answer: string | string[];
   explanation: string;
-  reference: string;
+  reference?: string;
 }
 
 interface ExamProps {
@@ -23,13 +30,17 @@ interface ExamProps {
   onAbort: () => void;
   initialDraft: ExamDraft | null;
   persistDraft: boolean;
+  draftEntry?: string;
+  draftStorageKey?: string;
+  sessionId: string;
+  onProgressCheckpoint: (answeredCount: number) => void;
 }
 
 const isAnswered = (answer: string | string[] | undefined) =>
   Array.isArray(answer) ? answer.length > 0 : Boolean(answer?.trim());
-const isSelfCheckQuestion = (question: { type: string }) => ['short-answer', 'writing', 'memorization', 'essay'].includes(question.type);
+const isSelfCheckQuestion = (question: { type: string }) => ['short-answer', 'short_answer', 'shortAnswer', 'writing', 'memorization', 'essay', 'case-study', 'case_study', 'case'].includes(question.type);
 
-export default function Exam({ questions, timeLimitInMinutes, onFinish, onAbort, initialDraft, persistDraft }: ExamProps) {
+export default function Exam({ questions, timeLimitInMinutes, onFinish, onAbort, initialDraft, persistDraft, draftEntry, draftStorageKey, sessionId, onProgressCheckpoint }: ExamProps) {
   const [currentIndex, setCurrentIndex] = useState(() => Math.min(initialDraft?.currentIndex ?? 0, Math.max(0, questions.length - 1)));
   const [answers, setAnswers] = useState<Record<string, string | string[]>>(() => initialDraft?.answers ?? {});
   const [markedQuestionIds, setMarkedQuestionIds] = useState<Set<number>>(() => new Set(initialDraft?.markedQuestionIds ?? []));
@@ -40,6 +51,7 @@ export default function Exam({ questions, timeLimitInMinutes, onFinish, onAbort,
   const [selfCheckResults, setSelfCheckResults] = useState<Record<string, boolean>>({});
   const answersRef = useRef(answers);
   const hasSubmittedRef = useRef(false);
+  const lastCheckpointRef = useRef<number | null>(null);
 
   useEffect(() => {
     answersRef.current = answers;
@@ -57,15 +69,17 @@ export default function Exam({ questions, timeLimitInMinutes, onFinish, onAbort,
         questionIds: questions.map((question) => question.id),
         createdAt: initialDraft?.createdAt ?? new Date().toISOString(),
         updatedAt: new Date().toISOString(),
-      });
+        sessionId,
+        entry: draftEntry,
+      }, draftStorageKey);
     }
-  }, [answers, currentIndex, initialDraft?.createdAt, markedQuestionIds, persistDraft, questions, timeLeft]);
+  }, [answers, currentIndex, draftEntry, draftStorageKey, initialDraft?.createdAt, markedQuestionIds, persistDraft, questions, sessionId, timeLeft]);
 
   const submitExam = (secondsLeft: number, results = selfCheckResults) => {
     if (hasSubmittedRef.current) return;
 
     hasSubmittedRef.current = true;
-    clearExamDraft();
+    clearExamDraft(draftStorageKey);
     onFinish(answersRef.current, Math.max(0, secondsLeft), results);
   };
 
@@ -104,6 +118,13 @@ export default function Exam({ questions, timeLimitInMinutes, onFinish, onAbort,
   const progressPercent = questions.length === 0 ? 0 : ((currentIndex + 1) / questions.length) * 100;
   const isCurrentMarked = markedQuestionIds.has(currentQuestion.id);
 
+  useEffect(() => {
+    if (answeredCount > 0 && answeredCount % 5 === 0 && lastCheckpointRef.current !== answeredCount) {
+      lastCheckpointRef.current = answeredCount;
+      onProgressCheckpoint(answeredCount);
+    }
+  }, [answeredCount, onProgressCheckpoint]);
+
   const formatTime = (seconds: number) => {
     const minutes = Math.floor(seconds / 60);
     const remainingSeconds = seconds % 60;
@@ -118,7 +139,7 @@ export default function Exam({ questions, timeLimitInMinutes, onFinish, onAbort,
   };
 
   const handleSelectOption = (option: string) => {
-    if (currentQuestion.type === 'multiple') {
+    if (currentQuestion.type === 'multiple' || currentQuestion.type === 'multiSelect') {
       const storedAnswer = answers[currentQuestion.id];
       const currentAnswer: string[] = Array.isArray(storedAnswer) ? storedAnswer : [];
       const nextAnswer = currentAnswer.includes(option)
@@ -242,21 +263,23 @@ export default function Exam({ questions, timeLimitInMinutes, onFinish, onAbort,
             </div>
           </div>
 
-          <h1 className="exam-question-title text-lg sm:text-xl font-medium text-slate-100 mb-8 leading-relaxed">{currentQuestion.question}</h1>
+          <h1 className="exam-question-title text-lg sm:text-xl font-medium text-slate-100 mb-8 leading-relaxed">{currentQuestion.displayQuestion ?? currentQuestion.question}</h1>
+          {currentQuestion.imageRequired && currentQuestion.imageSource ? <figure className="mb-8 rounded-xl border border-slate-700 bg-white/95 p-3"><img src={currentQuestion.imageSource} alt={currentQuestion.imageAlt || '題目圖片'} className="mx-auto max-h-[460px] max-w-full object-contain" /><figcaption className="mt-2 text-center text-xs text-slate-600">{currentQuestion.imageAlt || '題目圖片'}</figcaption></figure> : currentQuestion.imageRequired && currentQuestion.imageMissing ? <p className="mb-8 rounded-xl border border-amber-800/60 bg-amber-950/20 p-4 text-sm text-amber-100">原題需要圖片，但目前沒有可驗證的原始圖片來源；本題已使用不依賴圖片的文字化題幹，圖片資料待補。</p> : null}
 
           <div className="flex-grow space-y-3">
-            {currentQuestion.options && currentQuestion.options.length > 0 ? currentQuestion.options.map((option) => {
+            {currentQuestion.options && currentQuestion.options.length > 0 ? currentQuestion.options.map((option, optionIndex) => {
+              const displayOption = currentQuestion.displayOptions?.[optionIndex] ?? option;
               const answer = answers[currentQuestion.id];
-              const selected = currentQuestion.type === 'multiple' ? Array.isArray(answer) && answer.includes(option) : answer === option;
+              const selected = currentQuestion.type === 'multiple' || currentQuestion.type === 'multiSelect' ? Array.isArray(answer) && answer.includes(option) : answer === option;
               return (
                 <button
                   key={option}
                   onClick={() => handleSelectOption(option)}
                   className={`w-full text-left px-5 py-4 rounded-xl border text-sm transition-all focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-[#0b0d14] ${selected ? 'bg-indigo-600/10 border-indigo-500 text-white font-medium' : 'bg-slate-900/30 border-slate-800 hover:bg-slate-900/80 hover:border-slate-700 text-slate-300'}`}
-                  role={currentQuestion.type === 'multiple' ? 'checkbox' : 'radio'}
+                  role={currentQuestion.type === 'multiple' || currentQuestion.type === 'multiSelect' ? 'checkbox' : 'radio'}
                   aria-checked={selected}
                 >
-                  {option}
+                  {displayOption}
                 </button>
               );
             }) : (
