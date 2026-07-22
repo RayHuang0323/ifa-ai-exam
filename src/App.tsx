@@ -38,7 +38,7 @@ const isFullMockEligibleQuestion = (question: RuntimeQuestion) => question.pract
 const toSchedulerCandidate = (question: RuntimeQuestion, formal = false): SchedulerCandidate => ({
   id: question.id,
   category: question.category,
-  formal: formal && isFullMockEligibleQuestion(question),
+  formal,
   priority: question.priority,
   sourceConfidence: question.sourceConfidence,
   isImportant: formal && (question.reviewStatus === 'verified' || question.sourceConfidence === 'high' || (question.priority ?? 0) >= 8 || ['解剖生理', '精油基礎', '精油化學', '安全禁忌'].includes(question.category)),
@@ -48,6 +48,8 @@ const toSchedulerCandidate = (question: RuntimeQuestion, formal = false): Schedu
   practiceOnly: question.practiceOnly,
   questionConfidence: question.questionConfidence,
   answerConfidence: question.answerConfidence,
+  duplicateGroupId: question.duplicateGroupId,
+  duplicateRisk: question.duplicateRisk,
   qualityStatus: question.qualityStatus,
 });
 

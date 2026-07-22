@@ -13,6 +13,7 @@ import { applyQuestionQualityGovernance, type RubricMetadata } from './questionQ
 import { evaluateBQuestion, getMetadataMissingFields, prepareQuestionSequence, resolveAnswerConfidence, resolveMetadataCompleteness, resolveQuestionConfidence, type AnswerConfidence, type BQualityReview, type MetadataCompleteness, type OptionQualityMetadata, type QuestionConfidence, type QuestionLanguageAudit, type QuestionNaturalnessAudit, type QuestionQualityMetadata, type SourceReviewMetadata } from './questionQualityAudit';
 import { refineFormalQuestion } from './formalQuestionRefinement';
 import type { FormalQuestionRefinement } from './questionQualityAudit';
+import { applyQuestionPoolMetadata, buildQuestionPoolMetadata, type DuplicateRisk, type QuestionSourceType } from '../data/questions/questionPoolMetadata';
 
 export interface RuntimeQuestion {
   id: number;
@@ -95,6 +96,9 @@ export interface RuntimeQuestion {
   riskFlags?: string[];
   generatedBy?: string;
   generatedAt?: string;
+  questionSourceType?: QuestionSourceType;
+  duplicateGroupId?: string;
+  duplicateRisk?: DuplicateRisk;
   deprecated?: boolean;
   deprecatedReason?: string;
   supersededBy?: number;
@@ -153,14 +157,21 @@ const withQuestionConfidence = (question: RuntimeQuestion): RuntimeQuestion => {
   const answerConfidence = bQualityReview?.disposition === 'upgrade_to_A' ? 'A' : bQualityReview?.disposition === 'downgrade_to_practice' ? 'C' : initialAnswerConfidence;
   return { ...question, answerConfidence, bQualityReview, questionConfidence: resolveQuestionConfidence({ ...question, answerConfidence }) };
 };
-const formalQuestionPool: RuntimeQuestion[] = prepareQuestionSequence([...week1Pool, ...week2Pool, ...verifiedExtraPool, ...sourceVerifiedPool].map(withSourceTraceability)).map(refineFormalQuestion).map(withQuestionConfidence);
+const formalQuestionPoolBase: RuntimeQuestion[] = prepareQuestionSequence([...week1Pool, ...week2Pool, ...verifiedExtraPool, ...sourceVerifiedPool].map(withSourceTraceability)).map(refineFormalQuestion).map(withQuestionConfidence);
 const isPracticeQuestionEligible = (question: typeof examPracticeQuestions[number]) => (
   question.isActive !== false
   && question.excludeFromPractice !== true
   && (question as { deprecated?: boolean }).deprecated !== true
   && !['unsafe_candidate', 'duplicate_candidate'].includes(question.qualityStatus ?? '')
 );
-const practiceQuestionPool: RuntimeQuestion[] = prepareQuestionSequence(examPracticeQuestions.filter(isPracticeQuestionEligible).map((question) => applyQuestionQualityGovernance({ ...question, reviewStatus: question.reviewStatus as RuntimeQuestion['reviewStatus'], sourceType: question.sourceType, weekId: 'exam-practice' }))).map(withQuestionConfidence);
+const practiceQuestionPoolBase: RuntimeQuestion[] = prepareQuestionSequence(examPracticeQuestions.filter(isPracticeQuestionEligible).map((question) => applyQuestionQualityGovernance({ ...question, reviewStatus: question.reviewStatus as RuntimeQuestion['reviewStatus'], sourceType: question.sourceType, weekId: 'exam-practice' }))).map(withQuestionConfidence);
+const questionPoolMetadata = buildQuestionPoolMetadata([...formalQuestionPoolBase, ...practiceQuestionPoolBase]);
+const applyRuntimePoolMetadata = (question: RuntimeQuestion) => applyQuestionPoolMetadata(question, questionPoolMetadata.get(question.id) ?? {
+  questionSourceType: 'unknown',
+  duplicateRisk: 'none',
+});
+const formalQuestionPool: RuntimeQuestion[] = formalQuestionPoolBase.map(applyRuntimePoolMetadata);
+const practiceQuestionPool: RuntimeQuestion[] = practiceQuestionPoolBase.map(applyRuntimePoolMetadata);
 
 export const normalizeQuestion = (rawQuestion: RawQuestion, weekId: string, index: number): EngineQuestion => ({
   id: typeof rawQuestion.id === 'number' ? rawQuestion.id : index + 1,

@@ -19,6 +19,8 @@ export interface SchedulerCandidate {
   practiceOnly?: boolean;
   questionConfidence?: SchedulerQuestionConfidence;
   answerConfidence?: SchedulerAnswerConfidence;
+  duplicateGroupId?: string;
+  duplicateRisk?: 'none' | 'low' | 'medium' | 'high';
   qualityStatus?: string;
   isMarked?: boolean;
   wrongCount?: number;
@@ -207,6 +209,7 @@ export const getRecentQuestionIds = (options: { modes?: SchedulerMode[]; days?: 
 };
 
 const isBlocked = (candidate: SchedulerCandidate) => candidate.isActive === false || candidate.excludeFromPractice === true || candidate.deprecated === true || candidate.qualityStatus === 'unsafe_candidate' || candidate.qualityStatus === 'duplicate_candidate';
+const candidateGroupKey = (candidate: SchedulerCandidate) => candidate.duplicateGroupId ? `group:${candidate.duplicateGroupId}` : `id:${candidate.id}`;
 const getRecordScore = (candidate: SchedulerCandidate, state: QuestionSchedulerState) => {
   const record = getQuestionAppearance(candidate.id, state);
   const masteryPenalty = record.mastery === 'not_mastered' ? 40 : record.mastery === 'partial' || record.mastery === 'needs_human_review' ? 20 : record.mastery === 'mostly_mastered' ? 5 : 0;
@@ -217,22 +220,39 @@ const getRecordScore = (candidate: SchedulerCandidate, state: QuestionSchedulerS
 };
 const sortByScore = (candidates: SchedulerCandidate[], state: QuestionSchedulerState) => [...candidates].sort((a, b) => getRecordScore(b, state) - getRecordScore(a, state) || a.id - b.id);
 const uniqueCandidates = (candidates: SchedulerCandidate[]) => [...new Map(candidates.filter((candidate) => Number.isFinite(candidate.id) && !isBlocked(candidate)).map((candidate) => [candidate.id, candidate])).values()];
-const selectFromGroups = (groups: SchedulerCandidate[][], count: number, state: QuestionSchedulerState) => {
+const selectFromGroups = (groups: SchedulerCandidate[][], count: number, state: QuestionSchedulerState, selectedGroups = new Set<string>()) => {
   const selected: SchedulerCandidate[] = [];
   const seen = new Set<number>();
   groups.forEach((group) => sortByScore(group, state).forEach((candidate) => {
-    if (selected.length >= count || seen.has(candidate.id)) return;
-    selected.push(candidate); seen.add(candidate.id);
+    const groupKey = candidateGroupKey(candidate);
+    if (selected.length >= count || seen.has(candidate.id) || selectedGroups.has(groupKey)) return;
+    selected.push(candidate); seen.add(candidate.id); selectedGroups.add(groupKey);
   }));
+  return selected;
+};
+const uniqueGroups = (candidates: SchedulerCandidate[], count: number, blockedGroups = new Set<string>()) => {
+  const selected: SchedulerCandidate[] = [];
+  const seenGroups = new Set(blockedGroups);
+  candidates.forEach((candidate) => {
+    const groupKey = candidateGroupKey(candidate);
+    if (selected.length >= count || seenGroups.has(groupKey)) return;
+    selected.push(candidate);
+    seenGroups.add(groupKey);
+  });
   return selected;
 };
 
 const getCandidateConfidence = (candidate: SchedulerCandidate): SchedulerAnswerConfidence => candidate.answerConfidence ?? (candidate.questionConfidence === undefined && candidate.practiceOnly !== true ? 'A' : candidate.questionConfidence === 'C' || candidate.practiceOnly ? 'C' : candidate.questionConfidence === 'A' ? 'A' : 'B');
 const selectCoverageQuestions = (candidates: SchedulerCandidate[], count: number, carryoverIds: number[], recentIds: Set<number>, state: QuestionSchedulerState, completedIds = new Set<number>(), maxLowConfidenceRatio?: number) => {
-  const available = uniqueCandidates(candidates).filter((candidate) => !completedIds.has(candidate.id));
+  const unique = uniqueCandidates(candidates);
+  const completedGroups = new Set(unique.filter((candidate) => completedIds.has(candidate.id)).map(candidateGroupKey));
+  const recentGroups = new Set(unique.filter((candidate) => recentIds.has(candidate.id)).map(candidateGroupKey));
+  const blockedGroups = new Set([...completedGroups, ...recentGroups]);
+  const available = unique.filter((candidate) => !completedIds.has(candidate.id));
   const byId = new Map(available.map((candidate) => [candidate.id, candidate]));
   const carryover = carryoverIds.map((id) => byId.get(id)).filter((candidate): candidate is SchedulerCandidate => Boolean(candidate));
-  const remaining = available.filter((candidate) => !carryover.some((item) => item.id === candidate.id));
+  const carryoverGroups = new Set(carryover.map(candidateGroupKey));
+  const remaining = available.filter((candidate) => !carryover.some((item) => item.id === candidate.id) && !carryoverGroups.has(candidateGroupKey(candidate)) && !blockedGroups.has(candidateGroupKey(candidate)));
   const neverShown = remaining.filter((candidate) => getQuestionAppearance(candidate.id, state).shownCount === 0);
   const unseenCycle = remaining.filter((candidate) => !getQuestionAppearance(candidate.id, state).isCompletedOnce && !recentIds.has(candidate.id));
   const nonrecent = remaining.filter((candidate) => !recentIds.has(candidate.id));
@@ -242,8 +262,9 @@ const selectCoverageQuestions = (candidates: SchedulerCandidate[], count: number
   const carryoverTop = carryover.filter((candidate) => ['A+', 'A'].includes(getCandidateConfidence(candidate)));
   const carryoverB = carryover.filter((candidate) => getCandidateConfidence(candidate) === 'B');
   const carryoverLow = carryover.filter((candidate) => getCandidateConfidence(candidate) === 'C');
-  const selectedCarryoverHigh = [...carryoverTop, ...carryoverB].slice(0, count);
-  const selectedCarryover = [...selectedCarryoverHigh, ...carryoverLow.slice(0, Math.max(0, maxLowConfidence - (selectedCarryoverHigh.length >= count ? 0 : 0)))].slice(0, count);
+  const selectedCarryoverHigh = uniqueGroups([...carryoverTop, ...carryoverB], count);
+  const selectedCarryoverGroupIds = new Set(selectedCarryoverHigh.map(candidateGroupKey));
+  const selectedCarryover = [...selectedCarryoverHigh, ...uniqueGroups(carryoverLow, Math.max(0, maxLowConfidence - selectedCarryoverHigh.filter((candidate) => getCandidateConfidence(candidate) === 'C').length), selectedCarryoverGroupIds)].slice(0, count);
   const remainingCount = Math.max(0, count - selectedCarryover.length);
   const selectedCarryoverLowCount = selectedCarryover.filter((candidate) => getCandidateConfidence(candidate) === 'C').length;
   const remainingLowSlots = Math.max(0, maxLowConfidence - selectedCarryoverLowCount);
@@ -251,9 +272,10 @@ const selectCoverageQuestions = (candidates: SchedulerCandidate[], count: number
   const bGroups = groups.map((group) => group.filter((candidate) => getCandidateConfidence(candidate) === 'B'));
   const lowGroups = groups.map((group) => group.filter((candidate) => getCandidateConfidence(candidate) === 'C'));
   const highBudget = Math.max(0, remainingCount - remainingLowSlots);
-  const selectedTop = selectFromGroups(topGroups, highBudget, state);
-  const selectedB = selectFromGroups(bGroups, Math.max(0, highBudget - selectedTop.length), state);
-  const selectedLow = selectFromGroups(lowGroups, Math.min(remainingLowSlots, remainingCount - selectedTop.length - selectedB.length), state);
+  const selectedGroups = new Set(selectedCarryover.map(candidateGroupKey));
+  const selectedTop = selectFromGroups(topGroups, highBudget, state, selectedGroups);
+  const selectedB = selectFromGroups(bGroups, Math.max(0, highBudget - selectedTop.length), state, selectedGroups);
+  const selectedLow = selectFromGroups(lowGroups, Math.min(remainingLowSlots, remainingCount - selectedTop.length - selectedB.length), state, selectedGroups);
   const selected = [...selectedTop, ...selectedB, ...selectedLow];
   return [...selectedCarryover, ...selected].map((candidate) => candidate.id);
 };
@@ -269,7 +291,10 @@ export const selectWeeklyQuestionIds = (candidates: SchedulerCandidate[], count:
   const state = loadQuestionSchedulerState();
   const recentIds = new Set(getRecentQuestionIds({ modes: ['daily', 'weekly', 'mock'], days: 7 }));
   const completedIds = new Set([...permanentCompletedQuestionIds, ...Object.values(state.records).filter((record) => record.isCompletedOnce || record.completedCount > 0).map((record) => record.questionId)]);
-  return selectCoverageQuestions(candidates, Math.max(0, count), carryoverIds, recentIds, state, completedIds);
+  const formalPriorityCandidates = candidates.map((candidate) => candidate.formal === true
+    ? { ...candidate, priority: (candidate.priority ?? 0) + 1000 }
+    : candidate);
+  return selectCoverageQuestions(formalPriorityCandidates, Math.max(0, count), carryoverIds, recentIds, state, completedIds);
 };
 
 /** Sprint 39 僅建置能力。未明確啟用 FINAL_REVIEW_MODE 時永遠不回傳題目。 */
