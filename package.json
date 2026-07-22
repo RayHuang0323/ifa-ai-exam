@@ -75,6 +75,7 @@
     "report:sprint47": "node scripts/build-sprint47-syllabus-mapping.mjs",
     "verify:sprint48": "node scripts/verify-sprint48.mjs",
     "audit:questions:ai:sprint49": "node scripts/run-question-ai-review.mjs",
+    "review:questions:high:sprint50": "node scripts/run-sprint50-high-priority-review.mjs",
     "verify:sprint42-1": "node scripts/verify-sprint42-1.mjs && npm run build && npm run verify:bundle-security",
     "verify:bundle-security": "node scripts/verify-production-bundle-security.mjs"
   },

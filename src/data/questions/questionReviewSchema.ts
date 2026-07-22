@@ -13,6 +13,7 @@ export type SourceConfidence = 'unknown' | 'low' | 'medium' | 'high';
 export type ExplanationQuality = 'unknown' | 'poor' | 'fair' | 'good';
 export type DifficultyReview = 'unknown' | 'aligned' | 'questionable' | 'needs_human_review';
 export type DuplicateRisk = 'unknown' | 'none' | 'low' | 'medium' | 'high';
+export type ReviewDecision = 'approved' | 'needs_edit' | 'rejected';
 
 export interface QuestionReviewMetadata {
   schemaVersion: typeof questionReviewSchemaVersion;
@@ -27,8 +28,16 @@ export interface QuestionReviewMetadata {
   duplicateRisk: DuplicateRisk;
   reasonCodes: string[];
   aiNotes: string[];
+  /** Optional for Sprint 49 queue records; required in Sprint 50 output records. */
+  reviewDecision?: ReviewDecision;
+  reviewNote?: string;
   reviewedAt?: string | null;
   reviewedBy?: string | null;
+}
+
+export interface QuestionReviewOutputMetadata extends Omit<QuestionReviewMetadata, 'reviewDecision' | 'reviewNote'> {
+  reviewDecision: ReviewDecision;
+  reviewNote: string;
 }
 
 const values = {
@@ -39,6 +48,7 @@ const values = {
   explanationQuality: new Set<ExplanationQuality>(['unknown', 'poor', 'fair', 'good']),
   difficultyReview: new Set<DifficultyReview>(['unknown', 'aligned', 'questionable', 'needs_human_review']),
   duplicateRisk: new Set<DuplicateRisk>(['unknown', 'none', 'low', 'medium', 'high']),
+  reviewDecision: new Set<ReviewDecision>(['approved', 'needs_edit', 'rejected']),
 };
 
 export const isQuestionReviewMetadata = (value: unknown): value is QuestionReviewMetadata => {
@@ -59,5 +69,14 @@ export const isQuestionReviewMetadata = (value: unknown): value is QuestionRevie
     && Array.isArray(metadata.reasonCodes)
     && metadata.reasonCodes.every((code) => typeof code === 'string')
     && Array.isArray(metadata.aiNotes)
-    && metadata.aiNotes.every((note) => typeof note === 'string');
+    && metadata.aiNotes.every((note) => typeof note === 'string')
+    && (metadata.reviewDecision === undefined || values.reviewDecision.has(metadata.reviewDecision as ReviewDecision))
+    && (metadata.reviewNote === undefined || typeof metadata.reviewNote === 'string');
+};
+
+export const isQuestionReviewOutputMetadata = (value: unknown): value is QuestionReviewOutputMetadata => {
+  if (!isQuestionReviewMetadata(value)) return false;
+  const metadata = value as Partial<QuestionReviewOutputMetadata>;
+  return values.reviewDecision.has(metadata.reviewDecision as ReviewDecision)
+    && typeof metadata.reviewNote === 'string';
 };
