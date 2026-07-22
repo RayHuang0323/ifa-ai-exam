@@ -73,6 +73,7 @@
     "verify:sprint42": "node scripts/verify-sprint42.mjs",
     "report:sprint42-1": "node scripts/build-sprint42-1-report.mjs",
     "report:sprint47": "node scripts/build-sprint47-syllabus-mapping.mjs",
+    "verify:sprint48": "node scripts/verify-sprint48.mjs",
     "verify:sprint42-1": "node scripts/verify-sprint42-1.mjs && npm run build && npm run verify:bundle-security",
     "verify:bundle-security": "node scripts/verify-production-bundle-security.mjs"
   },

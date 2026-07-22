@@ -23,7 +23,9 @@ import { applyProfileQuery, type LearnerProfile } from './utils/learnerProfile';
 import { applyDailyTaskV2QuestionSelection, completeDailyTaskV2Questions, dailyMaximum, dailyTarget, dailyTaskV2DraftStorageKey, getDailyTaskV2Plan } from './utils/dailyTaskV2';
 import { resetDailyTask, resetLocalProgress } from './utils/localLearningReset';
 import { protectQuestionIds } from './utils/answeredQuestionLock';
-import { recordQuestionMastery, recordQuestionsAnswered, recordQuestionsCompleted, recordQuestionsShown, seedSchedulerFromHistoricalSessions, selectDailyQuestionIds, selectMockQuestionIds, selectWeeklyQuestionIds, type SchedulerCandidate, type SchedulerMode } from './utils/questionScheduler';
+import { mockBlueprintConfig } from './data/examBlueprint';
+import { recordQuestionMastery, recordQuestionsAnswered, recordQuestionsCompleted, recordQuestionsShown, seedSchedulerFromHistoricalSessions, selectDailyQuestionIds, selectWeeklyQuestionIds, type SchedulerCandidate, type SchedulerMode } from './utils/questionScheduler';
+import { selectWeightedMockQuestionIds } from './utils/weightedMockSelection';
 
 type Page = 'home' | 'instructions' | 'exam' | 'result' | 'wrongBook' | 'practiceCenter' | 'coachDashboard';
 type ExamEntry = 'new-exam' | 'today-task' | 'weekly-review' | 'wrong-review' | 'writing-practice';
@@ -35,6 +37,7 @@ const isFullMockEligibleQuestion = (question: RuntimeQuestion) => question.pract
 
 const toSchedulerCandidate = (question: RuntimeQuestion, formal = false): SchedulerCandidate => ({
   id: question.id,
+  category: question.category,
   formal: formal && isFullMockEligibleQuestion(question),
   priority: question.priority,
   sourceConfidence: question.sourceConfidence,
@@ -117,7 +120,7 @@ function App() {
     clearExamDraft();
     setExamDraft(null);
     const formalPool = getFormalQuestionPool().filter(isFullMockEligibleQuestion);
-    const selectedIds = selectMockQuestionIds(formalPool.map((question) => toSchedulerCandidate(question, !isPracticeOnlyQuestion(question))), formalPool.length);
+    const selectedIds = selectWeightedMockQuestionIds(formalPool.map((question) => toSchedulerCandidate(question, !isPracticeOnlyQuestion(question))), mockBlueprintConfig.questionCount);
     const selectedSet = new Set(selectedIds);
     const formalQuestions = selectedIds.map((id) => getQuestionById(id)).filter((question): question is RuntimeQuestion => question !== null && selectedSet.has(question.id));
     setQuestions(prepareQuestionSequence(formalQuestions));
@@ -378,7 +381,7 @@ function App() {
   const handleRetry = () => {
     clearExamDraft();
     const formalPool = getFormalQuestionPool().filter(isFullMockEligibleQuestion);
-    const selectedIds = selectMockQuestionIds(formalPool.map((question) => toSchedulerCandidate(question, !isPracticeOnlyQuestion(question))), formalPool.length);
+    const selectedIds = selectWeightedMockQuestionIds(formalPool.map((question) => toSchedulerCandidate(question, !isPracticeOnlyQuestion(question))), mockBlueprintConfig.questionCount);
     const formalQuestions = selectedIds.map((id) => getQuestionById(id)).filter((question): question is RuntimeQuestion => question !== null);
     setQuestions(prepareQuestionSequence(formalQuestions));
     setTimeLimit(calculateTimeLimitInMinutes('formal-exam', formalQuestions));

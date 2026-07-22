@@ -22,6 +22,7 @@ export interface SchedulerCandidate {
   qualityStatus?: string;
   isMarked?: boolean;
   wrongCount?: number;
+  category?: string;
 }
 
 export interface QuestionAppearanceRecord {
