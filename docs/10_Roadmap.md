@@ -234,3 +234,10 @@ Daily Task v2 已提供 30 題目標、45 題顯示上限與 carryover，不以�
 - 已完成 157 個 exam-like source document 的候選分類、可讀文件抽取、答案狀態、圖片 metadata、review queue 與 Formal coverage report。
 - 下一 Sprint 應先人工處理 official_exam_candidate：核對文件是否真的為正式／歷屆試卷、題目邊界、來源頁、答案頁、版本、圖片題與跨來源重複；未完成前不得匯入 Formal。
 - practice-only 與 unknown 候選維持隔離；不以 extraction records 或 review queue 數量作為正式題數承諾，也不改 scheduler、blueprint、UI 或 Apps Script。
+
+## Sprint 57 完成：Past Exam Formal Candidate Review
+
+- 已建立 16 份 official 與 52 份 textbook candidate 的正式候選 review metadata、formal candidate queue、duplicate group inventory 與 image question inventory。
+- 嚴格歷屆／考古題來源目前有 5 份、93 筆清楚題目紀錄；official＋final 去重後 213 組；textbook 去重後 65 組。這些都仍是待審候選，不是正式題數承諾。
+- 下一 Sprint 優先逐題核對 official／final source 的來源頁、版本／日期、答案頁與圖片；再處理 textbook 題的正式性判定與 duplicate representative。完成人工 decision 前，Formal 維持 0 筆新增。
+- 圖片題須先完成受控 asset extraction 與 source lineage 綁定；不得把 private PDF／DOCX、猜測答案或未核對 image question 送入 runtime。

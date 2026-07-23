@@ -270,3 +270,12 @@ Coach Dashboard uses an Apps Script read key stored only in browser sessionStora
 - legacy `.doc`／`.ppt`／`.xls` 在無 Office automation 的環境只能保留 hash、分類與 source-level review record；DOCX／PPTX 目前以 XML 讀取但頁碼可能待補。
 - 77 個來源文件含圖片；圖片 metadata 已建立，但尚未做 OCR、受控 asset extraction、視覺題答案核對或 image-to-question 綁定。
 - Formal exact normalized match 為 0 不代表原始文件沒有重複題；PDF／DOCX 題幹可能有版面、繁簡、選項或跨頁差異，下一 Sprint 需人工抽樣與更保守的相似度 review，不得直接自動合併。
+
+## Sprint 57：正式考試候選人工核對技術債
+
+- 16 份 official candidate 只有 225 筆清楚題目紀錄；其中 5 份明示考古題來源有 93 筆，另有 8 份 final exam source 有 132 筆。這些數字仍是 extraction occurrence，不是已完成 reviewer decision 的正式題數。
+- 52 份 textbook candidate 的 130 筆紀錄主要是鏡像文件；去重後 65 組，必須先決定教材練習是否真的對應正式考試，不能把 `source_stated` 當成 Formal 核准。
+- 1,054 個去重後 review units（queue occurrence 1,131）仍缺人工來源頁／版本、答案核對、題型／風險決策或題界確認；Formal 可加入數量維持 0。
+- 77 個 duplicate groups（154 筆 occurrence）只做 normalized exact signal，沒有做 near-duplicate 自動合併；後續需由人工選代表來源並保留其餘 lineage，不能刪原始來源或重建既有 ID。
+- 138 筆 high-signal image question records 尚無受控 asset path；`public/question-assets/` 只有 staging 說明，需人工逐頁核對 image-to-question 關聯與答案後，才能提出獨立 asset/import patch。
+- legacy `.doc` 等不可讀文件仍只有 source-level review record；若要補抽取能力，需另行核准 Office automation／轉檔工具與 private source 資料處理邊界。

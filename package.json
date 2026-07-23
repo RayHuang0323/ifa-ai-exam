@@ -78,6 +78,7 @@
     "review:questions:high:sprint50": "node scripts/run-sprint50-high-priority-review.mjs",
     "verify:sprint52": "node scripts/verify-sprint52.mjs",
     "report:sprint56": "python scripts/sprint56-past-exam-pipeline.py",
+    "report:sprint57": "python scripts/sprint57-past-exam-review.py",
     "verify:sprint42-1": "node scripts/verify-sprint42-1.mjs && npm run build && npm run verify:bundle-security",
     "verify:bundle-security": "node scripts/verify-production-bundle-security.mjs"
   },

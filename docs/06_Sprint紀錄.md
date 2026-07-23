@@ -524,3 +524,12 @@ Sprint 10：刷題與錯題複習。
 - 明示答案才保存 `answer_status=source_stated` 與 `answer_source`；沒有答案一律 `unknown`，不由檔名、選項或模型推論補答。
 - 建立 review-only image metadata schema 與 `public/question-assets/` staging 說明；本 Sprint 不 OCR、不複製 private 圖片、不把圖片 binary 或來源路徑打包進 runtime。
 - 產出 `sprint56_past_exam_inventory.md`、metadata-only `sprint56_past_exam_review_queue.json` 與 `sprint56_past_exam_coverage.md`；完整含題目／選項／明示答案的 `sprint56_past_exam_extractions.json` 僅保留本機並由 `.gitignore` 排除，未修改 canonical question JSON、UI、Daily／Weekly、scheduler、blueprint 或 Apps Script。
+
+# Sprint 57：Past Exam Formal Candidate Review
+
+- 以 Sprint 56 local extraction artifact 為輸入，完成 16 份 official 與 52 份 textbook candidate 文件的來源層級、年份／日期、頁碼、題數、答案可得性、圖片與 confidence metadata。
+- official candidate 抽出 225 筆清楚題目紀錄，normalized 去重後 213 組；其中明示考古題／past-exam 檔名的來源為 5 份、93 筆紀錄。final exam candidate 為 8 份、132 筆；teacher/assessor note 3 份但無清楚題目邊界。
+- textbook candidate 抽出 130 筆、去重後 65 組，並確認主要為兩組鏡像教材；部分文件具 source-stated answer，但不能據此視為正式考試答案。
+- 建立 `docs/sprint57_formal_candidate_queue.json` 與 `docs/sprint57_past_exam_review.md`；queue 共 1,131 筆來源 occurrence、77 個 duplicate groups、138 筆 image question records，所有 record 保留 Sprint 55 inventory、Sprint 56 question ID、source hash 與 source page lineage。
+- Formal exact match 為 0；可直接加入 Formal 為 0；去重後 1,054 個 review units 仍需人工確認。沒有新增 canonical question、沒有重建 question ID、沒有修改 runtime、Daily／Weekly、UI、scheduler、blueprint 或 Apps Script，也沒有 deploy。
+- 新增可重跑 `scripts/sprint57-past-exam-review.py` 與 `report:sprint57` npm script；輸出只含 metadata，題文／答案／圖片仍維持 local ignored extraction 狀態。
