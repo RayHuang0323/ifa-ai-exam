@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ifa-ai-exam.local/schemas/sprint56-image-metadata.json",
+  "title": "Sprint 56 question image metadata",
+  "description": "Review-only lineage metadata for a source image. It is not a runtime question field and does not embed binary image data.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "sourceFile",
+    "page",
+    "type",
+    "extractedAsset",
+    "description"
+  ],
+  "properties": {
+    "sourceFile": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Repository-relative review source path, such as private/... or external/..."
+    },
+    "page": {
+      "type": ["integer", "null"],
+      "minimum": 1
+    },
+    "type": {
+      "type": "string",
+      "enum": ["embedded_image", "scanned_page", "diagram", "photo", "unknown"]
+    },
+    "extractedAsset": {
+      "type": ["string", "null"],
+      "description": "Relative future asset path under public/question-assets; null until a controlled extraction is approved."
+    },
+    "description": {
+      "type": "string"
+    },
+    "sourceHash": {
+      "type": ["string", "null"],
+      "pattern": "^[A-Fa-f0-9]{64}$"
+    },
+    "imageIndex": {
+      "type": ["integer", "null"],
+      "minimum": 1
+    }
+  }
+}

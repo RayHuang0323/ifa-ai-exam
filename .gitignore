@@ -18,6 +18,9 @@ dist-ssr
 test-results/
 playwright-report/
 
+# Sprint 56 local extraction contains source-derived question text and answers.
+docs/sprint56_past_exam_extractions.json
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

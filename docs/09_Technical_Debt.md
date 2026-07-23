@@ -262,3 +262,11 @@ Coach Dashboard uses an Apps Script read key stored only in browser sessionStora
 - 顯示題幹已自然化，但 41 題仍缺答案依據，應由人工核對教材後補 evidence；不得由 display layer 反推或改寫答案。
 - Daily 題庫仍有大量來源依據與自然度缺口，下一步應優先做小批人工複核，不以自動模板大量升格。
 - Result 來源對缺少章節／頁碼／版本的題目只能顯示待補；不能暴露 `word/document.xml`、段落編號或 source id。
+
+## Sprint 56：考古題 extraction pipeline 技術債
+
+- 目前 882 個 question-like records 中，只有文件明示答案的 18 個保留 `source_stated`；其餘 864 個仍為 unknown，必須人工核對答案頁、版本與題型，不能由抽取結果自動升格。
+- 1,240 個低訊號編號片段只作 review queue，尚未證明是完整題目；需人工清理題幹邊界、選項與跨頁題。
+- legacy `.doc`／`.ppt`／`.xls` 在無 Office automation 的環境只能保留 hash、分類與 source-level review record；DOCX／PPTX 目前以 XML 讀取但頁碼可能待補。
+- 77 個來源文件含圖片；圖片 metadata 已建立，但尚未做 OCR、受控 asset extraction、視覺題答案核對或 image-to-question 綁定。
+- Formal exact normalized match 為 0 不代表原始文件沒有重複題；PDF／DOCX 題幹可能有版面、繁簡、選項或跨頁差異，下一 Sprint 需人工抽樣與更保守的相似度 review，不得直接自動合併。

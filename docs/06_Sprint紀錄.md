@@ -515,3 +515,12 @@ Sprint 10：刷題與錯題複習。
 
 - 正式 285 題中 217 題完成 display refinement、68 題保留、41 題列人工確認；不修改 `question`、`answer`、`evidenceExcerpt`、`answerBasis`、Bella history、Apps Script 或 answered lock。
 - `verify:sprint42-1` 通過正式題數量、來源／歷史保護、TypeScript build 與 production bundle security；本 Sprint 未 deploy。
+
+# Sprint 56：Past Exam Extraction Pipeline
+
+- 建立只讀 `scripts/sprint56-past-exam-pipeline.py`，以 Sprint 55 inventory 為輸入，將 157 個 exam-like source document 分為 `official_exam_candidate` 16、`textbook_exam_candidate` 52、`practice_only` 72、`unknown` 17。
+- 產生 882 個具題目訊號的 extraction records；另保留 1,240 個低訊號編號片段與不可讀／圖片-only source review records，全部進 `pending_review` queue，不建立 runtime 題目 ID。
+- Formal baseline 維持 285 題：official_exam 25、textbook 259、unknown 1。候選與 Formal 的 exact normalized match 為 0；pipeline 不因此自動新增、覆蓋、合併或刪除題目。
+- 明示答案才保存 `answer_status=source_stated` 與 `answer_source`；沒有答案一律 `unknown`，不由檔名、選項或模型推論補答。
+- 建立 review-only image metadata schema 與 `public/question-assets/` staging 說明；本 Sprint 不 OCR、不複製 private 圖片、不把圖片 binary 或來源路徑打包進 runtime。
+- 產出 `sprint56_past_exam_inventory.md`、metadata-only `sprint56_past_exam_review_queue.json` 與 `sprint56_past_exam_coverage.md`；完整含題目／選項／明示答案的 `sprint56_past_exam_extractions.json` 僅保留本機並由 `.gitignore` 排除，未修改 canonical question JSON、UI、Daily／Weekly、scheduler、blueprint 或 Apps Script。

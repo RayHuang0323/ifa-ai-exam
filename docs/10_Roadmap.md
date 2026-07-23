@@ -228,3 +228,9 @@ Daily Task v2 已提供 30 題目標、45 題顯示上限與 carryover，不以�
 
 - 正式題使用 `displayQuestion` 呈現自然、正式的考試語氣，canonical 題目與答案維持不可變；Result 來源欄位使用安全 fallback。
 - 下一階段以人工確認 41 題答案依據、補來源版本／頁碼與小批修正 Daily 題庫為主；不自動升格、不新增大量題目、不 deploy Apps Script。
+
+## Sprint 56 完成：Past Exam Extraction Pipeline
+
+- 已完成 157 個 exam-like source document 的候選分類、可讀文件抽取、答案狀態、圖片 metadata、review queue 與 Formal coverage report。
+- 下一 Sprint 應先人工處理 official_exam_candidate：核對文件是否真的為正式／歷屆試卷、題目邊界、來源頁、答案頁、版本、圖片題與跨來源重複；未完成前不得匯入 Formal。
+- practice-only 與 unknown 候選維持隔離；不以 extraction records 或 review queue 數量作為正式題數承諾，也不改 scheduler、blueprint、UI 或 Apps Script。
