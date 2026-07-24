@@ -40,8 +40,9 @@ for (const fileName of questionFiles) {
 }
 
 const allQuestions = files.flatMap(({ fileName, questions }) => questions.map((question) => ({ ...question, inputFile: fileName })));
-const formalFiles = new Set(['week1.json', 'week2.json', 'verified-extra.json', 'source-verified.json', 'source-verified-sprint36.json', 'source-verified-sprint37.json']);
+const formalFiles = new Set(['week1.json', 'week2.json', 'verified-extra.json', 'source-verified.json', 'source-verified-sprint36.json', 'source-verified-sprint37.json', 'past-exam-verified.json']);
 const formal = allQuestions.filter((question) => formalFiles.has(question.inputFile));
+const pastExam = allQuestions.filter((question) => question.inputFile === 'past-exam-verified.json');
 const practice = allQuestions.filter((question) => question.inputFile === 'exam-practice.json' && question.isActive !== false && question.excludeFromPractice !== true && question.qualityStatus !== 'unsafe_candidate' && question.qualityStatus !== 'duplicate_candidate');
 const runtime = [...formal, ...practice];
 
@@ -99,7 +100,8 @@ for (const question of runtime) {
   if (runtimeIds.has(question.id)) errors.push(`runtime duplicate id ${question.id}`);
   runtimeIds.add(question.id);
 }
-if (formal.length !== 285) errors.push(`formal count expected 285, got ${formal.length}`);
+if (formal.length !== 292) errors.push(`formal count expected 292 (285 baseline + 7 Sprint 58 past_exam), got ${formal.length}`);
+if (pastExam.length !== 7 || pastExam.some((question) => question.sourceType !== 'past_exam' || question.priority < 20)) errors.push(`Sprint 58 past_exam integration expected 7 questions with priority >= 20, got ${pastExam.length}`);
 if (practice.length !== 974) errors.push(`runtime practice count expected 974, got ${practice.length}`);
 
 const [metadata, engine, scheduler, report] = await Promise.all([
@@ -109,7 +111,7 @@ const [metadata, engine, scheduler, report] = await Promise.all([
   readFile(reportPath, 'utf8'),
 ]);
 for (const required of ['official_exam', 'textbook', 'ai_generated', 'unknown', 'duplicateGroupId', 'duplicateRisk']) if (!metadata.includes(required)) errors.push(`metadata missing ${required}`);
-for (const required of ['buildQuestionPoolMetadata', 'questionPoolMetadata', 'getDailyQuestionPool', 'getPracticeQuestionPool']) if (!engine.includes(required)) errors.push(`engine missing ${required}`);
+for (const required of ['buildQuestionPoolMetadata', 'questionPoolMetadata', 'getDailyQuestionPool', 'getPracticeQuestionPool', 'pastExamPool', 'withSourcePriority']) if (!engine.includes(required)) errors.push(`engine missing ${required}`);
 for (const required of ['candidateGroupKey', 'completedGroups', 'recentGroups', 'days: 3', 'days: 7', '1000']) if (!scheduler.includes(required)) errors.push(`scheduler missing ${required}`);
 if (!report.includes('Sprint 52') || !report.includes('Full Mock') || !report.includes('Weekly') || !report.includes('Daily')) errors.push('strategy report is incomplete');
 

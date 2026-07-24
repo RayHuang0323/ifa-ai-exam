@@ -241,3 +241,9 @@ Daily Task v2 已提供 30 題目標、45 題顯示上限與 carryover，不以�
 - 嚴格歷屆／考古題來源目前有 5 份、93 筆清楚題目紀錄；official＋final 去重後 213 組；textbook 去重後 65 組。這些都仍是待審候選，不是正式題數承諾。
 - 下一 Sprint 優先逐題核對 official／final source 的來源頁、版本／日期、答案頁與圖片；再處理 textbook 題的正式性判定與 duplicate representative。完成人工 decision 前，Formal 維持 0 筆新增。
 - 圖片題須先完成受控 asset extraction 與 source lineage 綁定；不得把 private PDF／DOCX、猜測答案或未核對 image question 送入 runtime。
+
+## Sprint 58 完成：Past Exam Verified Formal Import
+
+- 已將 Sprint 57 queue 的 1,131 筆 occurrence 全部分類；7 題通過官方同頁答案與 IFA scope gate，539 題待人工核對，585 題不作為目前正式匯入候選。
+- 7 題新增為獨立 `past-exam-verified.json` formal batch，Daily／Weekly／Mock 共用；既有題目檔、UI、scheduler、blueprint 與 Apps Script 不變。
+- 下一 Sprint 優先處理 539 筆 needs_review，尤其是答案未標示、圖片依賴、選擇題未圈選、以及 textbook candidate 是否真正屬正式考試的判定；不要以 queue 數量直接升格。

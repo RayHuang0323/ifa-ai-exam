@@ -4,10 +4,10 @@ import { fileURLToPath } from 'node:url';
 
 const root = dirname(dirname(fileURLToPath(import.meta.url)));
 const readJson = async (name) => JSON.parse(await readFile(join(root, 'src', 'data', 'questions', name), 'utf8'));
-const [week1, week2, verifiedExtra, sourceVerified, sourceVerifiedSprint36, sourceVerifiedSprint37, staging] = await Promise.all([readJson('week1.json'), readJson('week2.json'), readJson('verified-extra.json'), readJson('source-verified.json'), readJson('source-verified-sprint36.json'), readJson('source-verified-sprint37.json'), readJson('week2.staging.json')]);
+const [week1, week2, verifiedExtra, sourceVerified, sourceVerifiedSprint36, sourceVerifiedSprint37, pastExamVerified, staging] = await Promise.all([readJson('week1.json'), readJson('week2.json'), readJson('verified-extra.json'), readJson('source-verified.json'), readJson('source-verified-sprint36.json'), readJson('source-verified-sprint37.json'), readJson('past-exam-verified.json'), readJson('week2.staging.json')]);
 const errors = [];
 const ids = new Set();
-const formal = [...week1, ...week2, ...verifiedExtra, ...sourceVerified, ...sourceVerifiedSprint36, ...sourceVerifiedSprint37];
+const formal = [...week1, ...week2, ...verifiedExtra, ...sourceVerified, ...sourceVerifiedSprint36, ...sourceVerifiedSprint37, ...pastExamVerified];
 const automaticTypes = new Set(['single', 'multiple', 'multipleChoice', 'multiSelect']);
 const manualTypes = new Set(['short_answer', 'shortAnswer', 'essay', 'case', 'case_study']);
 
@@ -42,13 +42,19 @@ for (const question of [...sourceVerified, ...sourceVerifiedSprint36, ...sourceV
   if (question.reviewStatus !== 'source_verified' || question.verificationType !== 'source_verified') errors.push(`教材證據正式題 ${question.id} 標記錯誤`);
   if (question.practiceOnly === true || question.formalScoreEligible !== true || question.deprecated === true || question.isActive === false) errors.push(`教材證據正式題 ${question.id} 正式池邊界錯誤`);
 }
+for (const question of pastExamVerified) {
+  for (const field of ['sourceType', 'sourceLabel', 'sourceFile', 'sourcePage', 'sourceEvidenceIds', 'evidenceExcerpt', 'answerBasis', 'sourceConfidence', 'verificationType', 'verifiedBy', 'verifiedAt']) if (!question[field] || (Array.isArray(question[field]) && question[field].length === 0)) errors.push(`past_exam 題目 ${question.id} 缺少 ${field}`);
+  if (question.sourceType !== 'past_exam' || question.verificationType !== 'past_exam' || question.reviewStatus !== 'verified') errors.push(`past_exam 題目 ${question.id} 標記錯誤`);
+  if (question.practiceOnly === true || question.formalScoreEligible !== true || question.isActive === false) errors.push(`past_exam 題目 ${question.id} 正式池邊界錯誤`);
+  if (/private[\\/]|external[\\/]/i.test(JSON.stringify(question))) errors.push(`past_exam 題目 ${question.id} 暴露私有原始資料路徑`);
+}
 const stagingNeedsReview = staging.filter((question) => question.reviewStatus !== 'approved-candidate' || question.sourceType === 'mock-exam' || question.sourceType === 'student-notes' || (question.tags ?? []).some((tag) => /需|不可/.test(tag)));
 const stagingMock = staging.filter((question) => question.sourceType === 'mock-exam');
 if (stagingMock.some((question) => question.sourceLabel !== '模擬題（非歷屆試題）')) errors.push('mock staging 題必須標示「模擬題（非歷屆試題）」');
-if (week1.length !== 20 || week2.length !== 21 || formal.length !== week1.length + week2.length + verifiedExtra.length + sourceVerified.length + sourceVerifiedSprint36.length + sourceVerifiedSprint37.length) errors.push(`正式題數異常：Week1 ${week1.length}、Week2 ${week2.length}、補充 ${verifiedExtra.length}、教材證據 ${sourceVerified.length + sourceVerifiedSprint36.length + sourceVerifiedSprint37.length}、合計 ${formal.length}`);
+if (week1.length !== 20 || week2.length !== 21 || formal.length !== week1.length + week2.length + verifiedExtra.length + sourceVerified.length + sourceVerifiedSprint36.length + sourceVerifiedSprint37.length + pastExamVerified.length) errors.push(`正式題數異常：Week1 ${week1.length}、Week2 ${week2.length}、補充 ${verifiedExtra.length}、教材證據 ${sourceVerified.length + sourceVerifiedSprint36.length + sourceVerifiedSprint37.length}、past_exam ${pastExamVerified.length}、合計 ${formal.length}`);
 if (stagingNeedsReview.length !== 12 || stagingMock.length !== 1) errors.push(`審核分類異常：needs_review ${stagingNeedsReview.length}、mock ${stagingMock.length}`);
 
 if (errors.length) {
   console.error('正式題庫驗證失敗：'); errors.forEach((error) => console.error(`- ${error}`)); process.exit(1);
 }
-console.log(`正式題庫驗證通過：人工 verified ${week1.length + week2.length + verifiedExtra.length} 題、教材證據 source_verified ${sourceVerified.length + sourceVerifiedSprint36.length + sourceVerifiedSprint37.length} 題、正式池合計 ${formal.length} 題；needs_review ${stagingNeedsReview.length} 題、mock ${stagingMock.length} 題。`);
+console.log(`正式題庫驗證通過：人工 verified ${week1.length + week2.length + verifiedExtra.length} 題、教材證據 source_verified ${sourceVerified.length + sourceVerifiedSprint36.length + sourceVerifiedSprint37.length} 題、past_exam ${pastExamVerified.length} 題、正式池合計 ${formal.length} 題；needs_review ${stagingNeedsReview.length} 題、mock ${stagingMock.length} 題。`);

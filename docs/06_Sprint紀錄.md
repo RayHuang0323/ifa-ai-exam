@@ -533,3 +533,11 @@ Sprint 10：刷題與錯題複習。
 - 建立 `docs/sprint57_formal_candidate_queue.json` 與 `docs/sprint57_past_exam_review.md`；queue 共 1,131 筆來源 occurrence、77 個 duplicate groups、138 筆 image question records，所有 record 保留 Sprint 55 inventory、Sprint 56 question ID、source hash 與 source page lineage。
 - Formal exact match 為 0；可直接加入 Formal 為 0；去重後 1,054 個 review units 仍需人工確認。沒有新增 canonical question、沒有重建 question ID、沒有修改 runtime、Daily／Weekly、UI、scheduler、blueprint 或 Apps Script，也沒有 deploy。
 - 新增可重跑 `scripts/sprint57-past-exam-review.py` 與 `report:sprint57` npm script；輸出只含 metadata，題文／答案／圖片仍維持 local ignored extraction 狀態。
+
+# Sprint 58：Past Exam Verified Formal Import
+
+- 讀取 Sprint 57 queue 共 1,131 筆 candidates，逐筆分類為 `verified` 7、`needs_review` 539、`rejected` 585；所有 occurrence 保留 source file、source page、source hash、Sprint 56 question id 與 Sprint 57 candidate id lineage。
+- 僅核准 2024 IFA 解剖學與生理學期末評量（四）解答第 3 頁中，題目與官方答案同頁、無必要圖片且答案明示的 7 題；第 8 題答案未升格，未補答案或猜答案。
+- 新增 `docs/sprint58_past_exam_verified.json`、`docs/sprint58_past_exam_review.md` 與 `src/data/questions/past-exam-verified.json`；既有 canonical question JSON 未修改，既有題目 ID 未修改。
+- question engine 讀取新的 verified batch，Daily Task、Weekly Review、Mock Exam 共用 formal pool；以 priority `past_exam 20 > textbook/source_verified 10 > practice 原 priority` 實作來源權重。未修改 UI、Daily／Weekly 流程、scheduler、blueprint、Apps Script 或 deploy。
+- 新增可重跑 `scripts/sprint58-past-exam-verification.py`、`scripts/sprint58-past-exam-import.mjs`，並更新題庫驗證與 Sprint 52 regression count。
