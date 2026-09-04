@@ -13,7 +13,7 @@ import { getLocalDateString, loadStudyProgress, recordStudySession } from './uti
 import { clearExamDraft, loadExamDraft, type ExamDraft } from './utils/examDraft';
 import { getReviewableWrongAnswers, recordWrongAnswerReview, recordWrongAnswers } from './utils/wrongAnswerStore';
 import { getReviewableUnansweredQuestionIds, recordUnansweredQuestions, resolveUnansweredQuestions } from './utils/unansweredQuestionStore';
-import { getDailyQuestionPool, getFormalQuestionPool, getPracticeQuestionPool, getQuestionById, getWritingPracticeQuestions, type RuntimeQuestion } from './utils/questionEngine';
+import { getDailyQuestionPool, getFormalQuestionPool, getFullMockQuestionPool, getPracticeQuestionPool, getQuestionById, getWritingPracticeQuestions, type RuntimeQuestion } from './utils/questionEngine';
 import { prepareQuestionSequence } from './utils/questionQualityAudit';
 import { calculateTimeLimitInMinutes } from './utils/examTime';
 import type { StudyMode } from './types/study';
@@ -33,7 +33,6 @@ type AppQuestion = RuntimeQuestion | WritingPracticeSample;
 type GradingQuestion = { id: number; type: string; answer: string | string[]; weekId?: string; formalScoreEligible?: boolean; practiceOnly?: boolean };
 const getQuestionWeekId = (question: AppQuestion) => 'weekId' in question ? question.weekId : undefined;
 const isPracticeOnlyQuestion = (question: AppQuestion) => 'practiceOnly' in question && question.practiceOnly === true;
-const isFullMockEligibleQuestion = (question: RuntimeQuestion) => question.practiceOnly !== true && question.formalScoreEligible !== false && question.answerConfidence !== 'C' && question.questionConfidence !== 'C';
 
 const toSchedulerCandidate = (question: RuntimeQuestion, formal = false): SchedulerCandidate => ({
   id: question.id,
@@ -121,7 +120,7 @@ function App() {
   const prepareNewExam = (entry: ExamEntry, suggestedQuestions = 0) => {
     clearExamDraft();
     setExamDraft(null);
-    const formalPool = getFormalQuestionPool().filter(isFullMockEligibleQuestion);
+    const formalPool = getFullMockQuestionPool();
     const selectedIds = selectWeightedMockQuestionIds(formalPool.map((question) => toSchedulerCandidate(question, !isPracticeOnlyQuestion(question))), mockBlueprintConfig.questionCount);
     const selectedSet = new Set(selectedIds);
     const formalQuestions = selectedIds.map((id) => getQuestionById(id)).filter((question): question is RuntimeQuestion => question !== null && selectedSet.has(question.id));
@@ -222,11 +221,9 @@ function App() {
       return;
     }
     setExamDraft(draft);
-    const resumedDailyQuestions = draft.entry === 'today-task'
-      ? draft.questionIds.map((id) => getQuestionById(id)).filter((question) => question !== null)
-      : getFormalQuestionPool().filter(isFullMockEligibleQuestion);
-    setQuestions(prepareQuestionSequence(resumedDailyQuestions));
-    setTimeLimit(calculateTimeLimitInMinutes(draft.entry === 'today-task' ? 'daily' : 'formal-exam', resumedDailyQuestions));
+    const resumedQuestions = draft.questionIds.map((id) => getQuestionById(id)).filter((question) => question !== null);
+    setQuestions(prepareQuestionSequence(resumedQuestions));
+    setTimeLimit(calculateTimeLimitInMinutes(draft.entry === 'today-task' ? 'daily' : 'formal-exam', resumedQuestions));
     setExamEntry(draft.entry === 'today-task' ? 'today-task' : 'new-exam');
     setSessionMode(draft.entry === 'today-task' ? 'daily' : 'formal-exam');
     setPersistDraft(true);
@@ -382,7 +379,7 @@ function App() {
 
   const handleRetry = () => {
     clearExamDraft();
-    const formalPool = getFormalQuestionPool().filter(isFullMockEligibleQuestion);
+    const formalPool = getFullMockQuestionPool();
     const selectedIds = selectWeightedMockQuestionIds(formalPool.map((question) => toSchedulerCandidate(question, !isPracticeOnlyQuestion(question))), mockBlueprintConfig.questionCount);
     const formalQuestions = selectedIds.map((id) => getQuestionById(id)).filter((question): question is RuntimeQuestion => question !== null);
     setQuestions(prepareQuestionSequence(formalQuestions));

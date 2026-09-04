@@ -1,7 +1,13 @@
+import { createServer } from 'vite';
 import { readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 
 const root = process.cwd();
+const storage = new Map();
+globalThis.window = {
+  location: { search: '?profile=coach-test' },
+  localStorage: { getItem: (key) => storage.get(key) ?? null, setItem: (key, value) => storage.set(key, String(value)), removeItem: (key) => storage.delete(key) },
+};
 const questionDir = join(root, 'src', 'data', 'questions');
 const reportPath = join(root, 'docs', 'sprint52_question_pool_strategy.md');
 const metadataPath = join(questionDir, 'questionPoolMetadata.ts');
@@ -100,8 +106,8 @@ for (const question of runtime) {
   if (runtimeIds.has(question.id)) errors.push(`runtime duplicate id ${question.id}`);
   runtimeIds.add(question.id);
 }
-if (formal.length !== 292) errors.push(`formal count expected 292 (285 baseline + 7 Sprint 58 past_exam), got ${formal.length}`);
-if (pastExam.length !== 7 || pastExam.some((question) => question.sourceType !== 'past_exam' || question.priority < 20)) errors.push(`Sprint 58 past_exam integration expected 7 questions with priority >= 20, got ${pastExam.length}`);
+if (formal.length !== 359) errors.push(`formal count expected 359 (285 baseline + 74 past_exam), got ${formal.length}`);
+if (pastExam.length !== 74 || pastExam.some((question) => question.sourceType !== 'past_exam' || question.priority < 20)) errors.push(`Sprint 62 past_exam integration expected 74 questions with priority >= 20, got ${pastExam.length}`);
 if (practice.length !== 974) errors.push(`runtime practice count expected 974, got ${practice.length}`);
 
 const [metadata, engine, scheduler, report] = await Promise.all([
@@ -114,6 +120,24 @@ for (const required of ['official_exam', 'textbook', 'ai_generated', 'unknown', 
 for (const required of ['buildQuestionPoolMetadata', 'questionPoolMetadata', 'getDailyQuestionPool', 'getPracticeQuestionPool', 'pastExamPool', 'withSourcePriority']) if (!engine.includes(required)) errors.push(`engine missing ${required}`);
 for (const required of ['candidateGroupKey', 'completedGroups', 'recentGroups', 'days: 3', 'days: 7', '1000']) if (!scheduler.includes(required)) errors.push(`scheduler missing ${required}`);
 if (!report.includes('Sprint 52') || !report.includes('Full Mock') || !report.includes('Weekly') || !report.includes('Daily')) errors.push('strategy report is incomplete');
+
+const runtimeServer = await createServer({ root, logLevel: 'error', optimizeDeps: { noDiscovery: true }, server: { middlewareMode: true } });
+let runtimeFormalCount = 0;
+let runtimeEligibleCount = 0;
+let runtimePracticeCount = 0;
+let runtimeDailyCount = 0;
+try {
+  const runtimeEngine = await runtimeServer.ssrLoadModule('/src/utils/questionEngine.ts');
+  runtimeFormalCount = runtimeEngine.getFormalQuestionPool().length;
+  runtimeEligibleCount = runtimeEngine.getFullMockQuestionPool().length;
+  runtimePracticeCount = runtimeEngine.getPracticeQuestionPool().length;
+  runtimeDailyCount = runtimeEngine.getDailyQuestionPool().length;
+} finally {
+  await runtimeServer.close();
+}
+if (runtimeFormalCount !== formal.length) errors.push(`runtime formal count differs from JSON pool: ${runtimeFormalCount} != ${formal.length}`);
+if (runtimePracticeCount !== practice.length) errors.push(`runtime practice count differs from JSON pool: ${runtimePracticeCount} != ${practice.length}`);
+if (runtimeEligibleCount <= 0 || runtimeEligibleCount >= runtimeFormalCount) errors.push(`runtime full mock eligibility boundary invalid: ${runtimeEligibleCount}/${runtimeFormalCount}`);
 
 if (errors.length) {
   console.error('Sprint 52 verification failed:');
@@ -129,7 +153,7 @@ const summary = {
     practiceRaw: countBy(allQuestions.filter((question) => question.inputFile === 'exam-practice.json'), (question) => classify(question, question.inputFile)),
     byFile: Object.fromEntries(files.map(({ fileName, questions }) => [fileName, countBy(questions, (question) => classify(question, fileName))])),
   },
-  runtimePool: { formal: formal.length, practice: practice.length, daily: runtime.length, fullMock: formal.length, weekly: runtime.length },
+  runtimePool: { formal: runtimeFormalCount, practice: runtimePracticeCount, daily: runtimeDailyCount, fullMock: runtimeEligibleCount, weekly: runtimeDailyCount },
   duplicateAudit: {
     formalExactGroups: exactGroups(formal).length,
     practiceExactGroups: exactGroups(practice).length,

@@ -39,6 +39,21 @@ interface ExamProps {
 const isAnswered = (answer: string | string[] | undefined) =>
   Array.isArray(answer) ? answer.length > 0 : Boolean(answer?.trim());
 const isSelfCheckQuestion = (question: { type: string }) => ['short-answer', 'short_answer', 'shortAnswer', 'writing', 'memorization', 'essay', 'case-study', 'case_study', 'case'].includes(question.type);
+const getQuestionTypeLabel = (type: string) => ({
+  single: '單選',
+  multiple: '多選',
+  multipleChoice: '單選',
+  multiSelect: '多選',
+  'short-answer': '簡答／默寫',
+  short_answer: '簡答／默寫',
+  shortAnswer: '簡答／默寫',
+  writing: '簡答／默寫',
+  memorization: '簡答／默寫',
+  essay: '申論',
+  'case-study': '案例題',
+  case_study: '案例題',
+  case: '案例題',
+}[type] ?? type.replaceAll('_', ' '));
 
 export default function Exam({ questions, timeLimitInMinutes, onFinish, onAbort, initialDraft, persistDraft, draftEntry, draftStorageKey, sessionId, onProgressCheckpoint }: ExamProps) {
   const [currentIndex, setCurrentIndex] = useState(() => Math.min(initialDraft?.currentIndex ?? 0, Math.max(0, questions.length - 1)));
@@ -179,7 +194,6 @@ export default function Exam({ questions, timeLimitInMinutes, onFinish, onAbort,
     const nextResults = { ...selfCheckResults, [currentQuestion.id]: correct };
     setSelfCheckResults(nextResults);
     setShowSelfCheck(false);
-    submitExam(timeLeft, nextResults);
   };
 
   if (!currentQuestion) return null;
@@ -247,7 +261,7 @@ export default function Exam({ questions, timeLimitInMinutes, onFinish, onAbort,
         <section className="exam-question-card rounded-2xl border border-slate-800 bg-[#0b0d14] p-6 sm:p-8 min-h-[430px] flex flex-col">
           <div className="flex items-center justify-between gap-3 mb-6">
             <span className="px-2 py-1 rounded bg-slate-900 border border-slate-800 text-[10px] font-mono font-bold text-indigo-400 uppercase tracking-widest">
-              {currentQuestion.type.replace('_', ' ')}
+              {getQuestionTypeLabel(currentQuestion.type)}
             </span>
             <div className="flex items-center gap-3">
               <button

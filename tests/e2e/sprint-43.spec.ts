@@ -53,6 +53,8 @@ test('Learner 可完成今日任務的暫存、恢復、交卷與非選擇題規
   await page.getByRole('textbox', { name: '文字答案' }).fill('肺靜脈將含氧較高的血液送回左心房。');
   await page.getByTestId('submit-self-check-button').click();
   await page.getByTestId('self-check-correct-button').click();
+  await page.locator("button[data-variant='submit']").click();
+  await page.getByRole('button', { name: '確認交卷' }).click();
   await expect(page.getByRole('heading', { name: '簡答／默寫練習完成' })).toBeVisible();
   await expect(page.getByRole('region', { name: '規準輔助評分摘要' })).toBeVisible();
   await expect(page.getByText('規準輔助評分').first()).toBeVisible();

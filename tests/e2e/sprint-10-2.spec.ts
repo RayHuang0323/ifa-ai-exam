@@ -1,6 +1,14 @@
 import { expect, test } from '@playwright/test';
 
 test.beforeEach(async ({ page }) => {
+  await page.route('**/*', async (route) => {
+    const action = new URL(route.request().url()).searchParams.get('action');
+    if (action) {
+      await route.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify({ success: false, error: 'offline test' }) });
+      return;
+    }
+    await route.continue();
+  });
   await page.goto('/');
   await page.evaluate(() => localStorage.clear());
   await page.reload();
@@ -23,7 +31,7 @@ test('mockExam 離開後可恢復草稿', async ({ page }) => {
   console.log('Step 4: 檢查 Resume');
   await expect(page.getByRole('button', { name: '繼續模擬測驗' })).toBeVisible();
   await page.getByRole('button', { name: '繼續模擬測驗' }).click();
-  await expect(page.locator('[data-status="marked"]')).toHaveCount(1);
+  await expect(page.getByRole('button', { name: '已標記' })).toHaveCount(1);
   await expect(page.getByText(/第 1 題 \/ 共 \d+ 題/)).toBeVisible();
 });
 

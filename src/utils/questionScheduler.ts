@@ -11,6 +11,7 @@ export interface SchedulerCandidate {
   id: number;
   formal?: boolean;
   priority?: number;
+  sourceType?: string;
   sourceConfidence?: string;
   isImportant?: boolean;
   isActive?: boolean;
@@ -210,13 +211,16 @@ export const getRecentQuestionIds = (options: { modes?: SchedulerMode[]; days?: 
 
 const isBlocked = (candidate: SchedulerCandidate) => candidate.isActive === false || candidate.excludeFromPractice === true || candidate.deprecated === true || candidate.qualityStatus === 'unsafe_candidate' || candidate.qualityStatus === 'duplicate_candidate';
 const candidateGroupKey = (candidate: SchedulerCandidate) => candidate.duplicateGroupId ? `group:${candidate.duplicateGroupId}` : `id:${candidate.id}`;
+const isPastExam = (candidate: SchedulerCandidate) => ['past_exam', 'past-exam'].includes(String(candidate.sourceType ?? '').toLowerCase()) || (candidate.priority ?? 0) >= 10000;
 const getRecordScore = (candidate: SchedulerCandidate, state: QuestionSchedulerState) => {
   const record = getQuestionAppearance(candidate.id, state);
   const masteryPenalty = record.mastery === 'not_mastered' ? 40 : record.mastery === 'partial' || record.mastery === 'needs_human_review' ? 20 : record.mastery === 'mostly_mastered' ? 5 : 0;
   const priority = Math.max(0, candidate.priority ?? 0);
   const importance = candidate.isImportant ? 30 : (candidate.formal ? 10 : 0) + (candidate.sourceConfidence === 'high' ? 8 : 0);
   const age = record.lastShownAt ? Math.min(20, Math.max(0, (Date.now() - new Date(record.lastShownAt).getTime()) / DAY_MS)) : 20;
-  return masteryPenalty + importance + priority + age - record.shownCount * 5;
+  // Sprint 59：可確認的歷屆考題直接對正式考試命中率最有幫助，三種選題模式都置頂。
+  const pastExamPriority = isPastExam(candidate) ? 10000 : 0;
+  return pastExamPriority + masteryPenalty + importance + priority + age - record.shownCount * 5;
 };
 const sortByScore = (candidates: SchedulerCandidate[], state: QuestionSchedulerState) => [...candidates].sort((a, b) => getRecordScore(b, state) - getRecordScore(a, state) || a.id - b.id);
 const uniqueCandidates = (candidates: SchedulerCandidate[]) => [...new Map(candidates.filter((candidate) => Number.isFinite(candidate.id) && !isBlocked(candidate)).map((candidate) => [candidate.id, candidate])).values()];

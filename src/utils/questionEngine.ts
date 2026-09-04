@@ -108,8 +108,10 @@ export interface RuntimeQuestion {
 type RawQuestion = typeof week1Questions[number];
 const withSourcePriority = (question: RuntimeQuestion): RuntimeQuestion => {
   const sourceType = String(question.sourceType ?? '').toLowerCase();
-  const minimumPriority = sourceType === 'past_exam' || sourceType === 'official_exam'
-    ? 20
+  const minimumPriority = sourceType === 'past_exam' || sourceType === 'past-exam'
+    ? 10000
+    : sourceType === 'official_exam'
+      ? 20
     : ['textbook', 'extracted_material', 'source_verified'].includes(sourceType)
       ? 10
       : 0;
@@ -194,6 +196,11 @@ const applyRuntimePoolMetadata = (question: RuntimeQuestion) => applyQuestionPoo
 });
 const formalQuestionPool: RuntimeQuestion[] = formalQuestionPoolBase.map(applyRuntimePoolMetadata);
 const practiceQuestionPool: RuntimeQuestion[] = practiceQuestionPoolBase.map(applyRuntimePoolMetadata);
+export const isFullMockEligibleQuestion = (question: RuntimeQuestion) => question.practiceOnly !== true
+  && question.formalScoreEligible !== false
+  && question.answerConfidence !== 'C'
+  && question.questionConfidence !== 'C';
+export const getFullMockQuestionPool = () => formalQuestionPool.filter(isFullMockEligibleQuestion);
 
 export const normalizeQuestion = (rawQuestion: RawQuestion, weekId: string, index: number): EngineQuestion => ({
   id: typeof rawQuestion.id === 'number' ? rawQuestion.id : index + 1,

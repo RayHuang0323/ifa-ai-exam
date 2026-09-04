@@ -58,7 +58,7 @@ type QualityQuestion = {
   optionQuality?: OptionQualityMetadata;
   sourceReview?: SourceReviewMetadata;
   imageRequired?: boolean;
-  imageSource?: string;
+  imageSource?: string | { source_file?: string; source_page?: string | number; source_hash?: string };
   imageAlt?: string;
   imageReference?: { source: string; alt: string; verified: boolean } | null;
   imageMissing?: boolean;
@@ -168,7 +168,11 @@ export const applyQuestionQualityGovernance = <T extends QualityQuestion>(questi
   };
   const rubricMetadata = isNonChoice(question.type) && !Array.isArray(base.rubric) && base.rubric && typeof base.rubric === 'object' ? base.rubric as RubricMetadata : undefined;
   const imageRequired = question.imageRequired === true || detectsImageDependency(question.question);
-  const imageSource = question.imageSource?.trim() ?? '';
+  // Past-exam imports may carry image provenance metadata in imageSource rather
+  // than a renderable URL. Only a string is safe to pass to <img src>; the
+  // structured value remains available through the source fields and should
+  // render as the existing missing-image warning.
+  const imageSource = typeof question.imageSource === 'string' ? question.imageSource.trim() : '';
   const languageAudit = auditQuestionLanguage({ ...question, answerBasis: question.answerBasis, explanation: question.explanation });
   const naturalness = questionNaturalnessAudit(toTraditional(question.question), question.type);
   const displayQuestion = imageQuestionOverrides[question.id] ?? languageAudit.displayQuestion;

@@ -22,7 +22,8 @@ try {
     readFile(join(root, 'src/App.tsx'), 'utf8'),
   ]);
   const formal = engine.getFormalQuestionPool();
-  const eligible = formal.filter(isEligibleFormal);
+  const eligible = engine.getFullMockQuestionPool();
+  const eligibleByRule = formal.filter(isEligibleFormal);
   const candidates = eligible.map((question) => ({
     id: question.id,
     formal: true,
@@ -44,15 +45,15 @@ try {
   const targetCounts = blueprint.getMockBlueprintTargetCounts(blueprint.mockBlueprintConfig.questionCount);
   const normalizeCounts = (counts) => Object.fromEntries(Object.entries(counts).sort(([left], [right]) => left.localeCompare(right)));
 
-  assert(formal.length === 285, `formal 題數異常：${formal.length}`);
-  assert(eligible.length === 284, `Full Mock eligible 題數異常：${eligible.length}`);
+  assert(new Set(formal.map((question) => question.id)).size === formal.length, 'formal pool 出現重複題');
+  assert(eligible.length === eligibleByRule.length && eligible.every((question) => isEligibleFormal(question)), `Full Mock eligible 篩選規則不同步：runtime=${eligible.length}, rule=${eligibleByRule.length}`);
   assert(selectedIds.length === blueprint.mockBlueprintConfig.questionCount, `mock 題數異常：${selectedIds.length}`);
   assert(new Set(selectedIds).size === selectedIds.length, 'mock 出現重複題');
   assert(selected.length === selectedIds.length, 'mock 有題目無法從 formal pool 解析');
   assert(selected.every((question) => isEligibleFormal(question)), 'mock 混入 practice／C 題');
   assert(JSON.stringify(normalizeCounts(categoryCounts)) === JSON.stringify(normalizeCounts(targetCounts)), `category distribution 異常：${JSON.stringify(categoryCounts)} != ${JSON.stringify(targetCounts)}`);
   assert(appSource.includes('recordQuestionsShown') && appSource.includes('recordQuestionsAnswered') && appSource.includes('recordQuestionsCompleted'), '答題紀錄／完成紀錄接線遺失');
-  assert(appSource.includes('selectWeightedMockQuestionIds') && appSource.includes('mockBlueprintConfig.questionCount'), 'Full Mock 未接入 weighted blueprint');
+  assert(appSource.includes('getFullMockQuestionPool') && appSource.includes('selectWeightedMockQuestionIds') && appSource.includes('mockBlueprintConfig.questionCount'), 'Full Mock 未接入共用正式有效池或 weighted blueprint');
   assert(appSource.includes('selectDailyQuestionIds') && appSource.includes('getDailyQuestionPool'), 'Daily 接線遺失');
 
   const mixedSelection = scheduler.selectWeightedMockQuestionIds([

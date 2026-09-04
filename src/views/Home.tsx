@@ -8,7 +8,7 @@ import { getStudyReminder } from '../utils/studyReminder';
 import type { StudyMode } from '../types/study';
 import { getWrongAnswerSummary, loadWrongAnswers } from '../utils/wrongAnswerStore';
 import { planTodayTask } from '../utils/taskPlanner';
-import { getCoverageByWeek, getDailyQuestionPool, getFormalQuestionPool } from '../utils/questionEngine';
+import { getCoverageByWeek, getDailyQuestionPool, getFormalQuestionPool, getFullMockQuestionPool } from '../utils/questionEngine';
 import type { LearnerProfile } from '../utils/learnerProfile';
 import { dailyMaximum, dailyTarget, getDailyTaskV2Plan } from '../utils/dailyTaskV2';
 import { getLearnerHomeSummary, type LearnerHomeSummary } from '../services/learnerHomeApi';
@@ -46,7 +46,7 @@ const Home: React.FC<HomeProps> = ({ hasExamDraft, onResumeExam, onStartTodayTas
   const localWeek2Coverage = getCoverageByWeek('week-2', studyProgress, wrongAnswers);
   const localAllIds = new Set(studyProgress.sessions.flatMap((session) => session.questionIds ?? []));
   const localAllTotal = getFormalQuestionPool().length;
-  const formalFirstRound = getFirstRoundStats(getFormalQuestionPool().map((question) => question.id));
+  const formalFirstRound = getFirstRoundStats(getFullMockQuestionPool().map((question) => question.id));
   const practiceFirstRound = getFirstRoundStats(getDailyQuestionPool().filter((question) => question.practiceOnly === true).map((question) => question.id));
   const localAllCoverage = { practicedCount: getFormalQuestionPool().filter((question) => localAllIds.has(question.id)).length, totalCount: localAllTotal, remainingCount: Math.max(0, localAllTotal - getFormalQuestionPool().filter((question) => localAllIds.has(question.id)).length), percent: localAllTotal ? Math.round(getFormalQuestionPool().filter((question) => localAllIds.has(question.id)).length / localAllTotal * 100) : 0 };
   const coverage = remoteStatus === 'ready' && remote ? remote.coverage : { week1: { practicedCount: localWeek1Coverage.practicedCount, totalCount: localWeek1Coverage.totalQuestions, remainingCount: localWeek1Coverage.unpracticedCount, percent: localWeek1Coverage.totalQuestions ? Math.round(localWeek1Coverage.practicedCount / localWeek1Coverage.totalQuestions * 100) : 0 }, week2: { practicedCount: localWeek2Coverage.practicedCount, totalCount: localWeek2Coverage.totalQuestions, remainingCount: localWeek2Coverage.unpracticedCount, percent: localWeek2Coverage.totalQuestions ? Math.round(localWeek2Coverage.practicedCount / localWeek2Coverage.totalQuestions * 100) : 0 }, all: localAllCoverage };
